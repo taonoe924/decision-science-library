@@ -9,7 +9,7 @@
     ],
     "source_date": "2026-08-14",
     "rq_candidate": "企業規模に応じた給与税の段差（notch）は企業成長をどの程度阻害し、標準的なDIDではその効果を適切に推定できるか？",
-    "hypothesis_candidate": "",
+    "hypothesis_candidate": "元配信の中心命題（解説者による再構成）：税・規制のnotchは企業の成長行動を歪め、標準的なDIDではその影響を過小推定し得るため、段差に伴う行動変化を考慮した推定が必要になる。",
     "method_keywords": [
       "DID"
     ],
@@ -21,10 +21,26 @@
     "title_ja_status": "provisional_translation",
     "rq_provenance": "reconstructed_from_digest_overview_not_author_verified",
     "rq_source_line": null,
-    "hypothesis_provenance": "needs_manual_review",
+    "hypothesis_provenance": "analyst_reconstruction_from_digest_not_author_verified",
     "substantive_verification": "not_checked_against_original",
     "bibliography_status": "verified_title_and_source_url",
-    "bibliography_source": "external_lookup_2026-11-25"
+    "bibliography_source": "external_lookup_2026-11-25",
+    "research_map": {
+      "identification_tags": [
+        "差の差分析"
+      ],
+      "outcome_tags": [
+        "経済・所得・消費",
+        "企業・生産性・経営",
+        "因果効果・推論精度"
+      ],
+      "mechanism_tags": [
+        "情報・知識"
+      ],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-62ca0acf9a",
@@ -36,7 +52,7 @@
     ],
     "source_date": "2026-08-14",
     "rq_candidate": "死亡によってQoLなどのOutcome自体が定義されなくなる場合、全人口に解釈可能な治療の因果効果をどう定義・推定するか？",
-    "hypothesis_candidate": "",
+    "hypothesis_candidate": "元配信の中心命題（解説者による再構成）：死亡によって未定義となるOutcomeを単純に欠測として扱わず、全人口について解釈可能な周辺因果効果を定義すべきである。",
     "method_keywords": [
       "CATE",
       "Survival"
@@ -49,10 +65,24 @@
     "title_ja_status": "provisional_translation",
     "rq_provenance": "reconstructed_from_digest_overview_not_author_verified",
     "rq_source_line": null,
-    "hypothesis_provenance": "needs_manual_review",
+    "hypothesis_provenance": "analyst_reconstruction_from_digest_not_author_verified",
     "substantive_verification": "not_checked_against_original",
     "bibliography_status": "verified_title_and_source_url",
-    "bibliography_source": "external_lookup_2026-11-25"
+    "bibliography_source": "external_lookup_2026-11-25",
+    "research_map": {
+      "identification_tags": [
+        "部分識別・頑健性",
+        "生存時間・打切り"
+      ],
+      "outcome_tags": [
+        "健康・医療",
+        "因果効果・推論精度"
+      ],
+      "mechanism_tags": [],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-8db14dc31c",
@@ -64,7 +94,7 @@
     ],
     "source_date": "2026-08-14",
     "rq_candidate": "平均処置効果だけでなく、処置下・非処置下の反事実Outcome分布全体をどのように推定し、分位点などの効果を評価できるか？",
-    "hypothesis_candidate": "",
+    "hypothesis_candidate": "元配信の中心命題（解説者による再構成）：反事実分布全体を推定できれば、平均値だけでなく分位点・分布の裾・効果の異質性に関する意思決定へ利用できる。",
     "method_keywords": [
       "DML",
       "AI"
@@ -77,10 +107,24 @@
     "title_ja_status": "provisional_translation",
     "rq_provenance": "reconstructed_from_digest_overview_not_author_verified",
     "rq_source_line": null,
-    "hypothesis_provenance": "needs_manual_review",
+    "hypothesis_provenance": "analyst_reconstruction_from_digest_not_author_verified",
     "substantive_verification": "not_checked_against_original",
     "bibliography_status": "verified_title_and_source_url",
-    "bibliography_source": "external_lookup_2026-11-25"
+    "bibliography_source": "external_lookup_2026-11-25",
+    "research_map": {
+      "identification_tags": [
+        "機械学習・ベイズ"
+      ],
+      "outcome_tags": [
+        "因果効果・推論精度"
+      ],
+      "mechanism_tags": [
+        "情報・知識"
+      ],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-260bb098e8",
@@ -92,7 +136,7 @@
     ],
     "source_date": "2026-08-21",
     "rq_candidate": "集団間で因果モデルが異なり、完全な移送ができない場合でも、他集団の因果効果について妥当な範囲を示せるか？",
-    "hypothesis_candidate": "",
+    "hypothesis_candidate": "元配信の中心命題（解説者による再構成）：集団間の因果モデルが完全には一致しなくても、因果抽象化を使い、効果の移送可能性を境界の形で評価できる場合がある。",
     "method_keywords": [
       "Transportability"
     ],
@@ -104,10 +148,22 @@
     "title_ja_status": "provisional_translation",
     "rq_provenance": "reconstructed_from_digest_overview_not_author_verified",
     "rq_source_line": null,
-    "hypothesis_provenance": "needs_manual_review",
+    "hypothesis_provenance": "analyst_reconstruction_from_digest_not_author_verified",
     "substantive_verification": "not_checked_against_original",
     "bibliography_status": "verified_title_and_source_url",
-    "bibliography_source": "external_lookup_2026-11-25"
+    "bibliography_source": "external_lookup_2026-11-25",
+    "research_map": {
+      "identification_tags": [
+        "因果効果の移送"
+      ],
+      "outcome_tags": [
+        "因果効果・推論精度"
+      ],
+      "mechanism_tags": [],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-4ba1548978",
@@ -119,7 +175,7 @@
     ],
     "source_date": "2026-08-21",
     "rq_candidate": "Treatmentの影響を受ける共変量が未処置Outcomeのトレンドも説明する場合、Bad Controlを避けつつDIDの効果をどう識別するか？",
-    "hypothesis_candidate": "",
+    "hypothesis_candidate": "元配信の中心命題（解説者による再構成）：処置の影響を受ける共変量を安易に調整することはDIDの識別を歪め得るが、単に除外すれば未処置トレンドの条件付き比較が崩れる場合もある。",
     "method_keywords": [
       "DID"
     ],
@@ -131,10 +187,25 @@
     "title_ja_status": "provisional_translation",
     "rq_provenance": "reconstructed_from_digest_overview_not_author_verified",
     "rq_source_line": null,
-    "hypothesis_provenance": "needs_manual_review",
+    "hypothesis_provenance": "analyst_reconstruction_from_digest_not_author_verified",
     "substantive_verification": "not_checked_against_original",
     "bibliography_status": "verified_title_and_source_url",
-    "bibliography_source": "external_lookup_2026-11-25"
+    "bibliography_source": "external_lookup_2026-11-25",
+    "research_map": {
+      "identification_tags": [
+        "差の差分析"
+      ],
+      "outcome_tags": [
+        "経済・所得・消費",
+        "因果効果・推論精度"
+      ],
+      "mechanism_tags": [
+        "習慣・持続性"
+      ],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-e53343e16f",
@@ -146,7 +217,7 @@
     ],
     "source_date": "2026-08-21",
     "rq_candidate": "時期・コホート別の効果異質性を保ちながら、似た効果だけを部分的に統合してDID推定の精度を改善できるか？",
-    "hypothesis_candidate": "",
+    "hypothesis_candidate": "元配信の中心命題（解説者による再構成）：staggered DIDのコホート・時点別効果は、類似性を考慮した部分的な統合によって効果異質性と推定分散の折り合いを付けられる可能性がある。",
     "method_keywords": [
       "DID"
     ],
@@ -158,10 +229,24 @@
     "title_ja_status": "provisional_translation",
     "rq_provenance": "reconstructed_from_digest_overview_not_author_verified",
     "rq_source_line": null,
-    "hypothesis_provenance": "needs_manual_review",
+    "hypothesis_provenance": "analyst_reconstruction_from_digest_not_author_verified",
     "substantive_verification": "not_checked_against_original",
     "bibliography_status": "verified_title_and_source_url",
-    "bibliography_source": "external_lookup_2026-11-25"
+    "bibliography_source": "external_lookup_2026-11-25",
+    "research_map": {
+      "identification_tags": [
+        "差の差分析",
+        "部分識別・頑健性",
+        "機械学習・ベイズ"
+      ],
+      "outcome_tags": [
+        "因果効果・推論精度"
+      ],
+      "mechanism_tags": [],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-44a219aa63",
@@ -173,7 +258,7 @@
     ],
     "source_date": "2026-08-28",
     "rq_candidate": "平行トレンドを直接仮定せず、処置前DIDの変動分布を使って処置後効果について妥当な推論ができるか？",
-    "hypothesis_candidate": "",
+    "hypothesis_candidate": "元配信の中心命題（解説者による再構成）：処置前DIDの絶対値の変動分布が時点間で安定するという別の仮定の下では、平行トレンドを直接仮定せずに推論するアプローチが考えられる。",
     "method_keywords": [
       "DID",
       "AI"
@@ -186,10 +271,24 @@
     "title_ja_status": "provisional_translation",
     "rq_provenance": "reconstructed_from_digest_overview_not_author_verified",
     "rq_source_line": null,
-    "hypothesis_provenance": "needs_manual_review",
+    "hypothesis_provenance": "analyst_reconstruction_from_digest_not_author_verified",
     "substantive_verification": "not_checked_against_original",
     "bibliography_status": "verified_title_and_source_url",
-    "bibliography_source": "external_lookup_2026-11-25"
+    "bibliography_source": "external_lookup_2026-11-25",
+    "research_map": {
+      "identification_tags": [
+        "差の差分析",
+        "機械学習・ベイズ"
+      ],
+      "outcome_tags": [
+        "判断品質・知識",
+        "因果効果・推論精度"
+      ],
+      "mechanism_tags": [],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-48724c28e5",
@@ -201,7 +300,7 @@
     ],
     "source_date": "2026-08-28",
     "rq_candidate": "他者・他店舗への波及効果がある実験で、spillover effectを高精度に推定するランダム化割当をどう設計するか？",
-    "hypothesis_candidate": "",
+    "hypothesis_candidate": "元配信の中心命題（解説者による再構成）：ネットワーク等で干渉がある実験では、処置の割当方法を設計し直すことで、波及効果を測る信号と分散のバランスを改善し得る。",
     "method_keywords": [
       "Spillover",
       "ネットワーク"
@@ -214,10 +313,27 @@
     "title_ja_status": "provisional_translation",
     "rq_provenance": "reconstructed_from_digest_overview_not_author_verified",
     "rq_source_line": null,
-    "hypothesis_provenance": "needs_manual_review",
+    "hypothesis_provenance": "analyst_reconstruction_from_digest_not_author_verified",
     "substantive_verification": "not_checked_against_original",
     "bibliography_status": "verified_title_and_source_url",
-    "bibliography_source": "external_lookup_2026-11-25"
+    "bibliography_source": "external_lookup_2026-11-25",
+    "research_map": {
+      "identification_tags": [
+        "ランダム化実験",
+        "部分識別・頑健性",
+        "ネットワーク干渉"
+      ],
+      "outcome_tags": [
+        "企業・生産性・経営",
+        "因果効果・推論精度"
+      ],
+      "mechanism_tags": [
+        "社会規範・ピア効果"
+      ],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-8fba52c564",
@@ -228,8 +344,8 @@
       "W36"
     ],
     "source_date": "2026-09-04",
-    "rq_candidate": "",
-    "hypothesis_candidate": "",
+    "rq_candidate": "地域ごとに政策内容や導入時点が異なるとき、地域・政策・時点に固有の処置効果をどのように識別・推論できるか？",
+    "hypothesis_candidate": "元配信の中心命題（解説者による再構成）：地域・政策種別・導入時期ごとのATTを区別して推定すれば、全体平均では捉えられない政策判断に必要な効果異質性を評価できる。ただし地域別の識別仮定が必要。",
     "method_keywords": [
       "DID",
       "AI"
@@ -240,9 +356,25 @@
     "verification": "not_checked_against_original",
     "title_ja": "どの政策がどこで有効か：州別処置効果のDID推定と推論",
     "title_ja_status": "provisional_translation",
-    "rq_provenance": "needs_manual_review",
-    "hypothesis_provenance": "needs_manual_review",
-    "substantive_verification": "not_checked_against_original"
+    "rq_provenance": "analyst_reconstruction_from_digest_not_author_verified",
+    "hypothesis_provenance": "analyst_reconstruction_from_digest_not_author_verified",
+    "substantive_verification": "not_checked_against_original",
+    "research_map": {
+      "identification_tags": [
+        "ランダム化実験",
+        "差の差分析",
+        "ネットワーク干渉",
+        "機械学習・ベイズ"
+      ],
+      "outcome_tags": [
+        "判断品質・知識",
+        "因果効果・推論精度"
+      ],
+      "mechanism_tags": [],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-8da38f287b",
@@ -253,8 +385,8 @@
       "W36"
     ],
     "source_date": "2026-09-04",
-    "rq_candidate": "",
-    "hypothesis_candidate": "",
+    "rq_candidate": "ネットワーク内の他者への介入が本人にも影響する状況で、実験時と異なる割当方針の因果効果を推定できるか？",
+    "hypothesis_candidate": "元配信の中心命題（解説者による再構成）：ネットワークでの干渉構造と割当確率をモデル化することにより、実験時とは異なる処置割当方針の平均Outcomeを評価できる場合がある。",
     "method_keywords": [
       "Spillover",
       "ネットワーク",
@@ -266,9 +398,27 @@
     "verification": "not_checked_against_original",
     "title_ja": "ネットワークにおけるオフポリシー因果効果推定",
     "title_ja_status": "provisional_translation",
-    "rq_provenance": "needs_manual_review",
-    "hypothesis_provenance": "needs_manual_review",
-    "substantive_verification": "not_checked_against_original"
+    "rq_provenance": "analyst_reconstruction_from_digest_not_author_verified",
+    "hypothesis_provenance": "analyst_reconstruction_from_digest_not_author_verified",
+    "substantive_verification": "not_checked_against_original",
+    "research_map": {
+      "identification_tags": [
+        "ネットワーク干渉",
+        "方策学習・OPE",
+        "機械学習・ベイズ"
+      ],
+      "outcome_tags": [
+        "判断品質・知識",
+        "因果効果・推論精度"
+      ],
+      "mechanism_tags": [
+        "社会規範・ピア効果",
+        "選択・自己制御"
+      ],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-b28db29cef",
@@ -279,8 +429,8 @@
       "W36"
     ],
     "source_date": "2026-09-04",
-    "rq_candidate": "",
-    "hypothesis_candidate": "",
+    "rq_candidate": "因果推論における事前学習済み基盤モデルとは何か。新規データへの適用可能性と識別上の限界は何か？（入門論文の学習上の問い）",
+    "hypothesis_candidate": "元配信の要点（研究仮説ではない）：事前学習した因果推論モデルを新規データへ適用する基盤モデルの考え方を概説する入門・展望論文であり、特定の因果効果の仮説検証を報告したものとは扱わない。",
     "method_keywords": [
       "DID",
       "ネットワーク",
@@ -292,9 +442,29 @@
     "verification": "not_checked_against_original",
     "title_ja": "因果推論の基盤モデル",
     "title_ja_status": "provisional_translation",
-    "rq_provenance": "needs_manual_review",
-    "hypothesis_provenance": "needs_manual_review",
-    "substantive_verification": "not_checked_against_original"
+    "rq_provenance": "analyst_reconstruction_from_digest_not_author_verified",
+    "hypothesis_provenance": "analyst_reconstruction_from_digest_not_author_verified",
+    "substantive_verification": "not_checked_against_original",
+    "research_map": {
+      "identification_tags": [
+        "差の差分析",
+        "観察データ・交絡調整",
+        "ネットワーク干渉",
+        "方策学習・OPE",
+        "機械学習・ベイズ"
+      ],
+      "outcome_tags": [
+        "判断品質・知識",
+        "因果効果・推論精度"
+      ],
+      "mechanism_tags": [
+        "情報・知識",
+        "組織・実装"
+      ],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-1dec3c647c",
@@ -322,7 +492,24 @@
     "substantive_verification": "not_checked_against_original",
     "source_url_provenance": "externally_matched_to_title_2026-11-25",
     "bibliography_status": "verified_title_and_source_url",
-    "bibliography_source": "https://doi.org/10.1016/j.econlet.2026.113121"
+    "bibliography_source": "https://doi.org/10.1016/j.econlet.2026.113121",
+    "research_map": {
+      "identification_tags": [
+        "差の差分析",
+        "部分識別・頑健性",
+        "方策学習・OPE"
+      ],
+      "outcome_tags": [
+        "企業・生産性・経営",
+        "因果効果・推論精度"
+      ],
+      "mechanism_tags": [
+        "習慣・持続性"
+      ],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-b7ba3b5524",
@@ -348,7 +535,17 @@
     "substantive_verification": "not_checked_against_original",
     "source_url_provenance": "externally_matched_to_title_2026-11-25",
     "bibliography_status": "verified_title_and_source_url",
-    "bibliography_source": "https://www.nber.org/papers/w35615"
+    "bibliography_source": "https://www.nber.org/papers/w35615",
+    "research_map": {
+      "identification_tags": [],
+      "outcome_tags": [
+        "因果効果・推論精度"
+      ],
+      "mechanism_tags": [],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-061d1b0eff",
@@ -376,7 +573,22 @@
     "substantive_verification": "not_checked_against_original",
     "source_url_provenance": "externally_matched_to_title_2026-11-25",
     "bibliography_status": "verified_title_and_source_url",
-    "bibliography_source": "https://arxiv.org/abs/2609.07944"
+    "bibliography_source": "https://arxiv.org/abs/2609.07944",
+    "research_map": {
+      "identification_tags": [
+        "差の差分析",
+        "回帰不連続",
+        "機械学習・ベイズ"
+      ],
+      "outcome_tags": [
+        "判断品質・知識",
+        "因果効果・推論精度"
+      ],
+      "mechanism_tags": [],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-9f6d9ca5d6",
@@ -404,7 +616,22 @@
     "substantive_verification": "not_checked_against_original",
     "source_url_provenance": "externally_matched_to_title_2026-11-25",
     "bibliography_status": "verified_title_and_source_url",
-    "bibliography_source": "https://arxiv.org/abs/2609.10617"
+    "bibliography_source": "https://arxiv.org/abs/2609.10617",
+    "research_map": {
+      "identification_tags": [
+        "観察データ・交絡調整"
+      ],
+      "outcome_tags": [
+        "判断品質・知識",
+        "因果効果・推論精度"
+      ],
+      "mechanism_tags": [
+        "習慣・持続性"
+      ],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-fb57ffda6e",
@@ -430,7 +657,18 @@
     "substantive_verification": "not_checked_against_original",
     "source_url_provenance": "externally_matched_to_title_2026-11-25",
     "bibliography_status": "verified_title_and_source_url",
-    "bibliography_source": "https://arxiv.org/abs/2609.11222"
+    "bibliography_source": "https://arxiv.org/abs/2609.11222",
+    "research_map": {
+      "identification_tags": [],
+      "outcome_tags": [
+        "判断品質・知識",
+        "因果効果・推論精度"
+      ],
+      "mechanism_tags": [],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-235e73a026",
@@ -458,7 +696,21 @@
     "substantive_verification": "not_checked_against_original",
     "source_url_provenance": "externally_matched_to_title_2026-11-25",
     "bibliography_status": "verified_title_and_source_url",
-    "bibliography_source": "https://doi.org/10.1093/ectj/utag028"
+    "bibliography_source": "https://doi.org/10.1093/ectj/utag028",
+    "research_map": {
+      "identification_tags": [
+        "差の差分析",
+        "回帰不連続",
+        "部分識別・頑健性"
+      ],
+      "outcome_tags": [
+        "因果効果・推論精度"
+      ],
+      "mechanism_tags": [],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-c79dc0a5e2",
@@ -488,7 +740,25 @@
     "rq_provenance": "legacy_extraction_from_digest",
     "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
     "hypothesis_source_line": 8,
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "research_map": {
+      "identification_tags": [
+        "ランダム化実験",
+        "部分識別・頑健性",
+        "方策学習・OPE",
+        "機械学習・ベイズ"
+      ],
+      "outcome_tags": [
+        "判断品質・知識",
+        "因果効果・推論精度"
+      ],
+      "mechanism_tags": [
+        "情報・知識"
+      ],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-07919c7d40",
@@ -514,7 +784,20 @@
     "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
     "hypothesis_source_line": 9,
     "substantive_verification": "not_checked_against_original",
-    "source_url_provenance": "source_link_in_previous_digest_not_externally_verified"
+    "source_url_provenance": "source_link_in_previous_digest_not_externally_verified",
+    "research_map": {
+      "identification_tags": [
+        "回帰不連続",
+        "観察データ・交絡調整"
+      ],
+      "outcome_tags": [
+        "因果効果・推論精度"
+      ],
+      "mechanism_tags": [],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-5445c52194",
@@ -540,7 +823,22 @@
     "rq_source_line": 5,
     "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
     "hypothesis_source_line": 10,
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "research_map": {
+      "identification_tags": [
+        "差の差分析",
+        "観察データ・交絡調整",
+        "部分識別・頑健性"
+      ],
+      "outcome_tags": [
+        "健康・医療",
+        "因果効果・推論精度"
+      ],
+      "mechanism_tags": [],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-c90ea9c9ca",
@@ -570,7 +868,20 @@
     "substantive_verification": "not_checked_against_original",
     "source_url_provenance": "externally_matched_to_title_2026-11-25",
     "bibliography_status": "verified_title_and_source_url",
-    "bibliography_source": "https://arxiv.org/abs/2609.28678"
+    "bibliography_source": "https://arxiv.org/abs/2609.28678",
+    "research_map": {
+      "identification_tags": [
+        "差の差分析"
+      ],
+      "outcome_tags": [
+        "経済・所得・消費",
+        "因果効果・推論精度"
+      ],
+      "mechanism_tags": [],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-6582247bcc",
@@ -597,7 +908,23 @@
     "rq_source_line": 5,
     "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
     "hypothesis_source_line": 20,
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "research_map": {
+      "identification_tags": [
+        "機械学習・ベイズ"
+      ],
+      "outcome_tags": [
+        "健康・医療",
+        "行動変容・継続",
+        "判断品質・知識"
+      ],
+      "mechanism_tags": [
+        "認知負荷・代替"
+      ],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-ec4e9eeabb",
@@ -609,7 +936,7 @@
     ],
     "source_date": "2026-09-28",
     "rq_candidate": "LLMは医師の診療判断を改善するか。そして、その効果は国によって異なり、もともとの医療判断能力の格差を縮めるのか？",
-    "hypothesis_candidate": "",
+    "hypothesis_candidate": "元配信の中心仮説：医師がLLMへアクセスできると臨床判断の成績が改善し、その限界的便益は医療資源・ベースライン成績が低い環境ほど大きいため、国間の成績格差を縮小する可能性がある。",
     "method_keywords": [
       "AI"
     ],
@@ -621,9 +948,25 @@
     "title_ja_status": "provisional_translation",
     "rq_provenance": "extracted_from_digest_rq",
     "rq_source_line": 5,
-    "hypothesis_provenance": "needs_manual_review",
+    "hypothesis_provenance": "analyst_reconstruction_from_digest_not_author_verified",
     "substantive_verification": "not_checked_against_original",
-    "source_url_provenance": "source_link_in_previous_digest_not_externally_verified"
+    "source_url_provenance": "source_link_in_previous_digest_not_externally_verified",
+    "research_map": {
+      "identification_tags": [
+        "ランダム化実験",
+        "機械学習・ベイズ"
+      ],
+      "outcome_tags": [
+        "健康・医療",
+        "判断品質・知識"
+      ],
+      "mechanism_tags": [
+        "認知負荷・代替"
+      ],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-9be0b9fd8f",
@@ -651,7 +994,25 @@
     "rq_source_line": 6,
     "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
     "hypothesis_source_line": 24,
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "research_map": {
+      "identification_tags": [
+        "差の差分析",
+        "観察データ・交絡調整",
+        "機械学習・ベイズ"
+      ],
+      "outcome_tags": [
+        "企業・生産性・経営",
+        "判断品質・知識",
+        "因果効果・推論精度"
+      ],
+      "mechanism_tags": [
+        "情報・知識"
+      ],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-21bfea85b2",
@@ -677,7 +1038,19 @@
     "rq_source_line": 6,
     "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
     "hypothesis_source_line": 10,
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "research_map": {
+      "identification_tags": [
+        "部分識別・頑健性"
+      ],
+      "outcome_tags": [
+        "因果効果・推論精度"
+      ],
+      "mechanism_tags": [],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-99c4958bc6",
@@ -704,7 +1077,24 @@
     "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
     "hypothesis_source_line": 34,
     "substantive_verification": "not_checked_against_original",
-    "source_url_provenance": "source_link_in_previous_digest_not_externally_verified"
+    "source_url_provenance": "source_link_in_previous_digest_not_externally_verified",
+    "research_map": {
+      "identification_tags": [
+        "ランダム化実験",
+        "部分識別・頑健性",
+        "方策学習・OPE"
+      ],
+      "outcome_tags": [
+        "判断品質・知識",
+        "因果効果・推論精度"
+      ],
+      "mechanism_tags": [
+        "情報・知識"
+      ],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-e539e49ca6",
@@ -732,7 +1122,25 @@
     "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
     "hypothesis_source_line": 30,
     "substantive_verification": "not_checked_against_original",
-    "source_url_provenance": "source_link_in_previous_digest_not_externally_verified"
+    "source_url_provenance": "source_link_in_previous_digest_not_externally_verified",
+    "research_map": {
+      "identification_tags": [
+        "ランダム化実験",
+        "機械学習・ベイズ"
+      ],
+      "outcome_tags": [
+        "企業・生産性・経営",
+        "判断品質・知識",
+        "因果効果・推論精度"
+      ],
+      "mechanism_tags": [
+        "情報・知識",
+        "認知負荷・代替"
+      ],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-bb858e1205",
@@ -760,7 +1168,24 @@
     "rq_source_line": 5,
     "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
     "hypothesis_source_line": 44,
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "research_map": {
+      "identification_tags": [
+        "差の差分析",
+        "因果効果の移送",
+        "ネットワーク干渉"
+      ],
+      "outcome_tags": [
+        "健康・医療",
+        "因果効果・推論精度"
+      ],
+      "mechanism_tags": [
+        "社会規範・ピア効果"
+      ],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-5b0863ec2d",
@@ -788,7 +1213,22 @@
     "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
     "hypothesis_source_line": 41,
     "substantive_verification": "not_checked_against_original",
-    "source_url_provenance": "source_link_in_previous_digest_not_externally_verified"
+    "source_url_provenance": "source_link_in_previous_digest_not_externally_verified",
+    "research_map": {
+      "identification_tags": [
+        "ランダム化実験",
+        "機械学習・ベイズ"
+      ],
+      "outcome_tags": [
+        "企業・生産性・経営",
+        "判断品質・知識",
+        "因果効果・推論精度"
+      ],
+      "mechanism_tags": [],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-730aa60651",
@@ -815,7 +1255,25 @@
     "rq_source_line": 5,
     "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
     "hypothesis_source_line": 33,
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "research_map": {
+      "identification_tags": [
+        "方策学習・OPE",
+        "機械学習・ベイズ"
+      ],
+      "outcome_tags": [
+        "判断品質・知識",
+        "因果効果・推論精度"
+      ],
+      "mechanism_tags": [
+        "情報・知識",
+        "認知負荷・代替",
+        "選択・自己制御"
+      ],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-fad50f3029",
@@ -839,7 +1297,23 @@
     "rq_source_line": 5,
     "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
     "hypothesis_source_line": 31,
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "research_map": {
+      "identification_tags": [
+        "機械学習・ベイズ"
+      ],
+      "outcome_tags": [
+        "判断品質・知識"
+      ],
+      "mechanism_tags": [
+        "情報・知識",
+        "認知負荷・代替",
+        "選択・自己制御"
+      ],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-1d8263bd82",
@@ -865,7 +1339,23 @@
     "rq_source_line": 5,
     "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
     "hypothesis_source_line": 35,
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "research_map": {
+      "identification_tags": [
+        "観察データ・交絡調整",
+        "生存時間・打切り",
+        "機械学習・ベイズ"
+      ],
+      "outcome_tags": [
+        "健康・医療",
+        "判断品質・知識",
+        "因果効果・推論精度"
+      ],
+      "mechanism_tags": [],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-3213b8fc54",
@@ -892,7 +1382,22 @@
     "rq_source_line": 5,
     "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
     "hypothesis_source_line": 64,
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "research_map": {
+      "identification_tags": [
+        "ランダム化実験",
+        "方策学習・OPE"
+      ],
+      "outcome_tags": [
+        "判断品質・知識"
+      ],
+      "mechanism_tags": [
+        "情報・知識"
+      ],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-81e90efb7e",
@@ -918,7 +1423,24 @@
     "rq_source_line": 5,
     "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
     "hypothesis_source_line": 49,
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "research_map": {
+      "identification_tags": [
+        "機械学習・ベイズ"
+      ],
+      "outcome_tags": [
+        "経済・所得・消費",
+        "判断品質・知識"
+      ],
+      "mechanism_tags": [
+        "注意・想起",
+        "情報・知識",
+        "選択・自己制御"
+      ],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-def930c5de",
@@ -944,7 +1466,26 @@
     "rq_source_line": 5,
     "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
     "hypothesis_source_line": 53,
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "research_map": {
+      "identification_tags": [
+        "ランダム化実験"
+      ],
+      "outcome_tags": [
+        "企業・生産性・経営",
+        "行動変容・継続",
+        "因果効果・推論精度"
+      ],
+      "mechanism_tags": [
+        "注意・想起",
+        "インセンティブ",
+        "情報・知識",
+        "組織・実装"
+      ],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-ff993d84fc",
@@ -968,7 +1509,22 @@
     "rq_source_line": 6,
     "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
     "hypothesis_source_line": 42,
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "research_map": {
+      "identification_tags": [
+        "生存時間・打切り"
+      ],
+      "outcome_tags": [
+        "健康・医療",
+        "因果効果・推論精度"
+      ],
+      "mechanism_tags": [
+        "認知負荷・代替"
+      ],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-aec80c656f",
@@ -992,7 +1548,24 @@
     "rq_source_line": 6,
     "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
     "hypothesis_source_line": 42,
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "research_map": {
+      "identification_tags": [
+        "部分識別・頑健性"
+      ],
+      "outcome_tags": [
+        "健康・医療",
+        "行動変容・継続",
+        "判断品質・知識",
+        "因果効果・推論精度"
+      ],
+      "mechanism_tags": [
+        "選択・自己制御"
+      ],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-cf94b5d051",
@@ -1016,7 +1589,22 @@
     "rq_source_line": 6,
     "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
     "hypothesis_source_line": 52,
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "research_map": {
+      "identification_tags": [],
+      "outcome_tags": [
+        "経済・所得・消費",
+        "判断品質・知識",
+        "因果効果・推論精度"
+      ],
+      "mechanism_tags": [
+        "情報・知識",
+        "選択・自己制御"
+      ],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-dac0ca69ca",
@@ -1042,7 +1630,25 @@
     "rq_provenance": "legacy_extraction_from_digest",
     "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
     "hypothesis_source_line": 38,
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "research_map": {
+      "identification_tags": [
+        "観察データ・交絡調整",
+        "部分識別・頑健性",
+        "方策学習・OPE"
+      ],
+      "outcome_tags": [
+        "判断品質・知識",
+        "因果効果・推論精度"
+      ],
+      "mechanism_tags": [
+        "情報・知識",
+        "選択・自己制御"
+      ],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-b7fe6b96d3",
@@ -1069,7 +1675,23 @@
     "rq_provenance": "legacy_extraction_from_digest",
     "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
     "hypothesis_source_line": 39,
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "research_map": {
+      "identification_tags": [
+        "差の差分析",
+        "観察データ・交絡調整"
+      ],
+      "outcome_tags": [
+        "健康・医療",
+        "因果効果・推論精度"
+      ],
+      "mechanism_tags": [
+        "選択・自己制御"
+      ],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-bda44147e2",
@@ -1095,7 +1717,24 @@
     "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
     "hypothesis_source_line": 34,
     "substantive_verification": "not_checked_against_original",
-    "source_url_provenance": "source_link_in_previous_digest_not_externally_verified"
+    "source_url_provenance": "source_link_in_previous_digest_not_externally_verified",
+    "research_map": {
+      "identification_tags": [
+        "ランダム化実験"
+      ],
+      "outcome_tags": [
+        "健康・医療",
+        "経済・所得・消費",
+        "企業・生産性・経営",
+        "因果効果・推論精度"
+      ],
+      "mechanism_tags": [
+        "選択・自己制御"
+      ],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-3ada9d3a18",
@@ -1122,7 +1761,23 @@
     "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
     "hypothesis_source_line": 48,
     "substantive_verification": "not_checked_against_original",
-    "source_url_provenance": "source_link_in_previous_digest_not_externally_verified"
+    "source_url_provenance": "source_link_in_previous_digest_not_externally_verified",
+    "research_map": {
+      "identification_tags": [
+        "機械学習・ベイズ"
+      ],
+      "outcome_tags": [
+        "健康・医療",
+        "判断品質・知識",
+        "因果効果・推論精度"
+      ],
+      "mechanism_tags": [
+        "情報・知識"
+      ],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-f1ad1fb3a4",
@@ -1149,7 +1804,20 @@
     "rq_provenance": "legacy_extraction_from_digest",
     "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
     "hypothesis_source_line": 42,
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "research_map": {
+      "identification_tags": [
+        "ランダム化実験",
+        "因果効果の移送"
+      ],
+      "outcome_tags": [
+        "因果効果・推論精度"
+      ],
+      "mechanism_tags": [],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-92bc6de864",
@@ -1177,7 +1845,23 @@
     "rq_provenance": "legacy_extraction_from_digest",
     "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
     "hypothesis_source_line": 42,
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "research_map": {
+      "identification_tags": [
+        "因果効果の移送",
+        "ネットワーク干渉"
+      ],
+      "outcome_tags": [
+        "行動変容・継続",
+        "因果効果・推論精度"
+      ],
+      "mechanism_tags": [
+        "社会規範・ピア効果"
+      ],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-399d8b695e",
@@ -1203,7 +1887,25 @@
     "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
     "hypothesis_source_line": 42,
     "substantive_verification": "not_checked_against_original",
-    "source_url_provenance": "source_link_in_previous_digest_not_externally_verified"
+    "source_url_provenance": "source_link_in_previous_digest_not_externally_verified",
+    "research_map": {
+      "identification_tags": [
+        "ランダム化実験"
+      ],
+      "outcome_tags": [
+        "健康・医療",
+        "行動変容・継続"
+      ],
+      "mechanism_tags": [
+        "インセンティブ",
+        "習慣・持続性",
+        "情報・知識",
+        "認知負荷・代替"
+      ],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-0bdefac09e",
@@ -1227,7 +1929,25 @@
     "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
     "hypothesis_source_line": 42,
     "substantive_verification": "not_checked_against_original",
-    "source_url_provenance": "source_link_in_previous_digest_not_externally_verified"
+    "source_url_provenance": "source_link_in_previous_digest_not_externally_verified",
+    "research_map": {
+      "identification_tags": [
+        "部分識別・頑健性"
+      ],
+      "outcome_tags": [
+        "経済・所得・消費",
+        "行動変容・継続",
+        "因果効果・推論精度"
+      ],
+      "mechanism_tags": [
+        "インセンティブ",
+        "情報・知識",
+        "選択・自己制御"
+      ],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-6575c5dfe1",
@@ -1253,7 +1973,23 @@
     "rq_provenance": "legacy_extraction_from_digest",
     "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
     "hypothesis_source_line": 46,
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "research_map": {
+      "identification_tags": [
+        "方策学習・OPE"
+      ],
+      "outcome_tags": [
+        "判断品質・知識",
+        "因果効果・推論精度"
+      ],
+      "mechanism_tags": [
+        "情報・知識",
+        "選択・自己制御"
+      ],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-83b0e41aa8",
@@ -1280,7 +2016,25 @@
     "rq_provenance": "legacy_extraction_from_digest",
     "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
     "hypothesis_source_line": 32,
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "research_map": {
+      "identification_tags": [
+        "観察データ・交絡調整",
+        "部分識別・頑健性",
+        "生存時間・打切り",
+        "機械学習・ベイズ"
+      ],
+      "outcome_tags": [
+        "健康・医療",
+        "因果効果・推論精度"
+      ],
+      "mechanism_tags": [
+        "情報・知識"
+      ],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-63f74ad77b",
@@ -1306,7 +2060,25 @@
     "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
     "hypothesis_source_line": 42,
     "substantive_verification": "not_checked_against_original",
-    "source_url_provenance": "source_link_in_previous_digest_not_externally_verified"
+    "source_url_provenance": "source_link_in_previous_digest_not_externally_verified",
+    "research_map": {
+      "identification_tags": [
+        "ランダム化実験"
+      ],
+      "outcome_tags": [
+        "健康・医療",
+        "行動変容・継続",
+        "因果効果・推論精度"
+      ],
+      "mechanism_tags": [
+        "インセンティブ",
+        "習慣・持続性",
+        "選択・自己制御"
+      ],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-4d71ad1dbd",
@@ -1329,7 +2101,18 @@
     "rq_provenance": "legacy_extraction_from_digest",
     "hypothesis_provenance": "legacy_extraction_from_digest",
     "substantive_verification": "not_checked_against_original",
-    "source_url_provenance": "source_link_in_previous_digest_not_externally_verified"
+    "source_url_provenance": "source_link_in_previous_digest_not_externally_verified",
+    "research_map": {
+      "identification_tags": [],
+      "outcome_tags": [
+        "経済・所得・消費",
+        "行動変容・継続"
+      ],
+      "mechanism_tags": [],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-f39eae36a4",
@@ -1355,7 +2138,23 @@
     "rq_provenance": "legacy_extraction_from_digest",
     "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
     "hypothesis_source_line": 28,
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "research_map": {
+      "identification_tags": [
+        "差の差分析",
+        "ネットワーク干渉"
+      ],
+      "outcome_tags": [
+        "健康・医療",
+        "因果効果・推論精度"
+      ],
+      "mechanism_tags": [
+        "社会規範・ピア効果"
+      ],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-a7f60207fb",
@@ -1381,7 +2180,23 @@
     "rq_provenance": "legacy_extraction_from_digest",
     "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
     "hypothesis_source_line": 35,
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "research_map": {
+      "identification_tags": [
+        "部分識別・頑健性",
+        "方策学習・OPE"
+      ],
+      "outcome_tags": [
+        "判断品質・知識",
+        "因果効果・推論精度"
+      ],
+      "mechanism_tags": [
+        "情報・知識"
+      ],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-dc007de13d",
@@ -1410,7 +2225,22 @@
     "substantive_verification": "not_checked_against_original",
     "source_url_provenance": "externally_matched_to_title_2026-11-25",
     "bibliography_status": "verified_title_and_source_url",
-    "bibliography_source": "https://www.jstage.jst.go.jp/article/jbef/18/Special_issue/18_18.S5.pp.S1-S4/_article/-char/en"
+    "bibliography_source": "https://www.jstage.jst.go.jp/article/jbef/18/Special_issue/18_18.S5.pp.S1-S4/_article/-char/en",
+    "research_map": {
+      "identification_tags": [
+        "ランダム化実験"
+      ],
+      "outcome_tags": [
+        "経済・所得・消費",
+        "行動変容・継続"
+      ],
+      "mechanism_tags": [
+        "情報・知識"
+      ],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-bd820a3c55",
@@ -1435,7 +2265,22 @@
     "substantive_verification": "not_checked_against_original",
     "source_url_provenance": "externally_matched_to_title_2026-11-25",
     "bibliography_status": "verified_title_and_source_url",
-    "bibliography_source": "https://www.nber.org/papers/w34025"
+    "bibliography_source": "https://www.nber.org/papers/w34025",
+    "research_map": {
+      "identification_tags": [
+        "ランダム化実験"
+      ],
+      "outcome_tags": [
+        "企業・生産性・経営",
+        "因果効果・推論精度"
+      ],
+      "mechanism_tags": [
+        "選択・自己制御"
+      ],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-7f69adc37d",
@@ -1461,7 +2306,27 @@
     "title_ja_status": "provisional_translation",
     "rq_provenance": "legacy_extraction_from_digest",
     "hypothesis_provenance": "legacy_extraction_from_digest",
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "research_map": {
+      "identification_tags": [
+        "差の差分析",
+        "部分識別・頑健性",
+        "生存時間・打切り",
+        "機械学習・ベイズ"
+      ],
+      "outcome_tags": [
+        "健康・医療",
+        "判断品質・知識",
+        "因果効果・推論精度"
+      ],
+      "mechanism_tags": [
+        "情報・知識",
+        "組織・実装"
+      ],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-db679cffd0",
@@ -1486,7 +2351,24 @@
     "title_ja_status": "provisional_translation",
     "rq_provenance": "legacy_extraction_from_digest",
     "hypothesis_provenance": "legacy_extraction_from_digest",
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "research_map": {
+      "identification_tags": [
+        "差の差分析",
+        "観察データ・交絡調整",
+        "部分識別・頑健性"
+      ],
+      "outcome_tags": [
+        "判断品質・知識",
+        "因果効果・推論精度"
+      ],
+      "mechanism_tags": [
+        "情報・知識"
+      ],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-56160473d1",
@@ -1510,7 +2392,21 @@
     "title_ja_status": "provisional_translation",
     "rq_provenance": "legacy_extraction_from_digest",
     "hypothesis_provenance": "legacy_extraction_from_digest",
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "research_map": {
+      "identification_tags": [
+        "機械学習・ベイズ"
+      ],
+      "outcome_tags": [
+        "判断品質・知識"
+      ],
+      "mechanism_tags": [
+        "認知負荷・代替"
+      ],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-ea9249a409",
@@ -1532,7 +2428,23 @@
     "title_ja_status": "provisional_translation",
     "rq_provenance": "legacy_extraction_from_digest",
     "hypothesis_provenance": "legacy_extraction_from_digest",
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "research_map": {
+      "identification_tags": [
+        "ランダム化実験"
+      ],
+      "outcome_tags": [
+        "健康・医療",
+        "行動変容・継続"
+      ],
+      "mechanism_tags": [
+        "注意・想起",
+        "情報・知識"
+      ],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-85e9fc2e70",
@@ -1560,7 +2472,26 @@
     "title_ja_status": "provisional_translation",
     "rq_provenance": "legacy_extraction_from_digest",
     "hypothesis_provenance": "legacy_extraction_from_digest",
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "research_map": {
+      "identification_tags": [
+        "ランダム化実験",
+        "観察データ・交絡調整",
+        "因果効果の移送",
+        "部分識別・頑健性",
+        "生存時間・打切り"
+      ],
+      "outcome_tags": [
+        "健康・医療",
+        "因果効果・推論精度"
+      ],
+      "mechanism_tags": [
+        "情報・知識"
+      ],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-23ddb1867c",
@@ -1588,7 +2519,25 @@
     "title_ja_status": "provisional_translation",
     "rq_provenance": "legacy_extraction_from_digest",
     "hypothesis_provenance": "legacy_extraction_from_digest",
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "research_map": {
+      "identification_tags": [
+        "観察データ・交絡調整",
+        "部分識別・頑健性",
+        "方策学習・OPE"
+      ],
+      "outcome_tags": [
+        "企業・生産性・経営",
+        "判断品質・知識",
+        "因果効果・推論精度"
+      ],
+      "mechanism_tags": [
+        "情報・知識"
+      ],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-87f8569164",
@@ -1613,7 +2562,23 @@
     "title_ja_status": "provisional_translation",
     "rq_provenance": "legacy_extraction_from_digest",
     "hypothesis_provenance": "legacy_extraction_from_digest",
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "research_map": {
+      "identification_tags": [
+        "ランダム化実験",
+        "機械学習・ベイズ"
+      ],
+      "outcome_tags": [
+        "企業・生産性・経営",
+        "判断品質・知識"
+      ],
+      "mechanism_tags": [
+        "情報・知識"
+      ],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-05ff915c4d",
@@ -1635,7 +2600,22 @@
     "title_ja_status": "provisional_translation",
     "rq_provenance": "legacy_extraction_from_digest",
     "hypothesis_provenance": "legacy_extraction_from_digest",
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "research_map": {
+      "identification_tags": [
+        "ランダム化実験"
+      ],
+      "outcome_tags": [
+        "経済・所得・消費"
+      ],
+      "mechanism_tags": [
+        "注意・想起",
+        "情報・知識"
+      ],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-d76aeef591",
@@ -1661,7 +2641,24 @@
     "rq_provenance": "legacy_extraction_from_digest",
     "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
     "hypothesis_source_line": 12,
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "research_map": {
+      "identification_tags": [
+        "方策学習・OPE",
+        "機械学習・ベイズ"
+      ],
+      "outcome_tags": [
+        "健康・医療",
+        "判断品質・知識",
+        "因果効果・推論精度"
+      ],
+      "mechanism_tags": [
+        "情報・知識"
+      ],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-c638566481",
@@ -1687,7 +2684,21 @@
     "rq_provenance": "legacy_extraction_from_digest",
     "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
     "hypothesis_source_line": 12,
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "research_map": {
+      "identification_tags": [
+        "ランダム化実験"
+      ],
+      "outcome_tags": [
+        "健康・医療",
+        "行動変容・継続",
+        "因果効果・推論精度"
+      ],
+      "mechanism_tags": [],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-63007291f5",
@@ -1712,7 +2723,22 @@
     "rq_provenance": "legacy_extraction_from_digest",
     "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
     "hypothesis_source_line": 12,
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "research_map": {
+      "identification_tags": [
+        "機械学習・ベイズ"
+      ],
+      "outcome_tags": [
+        "判断品質・知識",
+        "因果効果・推論精度"
+      ],
+      "mechanism_tags": [
+        "選択・自己制御"
+      ],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-aa9f672349",
@@ -1738,7 +2764,26 @@
     "rq_provenance": "legacy_extraction_from_digest",
     "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
     "hypothesis_source_line": 12,
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "research_map": {
+      "identification_tags": [
+        "ランダム化実験",
+        "因果効果の移送",
+        "部分識別・頑健性",
+        "機械学習・ベイズ"
+      ],
+      "outcome_tags": [
+        "健康・医療",
+        "判断品質・知識",
+        "因果効果・推論精度"
+      ],
+      "mechanism_tags": [
+        "情報・知識"
+      ],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-d7f08665d5",
@@ -1763,7 +2808,20 @@
     "rq_provenance": "legacy_extraction_from_digest",
     "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
     "hypothesis_source_line": 12,
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "research_map": {
+      "identification_tags": [
+        "差の差分析",
+        "方策学習・OPE"
+      ],
+      "outcome_tags": [
+        "因果効果・推論精度"
+      ],
+      "mechanism_tags": [],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-c8d65e4984",
@@ -1786,7 +2844,24 @@
     "rq_provenance": "legacy_extraction_from_digest",
     "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
     "hypothesis_source_line": 14,
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "research_map": {
+      "identification_tags": [
+        "ランダム化実験"
+      ],
+      "outcome_tags": [
+        "行動変容・継続"
+      ],
+      "mechanism_tags": [
+        "インセンティブ",
+        "習慣・持続性",
+        "情報・知識",
+        "認知負荷・代替"
+      ],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-f3d53a169f",
@@ -1811,7 +2886,24 @@
     "rq_provenance": "legacy_extraction_from_digest",
     "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
     "hypothesis_source_line": 12,
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "research_map": {
+      "identification_tags": [
+        "ランダム化実験",
+        "機械学習・ベイズ"
+      ],
+      "outcome_tags": [
+        "企業・生産性・経営",
+        "判断品質・知識"
+      ],
+      "mechanism_tags": [
+        "情報・知識",
+        "認知負荷・代替"
+      ],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-8b8144db83",
@@ -1845,7 +2937,25 @@
       "source_url": "https://academic.oup.com/ectj/article/21/1/C1/5056401",
       "locator": "Section 6.2, Table 2 (Panel A, twofold random forest)"
     },
-    "original_review_checked_on": "2026-11-25"
+    "original_review_checked_on": "2026-11-25",
+    "research_map": {
+      "identification_tags": [
+        "観察データ・交絡調整",
+        "部分識別・頑健性",
+        "機械学習・ベイズ"
+      ],
+      "outcome_tags": [
+        "健康・医療",
+        "判断品質・知識",
+        "因果効果・推論精度"
+      ],
+      "mechanism_tags": [
+        "情報・知識"
+      ],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-8da7742b2f",
@@ -1870,7 +2980,20 @@
     "rq_provenance": "legacy_extraction_from_digest",
     "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
     "hypothesis_source_line": 12,
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "research_map": {
+      "identification_tags": [
+        "差の差分析",
+        "部分識別・頑健性"
+      ],
+      "outcome_tags": [
+        "因果効果・推論精度"
+      ],
+      "mechanism_tags": [],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-3567d68f2d",
@@ -1895,7 +3018,23 @@
     "rq_provenance": "legacy_extraction_from_digest",
     "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
     "hypothesis_source_line": 12,
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "research_map": {
+      "identification_tags": [
+        "ランダム化実験"
+      ],
+      "outcome_tags": [
+        "経済・所得・消費",
+        "行動変容・継続"
+      ],
+      "mechanism_tags": [
+        "情報・知識",
+        "選択・自己制御"
+      ],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-45a7b98e64",
@@ -1926,7 +3065,23 @@
       "source_url": "https://poverty-action.org/publication/does-management-matter-evidence-india",
       "locator": "Research abstract and original paper sample description"
     },
-    "original_review_checked_on": "2026-11-25"
+    "original_review_checked_on": "2026-11-25",
+    "research_map": {
+      "identification_tags": [
+        "ランダム化実験"
+      ],
+      "outcome_tags": [
+        "企業・生産性・経営",
+        "因果効果・推論精度"
+      ],
+      "mechanism_tags": [
+        "情報・知識",
+        "組織・実装"
+      ],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-4d0da668f3",
@@ -1951,7 +3106,23 @@
     "rq_provenance": "legacy_extraction_from_digest",
     "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
     "hypothesis_source_line": 12,
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "research_map": {
+      "identification_tags": [
+        "ランダム化実験",
+        "部分識別・頑健性"
+      ],
+      "outcome_tags": [
+        "健康・医療",
+        "因果効果・推論精度"
+      ],
+      "mechanism_tags": [
+        "習慣・持続性"
+      ],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-22ffd85d70",
@@ -1976,7 +3147,23 @@
     "rq_provenance": "legacy_extraction_from_digest",
     "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
     "hypothesis_source_line": 12,
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "research_map": {
+      "identification_tags": [
+        "ランダム化実験",
+        "部分識別・頑健性"
+      ],
+      "outcome_tags": [
+        "健康・医療",
+        "因果効果・推論精度"
+      ],
+      "mechanism_tags": [
+        "習慣・持続性"
+      ],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-dd46e1bd34",
@@ -2010,7 +3197,26 @@
       "source_url": "https://sendhil.org/wp-content/uploads/2019/08/Publication-16.pdf",
       "locator": "Table 4, Panel A, pp. 3400–3401"
     },
-    "original_review_checked_on": "2026-11-25"
+    "original_review_checked_on": "2026-11-25",
+    "research_map": {
+      "identification_tags": [
+        "ランダム化実験",
+        "機械学習・ベイズ"
+      ],
+      "outcome_tags": [
+        "経済・所得・消費",
+        "企業・生産性・経営",
+        "行動変容・継続",
+        "判断品質・知識",
+        "因果効果・推論精度"
+      ],
+      "mechanism_tags": [
+        "注意・想起"
+      ],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-8ba0782922",
@@ -2037,7 +3243,23 @@
     "rq_provenance": "legacy_extraction_from_digest",
     "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
     "hypothesis_source_line": 12,
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "research_map": {
+      "identification_tags": [
+        "ランダム化実験"
+      ],
+      "outcome_tags": [
+        "健康・医療",
+        "判断品質・知識"
+      ],
+      "mechanism_tags": [
+        "社会規範・ピア効果",
+        "情報・知識"
+      ],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-5b78f0b3ca",
@@ -2064,7 +3286,26 @@
     "rq_provenance": "legacy_extraction_from_digest",
     "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
     "hypothesis_source_line": 12,
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "research_map": {
+      "identification_tags": [
+        "ランダム化実験",
+        "観察データ・交絡調整",
+        "因果効果の移送",
+        "生存時間・打切り",
+        "機械学習・ベイズ"
+      ],
+      "outcome_tags": [
+        "健康・医療",
+        "因果効果・推論精度"
+      ],
+      "mechanism_tags": [
+        "情報・知識"
+      ],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-def53679c7",
@@ -2089,7 +3330,21 @@
     "rq_provenance": "legacy_extraction_from_digest",
     "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
     "hypothesis_source_line": 12,
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "research_map": {
+      "identification_tags": [
+        "ランダム化実験"
+      ],
+      "outcome_tags": [
+        "因果効果・推論精度"
+      ],
+      "mechanism_tags": [
+        "情報・知識"
+      ],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-0fe4ab82a9",
@@ -2112,7 +3367,24 @@
     "rq_provenance": "legacy_extraction_from_digest",
     "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
     "hypothesis_source_line": 12,
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "research_map": {
+      "identification_tags": [
+        "ランダム化実験"
+      ],
+      "outcome_tags": [
+        "経済・所得・消費",
+        "判断品質・知識"
+      ],
+      "mechanism_tags": [
+        "社会規範・ピア効果",
+        "情報・知識",
+        "選択・自己制御"
+      ],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-3376f0baf3",
@@ -2139,7 +3411,22 @@
     "rq_provenance": "legacy_extraction_from_digest",
     "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
     "hypothesis_source_line": 12,
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "research_map": {
+      "identification_tags": [
+        "部分識別・頑健性",
+        "方策学習・OPE",
+        "機械学習・ベイズ"
+      ],
+      "outcome_tags": [
+        "判断品質・知識",
+        "因果効果・推論精度"
+      ],
+      "mechanism_tags": [],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-028ecc4f15",
@@ -2173,7 +3460,20 @@
       "source_url": "https://www.nature.com/articles/s41586-021-04128-4",
       "locator": "Abstract and Fig. 1"
     },
-    "original_review_checked_on": "2026-11-25"
+    "original_review_checked_on": "2026-11-25",
+    "research_map": {
+      "identification_tags": [
+        "ランダム化実験"
+      ],
+      "outcome_tags": [
+        "行動変容・継続",
+        "判断品質・知識"
+      ],
+      "mechanism_tags": [],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   },
   {
     "paper_id": "paper-6bc882df2c",
@@ -2196,6 +3496,20 @@
     "rq_provenance": "legacy_extraction_from_digest",
     "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
     "hypothesis_source_line": 12,
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "research_map": {
+      "identification_tags": [],
+      "outcome_tags": [
+        "判断品質・知識"
+      ],
+      "mechanism_tags": [
+        "インセンティブ",
+        "情報・知識",
+        "認知負荷・代替"
+      ],
+      "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
+      "source_coverage": "historical_digest",
+      "review_status": "candidate_tags_needs_manual_validation"
+    }
   }
 ]
