@@ -74,3 +74,14 @@
 .digest-context summary{cursor:pointer;font-weight:700;color:#294e70;line-height:1.6;}
 .digest-context[open] summary{margin-bottom:16px;padding-bottom:10px;border-bottom:1px solid #e0e7ef;}
 .digest-context .prose{margin-top:10px;}
+
+/* Research provenance and quantified-evidence audit, November 2026 */
+.audit-summary{margin:16px 0 24px;padding:17px 20px;border:1px solid #dce4ed;border-radius:10px;background:#fff;font-size:13px;line-height:1.75;color:#3d5367}
+.audit-summary h2{font-size:16px;margin:0 0 10px;color:#243c52}
+.audit-summary p{margin:7px 0}
+.audit-summary ul{padding-left:22px;margin:7px 0 10px}
+.audit-summary li{margin:4px 0}
+.audit-summary a{overflow-wrap:anywhere}
+.prose .table-scroll:focus-visible{outline:3px solid #457bad;outline-offset:2px}
+.prose .table-scroll::after{content:"横スクロールできます";display:block;text-align:right;padding:3px 10px;font-size:11px;color:#61778b;border-top:1px solid #e6ebf0}
+@media(min-width:920px){.prose .table-scroll::after{content:""}}
