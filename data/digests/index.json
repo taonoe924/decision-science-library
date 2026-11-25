@@ -1,0 +1,5 @@
+{
+  "schema_version": 1,
+  "dates": [],
+  "description": "Scheduled four-paper digests, newest first. Entries are data/digests/YYYY-MM-DD.json."
+}
