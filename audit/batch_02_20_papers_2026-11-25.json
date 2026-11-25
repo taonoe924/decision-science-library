@@ -20,9 +20,9 @@
     "format_verification_complete": 0,
     "automated_markdown_cleanup": 20,
     "primary_abstract_v2_verified": 1,
-    "primary_body_partially_verified": 3,
-    "selected_results_numeric_checked": 2,
-    "identification_assumptions_partially_checked": 3
+    "primary_body_partially_verified": 4,
+    "selected_results_numeric_checked": 3,
+    "identification_assumptions_partially_checked": 4
   },
   "records": [
     {
@@ -85,12 +85,12 @@
       "title": "Policy Learning With Observational Data",
       "original_url": "https://doi.org/10.3982/ECTA15732",
       "baseline_status": "basic_reference_check_previously_recorded",
-      "current_turn_source_check": "abstract_checked",
+      "current_turn_source_check": "journal_primary_body_section_5_1_and_table_II_checked",
       "full_paper_claims_checked": false,
       "format_v1_2_checked": false,
-      "quantitative_results_checked": false,
-      "identification_assumptions_checked": false,
-      "notes": "2026-11-25: primary abstract/landing page checked; paper body, data, effect sizes and confidence intervals not yet validated",
+      "quantitative_results_checked": true,
+      "identification_assumptions_checked": true,
+      "notes": "Econometrica §5.1, Table II policy value ±SE, GAIN within-county randomization, true versus fitted propensities, cost C in eq.39. No full-paper audit.",
       "automated_markdown_cleanup": true,
       "format_cleanup_summary": {
         "removed_boxed_math": 0,
