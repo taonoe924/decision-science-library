@@ -437,14 +437,14 @@
       "AI"
     ],
     "design_status": "要確認",
-    "source_text": "\n**Sahil Loomba, Dean Eckles／2026-09-02投稿**\n\n- **何が新しいか**：他者への処置が本人にも影響する状況で、実験時と異なる割当方針の因果効果を推定する。異質なBernoulli割当を対象に、仮定した干渉構造をFourier部分空間で表し、それを別の割当方針へ移す最小L2重みを構成する。\n- **検証と限界**：理論とシミュレーションで、方針変更・干渉構造の誤指定によるバイアスと分散の関係を検討。分散そのものは識別されず、識別可能な境界と保守的推定量を示す。任意のネットワーク・任意の全員導入へ、そのまま外挿できるという結果ではない。\n- **実務への翻訳（AIの解釈）**：紹介キャンペーンやネットワーク型サービスでは、少人数への実験効果を配布人数倍するだけでは展開後の価値を評価しにくい。実験時と本番の配布確率、想定する波及範囲を明示する出発点になる。\n- **読む価値**：2番目。既掲載の[[2026_Trinh_EndogenousSelectionAndSpillovers|内生的選択と波及の論文]]に続き、「配分を変えたらどうなるか」を別の方法論から学べる。\n\n出典：[arXiv書誌・要旨](https://arxiv.org/abs/2609.02756v1)／[本文HTML](https://arxiv.org/html/2609.02756v1)\n\n",
+    "source_text": "**Sahil Loomba, Dean Eckles｜2026-09-02投稿｜arXiv v1**\n\n[原著本文](https://arxiv.org/html/2609.02756v1)｜[書誌・要旨](https://arxiv.org/abs/2609.02756v1)\n\n#### 1. どんなもの？\n\n**RQ**：他者へのTreatmentが本人のOutcomeを変えるネットワーク環境で、実験時と異なるTreatment割当方針（Policy）の下でのOutcomeを推定できるか？\n\n通常のATEは一人の処置を変えた効果を考えますが、ネットワークで干渉があると、他者の処置確率もOutcomeに作用するため、割当方針そのものが因果効果の対象になり得ます。\n\n#### 2. 先行研究と比べてどこがすごい？\n\n全Treatmentベクトルへの逆確率重み付け（Global IPW）は形式的に方針を移送できても、ネットワークの規模とともに分散が極端に膨張します。本論文は、想定するネットワークの干渉構造を**Fourier部分空間**として定義し、必要な相互作用成分だけを保持する重みを構成します。\n\n重要なのは、**識別仮定をなくしたわけではなく、ネットワーク干渉の構造仮定によって推定可能性と精度を両立させようとする**点です。\n\n#### 3. 技術や手法のキモはどこ？\n\n実験時のBernoulli割当確率ベクトルを $p=(p_1,\\ldots,p_n)$、展開先の方針を $q=(q_1,\\ldots,q_n)$、干渉構造を表すFourier添字集合を $\\mathcal{S}$ とします。\n\n**原著Proposition 3.1の要点**：指定した部分空間 $\\mathcal H_{\\mathcal S}$ のすべての関数に対して、実験時の観測値から目標方針の期待値を復元する重みのうち、$L^2$ノルムが最小となる重みが一意に存在します。\n\n原著式(5)はその重みの分散をFourierのPolicy shift係数で表します。\n\n$$\n\\operatorname{Var}_{p}(W^{\\mathcal S}_{p,q})\n=\\sum_{V\\in\\mathcal S\\setminus\\{\\emptyset\\}}(\\Delta^V_{p,q})^2\n$$\n\n- $W^{\\mathcal S}_{p,q}$：実験方針pの下で使う移送重み\n- $\\Delta^V_{p,q}$：部分集合Vに対応する方針変化のFourier係数\n- $\\mathcal S$：干渉構造として残す相互作用集合\n\n**トレードオフ**：すべての相互作用を残せばバイアスを抑えやすいが分散が大きく、削りすぎると現実の干渉を取りこぼすためバイアスが発生し得ます。\n\n#### 4. どうやって有効だと検証した？\n\n| 原著の確認箇所 | 結果・意味 |\n|---|---|\n| Proposition 3.1 | 指定Fourier部分空間の下で一意の最小L2重み |\n| Proposition 4.1 | 干渉構造を誤指定した場合のスペクトル成分と方針変化に基づくバイアス |\n| Theorem 5.1 | Fourier-neighborhood overlapを含む条件下での一致性 |\n| Proposition 6.1 | 1回の割当実現から一般には分散を不偏識別できない |\n| Proposition 6.2 | 観測可能な情報から構成する保守的な共分散・分散境界 |\n\nこれらは**方法論・理論上の成果**であり、現実のネットワークに対する施策の平均的な実測効果ではありません。著者はシミュレーションも行っていますが、今回その全数値を原著表と照合していないため、効果量や95%CIを創作・補完していません。\n\n#### 5. 議論はある？\n\n「ネットワーク構造をどこまで知っているか」「実験時と展開先で処置確率がどれほど異なるか」が重要です。Global IPWはネットワークが大きくなると重み分散が指数的に増え得ます。Fourier部分空間を狭めれば分散を低減できますが、想定外の干渉によりバイアスが発生します。\n\n原著Proposition 6.1は、1回のTreatment割当からあらゆる潜在結果間の共分散を推定できるという誤解を否定します。分散の上界を用いた保守的な推論と、真の分散が識別されたことは区別してください。\n\n**実務上の翻訳（解説者の考察）**：顧客間の紹介施策を本番展開する場合、実験時の配信確率と本番配信確率、顧客間の影響範囲を事前に定義する。施策を単純に人数倍して経済価値を求めるのは適切とは限らない。\n\n#### 6. 次読むべき論文は？\n\nAronow & Samii (2017), *Estimating Average Causal Effects Under General Interference*：干渉下のExposure mapping。\n\nLoomba & Eckles (2025), *Policy Relevance of Causal Quantities in Networks*：政策ごとのEstimand設計。\n\n**原著照合範囲**：arXiv v1 §3 Proposition 3.1, §4 Proposition 4.1, §5 Theorem 5.1, §6 Propositions 6.1–6.2。数値シミュレーション・付録全体は未監査。\n",
     "source_heading_count": 0,
     "verification": "not_checked_against_original",
     "title_ja": "ネットワークにおけるオフポリシー因果効果推定",
     "title_ja_status": "provisional_translation",
     "rq_provenance": "analyst_reconstruction_from_digest_not_author_verified",
     "hypothesis_provenance": "analyst_reconstruction_from_digest_not_author_verified",
-    "substantive_verification": "not_checked_against_original",
+    "substantive_verification": "partially_checked_against_primary_sources",
     "research_map": {
       "identification_tags": [
         "ネットワーク干渉",
@@ -459,6 +459,22 @@
       "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
       "source_coverage": "historical_digest",
       "review_status": "candidate_tags_needs_manual_validation"
+    },
+    "original_review": {
+      "source_url": "https://arxiv.org/abs/2609.02756v1",
+      "locator": "v1 Propositions 3.1,4.1,6.1,6.2 and Theorem 5.1",
+      "scope": "Partial theoretical audit of spectral transport variance, interference assumptions and generic variance nonidentifiability; no simulation numeric checks",
+      "checked_on": "2026-11-25"
+    },
+    "detailed_review": {
+      "status": "selected_theoretical_claims_checked_against_original",
+      "source_url": "https://arxiv.org/abs/2609.02756v1",
+      "locator": "v1 Propositions 3.1,4.1,6.1,6.2 and Theorem 5.1",
+      "checked_on": "2026-11-25",
+      "scope": "Partial theoretical audit of spectral transport variance, interference assumptions and generic variance nonidentifiability; no simulation numeric checks",
+      "limitations": [
+        "Selected sections only; full original manuscript and all proofs not audited"
+      ]
     }
   },
   {
@@ -478,14 +494,14 @@
       "AI"
     ],
     "design_status": "DID（記載キーワード）",
-    "source_text": "\n**Christopher Stith, Hossein Rahmani, Jesse C. Cresswell／2026-09-02投稿**\n\n- **何が新しいか**：事前学習済みニューラルネットワークが、新しいデータセットに対してモデルを更新せず、in-context learningでATEなどを推定するCausal Foundation Modelsを解説。背景知識に加え、コードとJupyter notebooksを提供する実践的入門である。\n- **位置づけと限界**：新しい単一推定量の万能性を示す論文としてではなく、発展中の分野を理解する入門として読む。コード付きであること自体は、実務データでの識別の妥当性や推論精度の保証を意味しない。\n- **実務への翻訳（AIの解釈）**：類似した因果分析を繰り返す組織では、推定工程の再利用を検討する材料になる。導入評価では、既存手法との推定値比較に加え、交絡・overlap・学習時と適用時の違いを点検したい。\n- **読む価値**：3番目。すぐに分析基盤を置き換える判断より、再現例を読みながら技術の適用範囲を学ぶ用途に向く。\n\n出典：[arXiv書誌・要旨](https://arxiv.org/abs/2609.03003v1)／[本文HTML](https://arxiv.org/html/2609.03003v1)\n\n### 今週の読む順番と持ち帰る問い\n\n1. **地域別DID**：自分の分析のATTは、実際の意思決定単位と一致しているか。\n2. **ネットワークのoff-policy評価**：本番で割当を変えたとき、誰にどの波及が起きるか。\n3. **Causal Foundation Models**：分析工程のどこを再利用でき、どの仮定は案件ごとに確認する必要があるか。\n\nROIへの接続は今回の3本すべてで直接実証された結果ではなく、応用上の検討事項である。効果を経済価値に換算する場合は、対象人数・効果の持続期間・単位当たり価値・追加費用を別途定義する。\n",
+    "source_text": "**Christopher Stith, Hossein Rahmani, Jesse C. Cresswell｜2026-09-02投稿｜arXiv v1**\n\n[原著本文](https://arxiv.org/html/2609.03003v1)｜[書誌・要旨](https://arxiv.org/abs/2609.03003v1)\n\n#### 1. どんなもの？\n\n**RQ（本ライブラリによる整理）**：データセットごとに推定モデルを再学習する代わりに、事前学習したニューラルネットワークが新たなデータの文脈を読み込み、ATE・CATEなどを直接推定できるか？\n\n本稿は**Causal Foundation Models（CFM）の実践的な入門・解説論文**です。新しい一つのRCTで既存法を凌駕したと証明する実証論文として扱わないでください。\n\n#### 2. 先行研究と比べてどこがすごい？\n\n既存の因果推定では、処置変数、交絡を調整する共変量、アウトカム、識別仮定を定めた上で、案件ごとに回帰・重み付け・機械学習などを学習します。CFMは事前学習したモデルに新しいデータセットを入力し、**モデル重みを更新しないin-context inference**を試みる点が異なります。\n\nただし「モデルを学習しなくてよい」は**個別データに関する因果的な仮定を検討しなくてよい**という意味ではありません。\n\n#### 3. 技術や手法のキモはどこ？\n\n原著Figure 1では、文脈データ $(X_{ctx},T_{ctx},Y_{ctx})$ を渡し、照会対象の属性 $X_{qry}$ に対してCATEを推定するワークフローを説明しています。\n\n| 入力・出力 | 意味 |\n|---|---|\n| $X_{ctx}$ | 文脈サンプルの処置前共変量 |\n| $T_{ctx}$ | 文脈サンプルのTreatment |\n| $Y_{ctx}$ | 文脈サンプルのOutcome |\n| $X_{qry}$ | 因果効果を推定したい新しい対象の属性 |\n| $\\widehat\\tau(X_{qry})$ | CFMが返す条件付き処置効果推定値 |\n\n著者が説明する基本的な潜在Outcomeの識別条件は、\n\n$$\nY(t)\\perp T\\mid X\n$$\n\nという**条件付き交換可能性（ignorability）**と、各Treatmentが属性の各領域で割当可能である**positivity/overlap**です（原著Definition 2–3）。これらはニューラルネットワークの事前学習だけでは保証されません。\n\n#### 4. どうやって有効だと検証した？\n\n本稿は文献・モデル系統・実装例を体系化し、コードおよびJupyter notebooksを案内する**チュートリアル・レビュー**です。実務適用の前には、既存DML/AIPW等との再現比較、識別仮定の妥当性、データ分布の違い、効果量と不確実性を別途検証する必要があります。\n\nここではレビュー論文を、同じ母集団でのRCT実施数・効果量・95%CIを報告した実験研究のようには扱いません。\n\n#### 5. 議論はある？\n\n**識別可能性と予測性能は異なります。** 推定器が学習済みでも、未観測交絡やoverlap不足、事前学習時と適用時の分布変化は残ります。モデル間の性能比較では、シミュレーション上で真の効果が既知であることと、実際の介入データで真の反実仮想を観測できることを混同しないでください。\n\n**実務上の翻訳（解説者の考察）**：因果推論パイプラインでモデル選択・チューニング・反復実験の時間を節約できる可能性はありますが、意思決定に用いる前にATE/ATT/CATEの推定対象、データの交換可能性、事前学習分布との違い、校正・不確実性評価を点検する必要があります。\n\n#### 6. 次読むべき論文は？\n\nChernozhukov et al. (2018), *Double/Debiased Machine Learning for Treatment and Structural Parameters*：学習器を使う因果推論の直交化・交差適合の基礎。\n\nHahn (1998), *On the Role of the Propensity Score in Efficient Semiparametric Estimation*：因果パラメータの推定効率の基礎。\n\n**原著照合範囲**：arXiv v1 Abstract, Figure 1, §2（Definitions 2–3）, §3の手法紹介。比較実験の全数値やコード実行の検証は未実施。\n",
     "source_heading_count": 0,
     "verification": "not_checked_against_original",
     "title_ja": "因果推論の基盤モデル",
     "title_ja_status": "provisional_translation",
     "rq_provenance": "analyst_reconstruction_from_digest_not_author_verified",
     "hypothesis_provenance": "analyst_reconstruction_from_digest_not_author_verified",
-    "substantive_verification": "not_checked_against_original",
+    "substantive_verification": "partially_checked_against_primary_sources",
     "research_map": {
       "identification_tags": [
         "差の差分析",
@@ -502,6 +518,22 @@
       "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
       "source_coverage": "historical_digest",
       "review_status": "candidate_tags_needs_manual_validation"
+    },
+    "original_review": {
+      "source_url": "https://arxiv.org/abs/2609.03003v1",
+      "locator": "v1 abstract, Figure 1, §2 Definitions 2–3, §3 overview",
+      "scope": "Verified primary-source tutorial positioning, CFM in-context mechanism and assumptions; no model benchmark numeric verification",
+      "checked_on": "2026-11-25"
+    },
+    "detailed_review": {
+      "status": "selected_theoretical_claims_checked_against_original",
+      "source_url": "https://arxiv.org/abs/2609.03003v1",
+      "locator": "v1 abstract, Figure 1, §2 Definitions 2–3, §3 overview",
+      "checked_on": "2026-11-25",
+      "scope": "Verified primary-source tutorial positioning, CFM in-context mechanism and assumptions; no model benchmark numeric verification",
+      "limitations": [
+        "Selected sections only; full original manuscript and all proofs not audited"
+      ]
     }
   },
   {
