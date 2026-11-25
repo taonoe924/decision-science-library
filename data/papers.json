@@ -299,8 +299,8 @@
   {
     "paper_id": "paper-1dec3c647c",
     "title_candidate": "Difference-in-differences with unit-specific trends: Bias in post-treatment estimates and a simple alternative",
-    "doi_candidate": "",
-    "source_url": "",
+    "doi_candidate": "10.1016/j.econlet.2026.113121",
+    "source_url": "https://doi.org/10.1016/j.econlet.2026.113121",
     "source_weeks": [
       "W37"
     ],
@@ -319,13 +319,16 @@
     "rq_provenance": "legacy_extraction_from_digest",
     "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
     "hypothesis_source_line": 7,
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "source_url_provenance": "externally_matched_to_title_2026-11-25",
+    "bibliography_status": "verified_title_and_source_url",
+    "bibliography_source": "https://doi.org/10.1016/j.econlet.2026.113121"
   },
   {
     "paper_id": "paper-b7ba3b5524",
     "title_candidate": "Identifying Policy Causal Effects from Rule Changes",
-    "doi_candidate": "",
-    "source_url": "",
+    "doi_candidate": "10.3386/w35615",
+    "source_url": "https://www.nber.org/papers/w35615",
     "source_weeks": [
       "W37"
     ],
@@ -342,13 +345,16 @@
     "rq_provenance": "legacy_extraction_from_digest",
     "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
     "hypothesis_source_line": 7,
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "source_url_provenance": "externally_matched_to_title_2026-11-25",
+    "bibliography_status": "verified_title_and_source_url",
+    "bibliography_source": "https://www.nber.org/papers/w35615"
   },
   {
     "paper_id": "paper-061d1b0eff",
     "title_candidate": "CausalVerify: An Execution-Grounded Benchmark for LLM Causal Inference Workflows",
     "doi_candidate": "",
-    "source_url": "",
+    "source_url": "https://arxiv.org/abs/2609.07944",
     "source_weeks": [
       "W37"
     ],
@@ -367,13 +373,16 @@
     "rq_provenance": "legacy_extraction_from_digest",
     "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
     "hypothesis_source_line": 7,
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "source_url_provenance": "externally_matched_to_title_2026-11-25",
+    "bibliography_status": "verified_title_and_source_url",
+    "bibliography_source": "https://arxiv.org/abs/2609.07944"
   },
   {
     "paper_id": "paper-9f6d9ca5d6",
     "title_candidate": "Average Treatment Effect Localization: Projection Methods in Synthetic Control",
     "doi_candidate": "",
-    "source_url": "",
+    "source_url": "https://arxiv.org/abs/2609.10617",
     "source_weeks": [
       "W38"
     ],
@@ -392,13 +401,16 @@
     "rq_provenance": "legacy_extraction_from_digest",
     "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
     "hypothesis_source_line": 7,
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "source_url_provenance": "externally_matched_to_title_2026-11-25",
+    "bibliography_status": "verified_title_and_source_url",
+    "bibliography_source": "https://arxiv.org/abs/2609.10617"
   },
   {
     "paper_id": "paper-fb57ffda6e",
     "title_candidate": "Optimal Covariate Adjustment beyond the Average Treatment Effect: Treated-Population and Overlap-Weighted Estimands",
     "doi_candidate": "",
-    "source_url": "",
+    "source_url": "https://arxiv.org/abs/2609.11222",
     "source_weeks": [
       "W38"
     ],
@@ -415,13 +427,16 @@
     "rq_provenance": "legacy_extraction_from_digest",
     "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
     "hypothesis_source_line": 7,
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "source_url_provenance": "externally_matched_to_title_2026-11-25",
+    "bibliography_status": "verified_title_and_source_url",
+    "bibliography_source": "https://arxiv.org/abs/2609.11222"
   },
   {
     "paper_id": "paper-235e73a026",
     "title_candidate": "Quantile Treatment Effects in Difference-in-Discontinuities Designs",
-    "doi_candidate": "",
-    "source_url": "",
+    "doi_candidate": "10.1093/ectj/utag028",
+    "source_url": "https://doi.org/10.1093/ectj/utag028",
     "source_weeks": [
       "W38"
     ],
@@ -440,7 +455,10 @@
     "rq_provenance": "legacy_extraction_from_digest",
     "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
     "hypothesis_source_line": 7,
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "source_url_provenance": "externally_matched_to_title_2026-11-25",
+    "bibliography_status": "verified_title_and_source_url",
+    "bibliography_source": "https://doi.org/10.1093/ectj/utag028"
   },
   {
     "paper_id": "paper-c79dc0a5e2",
@@ -528,7 +546,7 @@
     "paper_id": "paper-c90ea9c9ca",
     "title_candidate": "Heterogeneous Policy Effects in Comparative Case Studies with Treated-Unit Microdata",
     "doi_candidate": "",
-    "source_url": "",
+    "source_url": "https://arxiv.org/abs/2609.28678",
     "source_weeks": [
       "W40"
     ],
@@ -549,7 +567,10 @@
     "rq_source_line": 5,
     "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
     "hypothesis_source_line": 10,
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "source_url_provenance": "externally_matched_to_title_2026-11-25",
+    "bibliography_status": "verified_title_and_source_url",
+    "bibliography_source": "https://arxiv.org/abs/2609.28678"
   },
   {
     "paper_id": "paper-6582247bcc",
@@ -1366,7 +1387,7 @@
     "paper_id": "paper-dc007de13d",
     "title_candidate": "Texting for Taxes: Field Evidence on Loss-Framed Nudges in Japan",
     "doi_candidate": "",
-    "source_url": "",
+    "source_url": "https://www.jstage.jst.go.jp/article/jbef/18/Special_issue/18_18.S5.pp.S1-S4/_article/-char/en",
     "source_weeks": [
       "W42"
     ],
@@ -1386,13 +1407,16 @@
     "rq_provenance": "legacy_extraction_from_digest",
     "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
     "hypothesis_source_line": 22,
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "source_url_provenance": "externally_matched_to_title_2026-11-25",
+    "bibliography_status": "verified_title_and_source_url",
+    "bibliography_source": "https://www.jstage.jst.go.jp/article/jbef/18/Special_issue/18_18.S5.pp.S1-S4/_article/-char/en"
   },
   {
     "paper_id": "paper-bd820a3c55",
     "title_candidate": "Designing Consent: Choice Architecture and Consumer Welfare in Data Sharing",
-    "doi_candidate": "",
-    "source_url": "",
+    "doi_candidate": "10.3386/w34025",
+    "source_url": "https://www.nber.org/papers/w34025",
     "source_weeks": [
       "W42"
     ],
@@ -1408,7 +1432,10 @@
     "title_ja_status": "provisional_translation",
     "rq_provenance": "legacy_extraction_from_digest",
     "hypothesis_provenance": "legacy_extraction_from_digest",
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "source_url_provenance": "externally_matched_to_title_2026-11-25",
+    "bibliography_status": "verified_title_and_source_url",
+    "bibliography_source": "https://www.nber.org/papers/w34025"
   },
   {
     "paper_id": "paper-7f69adc37d",
