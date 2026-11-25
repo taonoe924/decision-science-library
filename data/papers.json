@@ -8,7 +8,7 @@
       "W33"
     ],
     "source_date": "2026-08-14",
-    "rq_candidate": "",
+    "rq_candidate": "企業規模に応じた給与税の段差（notch）は企業成長をどの程度阻害し、標準的なDIDではその効果を適切に推定できるか？",
     "hypothesis_candidate": "",
     "method_keywords": [
       "DID"
@@ -18,7 +18,11 @@
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "給与税の閾値は企業成長の障壁となるか：理論と実証",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "reconstructed_from_digest_overview_not_author_verified",
+    "rq_source_line": null,
+    "hypothesis_provenance": "needs_manual_review",
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-62ca0acf9a",
@@ -29,7 +33,7 @@
       "W33"
     ],
     "source_date": "2026-08-14",
-    "rq_candidate": "",
+    "rq_candidate": "死亡によってQoLなどのOutcome自体が定義されなくなる場合、全人口に解釈可能な治療の因果効果をどう定義・推定するか？",
     "hypothesis_candidate": "",
     "method_keywords": [
       "CATE",
@@ -40,7 +44,11 @@
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "死亡によって観測が打ち切られるアウトカムの因果推論：周辺推定対象の考え方",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "reconstructed_from_digest_overview_not_author_verified",
+    "rq_source_line": null,
+    "hypothesis_provenance": "needs_manual_review",
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-8db14dc31c",
@@ -51,7 +59,7 @@
       "W33"
     ],
     "source_date": "2026-08-14",
-    "rq_candidate": "",
+    "rq_candidate": "平均処置効果だけでなく、処置下・非処置下の反事実Outcome分布全体をどのように推定し、分位点などの効果を評価できるか？",
     "hypothesis_candidate": "",
     "method_keywords": [
       "DML",
@@ -62,7 +70,11 @@
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "マルチンゲール事後分布を用いた反実仮想分布の推論",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "reconstructed_from_digest_overview_not_author_verified",
+    "rq_source_line": null,
+    "hypothesis_provenance": "needs_manual_review",
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-260bb098e8",
@@ -73,7 +85,7 @@
       "W34"
     ],
     "source_date": "2026-08-21",
-    "rq_candidate": "",
+    "rq_candidate": "集団間で因果モデルが異なり、完全な移送ができない場合でも、他集団の因果効果について妥当な範囲を示せるか？",
     "hypothesis_candidate": "",
     "method_keywords": [
       "Transportability"
@@ -83,7 +95,11 @@
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "因果的抽象化による一般化可能性・移送可能性",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "reconstructed_from_digest_overview_not_author_verified",
+    "rq_source_line": null,
+    "hypothesis_provenance": "needs_manual_review",
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-4ba1548978",
@@ -94,7 +110,7 @@
       "W34"
     ],
     "source_date": "2026-08-21",
-    "rq_candidate": "",
+    "rq_candidate": "Treatmentの影響を受ける共変量が未処置Outcomeのトレンドも説明する場合、Bad Controlを避けつつDIDの効果をどう識別するか？",
     "hypothesis_candidate": "",
     "method_keywords": [
       "DID"
@@ -104,7 +120,11 @@
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "「不適切な統制変数」を含む差の差分析",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "reconstructed_from_digest_overview_not_author_verified",
+    "rq_source_line": null,
+    "hypothesis_provenance": "needs_manual_review",
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-e53343e16f",
@@ -115,7 +135,7 @@
       "W34"
     ],
     "source_date": "2026-08-21",
-    "rq_candidate": "",
+    "rq_candidate": "時期・コホート別の効果異質性を保ちながら、似た効果だけを部分的に統合してDID推定の精度を改善できるか？",
     "hypothesis_candidate": "",
     "method_keywords": [
       "DID"
@@ -125,7 +145,11 @@
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "導入時期が異なるDIDにおける部分的同質性のベイズ推定",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "reconstructed_from_digest_overview_not_author_verified",
+    "rq_source_line": null,
+    "hypothesis_provenance": "needs_manual_review",
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-44a219aa63",
@@ -136,7 +160,7 @@
       "W35"
     ],
     "source_date": "2026-08-28",
-    "rq_candidate": "",
+    "rq_candidate": "平行トレンドを直接仮定せず、処置前DIDの変動分布を使って処置後効果について妥当な推論ができるか？",
     "hypothesis_candidate": "",
     "method_keywords": [
       "DID",
@@ -147,7 +171,11 @@
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "DIDの推論に介入前トレンドを活用する",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "reconstructed_from_digest_overview_not_author_verified",
+    "rq_source_line": null,
+    "hypothesis_provenance": "needs_manual_review",
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-48724c28e5",
@@ -158,7 +186,7 @@
       "W35"
     ],
     "source_date": "2026-08-28",
-    "rq_candidate": "",
+    "rq_candidate": "他者・他店舗への波及効果がある実験で、spillover effectを高精度に推定するランダム化割当をどう設計するか？",
     "hypothesis_candidate": "",
     "method_keywords": [
       "Spillover",
@@ -169,7 +197,11 @@
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "波及効果を伴う実験における頑健なシグナル最大化",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "reconstructed_from_digest_overview_not_author_verified",
+    "rq_source_line": null,
+    "hypothesis_provenance": "needs_manual_review",
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-8fba52c564",
@@ -191,7 +223,10 @@
     "source_heading_count": 0,
     "verification": "not_checked_against_original",
     "title_ja": "どの政策がどこで有効か：州別処置効果のDID推定と推論",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "needs_manual_review",
+    "hypothesis_provenance": "needs_manual_review",
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-8da38f287b",
@@ -214,7 +249,10 @@
     "source_heading_count": 0,
     "verification": "not_checked_against_original",
     "title_ja": "ネットワークにおけるオフポリシー因果効果推定",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "needs_manual_review",
+    "hypothesis_provenance": "needs_manual_review",
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-b28db29cef",
@@ -237,7 +275,10 @@
     "source_heading_count": 0,
     "verification": "not_checked_against_original",
     "title_ja": "因果推論の基盤モデル",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "needs_manual_review",
+    "hypothesis_provenance": "needs_manual_review",
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-1dec3c647c",
@@ -249,7 +290,7 @@
     ],
     "source_date": "2026-09-10",
     "rq_candidate": "DIDにstate-specific trendやfirm-specific trendなどのunit-specific trendを加えた場合、単一のpost-treatment coefficientは平均Treatment Effectを正しく推定するのか？",
-    "hypothesis_candidate": "",
+    "hypothesis_candidate": "方法論論文のため明示的なH1/H2はありません。 著者の主要命題は、 unit-specific trendを入れてもdynamic treatment effects自体は整合的に推定できる一方、post期間を1本の係数にまとめたCCTEは、平均Treatment Effectの整合推定量ではない というものです。 さらに、CCTEは短期効果を過大に重み付けし、一部の長期効果には負の重みを置き得るため、全期間の真のTreatment Effectが正でも、推定値が負になる可能性があります。",
     "method_keywords": [
       "DID"
     ],
@@ -258,7 +299,11 @@
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "個体固有トレンドを含むDID：介入後推定のバイアスと代替法",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "legacy_extraction_from_digest",
+    "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
+    "hypothesis_source_line": 7,
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-b7ba3b5524",
@@ -270,14 +315,18 @@
     ],
     "source_date": "2026-09-10",
     "rq_candidate": "政策レジームが変わった前後で、同じmacro shockの伝播が違って見えるとき、それはどのような「政策因果効果」を識別しているのか？ また通常のpolicy-shock approachとどう違うのか？",
-    "hypothesis_candidate": "",
+    "hypothesis_candidate": "方法論論文で正式なH1/H2はありません。 著者の主要命題は、 interacted local projectionとstandard policy-shock approachは、一定条件下では同じ高次元policy-effect spaceの異なるsliceを識別する というものです。 特にmonetary policyでは、通常のshock identificationは一時的な政策金利変化を捉えやすい一方、policy regimeの違いを使う方法は、より持続的なforward-guidance型policy pathの効果を捉えるとしています。",
     "method_keywords": [],
     "design_status": "要確認",
     "source_text": "**Ed Manuel & Christian K. Wolf｜NBER Working Paper 35615｜2026年8月**\n\n#### RQ\n\n**政策レジームが変わった前後で、同じmacro shockの伝播が違って見えるとき、それはどのような「政策因果効果」を識別しているのか？ また通常のpolicy-shock approachとどう違うのか？**\n\n#### 仮説・主要命題\n\n方法論論文で正式なH1/H2はありません。\n\n著者の主要命題は、\n\n> interacted local projectionとstandard policy-shock approachは、一定条件下では同じ高次元policy-effect spaceの異なるsliceを識別する\n\nというものです。\n\n特にmonetary policyでは、通常のshock identificationは一時的な政策金利変化を捉えやすい一方、**policy regimeの違いを使う方法は、より持続的なforward-guidance型policy pathの効果を捉える**としています。[^20260910-4]\n\n#### 1. どんなもの？\n\n通常のmacro causal inferenceでは、\n\n> 「予想外の利上げshockがGDPへ何をもたらすか？」\n\nを推定します。\n\nしかし政策は、本来1次元のshockではありません。\n\n例えば金融政策なら、\n\n- 今日25bp上げる\n- 半年維持する\n- 1年後下げる\n- 将来の金利pathについてguidanceを出す\n\nまで含めて**policy path全体**がTreatmentです。\n\nこの論文は、policy rule変更を使った因果推論が、政策spaceのどの方向のcounterfactualを比較しているのかを形式化しています。[^20260910-5]\n\n#### 2. 先行研究と比べてどこがすごい？\n\n従来のpolicy-shock研究ではTreatmentを概ね、\n\n$$\n\\varepsilon_t^{policy}\n$$\n\nという1つの外生shockとして扱います。\n\n一方、interacted local projectionでは、\n\n> 「regime Aのときshockへの反応は？」\n> 「regime Bでは？」\n\nを比較します。\n\nこれまでは両者が似た因果質問に見えていました。\n\n著者らは、\n\n> **政策は高次元なので、両者は一般には同じTreatmentを識別していない**\n\nことを明確にします。[^20260910-5]\n\nつまり推定値の違いを「methodological disagreement」と見る前に、\n\n> **そもそもcounterfactual policy pathが違うのではないか？**\n\nと考えるべき、という論文です。\n\n#### 3. 技術や手法のキモはどこ？\n\n##### 算式の説明\n\n通常のlocal projectionは概念的に、\n\n$$\nY_{t+h}\n=\n\\alpha_h+\n\\beta_h\\varepsilon_t+\n\\Gamma_hX_t+u_{t+h}\n$$\n\nです。\n\n- $Y_{t+h}$：$h$ 期後のGDP・物価等\n- $\\varepsilon_t$：policy shock\n- $\\beta_h$：shockに対する$h$期後の因果反応\n\ninteracted local projectionなら、\n\n$$\nY_{t+h}\n=\n\\alpha_h\n+\n\\beta_h\\varepsilon_t\n+\n\\theta_h(\\varepsilon_t\\times R_t)\n+\n\\Gamma_hX_t\n+\nu_{t+h}\n$$\n\nとなります。\n\n- $R_t$：policy regime\n- $\\theta_h$：regimeによるresponse差\n\n表面上は、\n\n$$\n\\theta_h\n$$\n\nが「regimeのTreatment Effect」のように見えます。\n\nしかし著者らの核心は、policyを1変数ではなく、\n\n$$\nP_t=\n(p_t,p_{t+1},p_{t+2},\\ldots)\n$$\n\nという**policy pathのベクトル**として考えることです。\n\nOutcomeも、\n\n$$\nY_{t+h}(P_t)\n$$\n\nと書くべきです。\n\nすると因果効果は、\n\n$$\n\\tau_h(P^A,P^B)\n=\nE[\nY_{t+h}(P^A)-Y_{t+h}(P^B)\n]\n$$\n\nです。\n\nつまり何をTreatmentと呼ぶかは、\n\n$$\nP^A-P^B\n$$\n\nという**政策pathの方向**によって決まります。\n\n通常のpolicy shockが、\n\n$$\n(25bp,0,0,\\ldots)\n$$\n\nのような一時的変化を近似する一方、regime differenceは、\n\n$$\n(25bp,25bp,20bp,15bp,\\ldots)\n$$\n\nのようなよりpersistentなpathを比較し得る、というのが直感です。\n\nしたがって、\n\n$$\n\\boxed{\n\\text{同じOutcome responseでも}\n\\quad\n\\text{Treatment pathが違えば別の因果効果}\n}\n$$\n\nです。\n\n#### 4. どうやって有効だと検証した？\n\n論文ではまず理論的に、interacted LPとpolicy shock identificationが同種のestimandを回収するための条件を導出しています。\n\nそのうえでmonetary policyへ適用し、通常のmonetary shockが**transitory rate movement**を捉えるのに対して、regime comparisonではよりpersistentでforward-guidanceに近いpolicy treatmentを識別することを示しています。[^20260910-4]\n\nしたがって「どちらが正しい」というvalidationではなく、\n\n> **異なるidentification strategyがpolicy-effect spaceのどこを見ているかを比較する**\n\nタイプの検証です。\n\n#### 5. 議論はある？\n\n最大のポイントは、**estimand interpretationへの依存性**です。\n\n高次元Treatmentでは、\n\n$$\nATE\n$$\n\nと一言で呼んでも意味が十分ではありません。\n\n特に経営施策でも同様で、\n\n> 「価格を5%下げる」\n\nだけなのか、\n\n> 「価格を5%下げ、広告を増やし、3か月維持する」\n\nなのかでTreatmentは違います。\n\n一方、この論文はmacroeconomic time-seriesを中心とした理論なので、企業の通常のpanel/RCTへそのまま適用する研究ではありません。\n\nただし、**複合施策を1本のTreatment dummyへ潰す危険性**という示唆は非常に一般性があります。\n\n#### 6. 次読むべき論文は？\n\n**Jordà (2005), “Estimation and Inference of Impulse Responses by Local Projections”**  \nLocal Projectionそのものの出発点です。\n\n**Ramey, monetary policy shock identification関連研究**  \n「shockをどうTreatmentとして定義するか」を理解するために重要です。\n\n**Policy Learning / Dynamic Treatment Regimeの文献**  \n企業施策へ移すなら、policy pathを「時系列のTreatment rule」として考える方向がつながります。\n\n---\n\n",
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "制度ルールの変更から政策の因果効果を識別する",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "legacy_extraction_from_digest",
+    "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
+    "hypothesis_source_line": 7,
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-061d1b0eff",
@@ -289,7 +338,7 @@
     ],
     "source_date": "2026-09-10",
     "rq_candidate": "LLMが因果推論手法を正しく説明できたり、実行可能なコードを書けたりすることは、「正しい因果効果を実際に推定できること」を意味するのか？",
-    "hypothesis_candidate": "",
+    "hypothesis_candidate": "正式なH1/H2型論文ではありません。 主要な検証命題は、 因果推論workflowは、text-level reasoningやcode executionだけではなく、実際にcanonical causal estimateを再現できるかで評価すべき というものです。 著者らは実際に、コードが正常実行されたworkflowのうち15.5%が誤ったTreatment Effectを返したと報告しています。",
     "method_keywords": [
       "DID"
     ],
@@ -298,7 +347,11 @@
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "CausalVerify：LLMの因果推論ワークフローを実行結果で評価するベンチマーク",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "legacy_extraction_from_digest",
+    "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
+    "hypothesis_source_line": 7,
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-9f6d9ca5d6",
@@ -310,7 +363,7 @@
     ],
     "source_date": "2026-09-14",
     "rq_candidate": "政策・事業施策の効果について、長期間の平均Treatment Effectではなく、「導入直後の短期的な因果効果」を適切に定義・推定できるか？",
-    "hypothesis_candidate": "",
+    "hypothesis_candidate": "方法論論文なので、著者は通常のH1/H2形式の仮説を置いていません。 主要な方法論的命題は、 Treatment導入直後に大きなweightを置いたAverage Treatment Effect Localization（ATEL）を定義し、時間変化する非線形な未観測交絡をfactor structureで捉えることで、single treated unitでも短期因果効果を推定・推論できる というものです。",
     "method_keywords": [
       "Synthetic Control"
     ],
@@ -319,7 +372,11 @@
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "合成コントロールにおける平均処置効果の局所化",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "legacy_extraction_from_digest",
+    "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
+    "hypothesis_source_line": 7,
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-fb57ffda6e",
@@ -331,14 +388,18 @@
     ],
     "source_date": "2026-09-14",
     "rq_candidate": "ATEで「最も効率的」とされる共変量adjustment setは、ATTやOverlap-weighted ATEでも最適なのか？",
-    "hypothesis_candidate": "",
+    "hypothesis_candidate": "正式な仮説型論文ではありません。 著者の主要命題は非常に重要で、 ATEで成立する「DAGから一意に最適なadjustment setを選べる」という結果は、ATE固有の性質であり、ATTでは一般に成立しない というものです。 さらに、ATEでは精度を改善するoutcome predictorが、ATTでは何もしない、あるいはvarianceを悪化させる場合すらあると示します。",
     "method_keywords": [],
     "design_status": "要確認",
     "source_text": "**Shoki Okubo｜arXiv｜2026年9月10日**\n\n#### RQ\n\n**ATEで「最も効率的」とされる共変量adjustment setは、ATTやOverlap-weighted ATEでも最適なのか？**\n\n#### 仮説・主要命題\n\n正式な仮説型論文ではありません。\n\n著者の主要命題は非常に重要で、\n\n> **ATEで成立する「DAGから一意に最適なadjustment setを選べる」という結果は、ATE固有の性質であり、ATTでは一般に成立しない**\n\nというものです。\n\nさらに、ATEでは精度を改善するoutcome predictorが、ATTでは**何もしない、あるいはvarianceを悪化させる場合すらある**と示します。[^20260914-3]\n\n#### 1. どんなもの？\n\n因果推論でよくある質問は、\n\n> confounder A,B,Cがある。  \n> predictor D,Eもある。  \n> 何をadjustすればよい？\n\nです。\n\nATEについては、\n\n> outcome predictorは入れた方が効率がよい  \n> pure instrumentは外した方がよい\n\nという比較的きれいな理論があります。\n\nところがこの論文は、\n\n> **estimandをATTに変えるだけで、その原則が崩れる**\n\nことを示します。\n\nつまり、\n\n$$\nATE,\\ ATT,\\ ATO\n$$\n\nでは、**同じDAG・同じデータでも「最も精度がよいadjustment」が違う**可能性があります。[^20260914-3]\n\n#### 2. 先行研究と比べてどこがすごい？\n\nATEでは、graphically optimal adjustment setが存在し、\n\n> causal graphだけ見れば、distributionを知らなくても最適setを決められる\n\nという強い結果があります。\n\n今回の論文はATTについて、\n\n$$\n\\boxed{\n\\text{Graph alone cannot determine the efficient adjustment set}\n}\n$$\n\nを証明します。\n\nつまり同じDAGでも、underlying distributionが違えば、\n\n$$\nS_1 \\text{ が最適}\n$$\n\nになったり、\n\n$$\nS_2 \\text{ が最適}\n$$\n\nになったりします。[^20260914-3]\n\nこれは「DAGを描けばvariable selectionが終わる」という理解への重要な修正です。\n\n#### 3. 技術や手法のキモはどこ？\n\n##### 算式の説明\n\nATEは、\n\n$$\nATE\n=\nE[Y(1)-Y(0)]\n$$\n\nATTは、\n\n$$\n\\boxed{\nATT\n=\nE[Y(1)-Y(0)\\mid A=1]\n}\n$$\n\nです。\n\n同じTreatment Effectでも、対象populationが違います。\n\nadjustment setを $S$ として、\n\n$$\ne_S=P(A=1\\mid S)\n$$\n\n$$\n\\mu_a(S)=E[Y\\mid A=a,S]\n$$\n\n$$\n\\sigma_a^2(S)\n=\nVar(Y\\mid A=a,S)\n$$\n\nとします。\n\nATEのsemiparametric efficiency boundは、\n\n$$\nV_{ATE}(S)\n=\nE\n\\left[\n\\frac{\\sigma_1^2(S)}{e_S}\n+\n\\frac{\\sigma_0^2(S)}{1-e_S}\n+\n\\{\\tau_S-ATE\\}^2\n\\right]\n$$\n\nです。[^20260914-3]\n\nここで、\n\n$$\n\\tau_S=\\mu_1(S)-\\mu_0(S)\n$$\n\nです。\n\n重要なのはvarianceへのweightです。\n\nATEでは、\n\n$$\nTreatment:\\quad \\frac1e\n$$\n\n$$\nControl:\\quad \\frac1{1-e}\n$$\n\nとなります。\n\n一方ATTではweight構造が、\n\n$$\nTreatment:\\quad e\n$$\n\n$$\nControl:\\quad \\frac{e^2}{1-e}\n$$\n\nとなります。[^20260914-3]\n\nこの差が決定的です。\n\n例えばTreatmentがrareで、\n\n$$\ne=0.1\n$$\n\nなら、\n\nATEのcontrol variance weightは、\n\n$$\n\\frac1{0.9}\\approx1.11\n$$\n\nですが、ATTでは、\n\n$$\n\\frac{0.1^2}{0.9}\n\\approx0.011\n$$\n\nです。\n\nつまり**control側のpredictionを改善する価値が全く違う**。\n\nそのため、ATEではoutcome predictorを追加すればvariance reductionに寄与していたのに、\n\nATTではeffect heterogeneityとの関係によって、\n\n$$\nV_{ATT}(S\\cup W)\n>\nV_{ATT}(S)\n$$\n\nすら起こり得ます。\n\nさらにOverlap-weighted estimandでは、\n\n$$\nh(e)=e(1-e)\n$$\n\nなので、covariate adjustmentによってpropensityが変わると、weight自体が変化し、\n\n> **varianceだけでなくestimandそのものが変わる**\n\nことまで示しています。[^20260914-3]\n\n#### 4. どうやって有効だと検証した？\n\nまず理論的に、\n\n- ATT efficiency bound\n- covariate追加時のbound差\n- DAGだけでは最適setを選べないこと\n\nを証明しています。\n\nSimulationでは、理論上のefficiency-bound orderingが有限標本RMSEでも概ね再現されます。\n\nさらにrandom graphを用いた検証では、arm-asymmetric effect modificationを持つ49構造のうち**10構造でATE-optimal setとATT-optimal setが異なり**、ATE-optimal setを使ったATT estimationには**2.9%〜25.9%の効率性penalty**がありました。[^20260914-3]\n\nLaLonde dataでもillustrationを行っています。\n\n#### 5. 議論はある？\n\nここは誤解しやすいです。\n\n著者が言っているのは、\n\n> 「outcome predictorを観測しない方がよい」\n\nではありません。\n\n比較しているのは、\n\n> **そのcovariateを通常のadjustment estimatorへ投入するかどうか**\n\nです。利用可能な情報自体が害になるという意味ではありません。[^20260914-3]\n\nまた最も大事なのは、\n\n$$\n\\text{validity} \\gg \\text{efficiency}\n$$\n\nです。\n\nconfounding adjustmentに必要な変数を、\n\n> varianceが増えるから\n\nという理由で外してはいけません。\n\n著者自身、LaLonde例ではprecisionより**substantive validityを優先すべき**としています。[^20260914-3]\n\n実務的な順番は、\n\n1. 因果識別上必要なadjustment setを決める\n2. valid setが複数ある場合にefficiencyを比較する\n\nです。\n\n#### 6. 次読むべき論文は？\n\n**Rotnitzky & Smucler (2020), Efficient Adjustment Sets for Population Average Causal Treatment Effect Estimation in Graphical Models**  \nATEで「graphically optimal set」が存在する基準論文。今回の論文はここを壊しにきています。\n\n**Hahn (1998), On the Role of the Propensity Score in Efficient Semiparametric Estimation of Average Treatment Effects**  \nATE/ATTのefficiency boundの基礎。\n\n**Li, Morgan & Zaslavsky (2018), Balancing Covariates via Propensity Score Weighting**  \nOverlap Weightingを理解するための基本論文です。[^20260914-3]\n\n---\n\n",
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "ATEを超えた最適共変量調整：処置群・重なり重み付き推定対象",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "legacy_extraction_from_digest",
+    "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
+    "hypothesis_source_line": 7,
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-235e73a026",
@@ -350,7 +411,7 @@
     ],
     "source_date": "2026-09-14",
     "rq_candidate": "Difference-in-Discontinuities designにおいて、平均Treatment EffectだけでなくOutcome distributionの各quantileへの因果効果を識別・推定できるか？",
-    "hypothesis_candidate": "",
+    "hypothesis_candidate": "方法論論文で、通常のH1/H2は設定されていません。 中心的命題は、 confounding discontinuous policyのdistributional effectがperiod間で安定しているという条件を置けば、新たなTreatmentのQuantile Treatment Effectをpoint identifyでき、さらにdoubly robustに推定できる というものです。",
     "method_keywords": [
       "DID"
     ],
@@ -359,7 +420,11 @@
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "差の差型不連続デザインにおける分位点処置効果",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "legacy_extraction_from_digest",
+    "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
+    "hypothesis_source_line": 7,
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-c79dc0a5e2",
@@ -372,7 +437,7 @@
     ],
     "source_date": "2026-09-17",
     "rq_candidate": "「誰にTreatmentを割り当てるか」を学習するとき、平均Outcomeを最大化するだけでなく、Treatmentによって悪化する個人へ誤ってTreatmentを割り当てる確率を、事前に指定した水準以下に制御できるか？",
-    "hypothesis_candidate": "",
+    "hypothesis_candidate": "方法論論文なので通常のH1/H2はありません。 著者の主要命題は、Conformal Policy Learning（CPL）を使えば、RCTではoutcome modelを仮定せず有限標本でcounterfactual harmの確率を制御でき、outcome modelがconsistentなら、その安全制約下で漸近的にoptimal welfareを達成できるというものです。観察研究ではlearn-then-balance weightingにより、doubly robustな安全保証まで拡張しています。",
     "method_keywords": [
       "RCT",
       "CATE",
@@ -385,7 +450,11 @@
     "verification": "not_checked_against_original",
     "title_ja": "分布に依存しない安全性保証付きの適合的方策学習",
     "title_ja_status": "source_title_unverified",
-    "bibliography_status": "verified_title_or_doi"
+    "bibliography_status": "verified_title_or_doi",
+    "rq_provenance": "legacy_extraction_from_digest",
+    "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
+    "hypothesis_source_line": 8,
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-07919c7d40",
@@ -397,7 +466,7 @@
     ],
     "source_date": "2026-09-21",
     "rq_candidate": "RDで広く使われているlocal polynomial estimatorは、実際のempirical settingで本当に最も精度よく短いconfidence intervalを与えるのか？ Outcomeのsmooth componentをより柔軟に学習しつつ、cutoff jumpだけをparametricに扱えば改善できるか？",
-    "hypothesis_candidate": "",
+    "hypothesis_candidate": "方法論論文なので通常のH1/H2はありません。 著者の主要命題は、RDをpartially linear problemとして定式化することで、cutoffのTreatment Effectはparametricに保ちながらsmooth nuisance componentを柔軟に推定でき、従来法より低いestimation errorと短く妥当なCIを得られるというものです。12の著名な実証研究に合わせたsimulationで検証しています。",
     "method_keywords": [
       "DML"
     ],
@@ -406,7 +475,11 @@
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "PLRD：部分線形回帰不連続デザインの推論",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "legacy_extraction_from_digest",
+    "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
+    "hypothesis_source_line": 9,
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-5445c52194",
@@ -417,8 +490,8 @@
       "W40"
     ],
     "source_date": "2026-09-28",
-    "rq_candidate": "",
-    "hypothesis_candidate": "",
+    "rq_candidate": "DiDのparallel trendsが未観測交絡によって破れている可能性があるとき、「どの程度強い未観測交絡なら、推定したATTの結論が覆るのか？」を定量化できるか。",
+    "hypothesis_candidate": "仮説検定型の論文ではありません。中心命題は「未観測交絡によるATT biasをTreatment assignment mechanism上のconfounding strengthとして表現し、観測共変量やpre-trendをbenchmarkにして感度分析できる」です。",
     "method_keywords": [
       "DID"
     ],
@@ -427,7 +500,12 @@
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "DIDデザインにおける欠落変数バイアス",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "extracted_from_digest_rq",
+    "rq_source_line": 5,
+    "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
+    "hypothesis_source_line": 10,
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-c90ea9c9ca",
@@ -438,8 +516,8 @@
       "W40"
     ],
     "source_date": "2026-09-28",
-    "rq_candidate": "",
-    "hypothesis_candidate": "",
+    "rq_candidate": "政策実施地域には詳細な個票データがあるが、比較地域には集計データしかない。それでも「誰に政策が効いたか」まで推定できるか？",
+    "hypothesis_candidate": "正式なH1/H2ではありません。relative parallel trendsとaggregate comparative-case designの識別条件の下で、全体平均と相対的な条件別差（\\tau(z)=\\bar\\tau+\\Delta(z)-\\bar\\Delta）からsubgroup treatment effectを識別できる、という元配信の中心命題です。",
     "method_keywords": [
       "DID",
       "Synthetic Control"
@@ -449,7 +527,12 @@
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "処置群の個票データを用いた比較事例研究の異質な政策効果",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "extracted_from_digest_rq",
+    "rq_source_line": 5,
+    "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
+    "hypothesis_source_line": 10,
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-6582247bcc",
@@ -460,8 +543,8 @@
       "W40"
     ],
     "source_date": "2026-09-28",
-    "rq_candidate": "",
-    "hypothesis_candidate": "",
+    "rq_candidate": "医師は認知負荷が高くなると診断の質が単純に落ちるのか。それとも、「考える」代わりに「検査する」ことで認知能力を補完するのか？",
+    "hypothesis_candidate": "cognitive loadが高まると医師はmental deliberationを減らし、より多くのdiagnostic actionへ置き換える。ただし検査はより一般的で精度の低いものへ偏る、という命題です。",
     "method_keywords": [
       "AI"
     ],
@@ -471,7 +554,12 @@
     "verification": "not_checked_against_original",
     "title_ja": "考えることと実行すること：認知能力・意思決定・医療診断",
     "title_ja_status": "source_title_unverified",
-    "bibliography_status": "verified_title_or_doi"
+    "bibliography_status": "verified_title_or_doi",
+    "rq_provenance": "extracted_from_digest_rq",
+    "rq_source_line": 5,
+    "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
+    "hypothesis_source_line": 20,
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-ec4e9eeabb",
@@ -482,7 +570,7 @@
       "W40"
     ],
     "source_date": "2026-09-28",
-    "rq_candidate": "",
+    "rq_candidate": "LLMは医師の診療判断を改善するか。そして、その効果は国によって異なり、もともとの医療判断能力の格差を縮めるのか？",
     "hypothesis_candidate": "",
     "method_keywords": [
       "AI"
@@ -492,7 +580,11 @@
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "LLM支援は医師の意思決定にどう影響するか：多国間RCT",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "extracted_from_digest_rq",
+    "rq_source_line": 5,
+    "hypothesis_provenance": "needs_manual_review",
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-9be0b9fd8f",
@@ -503,8 +595,8 @@
       "W40"
     ],
     "source_date": "2026-09-30",
-    "rq_candidate": "",
-    "hypothesis_candidate": "",
+    "rq_candidate": "DiDで「施策がOutcomeを改善した」ことが分かったとして、その効果を 直接効果と、ある行動・中間Outcomeを経由した間接効果に分解できるか？",
+    "hypothesis_candidate": "著者が通常のH1/H2として提示しているものではありません。中心命題は、適切なconditional parallel trends等の下で、Treatmentのdirect effect、Mediatorを通るindirect effect、TreatmentとMediatorのjoint effectを識別し、DMLで推定できる、というものです。",
     "method_keywords": [
       "DID",
       "DML",
@@ -515,7 +607,12 @@
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "ダブル機械学習を用いた媒介分析のためのDID",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "extracted_from_digest_rq",
+    "rq_source_line": 6,
+    "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
+    "hypothesis_source_line": 24,
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-21bfea85b2",
@@ -526,8 +623,8 @@
       "W40"
     ],
     "source_date": "2026-09-30",
-    "rq_candidate": "",
-    "hypothesis_candidate": "",
+    "rq_candidate": "Triple Difference（DDD）で「A群への効果はB群より大きい」と推定したとき、それを本当にサブグループ間の因果効果差と解釈してよいのか？",
+    "hypothesis_candidate": "仮説型論文ではありません。著者の中心命題は、通常のDDD estimandと「同じ共変量分布に揃えた上でのsubgroup treatment-effect difference」は別物であり、後者を表す新しいestimandとdoubly robust estimatorが必要だ、というものです。",
     "method_keywords": [
       "DID"
     ],
@@ -536,7 +633,12 @@
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "処置効果が異質な場合の三重差分デザイン",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "extracted_from_digest_rq",
+    "rq_source_line": 6,
+    "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
+    "hypothesis_source_line": 10,
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-99c4958bc6",
@@ -547,8 +649,8 @@
       "W40"
     ],
     "source_date": "2026-09-30",
-    "rq_candidate": "",
-    "hypothesis_candidate": "",
+    "rq_candidate": "医学的Evidenceが「Benefitについてはよく分かるが、Harmについてはよく分からない」とき、どの患者をTreatmentすべきか？既存guidelineに従うことが本当に最良なのか？",
+    "hypothesis_candidate": "著者らは、BenefitはRCTからheterogeneityを推定できてもHarm heterogeneityは十分識別できない場合、maximin / minimax-regret ruleを使えば、未知のHarm構造に対してrobustなTreatment allocationが可能になると考えます。",
     "method_keywords": [
       "RCT"
     ],
@@ -557,7 +659,12 @@
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "ガイドラインに従う価値はあるか：不完全なエビデンス下の意思決定",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "extracted_from_digest_rq",
+    "rq_source_line": 6,
+    "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
+    "hypothesis_source_line": 34,
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-e539e49ca6",
@@ -568,8 +675,8 @@
       "W40"
     ],
     "source_date": "2026-09-30",
-    "rq_candidate": "",
-    "hypothesis_candidate": "",
+    "rq_candidate": "AIを使うと目の前の仕事の品質は上がる。しかし、AIを3か月使った後、AIを取り上げても本人の専門能力は高くなっているのか？",
+    "hypothesis_candidate": "単純な一方向仮説ではありません。中心的な対立仮説は、AI利用がlearning-by-doingを補完してexpertiseを形成する可能性と、逆に認知作業をAIへoffloadしてskill acquisitionを阻害する可能性です。",
     "method_keywords": [
       "RCT",
       "AI"
@@ -579,7 +686,12 @@
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "AI支援は専門性を高めるか損なうか：特許文書作成の3か月間フィールド実験",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "extracted_from_digest_rq",
+    "rq_source_line": 6,
+    "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
+    "hypothesis_source_line": 30,
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-bb858e1205",
@@ -590,8 +702,8 @@
       "W40"
     ],
     "source_date": "2026-10-02",
-    "rq_candidate": "",
-    "hypothesis_candidate": "",
+    "rq_candidate": "Outcomeが「死亡年齢の分布」「電源構成」「ネットワーク」のように、単一の数値ではない場合でもDiDはできるのか？",
+    "hypothesis_candidate": "著者が通常のH1/H2として提示する論文ではありません。 中心命題は、Outcomeが一意なgeodesicを持つmetric spaceに属するなら、通常の「引き算」の代わりにgeodesic transportを使うことでATTを定義・識別できる、というものです。",
     "method_keywords": [
       "DID",
       "ネットワーク"
@@ -602,7 +714,12 @@
     "verification": "not_checked_against_original",
     "title_ja": "測地線を用いた差の差分析",
     "title_ja_status": "provisional_translation",
-    "bibliography_status": "verified_title_or_doi"
+    "bibliography_status": "verified_title_or_doi",
+    "rq_provenance": "extracted_from_digest_rq",
+    "rq_source_line": 5,
+    "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
+    "hypothesis_source_line": 44,
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-5b0863ec2d",
@@ -613,8 +730,8 @@
       "W40"
     ],
     "source_date": "2026-10-02",
-    "rq_candidate": "",
-    "hypothesis_candidate": "",
+    "rq_candidate": "店舗・病院・鉄道駅・施設など、「場所そのもの」がTreatmentの場合、どことどこを比較すれば因果効果になるのか？",
+    "hypothesis_candidate": "通常の仮説型論文ではありません。 中心命題は、spatial treatmentの効果を測る適切な比較対象は単なる「Treatment地点から遠いunit」ではなく、実際にTreatmentが置かれたlocation周辺と、Treatmentが置かれ得たが置かれなかったcounterfactual candidate location周辺である、というものです。",
     "method_keywords": [
       "DID",
       "RCT"
@@ -624,7 +741,12 @@
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "空間的処置に対する因果推論",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "extracted_from_digest_rq",
+    "rq_source_line": 5,
+    "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
+    "hypothesis_source_line": 41,
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-730aa60651",
@@ -635,8 +757,8 @@
       "W40"
     ],
     "source_date": "2026-10-02",
-    "rq_candidate": "",
-    "hypothesis_candidate": "",
+    "rq_candidate": "HumanとAIのどちらが優秀かではなく、「どのケースをAIに自動化し、どのケースをHumanへ渡し、どのケースでHuman+AIにするか」をどう最適化すればよいか？",
+    "hypothesis_candidate": "中心命題は、AI confidence等の少数のsufficient statisticsからHuman-AI collaboration policyの価値を評価でき、AIが確信しているケースはautomation、AIが不確かなケースはHumanへdelegateする選択的Policyが有効になり得る、というものです。",
     "method_keywords": [
       "Policy Learning",
       "AI"
@@ -646,7 +768,12 @@
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "人間とAIの協働をどう設計するか",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "extracted_from_digest_rq",
+    "rq_source_line": 5,
+    "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
+    "hypothesis_source_line": 33,
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-fad50f3029",
@@ -657,15 +784,20 @@
       "W40"
     ],
     "source_date": "2026-10-02",
-    "rq_candidate": "",
-    "hypothesis_candidate": "",
+    "rq_candidate": "専門家が判断に時間をかけていること自体から、「その判断がどれだけ難しいか」「追加情報を集めているか」「最終判断の質」を推測できるか？",
+    "hypothesis_candidate": "理論モデルから主に3つを導きます。 1. 普段選ばれにくい選択肢ほど、長時間考えた後に選ばれやすい 2. Decision timeは選択確率が50:50付近で最大になる 3. Decision qualityとdecision timeの関係は一方向ではなく、早期signalと後期signalのinformativenessによって正にも負にもなる。",
     "method_keywords": [],
     "design_status": "要確認",
     "source_text": "**Card, DellaVigna, Jiang & Taubinsky｜NBER WP 32515｜2024、2026年7月改訂**\n\n[Understanding Expert Choices Using Decision Time｜NBER](https://www.nber.org/papers/w32515?utm_source=chatgpt.com)\n\n##### Research Question (RQ)\n\n> **専門家が判断に時間をかけていること自体から、「その判断がどれだけ難しいか」「追加情報を集めているか」「最終判断の質」を推測できるか？**\n\n##### RQの面白さ\n\n通常ならDecision Qualityを、\n\n$$\nDecision\\rightarrow Outcome\n$$\n\nから評価します。\n\nこの論文は、\n\n$$\n\\boxed{\nDecision\\ Time\n}\n$$\n\nという普段は単なる業務ログとして捨てられる変数を、**意思決定過程を観測するproxy**として使います。\n\nしかも「時間をかける＝慎重＝良い判断」と単純には考えません。[^20261002-18]\n\n##### Proposition\n\n理論モデルから主に3つを導きます。\n\n1. **普段選ばれにくい選択肢ほど、長時間考えた後に選ばれやすい**\n2. Decision timeは選択確率が50:50付近で最大になる\n3. Decision qualityとdecision timeの関係は一方向ではなく、**早期signalと後期signalのinformativeness**によって正にも負にもなる。[^20261002-19]\n\n##### 1. どんなもの？\n\n中心的な実証はacademic journal editorです。\n\nEditorが、\n\n$$\nReject\n\\quad vs\\quad\nRevise\\&Resubmit\n$$\n\nを決めるまでの時間を観察します。\n\n直感的には、\n\n$$\nP(R\\&R)=0.01\n$$\n\nならすぐReject、\n\n$$\nP(R\\&R)=0.99\n$$\n\nならすぐR&R。\n\n最も悩むのは、\n\n$$\nP(R\\&R)\\approx0.5\n$$\n\nです。\n\nしたがって、\n\n$$\nDecision\\ Time\n$$\n\nは**decision uncertaintyの観測可能な痕跡**になります。\n\n##### 2. 先行研究と比べてどこがすごい？\n\nlaboratoryではresponse time研究が多数あります。\n\nしかし実社会では遅延が、\n\n$$\n\\boxed{\n「追加情報を集める」という内生的行動\n}\n$$\n\nでもあります。\n\nそこで著者らは、\n\n> Decision timeは単なる心理反応ではなく、information acquisition processそのものでは？\n\nと考えました。[^20261002-20]\n\n##### 3. 技術や手法のキモはどこ？\n\n概念的には、専門家が時点 $t$ までに得た情報を、\n\n$$\nI_t=(s_1,s_2,\\ldots,s_t)\n$$\n\nとします。\n\nそれに基づくbeliefを、\n\n$$\np_t=P(A\\text{が良い}\\mid I_t)\n$$\n\nとします。\n\n判断が十分明確ならstop。\n\n$$\np_t>c_H\n\\Rightarrow A\n$$\n\n$$\np_t<c_L\n\\Rightarrow B.\n$$\n\nしかし、\n\n$$\nc_L<p_t<c_H\n$$\n\nなら追加情報を取得する。\n\nしたがって、\n\n$$\np_t\\approx0.5\n\\Rightarrow\nDecision\\ Time\\uparrow.\n$$\n\nこれが、\n\n$$\n\\boxed{\nUncertainty\n\\rightarrow\nInformation\\ Acquisition\n\\rightarrow\nDecision\\ Time\n\\rightarrow\nChoice\n}\n$$\n\nという研究設計です。\n\n##### 4. どうやって有効だと検証した？\n\n主分析のeditorial settingでは、\n\n- decision timeが長いほどpositive decision（R&R）の確率が上昇\n- predicted positive-decision probabilityとdecision timeは**逆U字**\n- peakは概ね**50%付近**\n\nとなり、理論予測と整合しました。[^20261002-21]\n\nさらにqualityを見ると、\n\n$$\nReject\n$$\n\nされたpaperではdecision timeが長いほどqualityが高く、\n\n$$\nR\\&R\n$$\n\nでは逆に長いほどqualityが低いパターンでした。\n\nつまり境界事例ほど時間がかかるわけです。\n\nさらに、\n\n- loan officers\n- 若者のmarriage expectation\n\nという全く異なる2環境でも補強的Evidenceを示しています。[^20261002-22]\n\nただしstructural estimationでは、**editorial delay中に追加取得された情報量は比較的小さく、decision qualityへの影響も小さい**と推定されています。[^20261002-23]\n\nここがかなり意外です。\n\n$$\n\\boxed{\n時間をかけている\n\\neq\n多くを学んでいる\n}\n$$\n\n可能性があります。\n\n##### 5. 議論はある？\n\nDecision timeは完全なuncertainty measureではありません。\n\n例えば、\n\n- workload\n- procrastination\n- meeting schedule\n- organizational process\n\nでも遅くなります。\n\nしたがって、\n\n$$\nDecisionTime\\rightarrow Uncertainty\n$$\n\nと単純に因果解釈するのは危険です。\n\n著者らの価値は、理論から複数のtestable predictionsを導き、editor・loan officer等の異なる環境でそのパターンを検証した点にあります。\n\n##### 6. 次読むべき論文は？\n\nDrift Diffusion Model系研究はresponse timeとchoiceの基礎、rational inattentionは情報取得Cost、Handel et al. (2026) **Thinking versus Doing**は認知負荷下で専門家が思考を別の行動へ代替する問題につながります。[^20261002-24]\n\n**この論文から学ぶ研究の型：**\n\n> Outcomeだけを見るのではなく、**意思決定までの時間・クリック・閲覧・探索回数など「意思決定過程の副産物」を測定変数へ昇格させる**。そこから直接観測できないuncertaintyやinformation acquisitionを逆算する型です。\n\n---\n\n### 今回4本から学べるRQの作り方\n\n4本とも、「普段は分析上の制約・副産物と思っていたもの」を研究対象へ変えています。\n\n| 論文 | 普通なら | RQの転換 |\n|---|---|---|\n| Geodesic DiD | Outcomeを平均値にする | **分布・構造そのものをOutcomeにできないか？** |\n| Spatial Treatments | 近い人vs遠い人 | **理想RCTなら“場所”をどうrandomizeする？** |\n| Human-AI Collaboration | Human vs AI | **ケースごとに誰へ任せる？** |\n| Decision Time | 判断時間はノイズ | **時間から判断の迷いを測れないか？** |\n\n#### 今週読むならこの順\n\n**1位はB-1 Designing Human-AI Collaboration。** 前回のGenerative AI at Work → Jagged Frontier → Algorithm Aversionの続きを読むなら最もきれいです。「誰に効く」「どのTaskに効く」「人は使うか」の次に、**では組織として誰に何を任せるPolicyを作るのか**まで進めます。[^20261002-25]\n\n**2位はB-2 Understanding Expert Choices Using Decision Time。** RQの作り方という意味では今回最もおすすめです。「意思決定時間」という普通ならログの1列にすぎない変数から、**uncertainty→information acquisition→decision**という潜在プロセスを研究対象にしています。[^20261002-26]\n\n**3位はA-2 Causal Inference for Spatial Treatments。** 「使えるデータから比較群を作る」のではなく、**理想RCTを最初に想像して観察研究を逆設計する**という因果推論の思考法が学べます。しかも2026年9月22日にEconometricaで公開されたばかりです。[^20261002-27]\n\n**4位はA-1 Geodesic DiD。** 数学的には今回最も重いですが、「平均値に落としてから因果推論する」という無意識の前提を外してくれます。2026年9月11日公開のBiometrika論文で、分布・network・compositionまでDiDのOutcomeにできるという発想を押さえるだけでも価値があります。[^20261002-28]\n\n今回を一本につなぐと、\n\n$$\n\\boxed{\n\\text{何をOutcomeとして測るか}\n\\rightarrow\n\\text{Counterfactualをどう作るか}\n\\rightarrow\n\\text{誰に意思決定を任せるか}\n\\rightarrow\n\\text{意思決定過程をどう評価するか}\n}\n$$\n\nとなります。特にB-2の発想は、アプリ等のログデータにも応用しやすく、**最終的な行動だけでなく「行動に至るまでの迷い・探索」を新しいOutcomeとして設計する**というRQへ発展させられます。\n\n[^20261002-1]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用index：1。\n[^20261002-2]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用index：2。\n[^20261002-3]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用index：3。\n[^20261002-4]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用index：4。\n[^20261002-5]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用index：5。\n[^20261002-6]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用index：7。\n[^20261002-7]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用index：8。\n[^20261002-8]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用index：9。\n[^20261002-9]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用index：10。\n[^20261002-10]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用index：11。\n[^20261002-11]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用index：12。\n[^20261002-12]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用index：14。\n[^20261002-13]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用index：15。\n[^20261002-14]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用index：16。\n[^20261002-15]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用index：17。\n[^20261002-16]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用index：18。\n[^20261002-17]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用index：19。\n[^20261002-18]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用index：21。\n[^20261002-19]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用index：22。\n[^20261002-20]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用index：23。\n[^20261002-21]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用index：24。\n[^20261002-22]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用index：25。\n[^20261002-23]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用index：26。\n[^20261002-24]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用index：27。\n[^20261002-25]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用index：28。\n[^20261002-26]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用index：29。\n[^20261002-27]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用index：30。\n[^20261002-28]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用index：31。\n\n\n",
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "意思決定時間から専門家の選択を理解する",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "extracted_from_digest_rq",
+    "rq_source_line": 5,
+    "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
+    "hypothesis_source_line": 31,
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-1d8263bd82",
@@ -676,8 +808,8 @@
       "W41"
     ],
     "source_date": "2026-10-05",
-    "rq_candidate": "",
-    "hypothesis_candidate": "",
+    "rq_candidate": "観察データで「誰にTreatmentが効くか」をSurvival Outcomeについて推定したい。しかし未観測交絡もcensoringもある。この2つを同時に扱いながらHTEを推定できるか？",
+    "hypothesis_candidate": "著者が通常のH1/H2として提示する論文ではありません。 中心命題は、適切なnegative-control / proximal assumptionsが成立すれば、negative-control treatment $Z$ とnegative-control outcome $W$ を利用してlatent confounder $U$ の影響を補正し、censoring下でもheterogeneous survival treatment effectをnonparametricに学習できる、というものです。",
     "method_keywords": [
       "Survival"
     ],
@@ -686,7 +818,12 @@
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "負の対照を用いた因果生存フォレスト",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "extracted_from_digest_rq",
+    "rq_source_line": 5,
+    "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
+    "hypothesis_source_line": 35,
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-3213b8fc54",
@@ -697,8 +834,8 @@
       "W41"
     ],
     "source_date": "2026-10-05",
-    "rq_candidate": "",
-    "hypothesis_candidate": "",
+    "rq_candidate": "RCTから「最適なDynamic Treatment Rule」を正しく学習できたとしても、Human expertより本当に優れているのか？ HumanがAlgorithmにない情報を持っているなら、いつHumanからAlgorithmへ意思決定を切り替えるべきか？",
+    "hypothesis_candidate": "通常の仮説型論文ではありません。 中心命題は、initiation regimeを適切に選べば、Human decision ruleとpurely algorithmic optimal dynamic regimeの双方以上のperformanceを保証できる、というものです。",
     "method_keywords": [
       "RCT",
       "Policy Learning"
@@ -708,7 +845,12 @@
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "介入開始ルールに基づく最適な逐次意思決定",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "extracted_from_digest_rq",
+    "rq_source_line": 5,
+    "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
+    "hypothesis_source_line": 64,
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-81e90efb7e",
@@ -719,8 +861,8 @@
       "W41"
     ],
     "source_date": "2026-10-05",
-    "rq_candidate": "",
-    "hypothesis_candidate": "",
+    "rq_candidate": "人が将来のために十分貯蓄しないのは、将来の支出を知らないからではなく、「知っているのに意思決定時に思い出せない」からではないか？",
+    "hypothesis_candidate": "中心仮説は、将来の小規模・不規則・確率的支出がdecision時にmemoryからretrievalされにくいため、将来支出を過小評価し、現在消費を過大にしてしまう、というものです。 したがって新しい情報を一切与えず、既知の情報を思い出させるだけでも行動が変わるはずです。",
     "method_keywords": [
       "AI"
     ],
@@ -729,7 +871,12 @@
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "想起の失敗と消費平準化",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "extracted_from_digest_rq",
+    "rq_source_line": 5,
+    "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
+    "hypothesis_source_line": 49,
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-def930c5de",
@@ -740,8 +887,8 @@
       "W41"
     ],
     "source_date": "2026-10-05",
-    "rq_candidate": "",
-    "hypothesis_candidate": "",
+    "rq_candidate": "RCTで「効果がある」と分かった政策を政府が正式に採用した。それなのに現場で実行されないのはなぜか？ Evidence不足、Incentive不足、能力不足、それとも単にAttention不足なのか？",
+    "hypothesis_candidate": "著者らは複数のmechanismを競合仮説として扱います。 実装されない理由が、 - Evidence不足なら → Evidence提供が効く - Motivation不足なら → Incentiveが効く - Capability不足なら → Implementation assistanceが効く - Attention不足なら → Reminderが効く はずです。 ここが研究デザインとして非常にきれいです。",
     "method_keywords": [
       "RCT"
     ],
@@ -750,7 +897,12 @@
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "官僚の行動に対するインセンティブ・エビデンス・リマインダー",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "extracted_from_digest_rq",
+    "rq_source_line": 5,
+    "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
+    "hypothesis_source_line": 53,
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-ff993d84fc",
@@ -761,15 +913,20 @@
       "W41"
     ],
     "source_date": "2026-10-07",
-    "rq_candidate": "",
-    "hypothesis_candidate": "",
+    "rq_candidate": "「いつTreatmentを開始すべきか」を固定時点で比較するのではなく、“Treatment開始を少し早める圧力を強めたらPopulation Outcomeはどう変わるか？”を推定できないか？",
+    "hypothesis_candidate": "正式な仮説型論文ではありません。 中心命題は、time-to-treatmentのhazardをmultiplicativeにshiftするincremental interventionなら、極端な「全員を特定時点にTreatment」より弱いpositivity requirementで政策関連効果を識別でき、efficient influence functionを用いてML nuisance estimationとも組み合わせられる、というものです。",
     "method_keywords": [],
     "design_status": "要確認",
     "source_text": "\nZhichen Zhao, Andrew Ying, Ronghui Xu｜2026年5月28日\n\n[Efficient Inference for Incremental Causal Effects of Time to Treatment｜arXiv](https://arxiv.org/abs/2605.29348?utm_source=chatgpt.com)\n\n##### Research Question (RQ)\n\n> **「いつTreatmentを開始すべきか」を固定時点で比較するのではなく、“Treatment開始を少し早める圧力を強めたらPopulation Outcomeはどう変わるか？”を推定できないか？**\n\n##### RQの面白さ\n\n例えば健康診断です。\n\n通常なら、\n\n$$\nT=3か月以内に受診\n\\quad vs\\quad\nT>3か月\n$$\n\nなどとTreatmentを人工的にbinary化します。\n\nでも現実の施策は、\n\n> 全員を90日目に受診させる\n\nではありません。\n\nメール、PUSH、ポイント等で、\n\n$$\n\\boxed{\n受診するhazardを少し高める\n}\n$$\n\nだけです。\n\nつまり**現実のPolicyに近いcounterfactualをestimandにする**研究です。[^20261007-7]\n\n##### Proposition\n\n正式な仮説型論文ではありません。\n\n中心命題は、time-to-treatmentのhazardをmultiplicativeにshiftするincremental interventionなら、極端な「全員を特定時点にTreatment」より弱いpositivity requirementで政策関連効果を識別でき、efficient influence functionを用いてML nuisance estimationとも組み合わせられる、というものです。[^20261007-8]\n\n#### 1. どんなもの？\n\nTreatment開始時刻を、\n\n$$\nT\n$$\n\nとします。\n\nTreatment開始hazardは、\n\n$$\n\\lambda(t\\mid L)\n$$\n\nです。\n\n- $t$：時間\n- $L$：baseline covariates\n- $\\lambda(t\\mid L)$：まだTreatmentを受けていない人が時刻 $t$ に開始する瞬間的rate\n\n通常は、\n\n> $T=30$日にする vs $T=90$日にする\n\nと比較します。\n\n本研究では、\n\n$$\n\\lambda(t\\mid L)\n\\rightarrow\n\\delta\\lambda(t\\mid L)\n$$\n\nという介入を考えます。\n\n#### 2. 先行研究と比べてどこがすごい？\n\n従来の「when-to-treat」はdeterministic regimeが中心です。\n\nしかし、\n\n$$\nT=t\n$$\n\nを全員に強制するには、その時点でTreatmentを受ける可能性がほぼない人にもcounterfactualを要求します。\n\nつまりpositivityが厳しい。\n\nincremental interventionなら、\n\n$$\n\\boxed{\nObserved\\ Treatment\\ Process\nを少し傾ける\n}\n$$\n\nだけです。\n\n論文が明示する重要な特徴は、このincremental estimandではtraditional ATEに必要なpositivity assumptionを要求しない点です。[^20261007-9]\n\n#### 3. 技術や手法のキモはどこ？\n\n流れは、\n\n$$\nRQ\n\\rightarrow\nTreatment\\ Timing\n\\rightarrow\nHazard\n\\rightarrow\nIncremental\\ Intervention\n\\rightarrow\nCounterfactual\\ Outcome\n\\rightarrow\nEIF+DML/ML.\n$$\n\n##### 算式の説明\n\n観測hazardを、\n\n$$\n\\lambda(t\\mid L)\n$$\n\nとします。\n\nincrement parameter $\\delta>0$ により概念的に、\n\n$$\n\\lambda^\\delta(t\\mid L)\n=\n\\delta\\lambda(t\\mid L)\n$$\n\nとします。\n\n$$\n\\delta>1\n$$\n\nならTreatmentを早める方向、\n\n$$\n0<\\delta<1\n$$\n\nなら遅らせる方向です。\n\n対応するcounterfactual outcomeを、\n\n$$\nY^\\delta\n$$\n\nとすると、中心estimandは、\n\n$$\n\\boxed{\n\\psi(\\delta)=E[Y^\\delta]\n}\n$$\n\nです。\n\nそして例えば、\n\n$$\n\\psi(1.5)-\\psi(1)\n$$\n\nなら、\n\n> Treatment開始intensityを50%上げたPopulationでOutcomeはどれだけ変わるか\n\nを意味します。\n\nさらに著者らはefficient influence functionを導出します。\n\nその重要性は、\n\n$$\n\\hat\\psi-\\psi\n=\n\\frac1n\\sum_i\\phi(O_i;\\eta)\n+\no_p(n^{-1/2})\n$$\n\nという形で、\n\n- $\\phi$：efficient influence function\n- $O_i$：個人 $i$ の観測データ\n- $\\eta$：hazardやoutcome regression等のnuisance functions\n\nを使い、Neyman orthogonalityによってnuisance estimationにMLを利用しやすくする点です。[^20261007-10]\n\n#### 4. どうやって有効だと検証した？\n\nSimulationで推定性能とconfidence bandsを評価した後、**Norwegian cervical cancer screening data**へ適用しています。\n\n具体的には、inconclusive cytology後のHPV再検査について、\n\n$$\n\\text{再検査をより早く・頻繁にする}\n\\rightarrow\nCIN2+ detection\n$$\n\nがどう変わるかを分析しています。[^20261007-11]\n\n背景には、PreTectProofer群で他のHPV検査群より後続検査が多く、CIN2+ detectionも高いという問題があり、\n\n> 高いDetectionはtestそのものによるのか、それともfollow-up testing intensityが高いからなのか？\n\nという実際の臨床意思決定へつながっています。[^20261007-12]\n\n#### 5. 議論はある？\n\npositivity問題が軽くなるのは大きいですが、\n\n$$\n\\boxed{\nNo\\ Positivity\n\\neq\nNo\\ Assumptions\n}\n$$\n\nです。\n\nTreatment timingとOutcomeのconfoundingを十分調整する必要があります。\n\nまた、\n\n$$\n\\delta=2\n$$\n\nというhazard倍増が実際にどの施策で実現可能なのかは因果推論だけでは分かりません。\n\nここは、\n\n$$\nIncremental\\ Effect\n\\rightarrow\nImplementable\\ Intervention\n\\rightarrow\nCost\n\\rightarrow\nROI\n$$\n\nという次の研究課題になります。\n\n#### 6. 次読むべき論文は？\n\n**Kennedy, Incremental Propensity Score Interventions**  \n→ incremental interventionの基本。\n\n**Ying et al. (2025), Incremental causal effect for time to treatment initiation**  \n→ 本研究の直接的前身。IPW版。\n\n**Nie et al., Learning When-to-Treat Policies**  \n→ 「効果推定」から最適timing policyへ。\n\n##### この論文から学ぶ研究の型\n\n> 「全員をTreatment/Controlにしたら？」ではなく、**“現実の施策で動かせるTreatment distributionを少し変えたら？”**をcounterfactualにする。Estimandを現実のPolicy leverへ近づける型です。\n\nこれは健康行動介入との相性がかなり良いです。\n\n---\n\n",
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "処置までの時間に関する増分因果効果の効率的推論",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "extracted_from_digest_rq",
+    "rq_source_line": 6,
+    "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
+    "hypothesis_source_line": 42,
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-aec80c656f",
@@ -780,15 +937,20 @@
       "W41"
     ],
     "source_date": "2026-10-07",
-    "rq_candidate": "",
-    "hypothesis_candidate": "",
+    "rq_candidate": "人の意思決定が“間違っている”ように見えたとき、外部の研究者は何を根拠に「その意思決定は改善すべきだ」と判断できるのか？",
+    "hypothesis_candidate": "通常の単一仮説ではありません。 著者らが比較するのは3つのdiagnosticです。 本人が具体的な誤解をしているか。 本人自身が選択に確信を持っているか。 同じbehavioral patternが「明らかに間違い」と判定できる別Taskでも出るか。 中心命題は、これらが同じ「improvable decision」を識別するとは限らない、というものです。",
     "method_keywords": [],
     "design_status": "要確認",
     "source_text": "\nB. Douglas Bernheim, Aldo Lucia, Kirby Nielsen & Charles D. Sprenger｜NBER Working Paper 34979｜2026年3月\n\n[When Are Decisions Improvable?｜NBER](https://www.nber.org/papers/w34979?utm_source=chatgpt.com)\n\n##### Research Question (RQ)\n\n> **人の意思決定が“間違っている”ように見えたとき、外部の研究者は何を根拠に「その意思決定は改善すべきだ」と判断できるのか？**\n\n##### RQの面白さ\n\nこれはかなり根本的です。\n\nBehavioral Economicsでは、\n\n$$\nObserved\\ Choice\n\\neq\nNormative\\ Benchmark\n$$\n\nなら、\n\n> Biasがある\n\nと考えがちです。\n\nしかし、\n\n$$\n\\boxed{\n「自分なら違う選択をする」\n\\neq\n「本人の意思決定が間違っている」\n}\n$$\n\nです。\n\nそこで「decision qualityを診断する方法そのもの」を研究対象にします。[^20261007-13]\n\n##### Proposition\n\n通常の単一仮説ではありません。\n\n著者らが比較するのは3つのdiagnosticです。\n\n$$\n\\boxed{\nCharacterization\\ Assessment\n}\n$$\n\n本人が具体的な誤解をしているか。\n\n$$\n\\boxed{\nDecision\\ Confidence\n}\n$$\n\n本人自身が選択に確信を持っているか。\n\n$$\n\\boxed{\nPattern\\ Matching\n}\n$$\n\n同じbehavioral patternが「明らかに間違い」と判定できる別Taskでも出るか。\n\n中心命題は、これらが同じ「improvable decision」を識別するとは限らない、というものです。[^20261007-14]\n\n#### 1. どんなもの？\n\nRisky Choiceを対象に、\n\n> Safe optionを選ぶ人はrisk averseなのか？\n\nそれとも、\n\n> probabilityを理解できていないだけなのか？\n\nを調べます。\n\n重要なのは、\n\n$$\nChoice\n$$\n\nだけでPreferenceを逆算しないことです。\n\n$$\n\\boxed{\nChoice\n+\nReason\n+\nConfidence\n+\nRelated\\ Task\n}\n$$\n\nを測定します。\n\n#### 2. 先行研究と比べてどこがすごい？\n\nBehavioral researchでは、\n\n$$\nDeviation\\ from\\ Model\n\\rightarrow\nBias\n$$\n\nとなりがちです。\n\nしかし例えば、\n\n> 低confidence = 悪いdecision\n\nとも限りません。\n\n実際、Experiment 2ではrisk-taking時の低confidenceについて、**improvabilityを示唆する説明が最重要だったのは22%程度**。一方、87%では最重要理由がimprovabilityを意味しない説明で、50%は単に「選んだoptionがriskyだから」でした。[^20261007-15]\n\nつまり、\n\n$$\nLow\\ Confidence\n$$\n\nをそのまま、\n\n$$\nBad\\ Decision\n$$\n\nと解釈できません。\n\n#### 3. 技術や手法のキモはどこ？\n\n研究設計は、\n\n$$\nRQ\n\\rightarrow\nDecision\\ Errorを直接観測できない\n\\rightarrow\n3種類のProxy\n\\rightarrow\n同じDecisionを各Proxyで診断\n\\rightarrow\n診断結果の一致度を比較\n$$\n\nです。\n\n数式より重要なのは、latent variableとして、\n\n$$\nI_i=\n\\begin{cases}\n1 & \\text{decision }i\\text{ がimprovable}\\\\\n0 & \\text{otherwise}\n\\end{cases}\n$$\n\nがあると考え、\n\n$$\nI_i\n$$\n\nそのものは観測できないため、\n\n$$\nD_i^{CA},\\quad\nD_i^{Conf},\\quad\nD_i^{PM}\n$$\n\nという異なるdiagnosticから推測する設計です。\n\n#### 4. どうやって有効だと検証した？\n\n複数のexperimentでRisky ChoiceとRisk-Free Choiceを組み合わせています。\n\nExperiment 1のpre-choice conditionだけでも、Risky tasksで3,300超のchoice observationsを各incentive conditionで分析しています。例えばsafe option選択率はincentiveなし75%、あり74%でほぼ同じでした。[^20261007-16]\n\nより重要なのは、**3つのdiagnosticが「どのchoiceが改善可能か」について異なる結論を出した**ことです。したがって、risk preferenceをどこまでlegitimate preferenceとして尊重し、どこからmistakeと呼ぶかもdiagnosticに依存します。[^20261007-17]\n\n#### 5. 議論はある？\n\nこの論文自体にも議論があります。\n\n特にDecision Confidenceについては、その後Graeber & Enkeが「低confidenceを単なるoutcome uncertaintyと解釈しているという批判は強すぎる」と再検討しています。[^20261007-18]\n\nつまりこの論文からの教訓は、\n\n$$\n\\boxed{\nこのDiagnosticが正しい\n}\n$$\n\nではなく、\n\n$$\n\\boxed{\nDecision\\ Qualityを測ること自体がIdentification Problem\n}\n$$\n\nだということです。\n\n#### 6. 次読むべき論文は？\n\n**Enke & Graeber (2023), Cognitive Uncertainty**  \n→ confidenceをdecision processの情報として使う立場。\n\n**Graeber & Enke (2026), A Note on When Are Decisions Improvable?**  \n→ 本論文への直接的反論。\n\n**Bernheim & Rangel系のBehavioral Welfare Economics**  \n→ PreferenceとMistakeをどう区別するか。\n\n##### この論文から学ぶ研究の型\n\n> 「人が望ましい行動をしていない」と決める前に、**“何をもって望ましくないと判定しているのか？”をRQにする**。Outcome改善の前に、診断指標そのものの妥当性を比較検証する型です。\n\n---\n\n",
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "どのような意思決定は改善できるのか",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "extracted_from_digest_rq",
+    "rq_source_line": 6,
+    "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
+    "hypothesis_source_line": 42,
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-cf94b5d051",
@@ -799,15 +961,20 @@
       "W41"
     ],
     "source_date": "2026-10-07",
-    "rq_candidate": "",
-    "hypothesis_candidate": "",
+    "rq_candidate": "人が高収入を求めて仕事や人生の選択をするのは、本当に所得を高く評価しているからなのか。それとも「収入が増えれば自分はどれだけ幸せになるか」を過大評価しているからなのか？",
+    "hypothesis_candidate": "著者らのモデルでは、人は、 つまりincomeのmarginal satisfactionを過大評価するため、decisionでincomeに過大なweightを置く、と考えます。 したがって、 Income→Life Satisfactionの科学的Evidenceを提示する だけで、 が変化するはずです。",
     "method_keywords": [],
     "design_status": "要確認",
     "source_text": "\nRicardo Perez-Truglia & Rafael Macedo Rubião｜NBER Working Paper 35423｜2026年7月\n\n[Is Money Overrated? Misperceived Satisfaction from Income｜NBER](https://www.nber.org/papers/w35423?utm_source=chatgpt.com)\n\n##### Research Question (RQ)\n\n> **人が高収入を求めて仕事や人生の選択をするのは、本当に所得を高く評価しているからなのか。それとも「収入が増えれば自分はどれだけ幸せになるか」を過大評価しているからなのか？**\n\n##### RQの面白さ\n\n通常なら、\n\n$$\nHigh\\ Salary\\ Job\\ Choice\n$$\n\nを観察して、\n\n> この人はMoneyを重視するPreferenceを持つ\n\nと考えます。\n\nしかし著者らは、\n\n$$\n\\boxed{\nPreference\n\\neq\nBelief\n}\n$$\n\nと分解します。\n\nつまり、\n\n$$\nSalaryを重視する\n$$\n\nのではなく、\n\n$$\n\\boxed{\nSalary\\rightarrow Happiness\n}\n$$\n\nという**因果関係についてのBeliefを間違えている**可能性を考えます。[^20261007-19]\n\n##### Proposition\n\n著者らのモデルでは、人は、\n\n$$\n\\frac{\\partial Satisfaction}{\\partial Income}\n$$\n\nつまりincomeのmarginal satisfactionを過大評価するため、decisionでincomeに過大なweightを置く、と考えます。\n\nしたがって、\n\n> Income→Life Satisfactionの科学的Evidenceを提示する\n\nだけで、\n\n$$\nBelief\n\\rightarrow\nChoice\n$$\n\nが変化するはずです。[^20261007-20]\n\n#### 1. どんなもの？\n\nまず参加者に、\n\n> Incomeが増えたらLife Satisfactionはどれくらい増えると思いますか？\n\nと聞きます。\n\nそれをscientific evidence benchmarkと比較します。\n\n次にrandom assignmentで、\n\n$$\nTreatment\n=\nScientific\\ Evidence\n$$\n\nを提示します。\n\nそして、\n\n$$\nIncome\nvs\nNon\\text{-}Income\\ Job\\ Attributes\n$$\n\nのtrade-offが変化するかを測定します。\n\n#### 2. 先行研究と比べてどこがすごい？\n\n単なる、\n\n$$\nIncome\\rightarrow Happiness\n$$\n\n研究ではありません。\n\nまた、\n\n$$\nMoney\\ is\\ important?\n$$\n\nというPreference surveyでもありません。\n\n構造は、\n\n$$\n\\boxed{\nBelief\n\\rightarrow\nPreference\\ Weight\\ in\\ Decision\n\\rightarrow\nChoice\n}\n$$\n\nです。\n\nつまり観察されたPreferenceの一部が、実は**誤ったcausal beliefから内生的に生まれている**のではないか、と問います。\n\n##### さらに面白い測定方法\n\nreal-world decisionを取得するために、著者らは**AI-led interview**を導入しています。\n\n固定surveyで、\n\n> Salary vs commute\n\nなどを研究者が勝手に設定するのではなく、AI interviewerが本人に、\n\n> 今あなたが実際に悩んでいる選択は何ですか？\n\nと聞き出し、その人固有のtrade-offをclosed-ended measurementへ変換します。[^20261007-21]\n\nこれは研究デザインとしてかなり面白い部分です。\n\n#### 3. 技術や手法のキモはどこ？\n\n流れは、\n\n$$\nRQ\n\\rightarrow\nIncome\\ Preference?\n\\rightarrow\nIncome\\text{-}Satisfaction\\ Belief\n\\rightarrow\nBelief\\ Elicitation\n\\rightarrow\nRandomized\\ Information\n\\rightarrow\nBelief\\ Update\n\\rightarrow\nChoice\\ Change.\n$$\n\n概念的にutilityを、\n\n$$\nU_j\n=\n\\beta_I I_j\n+\n\\beta_N N_j\n$$\n\nとします。\n\n- $I_j$：選択肢 $j$ のincome\n- $N_j$：non-income attributes\n- $\\beta_I$：incomeへのweight\n\n通常は、\n\n$$\n\\beta_I\n$$\n\nをPreferenceと解釈します。\n\nしかし本研究では、\n\n$$\n\\beta_I\n=\nf(\\widehat{MSI})\n$$\n\nと考えます。\n\nここで、\n\n$$\n\\widehat{MSI}\n=\n\\widehat{\n\\frac{\\partial Satisfaction}\n{\\partial Income}\n}\n$$\n\nは本人が信じているMarginal Satisfaction from Incomeです。\n\nTreatmentによって、\n\n$$\n\\widehat{MSI}\\downarrow\n$$\n\nなら、\n\n$$\n\\beta_I\\downarrow\n$$\n\nになるかをRCTで検証します。\n\n#### 4. どうやって有効だと検証した？\n\n参加者はscientific benchmarkよりも、Income increaseがLife Satisfactionを高める効果を**大きく過大評価**していました。\n\nしかも、\n\n$$\nOthers\n$$\n\nについてより、\n\n$$\nSelf\n$$\n\nについてのoverestimationの方が大きいという結果でした。[^20261007-22]\n\nScientific Evidenceを提示するとbelief gapは縮小し、その効果は**1か月後にも残りました**。\n\nそして重要なのは行動意図まで変わったことです。\n\n$$\nBelief\\ Correction\n\\rightarrow\nIncome\\ Weight\\downarrow\n$$\n\nとなり、job-choice scenariosだけでなく、AI interviewで取得した**本人が実際に直面しているreal-world decision**でもincomeへのweightが低下しました。[^20261007-23]\n\n#### 5. 議論はある？\n\n最大の問題はscientific benchmarkです。\n\n$$\nIncome\n\\rightarrow\nLife\\ Satisfaction\n$$\n\n自体の因果推定が完全ではありません。\n\nまた、\n\n$$\nLife\\ Satisfaction\n$$\n\nだけが人生のobjectiveでもありません。\n\n人は、\n\n- Security\n- Status\n- Family\n- Future optionality\n\nなどの理由でincomeを重視する可能性があります。\n\nしたがって、\n\n$$\nIncomeを重視する=Mistake\n$$\n\nとは言えません。\n\n著者らが示しているのはより限定的に、\n\n$$\n\\boxed{\nIncome\\rightarrow Satisfactionについての誤認が、\n一部のDecision Weightを変えている\n}\n$$\n\nということです。[^20261007-24]\n\n#### 6. 次読むべき論文は？\n\n**Kahneman & Deaton (2010)**  \n→ Incomeとexperienced well-being。\n\n**Killingsworth et al.**  \n→ Income–wellbeing relationの再検討。\n\n**Information Treatment研究**  \n→ Belief correctionがChoiceへ伝播する条件。\n\n##### この論文から学ぶ研究の型\n\n> 観察されたChoiceからすぐPreferenceを推定せず、**「Preferenceなのか、世界についてのBeliefなのか？」を分解する**。BeliefだけをrandomizeしてChoiceが変われば、観察された“Preference”の生成mechanismへ踏み込めます。\n\n---\n\n### 4本を横断すると、今回は「Estimandの前段」がテーマ\n\n今回の4本は一見かなり違いますが、研究設計として並べると共通点があります。\n\n| 論文 | 普通なら問うこと | 一段深いRQ |\n|---|---|---|\n| Triple Difference | A群とB群で効果は違う？ | **その差自体を因果解釈できる？** |\n| Incremental Time-to-Treatment | 早期Treatmentは効く？ | **現実に動かせるTreatment intensityを変えたら？** |\n| Decisions Improvable | 行動を改善できる？ | **そもそも何を根拠に「改善」と呼ぶ？** |\n| Money Overrated | 高収入を好む？ | **PreferenceではなくBeliefの誤りでは？** |\n\nこの4本から抽出できる研究の思考順序は、\n\n$$\n\\boxed{\nObserved\\ Pattern\n\\rightarrow\n「何を意味している？」\n\\rightarrow\nEstimand\n\\rightarrow\nIdentification\n\\rightarrow\nIntervention\n\\rightarrow\nDecision\n}\n$$\n\nです。\n\nこれはかなり重要です。高度な推定法へ進むほど、\n\n$$\n\\text{Estimatorを高度化する}\n$$\n\nことに目が向きますが、その前に、\n\n$$\n\\boxed{\n「そのEstimandを推定できたとして、\n本当に知りたかったことに答えているか？」\n}\n$$\n\nを確認する必要があります。\n\n### 今週読むならこの順\n\n**1位：A-2 Incremental Causal Effects of Time to Treatment。** 今回もっとも実務へ展開しやすいです。「30日以内に行動した人 vs しなかった人」ではなく、**“行動hazardを20%上げる施策なら最終Outcomeはどれくらい変わるか”**と定義できるため、健康行動→疾患→経済価値という研究と非常に相性があります。[^20261007-25]\n\n**2位：B-1 When Are Decisions Improvable?** EBMの観点でも面白いです。「正しい行動へ誘導する」の前に、**研究者側が正しい行動を定義できているのか**を問い直します。さらに、この論文にはGraeber & Enkeから2026年5月に直接的な反論が出ているので、「論文→反論→再検討」という研究の議論そのものを追える教材にもなります。[^20261007-26]\n\n**3位：B-2 Is Money Overrated?** RQの作り方を学ぶなら非常に良いです。\n\n$$\nChoice\\rightarrow Preference\n$$\n\nと短絡せず、\n\n$$\nChoice\n\\leftarrow\nPreference+Belief\n$$\n\nと一度分解し、**Beliefだけrandomizeすることでmechanismを識別する**。さらにAI interviewを測定手段に使っている点も2026年らしい研究設計です。[^20261007-27]\n\n**4位：A-1 Triple Difference × HTE。** 数学的には少し重いですが、HTEを扱う際の重要な注意点です。CATEで「この属性の人に効く」と分かった後、\n\n$$\n\\boxed{\nその属性がEffect Modifierなのか？\n}\n$$\n\nという次のRQへ進む橋渡しになります。最新版が**2026年9月10日**なので、DiD × HTEの最新動向として押さえておく価値があります。[^20261007-28]\n\n今回の中では特にA-2から、健康サービス研究について面白い発展ができます。従来の\n\n$$\n\\text{利用した vs 利用しなかった}\n$$\n\nから、\n\n$$\n\\text{利用確率を上げる}\n\\rightarrow\n\\text{利用時期を早める}\n\\rightarrow\n\\text{健康Outcome}\n\\rightarrow\n\\text{疾病}\n\\rightarrow\n\\text{経済価値}\n$$\n\nへ変えると、**「誰に何が効くか」だけでなく「行動をどの程度・どのタイミングで動かせば事業価値が最大になるか」**というPolicy RQへ自然につながります。\n\n[^20261007-1]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用index：2。\n[^20261007-2]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用index：3。\n[^20261007-3]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用index：4。\n[^20261007-4]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用index：5。\n[^20261007-5]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用index：6。\n[^20261007-6]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用index：7。\n[^20261007-7]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用index：12。\n[^20261007-8]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用index：13。\n[^20261007-9]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用index：14。\n[^20261007-10]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用index：15。\n[^20261007-11]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用index：16。\n[^20261007-12]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用index：17。\n[^20261007-13]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用index：23。\n[^20261007-14]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用index：24。\n[^20261007-15]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用index：25。\n[^20261007-16]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用index：26。\n[^20261007-17]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用index：27。\n[^20261007-18]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用index：28。\n[^20261007-19]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用index：32。\n[^20261007-20]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用index：33。\n[^20261007-21]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用index：34。\n[^20261007-22]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用index：35。\n[^20261007-23]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用index：36。\n[^20261007-24]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用index：37。\n[^20261007-25]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用index：38。\n[^20261007-26]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用index：39。\n[^20261007-27]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用index：40。\n[^20261007-28]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用index：41。\n\n---\n\n",
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "お金の価値は過大評価されているか：所得による満足度の誤認",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "extracted_from_digest_rq",
+    "rq_source_line": 6,
+    "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
+    "hypothesis_source_line": 52,
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-dac0ca69ca",
@@ -819,7 +986,7 @@
     ],
     "source_date": "2026-10-09",
     "rq_candidate": "> **観察データから最適な施策配分を学習したい。しかし、未観測交絡によって推定したCATEが間違っている可能性がある。その場合でも、重大な損失を避けるPolicyを設計できるか？",
-    "hypothesis_candidate": "",
+    "hypothesis_candidate": "著者らが通常のH1・H2形式で提示しているものではありません。 中心命題は、未観測交絡の大きさを一定範囲に制約したうえで、最悪の場合のPolicy Valueを最大化すれば、未観測交絡に対して頑健な施策配分を学習できるというものです。",
     "method_keywords": [
       "CATE",
       "Policy Learning"
@@ -829,7 +996,11 @@
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "未観測交絡下の政策学習：頑健かつ効率的な方法",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "legacy_extraction_from_digest",
+    "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
+    "hypothesis_source_line": 38,
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-b7fe6b96d3",
@@ -841,7 +1012,7 @@
     ],
     "source_date": "2026-10-09",
     "rq_candidate": "> **同じ観察データに対して、Unconfoundednessに基づく推定と、Parallel Trendsに基づくDiDの両方が考えられる。どちらの識別仮定を信じるべきか、データから何か診断できないか？",
-    "hypothesis_candidate": "",
+    "hypothesis_candidate": "著者らの中心命題は、UnconfoundednessとConditional Common Trendsが同時に成立するなら、両者から識別されるATTは一致する、というものです。 したがって、両者の差をDMLで推定し、統計的にゼロから離れているか検定できます。 ただし、棄却されないことは、両方の仮定が正しいことの証明ではありません。",
     "method_keywords": [
       "DID",
       "DML"
@@ -852,7 +1023,11 @@
     "verification": "not_checked_against_original",
     "title_ja": "非交絡性と共通トレンドの同時検定",
     "title_ja_status": "source_title_unverified",
-    "bibliography_status": "verified_title_or_doi"
+    "bibliography_status": "verified_title_or_doi",
+    "rq_provenance": "legacy_extraction_from_digest",
+    "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
+    "hypothesis_source_line": 39,
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-bda44147e2",
@@ -864,7 +1039,7 @@
     ],
     "source_date": "2026-10-09",
     "rq_candidate": "> **睡眠不足が生産性や認知能力を低下させるなら、実際に人々の睡眠時間を増やすことで、仕事の成果や経済的意思決定は改善するのか？",
-    "hypothesis_candidate": "",
+    "hypothesis_candidate": "著者らの事前登録された研究では、睡眠増加が労働成果、認知能力、Well-being、経済的選択へ影響する可能性を検証しています。 本研究を理解するための中心的な比較命題は、 夜間睡眠の延長と職場での昼寝では、増加する睡眠の質・時間帯・機会費用が異なるため、経済的Outcomeへの効果も異なる可能性がある というものです。 後者の整理は、研究デザインから抽出した解釈です。",
     "method_keywords": [
       "RCT"
     ],
@@ -873,7 +1048,11 @@
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "都市部の貧困層で睡眠を増やすことの経済的影響",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "legacy_extraction_from_digest",
+    "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
+    "hypothesis_source_line": 34,
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-3ada9d3a18",
@@ -885,7 +1064,7 @@
     ],
     "source_date": "2026-10-09",
     "rq_candidate": "> **医師が検査を実施するかどうかの判断は、本当に患者のリスクに応じて適切に行われているのか？ AIと医師の判断が異なる場合、医師が間違っているのか、それともAIにはない情報を医師が持っているのか？",
-    "hypothesis_candidate": "",
+    "hypothesis_candidate": "著者らの理論モデルは、医師の検査判断について、インセンティブによる過剰検査だけでなく、リスクの誤認による過剰検査と過少検査が同時に存在する可能性を考えています。 中心的な検証命題は、 医師が患者リスクを適切に判断できていない場合、低リスク患者への不要な検査と、高リスク患者への検査不足が同時に観察される というものです。",
     "method_keywords": [
       "Machine Learning",
       "AI"
@@ -895,7 +1074,11 @@
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "医師の誤りを診断する：低価値医療への機械学習アプローチ",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "legacy_extraction_from_digest",
+    "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
+    "hypothesis_source_line": 48,
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-f1ad1fb3a4",
@@ -907,7 +1090,7 @@
     ],
     "source_date": "2026-10-12",
     "rq_candidate": "> **過去のRCTで推定したTreatment Effectを、同じTreatmentを実施していない別の時点へ移転できるか？",
-    "hypothesis_candidate": "",
+    "hypothesis_candidate": "著者がH1・H2という形式で提示した仮説ではありません。 中心命題は、Treatment Effectの時間変化に一定の共通構造が存在するなら、別のRCTを時間的な基準（Anchor）として利用し、未実施時点の因果効果を識別できるというものです。 論文では、異なる識別条件を持つ2つの方法を提案しています。",
     "method_keywords": [
       "RCT",
       "Transportability"
@@ -918,7 +1101,11 @@
     "verification": "not_checked_against_original",
     "title_ja": "TEA-Time：異なる時点への因果効果の移送",
     "title_ja_status": "source_title_unverified",
-    "bibliography_status": "verified_title_or_doi"
+    "bibliography_status": "verified_title_or_doi",
+    "rq_provenance": "legacy_extraction_from_digest",
+    "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
+    "hypothesis_source_line": 42,
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-92bc6de864",
@@ -930,7 +1117,7 @@
     ],
     "source_date": "2026-10-12",
     "rq_candidate": "> **あるネットワークで確認された介入効果を、人間関係やネットワーク構造が異なる集団へ移転できるか？ 特に、直接効果とSpillover Effectを分けて推定できるか？",
-    "hypothesis_candidate": "",
+    "hypothesis_candidate": "著者が正式なH1・H2として提示したものではありません。 中心命題は、個人属性の違いとネットワーク構造の違いを区別し、一定の因果メカニズムが集団間で不変であれば、直接効果・波及効果・総効果を移転先集団について識別できるというものです。",
     "method_keywords": [
       "Transportability",
       "Spillover",
@@ -942,7 +1129,11 @@
     "verification": "not_checked_against_original",
     "title_ja": "干渉が存在するネットワーク間での移送可能な因果効果推定",
     "title_ja_status": "source_title_unverified",
-    "bibliography_status": "verified_title_or_doi"
+    "bibliography_status": "verified_title_or_doi",
+    "rq_provenance": "legacy_extraction_from_digest",
+    "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
+    "hypothesis_source_line": 42,
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-399d8b695e",
@@ -954,7 +1145,7 @@
     ],
     "source_date": "2026-10-12",
     "rq_candidate": "> **健康診断を繰り返し受けることで習慣が強化されるのか。それとも、最初の1回を経験することが、その後の継続行動を決定づけるのか？",
-    "hypothesis_candidate": "",
+    "hypothesis_candidate": "本研究は、2つの競合する習慣形成メカニズムを検証します。 仮説①：Reinforcement Model 利用を繰り返すほど習慣が強化される。 という累積的な効果が期待されます。 仮説②：Threshold Model 一定の経験を超えることで習慣が形成され、その後の追加経験による効果は限定的になる。 が重要で、 の追加効果は小さい可能性があります。 著者らは、この競合仮説を3年間のRCTで検証しています。",
     "method_keywords": [
       "RCT"
     ],
@@ -963,7 +1154,11 @@
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "習慣はいかに形成されるか：健康診断からの実験的証拠",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "legacy_extraction_from_digest",
+    "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
+    "hypothesis_source_line": 42,
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-0bdefac09e",
@@ -975,14 +1170,18 @@
     ],
     "source_date": "2026-10-12",
     "rq_candidate": "> **経済的なインセンティブや情報が変化しても、人々の意思決定が十分に変化しないのはなぜか？ その反応の弱さには、多様な意思決定に共通するメカニズムが存在するのか？",
-    "hypothesis_candidate": "",
+    "hypothesis_candidate": "中心的な仮説は次の2つです。 仮説①：Behavioral Attenuation 自分にとって最適な選択についての認知的不確実性が高いほど、意思決定の基本条件への反応が弱くなる。 仮説②：Diminishing Sensitivity 最適な選択が分かりやすい基準点から離れるほど、認知的不確実性が増し、基本条件への反応が弱くなる。 著者らは、こうした現象が個別の意思決定課題だけでなく、幅広い領域で共通して生じるかを検証しています。",
     "method_keywords": [],
     "design_status": "要確認",
     "source_text": "\n**Benjamin Enke, Thomas Graeber, Ryan Oprea & Jeffrey Yang**\n\n2024年初稿。2026年2月にUniversity of Zurich Working Paperとして公開された版もあり、著者サイトでは*Journal of Political Economy*採択済みとされています。\n\n[論文・University of Zurich版](https://www.zora.uzh.ch/bitstreams/fc7e186d-c67a-4213-b425-06384b9231c6/download?utm_source=chatgpt.com)\n\n##### Research Question（RQ）\n\n> **経済的なインセンティブや情報が変化しても、人々の意思決定が十分に変化しないのはなぜか？ その反応の弱さには、多様な意思決定に共通するメカニズムが存在するのか？**\n\n##### RQの面白さ\n\n通常の経済学では、\n\n$$\n\\text{インセンティブが変化}\n\\rightarrow\n\\text{行動が変化}\n$$\n\nと考えます。\n\n例えば報酬が高くなれば、努力量が増えると予測します。\n\nしかし現実には、インセンティブが変わっても行動があまり変わらない場合があります。\n\n著者らは、これを単に、\n\n> 人はインセンティブに反応しない\n\nとは考えません。\n\nむしろ、\n\n> **何を選べば自分にとって最適なのかが分からないため、行動を十分に調整できないのではないか？**\n\nと考えます。\n\nこれをBehavioral Attenuationと呼びます。\n\n##### 主な仮説\n\n中心的な仮説は次の2つです。\n\n**仮説①：Behavioral Attenuation**\n\n自分にとって最適な選択についての認知的不確実性が高いほど、意思決定の基本条件への反応が弱くなる。\n\n**仮説②：Diminishing Sensitivity**\n\n最適な選択が分かりやすい基準点から離れるほど、認知的不確実性が増し、基本条件への反応が弱くなる。\n\n著者らは、こうした現象が個別の意思決定課題だけでなく、幅広い領域で共通して生じるかを検証しています。[^20261012-11]\n\n##### 1．どんなもの？\n\n本研究では、30を超える実験を実施しています。\n\n対象は非常に幅広く、\n\n- 投資・貯蓄\n- 労働供給\n- 商品選択\n- 税金\n- 公共政策の評価\n- 予測・推論\n- 戦略的ゲーム\n\nなどです。\n\nそれぞれの実験で、意思決定の基本条件を変化させます。\n\n例えば、投資であれば期待収益率、労働供給であれば報酬条件などです。\n\nそして、その変化に対して選択がどれだけ反応するかを測定します。\n\n##### 2．先行研究と比べてどこがすごい？\n\n行動経済学には、多くの個別的なBiasがあります。\n\n例えば、\n\n- Probability Weighting\n- Base-rate Neglect\n- Conservatism\n- Diminishing Sensitivity\n\nなどです。\n\n通常は、それぞれのBiasを個別の理論で説明します。\n\n本研究は、\n\n$$\n\\boxed{\n情報処理の難しさ\n\\rightarrow\n意思決定の反応が弱くなる\n}\n$$\n\nという共通メカニズムによって、複数の現象を説明できるのではないかと考えます。\n\nつまり、**個別の現象を説明する理論ではなく、多様な現象を横断する共通原理を検証する研究**です。\n\n##### 3．技術や手法のキモはどこ？\n\n研究の流れは、\n\n$$\n\\begin{aligned}\n&RQ:\\text{意思決定の反応が弱い理由は何か}\\\\\n&\\downarrow\\\\\n&仮説:\\text{認知的不確実性が反応を弱める}\\\\\n&\\downarrow\\\\\n&必要データ:\\text{基本条件・選択・認知的不確実性}\\\\\n&\\downarrow\\\\\n&研究デザイン:\\text{多領域の実験}\\\\\n&\\downarrow\\\\\n&分析:\\text{反応感度と不確実性の関係}\\\\\n&\\downarrow\\\\\n&結果:\\text{領域横断的な規則性}\n\\end{aligned}\n$$\n\n###### 数式で考える\n\n意思決定を、\n\n$$\na=f(z)\n$$\n\nとします。\n\n- $a$：選択・行動\n- $z$：報酬や確率などの基本条件\n\nです。\n\n基本条件への反応を、\n\n$$\n\\beta\n=\n\\frac{\\partial a}{\\partial z}\n$$\n\nとします。\n\nこれは反応の傾きを表します。\n\n本研究では、認知的不確実性を、\n\n$$\nU\n$$\n\nとしたとき、\n\n$$\n\\boxed{\n|\\beta(U_{high})|\n<\n|\\beta(U_{low})|\n}\n$$\n\nとなる傾向があるかを考えます。\n\nつまり、認知的不確実性が高い人ほど、基本条件が変化しても選択があまり変わらないということです。\n\n実証的には、概念的に、\n\n$$\na_i\n=\n\\alpha+\n\\beta_1 z_i+\n\\beta_2 U_i+\n\\beta_3(z_i\\times U_i)\n+\\epsilon_i\n$$\n\nという交互作用モデルで理解できます。\n\nただし、これは研究の考え方を説明するための簡略式であり、論文内のすべての実験がこの同一モデルで分析されているわけではありません。\n\n##### 4．どうやって有効だと検証した？\n\n著者らは30を超える実験で、基本条件に対する反応と認知的不確実性の関係を検証しています。\n\n主要結果は、\n\n$$\n\\boxed{\n93\\%\n}\n$$\n\nです。\n\n**実験の93%で、認知的不確実性が高いほど、基本条件への反応が弱くなるという関係が確認されました。**\n\nさらに、客観的な最適解が存在する課題では、観察された反応感度が最適な反応より小さい傾向が確認されています。\n\nまた、問題の複雑さが増すことで反応が弱くなるという結果も報告されています。\n\n重要なのは、特定の選択課題だけでなく、多様な領域で同じ方向の規則性が観察されたことです。[^20261012-12]\n\n##### 5．議論はある？\n\n注意したいのは、認知的不確実性と反応の弱さが関連しているからといって、すべての意思決定の鈍さが認知的不確実性によって引き起こされているとは限らないことです。\n\n例えば、\n\n- 選択肢を変更する費用が高い\n- 既存の習慣を維持したい\n- 基本条件の変化が小さすぎる\n- 将来の結果に不確実性がある\n\nなど、別の理由も考えられます。\n\nまた、認知的不確実性の測定方法そのものについても議論があります。\n\n本人が、\n\n> 最適な選択をした自信がない\n\nと回答したとき、それが意思決定の難しさを意味するのか、結果の不確実性を意味するのかは区別が必要です。\n\nしたがって本研究は、認知的不確実性が重要な説明変数であることを示していますが、すべての行動Biasを単一の原因で説明できると証明したものではありません。\n\n##### 6．次読むべき論文は？\n\n**Enke & Graeber（2023）“Cognitive Uncertainty”**  \n→ 認知的不確実性の測定と理論的背景。\n\n**Graeber & Enke（2026）“A Note on When Are Decisions Improvable?”**  \n→ 認知的不確実性の測定に対する批判と反論。\n\n**Graeber & Gabaix “The Complexity of Economic Decisions”**  \n→ 問題の複雑さをどう定義・測定するか。\n\n**この論文から学ぶ研究の型**\n\n異なる領域で観察される複数のBiasに対して、**共通する潜在メカニズムを仮説として設定し、同じ測定概念を使って領域横断的に検証する**。\n\n---\n\n### 4本を横断して考える\n\n今回の4本を研究設計の観点から整理すると、次のようになります。\n\n| 論文 | 通常の問い | 一段深いRQ |\n|---|---|---|\n| A-1｜TEA-Time | A/Bテストで効果があったか？ | **その効果は別の時点でも成立するか？** |\n| A-2｜Network Transportability | 介入の効果はあるか？ | **周囲への波及を含め、別のネットワークでも成立するか？** |\n| B-1｜Habit Formation | 利用回数が増えると継続するか？ | **初回経験と追加経験のどちらが習慣形成に重要か？** |\n| B-2｜Behavioral Attenuation | インセンティブを増やすと行動するか？ | **人がインセンティブに十分反応しないのはなぜか？** |\n\n特にB-1とB-2を組み合わせると、健康サービスの行動変容について興味深い研究仮説が考えられます。\n\n例えば、\n\n> 健康サービスの初回利用を促進する場合、インセンティブの金額を増やすよりも、利用方法や利用後の価値を理解しやすくする方が、初回利用率とその後の継続率を改善するのではないか？\n\nというRQです。\n\nこれは今回の論文から着想した**新たな仮説**であり、両論文によって直接検証された結論ではありません。\n\n考えられる研究デザインは、初回未利用者を対象とした2×2のRCTです。\n\n| | 通常の説明 | 利用価値・手順を分かりやすく説明 |\n|---|---|---|\n| 通常インセンティブ | Control | 説明改善 |\n| 高インセンティブ | 金額改善 | 金額＋説明改善 |\n\n主要Outcomeは初回利用率とし、その後の継続率を追跡します。\n\nさらに、初回利用が継続率へ与える因果効果を知りたい場合には、割当と実際の利用を区別して分析する必要があります。\n\nこの設計なら、\n\n$$\n\\boxed{\nインセンティブ\n\\times\n認知的負荷\n\\rightarrow\n初回利用\n\\rightarrow\n継続利用\n}\n$$\n\nという研究へ発展できます。\n\n---\n\n### 今週読むならこの順\n\n##### 1位：B-1｜How Do Habits Form?\n\n**学ぶこと：競合仮説をどうRCTで識別するか。**\n\n今回最もおすすめです。\n\n特に、\n\n$$\n\\text{初回利用}\n$$\n\nと、\n\n$$\n\\text{繰り返し利用}\n$$\n\nを区別したところに研究設計上の学びがあります。\n\n習慣形成を単に継続率で測るのではなく、**どの経験が将来の行動を変化させるのか**を推定しています。\n\n##### 2位：B-2｜Behavioral Attenuation\n\n**学ぶこと：個別の行動Biasから共通メカニズムを抽出する方法。**\n\n行動経済学の多くの現象を、認知的不確実性という共通概念で整理しています。\n\n「なぜ人は行動しないのか」というRQを考える際、インセンティブ不足以外の仮説を立てるために役立ちます。\n\n##### 3位：A-1｜TEA-Time\n\n**学ぶこと：過去のRCTを、別の時点の意思決定へ利用する方法。**\n\nマーケティングのA/Bテストは、実施した時点の効果しか直接識別しません。\n\n本論文は、複数の実験結果を組み合わせて、別の時点の効果を推定する考え方を学べます。\n\n実務では、過去のA/Bテストの蓄積を研究資産として活用する際の参考になります。\n\n##### 4位：A-2｜Transportable Causal Effect Estimation across Networks under Interference\n\n**学ぶこと：直接効果と波及効果を区別し、異なる集団へ一般化する方法。**\n\n数学的には今回最も複雑な論文です。\n\nただし、保険・ヘルスケアにおいて、個人への施策が家族や周囲の人へ波及する可能性を考える場合には重要です。\n\n特に、\n\n$$\n\\boxed{\nDirect\\ Effect\n\\neq\nTotal\\ Policy\\ Effect\n}\n$$\n\nという区別を理解するために適しています。\n\n今回の4本から共通して学べるのは、**推定した効果をそのまま意思決定へ使うのではなく、効果が生じるメカニズム、時間的な変化、集団間の違いを研究対象として明示すること**です。\n\n[^20261012-1]: [元レポートの引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)（2026-10-12）。引用index：1。\n[^20261012-2]: [元レポートの引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)（2026-10-12）。引用index：2。\n[^20261012-3]: [元レポートの引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)（2026-10-12）。引用index：3。\n[^20261012-4]: [元レポートの引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)（2026-10-12）。引用index：4。\n[^20261012-5]: [元レポートの引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)（2026-10-12）。引用index：6。\n[^20261012-6]: [元レポートの引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)（2026-10-12）。引用index：7。\n[^20261012-7]: [元レポートの引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)（2026-10-12）。引用index：8。\n[^20261012-8]: [元レポートの引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)（2026-10-12）。引用index：9。\n[^20261012-9]: [元レポートの引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)（2026-10-12）。引用index：11。\n[^20261012-10]: [元レポートの引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)（2026-10-12）。引用index：12。\n[^20261012-11]: [元レポートの引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)（2026-10-12）。引用index：14。\n[^20261012-12]: [元レポートの引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)（2026-10-12）。引用index：15。\n\n\n",
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "行動効果の減衰",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "legacy_extraction_from_digest",
+    "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
+    "hypothesis_source_line": 42,
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-6575c5dfe1",
@@ -994,7 +1193,7 @@
     ],
     "source_date": "2026-10-14",
     "rq_candidate": "> **複数の施策について因果効果や経済価値を推定できたとき、推定値が最も高い施策を選ぶことは、本当に合理的なのか？",
-    "hypothesis_candidate": "",
+    "hypothesis_candidate": "著者らは、推定Welfareと推定リスクを組み合わせることで、統計的不確実性を考慮したPolicy Selectionが可能になることを理論的に示しています。 特に提案するPoLeCe（Policy Learning with Confidence）は、一定の正則条件のもとで、選択したPolicyの真のWelfareが、報告した下限を所定の信頼水準で上回るという保証を持ちます。",
     "method_keywords": [
       "Policy Learning"
     ],
@@ -1004,7 +1203,11 @@
     "verification": "not_checked_against_original",
     "title_ja": "信頼性を考慮した方策学習",
     "title_ja_status": "source_title_unverified",
-    "bibliography_status": "verified_title_or_doi"
+    "bibliography_status": "verified_title_or_doi",
+    "rq_provenance": "legacy_extraction_from_digest",
+    "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
+    "hypothesis_source_line": 46,
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-83b0e41aa8",
@@ -1017,7 +1220,7 @@
     ],
     "source_date": "2026-10-14",
     "rq_candidate": "> **疾患発症や解約のようなTime-to-Event Outcomeについて、イベントがまだ発生していない人の情報も活用しながら、個人ごとの因果効果を推定できるか？",
-    "hypothesis_candidate": "",
+    "hypothesis_candidate": "著者らの中心命題は、Recursively Imputed Survival Treesを用いて打切り後のイベント時点を複数回補完することで、従来のCausal Survival Forestよりも、特に打切り率が高い場合にHTE推定精度を改善できるというものです。 さらに、適切な操作変数が存在する場合には、未観測交絡を伴う設定にも拡張できるとしています。",
     "method_keywords": [
       "CATE",
       "Survival"
@@ -1027,7 +1230,11 @@
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "イベント発生までの時間に対する異質な処置効果：打ち切りデータと再帰的補完木",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "legacy_extraction_from_digest",
+    "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
+    "hypothesis_source_line": 32,
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-63f74ad77b",
@@ -1039,7 +1246,7 @@
     ],
     "source_date": "2026-10-14",
     "rq_candidate": "> **健康行動へのインセンティブを個別最適化したい。しかし、本人の行動変容しやすさを正確に観測できない。その場合、本人にインセンティブ条件を選ばせることで、最適な施策配分を実現できるか？",
-    "hypothesis_candidate": "",
+    "hypothesis_candidate": "著者らの理論モデルから導かれる中心的な予測は、運動の限界費用が低い人ほど、高い目標歩数と高い報酬の組み合わせを選び、運動の限界費用が高い人ほど、低い目標と低い報酬を選ぶというものです。 適切に設計された選択メニューであれば、本人が自分の利益を考えて選ぶことで、政策実施者にとっても望ましい割当が実現します。",
     "method_keywords": [
       "CATE"
     ],
@@ -1048,7 +1255,11 @@
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "個別化政策のメカニズムデザイン：運動を促すフィールド実験",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "legacy_extraction_from_digest",
+    "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
+    "hypothesis_source_line": 42,
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-4d71ad1dbd",
@@ -1067,7 +1278,10 @@
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "その場しのぎの修正：消費・貯蓄行動における準合理性",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "legacy_extraction_from_digest",
+    "hypothesis_provenance": "legacy_extraction_from_digest",
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-f39eae36a4",
@@ -1079,7 +1293,7 @@
     ],
     "source_date": "2026-10-16",
     "rq_candidate": "> **政策が地域ごとに異なる時期に導入され、未導入地域にも効果が波及する場合、政策全体の因果効果をどう識別するか？",
-    "hypothesis_candidate": "",
+    "hypothesis_candidate": "著者がH1・H2という形式で提示しているものではありません。 中心命題（著者が正式な仮説として提示しているものではない）は、他地域から受ける政策の影響をExposureとして定義し、適切な条件付き平行トレンド仮定が成立すれば、政策の総効果を直接効果と波及効果に分解・識別できる、というものです。",
     "method_keywords": [
       "DID",
       "Spillover"
@@ -1089,7 +1303,11 @@
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "ネットワーク波及効果を伴う段階的DIDの識別と推定",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "legacy_extraction_from_digest",
+    "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
+    "hypothesis_source_line": 28,
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-a7f60207fb",
@@ -1101,7 +1319,7 @@
     ],
     "source_date": "2026-10-16",
     "rq_candidate": "> **政策の平均的な効果がプラスでも、一部の人には大きなマイナス効果が生じる場合、平均Welfareを最大化する政策が本当に望ましいのか？",
-    "hypothesis_candidate": "",
+    "hypothesis_candidate": "著者がH1・H2という形式で提示しているものではありません。 中心命題（著者が正式な仮説として提示しているものではない）は、平均Welfareではなく個人・集団ごとのRegretの二乗を最小化すると、全員実施・全員非実施ではなく、一定割合で施策を配分するFractional Policyが最適になり得る、というものです。",
     "method_keywords": [
       "CATE",
       "Policy Learning"
@@ -1111,7 +1329,11 @@
     "source_heading_count": 8,
     "verification": "not_checked_against_original",
     "title_ja": "後悔回避を考慮した政策ターゲティング",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "legacy_extraction_from_digest",
+    "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
+    "hypothesis_source_line": 35,
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-dc007de13d",
@@ -1123,7 +1345,7 @@
     ],
     "source_date": "2026-10-16",
     "rq_candidate": "> **税金を滞納している人に対して、未納による損失を強調したSMSを送ると、通常の督促SMSより納付率が高まるのか？",
-    "hypothesis_candidate": "",
+    "hypothesis_candidate": "著者らは、Prospect Theoryに基づき、明示的な仮説を設定しています。 H1：未納による損失を強調したSMSは、通常の督促SMSよりも納付率を高める。 損失回避（Loss Aversion）の考え方では、人々は同じ大きさの利益よりも損失を強く感じる傾向があります。 したがって、単に納付を依頼するよりも、未納による不利益を明示する方が行動を促す可能性があります。",
     "method_keywords": [
       "RCT",
       "ナッジ"
@@ -1133,7 +1355,11 @@
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "納税を促すSMS：日本における損失フレーミングのフィールド実験",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "legacy_extraction_from_digest",
+    "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
+    "hypothesis_source_line": 22,
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-bd820a3c55",
@@ -1152,7 +1378,10 @@
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "同意の設計：データ共有における選択アーキテクチャと消費者厚生",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "legacy_extraction_from_digest",
+    "hypothesis_provenance": "legacy_extraction_from_digest",
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-7f69adc37d",
@@ -1175,7 +1404,10 @@
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "時間変化を考慮した因果生存学習",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "legacy_extraction_from_digest",
+    "hypothesis_provenance": "legacy_extraction_from_digest",
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-db679cffd0",
@@ -1197,7 +1429,10 @@
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "DIDにおける異質な効果のメタ学習器",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "legacy_extraction_from_digest",
+    "hypothesis_provenance": "legacy_extraction_from_digest",
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-56160473d1",
@@ -1218,7 +1453,10 @@
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "AI支援ライティングにおける実行計画を促す認知的介入の実験比較",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "legacy_extraction_from_digest",
+    "hypothesis_provenance": "legacy_extraction_from_digest",
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-ea9249a409",
@@ -1237,7 +1475,10 @@
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "服薬継続を促すリマインダー：フィールド実験",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "legacy_extraction_from_digest",
+    "hypothesis_provenance": "legacy_extraction_from_digest",
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-85e9fc2e70",
@@ -1262,7 +1503,10 @@
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "生存時間に対する処置効果の効率的な移送と一般化",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "legacy_extraction_from_digest",
+    "hypothesis_provenance": "legacy_extraction_from_digest",
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-23ddb1867c",
@@ -1287,7 +1531,10 @@
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "観察データを用いた政策学習",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "legacy_extraction_from_digest",
+    "hypothesis_provenance": "legacy_extraction_from_digest",
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-87f8569164",
@@ -1309,7 +1556,10 @@
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "制約のない生成AIは学習を損なう可能性がある：高校数学からの証拠",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "legacy_extraction_from_digest",
+    "hypothesis_provenance": "legacy_extraction_from_digest",
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-05ff915c4d",
@@ -1328,7 +1578,10 @@
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "税の顕著性：理論と実証",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "legacy_extraction_from_digest",
+    "hypothesis_provenance": "legacy_extraction_from_digest",
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-d76aeef591",
@@ -1340,7 +1593,7 @@
     ],
     "source_date": "2026-11-02",
     "rq_candidate": "ある介入方針の下で集めた時系列データを使い、別の介入方針を実施した場合の累積価値を、どれだけ正確に推定できるか？",
-    "hypothesis_candidate": "",
+    "hypothesis_candidate": "著者が正式な仮説として提示しているものではありません。中心命題は、Markov構造を利用し、Q関数と密度比を組み合わせれば、既存のOff-Policy Evaluationより統計的に効率よく方針価値を推定できるというものです。",
     "method_keywords": [
       "Machine Learning"
     ],
@@ -1350,7 +1603,11 @@
     "verification": "not_checked_against_original",
     "title_ja": "マルコフ決定過程における効率的なオフポリシー評価のための二重強化学習",
     "title_ja_status": "provisional_translation",
-    "bibliography_status": "verified_title_or_doi"
+    "bibliography_status": "verified_title_or_doi",
+    "rq_provenance": "legacy_extraction_from_digest",
+    "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
+    "hypothesis_source_line": 12,
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-c638566481",
@@ -1362,7 +1619,7 @@
     ],
     "source_date": "2026-11-02",
     "rq_candidate": "ワクチン接種を促すテキストメッセージでは、どのような表現や心理的な働きかけが最も有効か？",
-    "hypothesis_candidate": "",
+    "hypothesis_candidate": "著者が正式な仮説として提示しているものではありません。中心命題は、メッセージの心理的フレーミングによって接種率が異なり、特に受診時の行動を具体的に促す表現が有効である可能性です。",
     "method_keywords": [
       "RCT",
       "ナッジ"
@@ -1372,7 +1629,11 @@
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "受診予定患者のワクチン接種を促すテキストナッジの大規模比較実験",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "legacy_extraction_from_digest",
+    "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
+    "hypothesis_source_line": 12,
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-63007291f5",
@@ -1384,7 +1645,7 @@
     ],
     "source_date": "2026-11-02",
     "rq_candidate": "機械学習によるリスク予測を利用することで、裁判官の保釈判断を改善し、再犯・不出廷リスクと拘留人数を同時に減らせるか？",
-    "hypothesis_candidate": "",
+    "hypothesis_candidate": "著者が正式な仮説として提示しているものではありません。中心命題は、機械学習によるリスク順位付けを意思決定に適切に組み込めば、裁判官の判断と比較して社会的な価値を改善できるというものです。",
     "method_keywords": [
       "AI"
     ],
@@ -1393,7 +1654,11 @@
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "人間の意思決定と機械による予測",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "legacy_extraction_from_digest",
+    "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
+    "hypothesis_source_line": 12,
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-aa9f672349",
@@ -1405,7 +1670,7 @@
     ],
     "source_date": "2026-11-04",
     "rq_candidate": "研究対象集団と、実際に施策を適用したい集団で属性分布や利用可能な共変量が異なる場合、因果効果をどのように移送・一般化できるか？",
-    "hypothesis_candidate": "",
+    "hypothesis_candidate": "著者が正式な仮説として提示しているものではありません。中心命題は、適切な効果修飾因子が測定され、集団間の交換可能性とOverlapが成立すれば、異なる共変量情報を持つ集団間でも平均因果効果を移送でき、Doubly Robust推定によって効率性を改善できるというものです。",
     "method_keywords": [
       "RCT",
       "AI"
@@ -1415,7 +1680,11 @@
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "効率的な一般化と移送可能性",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "legacy_extraction_from_digest",
+    "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
+    "hypothesis_source_line": 12,
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-d7f08665d5",
@@ -1427,7 +1696,7 @@
     ],
     "source_date": "2026-11-04",
     "rq_candidate": "施策開始時期が対象者・地域によって異なり、効果にも異質性がある場合、通常のTwo-Way Fixed Effects（TWFE）のイベントスタディは、介入前後の効果を正しく推定できるか？",
-    "hypothesis_candidate": "",
+    "hypothesis_candidate": "著者が正式な仮説として提示しているものではありません。中心命題は、介入時期や効果が異質な場合、TWFEのイベント時点別係数には別時点の効果が混入するが、コホート別効果を推定してから適切に集約すれば、この混入を回避できるというものです。",
     "method_keywords": [
       "DID"
     ],
@@ -1436,7 +1705,11 @@
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "異質な処置効果を伴うイベントスタディの動学的効果推定",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "legacy_extraction_from_digest",
+    "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
+    "hypothesis_source_line": 12,
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-c8d65e4984",
@@ -1448,14 +1721,18 @@
     ],
     "source_date": "2026-11-04",
     "rq_candidate": "手洗いへの金銭的インセンティブやモニタリングは、終了後にも持続する習慣を形成するか。さらに、人は将来のインセンティブや監視を予期して、現在の行動を変えるか？",
-    "hypothesis_candidate": "",
+    "hypothesis_candidate": "Rational Habit Formationモデルに基づき、現在の行動が将来の行動コストや効用へ影響するなら、将来の報酬・モニタリングへの期待が現在の行動にも影響する、という予測を検証しています。",
     "method_keywords": [],
     "design_status": "要確認",
     "source_text": "\nReshmaan Hussam, Atonu Rabbani, Giovanni Reggiani & Natalia Rigol｜American Economic Journal: Applied Economics, 2022\n\n[Rational Habit Formation: Experimental Evidence from Handwashing in India](https://doi.org/10.1257/app.20190568)\n\n**Research Question（RQ）**\n\n手洗いへの金銭的インセンティブやモニタリングは、終了後にも持続する習慣を形成するか。さらに、人は将来のインセンティブや監視を予期して、現在の行動を変えるか？\n\n**RQの面白さ：** 単に「介入後も行動が続いたか」を見るのではなく、**将来の介入予定を事前に知らせることによって、現在の行動が変化するか**を検証した点です。\n\nこれは、習慣形成を単なる過去行動の反復ではなく、将来を見越した意思決定として扱う研究です。\n\n**主な仮説・Proposition：** Rational Habit Formationモデルに基づき、現在の行動が将来の行動コストや効用へ影響するなら、将来の報酬・モニタリングへの期待が現在の行動にも影響する、という予測を検証しています。\n\n##### 1．どんなもの？\n\nインド農村部で、センサー付き石けんディスペンサーを使って手洗い行動を測定したフィールド実験です。\n\nモニタリング、フィードバック、金銭的インセンティブ、将来の介入予定の通知などを組み合わせ、手洗い行動の形成と持続を調べています。\n\n##### 2．先行研究と比べてどこがすごい？\n\nこれまで紹介したLally et al.（2010）は、行動反復と自動化の時間的関係を観察しました。\n\n本研究はさらに踏み込み、介入条件を実験的に変えることで、習慣形成に関する理論の予測を検証しています。\n\n特に「将来のモニタリングを知らせるだけで現在の手洗いが増えるか」という問いは、習慣の蓄積を直接観測できなくても、その理論的メカニズムを検証しようとする設計として参考になります。\n\n##### 3．技術や手法のキモはどこ？\n\n| 段階 | 内容 |\n|--------|--------|\n| RQ | 将来の介入期待は現在の行動を変えるか |\n| 仮説 | 将来の効用を見越して習慣を形成する |\n| 必要なデータ | 日次手洗い、介入割当、将来介入の通知 |\n| 研究デザイン | 複数条件のフィールドRCT |\n| 分析手法 | 群間比較、期間別の行動推移 |\n| 結果 | 即時効果、終了後の持続、予期効果 |\n\n特に優れているのは、次の2つを分けて検証した点です。\n\n**即時効果：** 今、報酬があるから手を洗う。\n\n**予期効果：** 将来の報酬・監視を知ったことで、今から行動を変える。\n\nこの違いは、歩数施策にも応用できます。\n\n例えば、同じ8週間のポイント施策でも、終了日を最初から知らせる群と、終了時期の通知方法を変える群では、行動形成過程が異なる可能性があります。ただし、予告方法の実験は顧客への透明性や倫理性を確保する必要があります。\n\n##### 4．どうやって有効だと検証した？\n\nセンサー付きディスペンサーによる日次の手洗い測定と、複数の実験群を利用しています。\n\n米国経済学会の解説によれば、金銭的インセンティブを受けた世帯の夕食時手洗い実施率は**62%**、ディスペンサーのみの群は**36%**でした。\n\nディスペンサーのみ\n\n### 36%\n\n夕食時の手洗い実施率\n\nインセンティブあり\n\n### 62%\n\n夕食時の手洗い実施率\n\n介入終了後も一定期間は効果が残りましたが、やがて対照群に近づきました。一方、翌年の同じ季節には、過去のインセンティブ群で再び手洗い率が高まるパターンも報告されています。\n\nまた、将来のモニタリングを予期した世帯で、現在の手洗いが増加したことも確認されています。[^d0b3b18d-5]\n\n##### 5．議論はある？\n\n介入終了後の持続が、心理的な自動化だけによるものとは限りません。知識、家庭内の環境、観測されているという意識なども考えられます。\n\nまた、将来のモニタリング予告による効果は、合理的な習慣形成だけでなく、期待や注意喚起によっても説明できる可能性があります。\n\n**私の考察：** B1から得られる最も大きな学びは、習慣形成を「行動が持続した」という結果だけでなく、**将来への期待を操作して理論を検証する**という研究設計です。\n\n##### 6．次読むべき論文は？\n\n[Lally et al.（2010）, How Are Habits Formed?](https://doi.org/10.1002/ejsp.674)：自動化の心理尺度と時間的変化を理解する。\n\n[Allcott & Rogers（2014）, The Short-Run and Long-Run Effects of Behavioral Interventions](https://doi.org/10.1257/aer.104.10.3003)：介入停止をランダム化する設計と比較する。\n\n**この論文から学ぶ研究の型：** 直接観測しにくい習慣形成メカニズムを、将来の報酬・介入期待を操作する実験によって検証する。行動の持続だけでなく、その持続を生む理論的な予測まで検証する。\n\n---\n\n",
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "合理的な習慣形成：インドの手洗い実験からの証拠",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "legacy_extraction_from_digest",
+    "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
+    "hypothesis_source_line": 14,
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-f3d53a169f",
@@ -1467,7 +1744,7 @@
     ],
     "source_date": "2026-11-04",
     "rq_candidate": "生成AIを使うことで知識労働者の生産性や成果品質は改善するか。また、AIが得意なタスクと不得意なタスクで、その効果はどのように異なるか？",
-    "hypothesis_candidate": "",
+    "hypothesis_candidate": "著者が正式な仮説として提示しているものではありません。中心命題は、AIの能力範囲内では生産性と品質が向上する一方、能力範囲外ではAIへの依存が判断の正確性を低下させる可能性がある、というものです。",
     "method_keywords": [
       "AI"
     ],
@@ -1476,7 +1753,11 @@
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "生成AIの不均一な能力領域：知識労働者の生産性と品質への影響",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "legacy_extraction_from_digest",
+    "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
+    "hypothesis_source_line": 12,
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-8b8144db83",
@@ -1488,7 +1769,7 @@
     ],
     "source_date": "2026-11-06",
     "rq_candidate": "高次元の共変量を機械学習で柔軟に調整しながら、ATEなどの低次元の因果パラメータについて、妥当な信頼区間を構築できるか？",
-    "hypothesis_candidate": "",
+    "hypothesis_candidate": "著者らは、Neyman直交スコアとCross-fittingを組み合わせることで、適切な収束条件の下で、機械学習を利用した因果パラメータ推定に漸近正規性と妥当な推論を与えられることを理論的に示しています。",
     "method_keywords": [
       "DML",
       "Machine Learning"
@@ -1498,7 +1779,11 @@
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "処置効果と構造パラメータのダブル／デバイアスド機械学習",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "legacy_extraction_from_digest",
+    "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
+    "hypothesis_source_line": 12,
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-8da7742b2f",
@@ -1510,7 +1795,7 @@
     ],
     "source_date": "2026-11-06",
     "rq_candidate": "介入開始時期が異なり、介入効果にも異質性がある場合、通常のイベントスタディ推定は何を推定しているのか。より頑健で効率的な推定方法はあるか？",
-    "hypothesis_candidate": "",
+    "hypothesis_candidate": "効果の異質性を許容する場合、未処置観測から反事実Outcomeを推定し、処置済み観測との差を集約するImputation推定量が、適切な仮定の下で頑健かつ効率的な推定を実現する、というものです。",
     "method_keywords": [
       "DID"
     ],
@@ -1519,7 +1804,11 @@
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "イベントスタディを再検討する：頑健で効率的な推定",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "legacy_extraction_from_digest",
+    "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
+    "hypothesis_source_line": 12,
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-3567d68f2d",
@@ -1531,7 +1820,7 @@
     ],
     "source_date": "2026-11-06",
     "rq_candidate": "将来の自分が貯蓄を取り崩してしまうと予想する人は、あえて引き出しを制限する貯蓄商品を選ぶのか。そして、その仕組みは実際の貯蓄を増やすのか？",
-    "hypothesis_candidate": "",
+    "hypothesis_candidate": "現在バイアスや自己制御問題を自覚している人は、将来の行動を制限するCommitment Deviceを選びやすく、その利用によって貯蓄残高が増加するという行動経済学的予測です。",
     "method_keywords": [
       "RCT"
     ],
@@ -1540,7 +1829,11 @@
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "オデュッセウスを帆柱に縛る：フィリピンのコミットメント貯蓄商品の証拠",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "legacy_extraction_from_digest",
+    "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
+    "hypothesis_source_line": 12,
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-45a7b98e64",
@@ -1552,14 +1845,18 @@
     ],
     "source_date": "2026-11-06",
     "rq_candidate": "企業間の生産性格差は、経営管理手法の違いによって因果的に生じるのか。また、生産性を高める管理手法が存在するなら、企業はなぜそれを導入しないのか？",
-    "hypothesis_candidate": "",
+    "hypothesis_candidate": "近代的な管理手法の導入は品質・効率・在庫管理を改善し、生産性を高める。また、未導入の理由には、経営者の情報不足や組織上の制約がある、という命題です。",
     "method_keywords": [],
     "design_status": "要確認",
     "source_text": "\nNicholas Bloom, Benn Eifert, Aprajit Mahajan, David McKenzie & John Roberts｜The Quarterly Journal of Economics, 2013\n\n[Does Management Matter? Evidence from India](https://doi.org/10.1093/qje/qjs044)\n\n**Research Question（RQ）**\n\n企業間の生産性格差は、経営管理手法の違いによって因果的に生じるのか。また、生産性を高める管理手法が存在するなら、企業はなぜそれを導入しないのか？\n\n**RQの面白さ：** 「優良企業は管理が優れている」という相関ではなく、**管理手法を実際に導入させると、生産性が改善するか**を検証しています。さらに、効果があると分かった後の「なぜ導入されていなかったのか」まで研究対象にしています。\n\n**主な仮説・Proposition：** 近代的な管理手法の導入は品質・効率・在庫管理を改善し、生産性を高める。また、未導入の理由には、経営者の情報不足や組織上の制約がある、という命題です。\n\n##### 1．どんなもの？\n\nインドの繊維企業を対象に、管理手法の改善コンサルティングをランダムに提供したフィールド実験です。\n\n対象となる管理手法には、品質管理、在庫管理、生産記録、作業計画などが含まれます。\n\n##### 2．先行研究と比べてどこがすごい？\n\n企業の管理品質と生産性の相関は知られていましたが、優秀な企業だから管理が良いのか、管理が良いから生産性が高いのかを区別するのは困難でした。\n\n本研究は、管理手法の導入支援をランダム化し、導入前後の生産性を追跡しています。\n\nさらに、経営者が改善策を知らなかったことや、管理者の時間が制約になっていたことを、導入阻害要因として検討しています。\n\n##### 3．技術や手法のキモはどこ？\n\n| 段階 | 内容 |\n|--------|--------|\n| RQ | 管理手法は生産性を因果的に高めるか |\n| 仮説 | 情報不足などが改善手法の導入を妨げる |\n| 必要なデータ | 管理実践、品質、生産量、在庫、企業属性 |\n| 研究デザイン | 工場へのコンサルティング介入のランダム化 |\n| 分析 | 介入群と対照群の生産性推移比較 |\n| 結果 | 生産性、品質、在庫、組織運営の変化 |\n\n重要なのは、対照群にも診断や一定の測定支援を提供している点です。\n\nしたがって、単なる「外部の専門家が来たこと」の効果ではなく、**管理手法の実装支援を追加する効果**に近い比較を目指しています。\n\n##### 4．どうやって有効だと検証した？\n\n17企業の繊維工場を対象に実験を行いました。\n\n著者らは、管理手法の導入によって初年度の生産性が**約17%改善**したと報告しています。\n\n管理手法導入による初年度の生産性改善\n\n### \\+17%\n\n品質改善、効率化、在庫削減を通じた効果\n\nさらに、3年以内に新たな工場の開設が見られました。これは、管理改善が短期の効率性だけでなく、企業の成長判断にも関係し得ることを示唆しています。[^99178ea9-6]\n\n##### 5．議論はある？\n\n企業数が17と少なく、対象もインドの比較的大規模な繊維企業です。一般的なサービス業や保険会社へ効果量を直接適用することはできません。\n\nまた、コンサルティングの提供には相応の費用がかかります。生産性改善が17%でも、導入費用や維持費用を考慮した純便益は別途評価する必要があります。\n\n加えて、管理手法のどの要素が最も重要だったかを完全に分離できるわけではありません。\n\n**私の考察：** データ分析チームが有効な施策を提示しても、現場で実行されなければ価値は生まれません。分析結果の品質だけでなく、現場の実装能力や情報不足を研究対象にするという視点は、組織のEBM推進にも参考になります。\n\n##### 6．次読むべき論文は？\n\n[Bloom et al., NBER Working Paper版](https://doi.org/10.3386/w16658)：実験設計と実装支援の内容を詳しく確認する。\n\n[本論文の補足資料](https://doi.org/10.1093/qje/qjs044)：管理手法の測定や介入内容を検討する。\n\n**この論文から学ぶ研究の型：** 既に知られている相関関係を、実装支援のRCTで因果的に検証する。さらに、効果があるにもかかわらず導入されない理由を研究することで、分析から組織変革への接続を考える。\n\n---\n\n### 今週読むならこの順\n\n| 順番 | 論文 | 何を学ぶか |\n|--------|--------|--------|\n| **1** | B1：Ashraf et al. | 一見不利な仕組みが顧客価値になるというRQの立て方 |\n| **2** | B2：Bloom et al. | 有効な施策が実装されない理由を実験で検証する方法 |\n| **3** | A2：Borusyak et al. | 時間を通じた因果効果の識別可能性 |\n| **4** | A1：Chernozhukov et al. | 複雑なデータで因果推論を行う際の推定・推論の分離 |\n\n#### 今回のTakeaway\n\n今回の4本を通じて、特に重要だと感じる論点は、**「効果がある施策」と「実際に価値を生む施策」は同じではない**ということです。\n\nB1では、顧客が自ら行動制約を選ぶことで価値が生まれました。B2では、価値のある管理手法が存在していても、情報不足や組織的な制約によって実装されていませんでした。\n\n一方、A1とA2は、そもそも施策の効果をどこまで正しく推定できているかを問い直しています。\n\n歩数インセンティブの研究へ応用するなら、次のRQが考えられます。\n\n**「金銭的インセンティブと自発的なコミットメント支援では、介入終了後の行動持続効果と費用対効果がどのように異なるか？」**\n\n例えば、ポイントのみ、コミットメント支援のみ、両者の組み合わせ、対照群の4群RCTを実施し、介入中の歩数と終了後6か月の歩数を測定します。\n\nさらに、行動の自動化スコアや目標達成への意欲を測定すれば、どの介入がどのような過程で持続効果を生むのかを探索できます。\n\nその結果を意思決定へつなげる際には、**短期CVRや歩数増加ではなく、介入終了後を含む累積追加歩数と施策費用を比較する**ことが重要です。\n\n[^99178ea9-1]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用識別子：`turn932792search12`。原論文への直接リンクではない。\n[^99178ea9-2]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用識別子：`turn932792search12`。原論文への直接リンクではない。\n[^99178ea9-3]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用識別子：`turn506267search0`。原論文への直接リンクではない。\n[^99178ea9-4]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用識別子：`turn506267search0`。原論文への直接リンクではない。\n[^99178ea9-5]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用識別子：`turn932792search1turn932792search2`。原論文への直接リンクではない。\n[^99178ea9-6]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用識別子：`turn932792search6turn932792search8`。原論文への直接リンクではない。\n\n",
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "経営管理は重要か：インドからの実証",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "legacy_extraction_from_digest",
+    "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
+    "hypothesis_source_line": 12,
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-4d0da668f3",
@@ -1571,7 +1868,7 @@
     ],
     "source_date": "2026-11-09",
     "rq_candidate": "短期Outcomeを組み合わせたSurrogate Indexが長期Outcomeへの効果を完全には捉えていない場合、長期ATEの推定結果はどれだけ変わるのか。その不確実性を定量化できるか？",
-    "hypothesis_candidate": "",
+    "hypothesis_candidate": "著者らは、処置と長期Outcomeの条件付き依存構造をCopulaで表現し、Weighted Surrogate Indexを構築することで、完全なSurrogacyが成立しない場合にも、追加仮定に応じた点識別または部分識別を行えることを示しています。",
     "method_keywords": [
       "RCT"
     ],
@@ -1580,7 +1877,11 @@
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "長期処置効果の推定に用いる代理指標アプローチの感度分析",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "legacy_extraction_from_digest",
+    "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
+    "hypothesis_source_line": 12,
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-22ffd85d70",
@@ -1592,7 +1893,7 @@
     ],
     "source_date": "2026-11-09",
     "rq_candidate": "継続的に提供される介入について、短期間のRCTから、介入を長期間続けた場合の累積因果効果を推定できるか？",
-    "hypothesis_candidate": "",
+    "hypothesis_candidate": "著者らは、短期実験から推定した状態遷移が将来にも適用可能であるという構造的仮定の下で、Offline RLとDoubly Robust推定を用いて継続介入の長期因果効果を推定し、信頼区間を構築する方法を提案しています。",
     "method_keywords": [
       "RCT"
     ],
@@ -1601,7 +1902,11 @@
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "短期実験から長期介入の長期因果効果を推論する",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "legacy_extraction_from_digest",
+    "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
+    "hypothesis_source_line": 12,
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-dd46e1bd34",
@@ -1613,7 +1918,7 @@
     ],
     "source_date": "2026-11-09",
     "rq_candidate": "人々が貯蓄目標を達成できない理由は、現在バイアスだけなのか。それとも、将来の目標や支出予定に十分な注意が向いていないことが原因なのか？",
-    "hypothesis_candidate": "",
+    "hypothesis_candidate": "著者らは、将来の目標を思い出させるリマインダーは貯蓄を増やし、特に具体的な貯蓄目的を想起させるメッセージが有効になると予測しています。",
     "method_keywords": [
       "RCT",
       "AI"
@@ -1623,7 +1928,11 @@
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "思い出してもらうことの効果：リマインダーはいかに貯蓄を増やすか",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "legacy_extraction_from_digest",
+    "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
+    "hypothesis_source_line": 12,
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-8ba0782922",
@@ -1635,7 +1944,7 @@
     ],
     "source_date": "2026-11-09",
     "rq_candidate": "抗菌薬を多く処方する医療機関に対して、同地域の他機関との比較情報を伝えることで、抗菌薬の処方量を減らせるか？",
-    "hypothesis_candidate": "",
+    "hypothesis_candidate": "著者らは、社会規範フィードバックによって高処方機関の抗菌薬処方が減少すると予測しました。また、患者向け情報提供による効果も別途検証しています。",
     "method_keywords": [
       "RCT",
       "ナッジ"
@@ -1646,7 +1955,11 @@
     "verification": "not_checked_against_original",
     "title_ja": "抗菌薬を多く処方する一般診療医への社会規範フィードバック",
     "title_ja_status": "provisional_translation",
-    "bibliography_status": "verified_title_or_doi"
+    "bibliography_status": "verified_title_or_doi",
+    "rq_provenance": "legacy_extraction_from_digest",
+    "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
+    "hypothesis_source_line": 12,
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-5b78f0b3ca",
@@ -1658,7 +1971,7 @@
     ],
     "source_date": "2026-11-11",
     "rq_candidate": "小規模RCTと大規模RWDが存在する場合、観察データの未測定交絡を無視せずに情報を統合し、個人属性別の生存時間への介入効果を推定できるか。",
-    "hypothesis_candidate": "",
+    "hypothesis_candidate": "著者が正式な仮説として提示しているものではありません。中心命題は、RCTとRWDで処置効果が移送可能であるという仮定の下で、観察データの交絡成分を分離したBayesian Forestを用いれば、RCT単独より効率的に生存効果の異質性を推定できるというものです。",
     "method_keywords": [
       "RCT",
       "Survival",
@@ -1669,7 +1982,11 @@
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "RCTと実世界データを統合するベイズ・フュージョン・フォレストによる生存効果の異質性推定",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "legacy_extraction_from_digest",
+    "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
+    "hypothesis_source_line": 12,
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-def53679c7",
@@ -1681,7 +1998,7 @@
     ],
     "source_date": "2026-11-11",
     "rq_candidate": "寄付金に対するマッチング補助を提示すると、寄付者は増えるのか。さらに、マッチング倍率を高くすると、寄付行動は追加的に増えるのか。",
-    "hypothesis_candidate": "",
+    "hypothesis_candidate": "マッチング補助は寄付率や寄付額を高める。さらに倍率が高いほど寄付行動が増えるか、という価格反応の予測を検証しています。",
     "method_keywords": [
       "RCT"
     ],
@@ -1690,7 +2007,11 @@
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "寄付に価格は影響するか：大規模自然フィールド実験",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "legacy_extraction_from_digest",
+    "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
+    "hypothesis_source_line": 12,
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-0fe4ab82a9",
@@ -1702,14 +2023,18 @@
     ],
     "source_date": "2026-11-11",
     "rq_candidate": "他人が金融商品を購入したと知ると、自分も購入したくなるのはなぜか。他人の選択から商品価値を学ぶSocial Learningと、他人と同じ商品を保有すること自体のSocial Utilityを区別できるか。",
-    "hypothesis_candidate": "",
+    "hypothesis_candidate": "他人の購入希望を知ることによるSocial Learning効果と、実際の保有を知ることによる追加的なSocial Utility効果の両方が、金融商品の購入意思決定を変えるという予測です。",
     "method_keywords": [],
     "design_status": "要確認",
     "source_text": "\nLeonardo Bursztyn, Florian Ederer, Bruno Ferman & Noam Yuchtman｜Econometrica, 2014\n\n[Understanding Mechanisms Underlying Peer Effects: Evidence from a Field Experiment on Financial Decisions](https://doi.org/10.3982/ECTA11991)\n\n**Research Question（RQ）**\n\n他人が金融商品を購入したと知ると、自分も購入したくなるのはなぜか。他人の選択から商品価値を学ぶSocial Learningと、他人と同じ商品を保有すること自体のSocial Utilityを区別できるか。\n\n**RQの面白さ：** 同じ「他人に影響されて購入した」という結果に対して、異なる2つのメカニズムを想定しています。そして、**他人が購入を希望した事実と、実際に保有できた事実を分離してランダム化する**という実験設計を考案しました。\n\n**主な仮説・Proposition：** 他人の購入希望を知ることによるSocial Learning効果と、実際の保有を知ることによる追加的なSocial Utility効果の両方が、金融商品の購入意思決定を変えるという予測です。\n\n##### 1．どんなもの？\n\n金融仲介会社と協力し、知人同士のペアを対象に実施したフィールド実験です。\n\n最初の人が金融商品の購入を希望した場合、その購入を実際に成立させるかをランダム化します。\n\n次に、もう一人へ購入希望や購入成立の情報を伝えるかどうかをランダム化します。\n\n##### 2．先行研究と比べてどこがすごい？\n\n従来のPeer Effects研究では、他人が行動した後に自分も行動するという相関から、社会的影響を推定することがありました。\n\nしかし、共通の情報、似た属性、同時に起きた外部要因によっても同じ相関が生じます。\n\n本研究は、購入希望と実際の保有を実験的に切り分け、Social LearningとSocial Utilityの寄与を区別しています。[^c75df7f1-6]\n\n##### 3．技術や手法のキモはどこ？\n\n| 段階 | 内容 |\n|--------|--------|\n| RQ | 他人の行動が自分の意思決定を変える理由は何か |\n| 仮説 | 情報学習と社会的効用がそれぞれ作用する |\n| 必要なデータ | ペア関係、購入希望、保有割当、情報提示、購入結果 |\n| 研究デザイン | 二段階ランダム化フィールド実験 |\n| 分析 | 3条件の購入率比較 |\n| 結果 | Social Learningと追加的Social Utilityの効果 |\n\n実験の識別構造\n\n**知人Aが金融商品の購入を希望**\n\n対照群\n\nAの情報を伝えない\n\nLearning\n\nAは希望したが保有していないと伝える\n\nLearning＋Utility\n\nAが希望し保有したと伝える\n\n**知人Bの金融商品購入率を比較**\n\n##### 4．どうやって有効だと検証した？\n\n研究で報告された購入率は、対照群42%、Social Learningのみ71%、Social LearningとSocial Utilityの両方が作用する群93%でした。[^c75df7f1-7]\n\n\n> 図を表へ変換（AI整形）。購入率の群間比較。単純な差はメカニズム識別の直感を示すもので、論文のすべての推定仕様を代替するものではありません。\n\n| 時点 | 金融商品購入率 |\n|---|---:|\n| 情報なし | 42 |\n| Learning | 71 |\n| Learning＋Utility | 93 |\n\n\n群間の単純な差を計算すると、\n\n$\n71-42=29\\text{ポイント}\n$\n\nがSocial Learningの効果に対応する比較です。\n\nさらに、\n\n$\n93-71=22\\text{ポイント}\n$\n\nが、購入希望という情報を共有したうえで、実際の保有を知ることによる追加効果に対応します。\n\nフォローアップ調査では、金融知識の高い人からの情報ほど学習効果が大きく、他人と同じ資産を持ちたいという動機も確認されています。[^c75df7f1-8]\n\n##### 5．議論はある？\n\nSocial LearningとSocial Utilityの区別は、実験操作が想定した心理的経路だけを変えるという解釈に依存します。\n\n例えば、知人が実際に保有できたという情報が、商品の信頼性に関する追加情報にもなっていれば、22ポイントを純粋な社会的効用だけと解釈することには慎重さが必要です。\n\n**私の考察：** 健康アプリでも、他人の歩数を提示して行動が変わったとして、それが「目標水準を学んだから」なのか「競争意識が高まったから」なのかを区別できます。例えば、平均歩数情報とランキング情報を別条件にする実験が考えられます。\n\n##### 6．次読むべき論文は？\n\n[Allcott（2011）, Social Norms and Energy Conservation](https://doi.org/10.1016/j.jpubeco.2011.03.003)：社会規範による実際の行動変容。\n\n[Hallsworth et al.（2016）, Social Norm Feedback and Antibiotic Prescribing](https://doi.org/10.1016/S0140-6736(16)00215-4)：専門職への社会規範介入のRCT。\n\n**この論文から学ぶ研究の型：** 同じ観測結果を説明する複数のメカニズムを列挙し、それぞれを区別できる実験操作を設計する。行動変容の有無だけでなく、その原因に踏み込む。\n\n---\n\n### 今週読むならこの順\n\n| 順番 | 論文 | 何を学ぶためか |\n|--------|--------|--------|\n| **1** | B2：Bursztyn et al. | 競合する心理メカニズムを実験で識別する設計 |\n| **2** | B1：Karlan & List | 施策の有無と強度を区別し、限界効果を測定する |\n| **3** | A2：Jacobs et al. | RCTとRWDの異なる識別上の強みを統合する |\n| **4** | A1：Athey & Wager | 因果効果を予算制約下の最適な施策配分へ変換する |\n\n#### 今回のTakeaway：4本を組み合わせた実験の構想\n\n歩数施策に応用するなら、B1とB2を組み合わせて、次のようなRQを立てられます。\n\n**「歩数インセンティブの金額を増やすことと、他者比較による社会的動機づけを追加することでは、どちらが費用対効果の高い行動変容を生むか。また、その効果は顧客属性によって異なるか？」**\n\n例えば、インセンティブを「なし・少額・高額」の3条件、他者比較を「なし・平均歩数提示・ランキング提示」の3条件に分けた3×3の要因実験が考えられます。\n\n実験条件：3×3＝9群\n\n|  | 比較なし | 平均歩数 | ランキング |\n|--------|--------|--------|--------|\n\n研究デザイン案。実際にはサンプルサイズ、費用、倫理性、介入間の干渉を検討して群数を調整します。\n\n評価Outcomeは、介入中の平均歩数、終了後3〜6か月の平均歩数、継続率、費用当たり追加歩数などです。\n\nその後、A2の考え方で長期の効果異質性を検討し、A1のPolicy Learningで「誰にどの施策を提供するか」という意思決定へ接続します。ただし、A1の元論文は主に二値介入を扱うため、9種類の介入からの選択には多値処置への拡張が必要です。\n\nこの構想の強みは、**実験で介入の仕組みを理解し、因果推論で顧客ごとの効果を推定し、最後に経営判断へ接続する**という一連の研究設計になっていることです。\n\n[^c75df7f1-1]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用識別子：`turn888073search11`。原論文への直接リンクではない。\n[^c75df7f1-2]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用識別子：`turn139015search0`。原論文への直接リンクではない。\n[^c75df7f1-3]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用識別子：`turn139015academia37`。原論文への直接リンクではない。\n[^c75df7f1-4]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用識別子：`turn139015academia37`。原論文への直接リンクではない。\n[^c75df7f1-5]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用識別子：`turn888073search2turn888073search7`。原論文への直接リンクではない。\n[^c75df7f1-6]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用識別子：`turn888073search0`。原論文への直接リンクではない。\n[^c75df7f1-7]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用識別子：`turn888073search8`。原論文への直接リンクではない。\n[^c75df7f1-8]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用識別子：`turn888073search9`。原論文への直接リンクではない。\n\n---\n\n",
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "ピア効果のメカニズムを理解する：金融意思決定のフィールド実験",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "legacy_extraction_from_digest",
+    "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
+    "hypothesis_source_line": 12,
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-3376f0baf3",
@@ -1721,7 +2046,7 @@
     ],
     "source_date": "2026-11-13",
     "rq_candidate": "顧客ごとに施策効果と施策費用が異なり、さらに費用推定にも不確実性がある場合、予算制約を満たしながら社会的便益を最大化する介入方針を学習できるか。",
-    "hypothesis_candidate": "",
+    "hypothesis_candidate": "著者が正式な仮説として提示しているものではありません。中心命題は、PAC-Bayesianな方針学習により、一般的な予算制約の下でも、方針の期待費用と最適方針からのRegretに対する有限標本保証を導けるというものです。",
     "method_keywords": [
       "CATE",
       "Policy Learning",
@@ -1732,7 +2057,11 @@
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "予算制約下のPACベイズ的処置割当",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "legacy_extraction_from_digest",
+    "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
+    "hypothesis_source_line": 12,
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-028ecc4f15",
@@ -1744,7 +2073,7 @@
     ],
     "source_date": "2026-11-13",
     "rq_candidate": "異なる研究者が考案した多数の行動変容施策を、同じ対象集団・同じOutcome・同じ期間で比較すると、どの施策が最も効果的か。また、専門家はその優劣を事前に予測できるか。",
-    "hypothesis_candidate": "",
+    "hypothesis_candidate": "著者が正式な仮説として提示しているものではありません。中心命題は、Megastudyにより複数介入の比較可能性を高め、有望な施策を効率的に発見できるというものです。",
     "method_keywords": [
       "RCT"
     ],
@@ -1754,7 +2083,11 @@
     "verification": "not_checked_against_original",
     "title_ja": "メガスタディは応用行動科学の効果を高める",
     "title_ja_status": "provisional_translation",
-    "bibliography_status": "verified_title_or_doi"
+    "bibliography_status": "verified_title_or_doi",
+    "rq_provenance": "legacy_extraction_from_digest",
+    "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
+    "hypothesis_source_line": 12,
+    "substantive_verification": "not_checked_against_original"
   },
   {
     "paper_id": "paper-6bc882df2c",
@@ -1766,13 +2099,17 @@
     ],
     "source_date": "2026-11-13",
     "rq_candidate": "行動科学の専門家は、金銭的・非金銭的インセンティブの実験効果をどの程度正確に予測できるか。また、専門家の地位、研究実績、経験は予測精度を高めるか。",
-    "hypothesis_candidate": "",
+    "hypothesis_candidate": "著者が正式な仮説として提示しているものではありません。中心命題は、専門家の予測を集約することで実験結果を比較的正確に予測できる一方、個人の研究実績や地位が必ずしも予測精度を説明しないというものです。",
     "method_keywords": [],
     "design_status": "要確認",
     "source_text": "\nStefano DellaVigna & Devin Pope｜Journal of Political Economy, 2018\n\n[Predicting Experimental Results: Who Knows What?](https://doi.org/10.1086/699976)\n\n**Research Question（RQ）**\n\n行動科学の専門家は、金銭的・非金銭的インセンティブの実験効果をどの程度正確に予測できるか。また、専門家の地位、研究実績、経験は予測精度を高めるか。\n\n**RQの面白さ：** 通常、専門家の知識は正しい判断につながると考えられます。しかし、**実験前の予測を記録して実験結果と比較すれば、専門知識の価値そのものを検証できる**という発想です。\n\n**主なProposition：** 著者が正式な仮説として提示しているものではありません。中心命題は、専門家の予測を集約することで実験結果を比較的正確に予測できる一方、個人の研究実績や地位が必ずしも予測精度を説明しないというものです。\n\n##### 1．どんなもの？\n\nDellaVigna & Popeの別研究で実施した、金銭的・非金銭的動機づけによる努力量の実験結果を、専門家や非専門家が事前に予測する研究です。\n\n予測と実測値を照合することで、専門家の判断精度を検証します。\n\n##### 2．先行研究と比べてどこがすごい？\n\n専門家の能力を論文数や所属機関などで評価するのではなく、**実際の予測精度**で評価しています。\n\nさらに、個人の予測と集団平均の予測を比較し、Wisdom of Crowdsの有効性を検証しています。\n\n##### 3．技術や手法のキモはどこ？\n\n| 段階 | 内容 |\n|--------|--------|\n| RQ | 専門家は施策効果を正しく予測できるか |\n| 命題 | 集団予測は個人予測より安定する |\n| 必要なデータ | 実験結果、事前予測、専門家属性 |\n| 研究デザイン | 実験結果に対する事前予測の精度検証 |\n| 分析 | 予測誤差、順位相関、属性別比較 |\n| 結果 | 集団予測の精度と専門性の関係 |\n\nこの研究では、平均絶対誤差や平均二乗誤差のような指標を使う発想が重要です。\n\n例えば、\n\n$\nMAE=\\frac1K\\sum_{k=1}^{K}|\\widehat y_k-y_k|\n$\n\n- $K$：予測対象となる施策数\n- $\\widehat y_k$：施策 $k$ の予測Outcome\n- $y_k$：施策 $k$ の実測Outcome\n- $MAE$：平均絶対予測誤差\n\nこれは予測精度の一般的な説明式であり、論文の全分析仕様を表したものではありません。\n\n##### 4．どうやって有効だと検証した？\n\n208人の専門家が、15種類の金銭的・行動科学的介入について、実験で得られる努力量を予測しました。\n\n比較対象には、博士課程学生、学部生、MBA学生、オンライン参加者も含まれています。\n\n専門家の集団平均予測\n\n### 96%\n\n個々の専門家予測の96%より高精度\n\n専門家の平均予測は実験結果をよく捉え、集団平均が個人の大部分を上回りました。一方、被引用数、職位、専門分野、関連経験は、予測精度と明確には相関しませんでした。[^082d98b8-6]\n\n##### 5．議論はある？\n\n実験対象は特定の努力課題であり、長期の経営判断や医療判断でも同様の結果になるとは限りません。\n\nまた、集団平均が優れていても、全員が同じ方向へ誤る場合には集合知が機能しません。\n\n**私の考察：** 経営会議で施策を提案するとき、実施前に関係者の効果予測を記録し、実験後に予測誤差を振り返る仕組みが考えられます。これは単に施策を評価するだけでなく、組織の判断能力を継続的に改善する方法にもなります。\n\n##### 6．次読むべき論文は？\n\n[DellaVigna & Pope（2018）, What Motivates Effort?](https://doi.org/10.1093/restud/rdx033)：予測対象となった実験そのものを理解する。\n\n[DellaVigna & Pope（2019）, Stability of Experimental Results](https://www.nber.org/papers/w25858)：実験条件を変えた場合の結果の安定性と専門家予測を比較する。\n\n**この論文から学ぶ研究の型：** 実験前に予測を記録し、実験後に実測値と比較する。施策効果だけでなく、施策を選ぶ人間の予測能力も評価対象にする。\n\n---\n\n### 今週読むならこの順\n\n| 順番 | 論文 | 学ぶ目的 |\n|--------|--------|--------|\n| **1** | B1：Milkman et al. | 多数の施策を同じ条件で比較する実験基盤の設計 |\n| **2** | B2：DellaVigna & Pope | 専門家の事前予測を測定し、意思決定能力を評価する |\n| **3** | A1：Meir et al. | 打切りの多い長期Outcomeで効果異質性を推定する |\n| **4** | A2：Pellatt | 推定された効果を予算制約付きの施策配分へ接続する |\n\n#### 今回のTakeaway：実験を「施策評価」から「組織の学習装置」へ\n\nB1とB2を組み合わせると、次のような実験設計が考えられます。\n\n**Step 1｜複数の施策案を募集**\n\n例：ポイント、リマインダー、目標設定、離脱後復帰報酬\n\n**Step 2｜担当者・専門家が効果を事前予測**\n\n予測効果量、確信度、根拠を記録\n\n**Step 3｜共通のRCT基盤で比較**\n\n同じ対象条件・同じKPI・同じ評価期間\n\n**Step 4｜実測効果と予測誤差を評価**\n\nどの施策が効いたか、誰の予測が正確だったか\n\n**Step 5｜効果と費用から次回の施策配分を改善**\n\nHTE、予算制約、継続効果を考慮\n\nこの設計では、実験によって2種類の学習が得られます。\n\n一つは「どの施策が顧客行動を変えるか」という**施策に関する学習**。もう一つは「どのような予測・判断が正確だったか」という**組織の意思決定に関する学習**です。\n\n特にB1で注目したいのは、最も効果的だった施策が「運動を続けている人への報酬」ではなく、「休んだ後に復帰した人への報酬」だったことです。これは、継続率を高める施策の対象を、活動中の顧客から離脱リスクのある顧客へ移す発想につながります。\n\n一方で、54施策のうち終了後に有意な効果が残ったのは8%でした。したがって、短期効果の大きさだけで施策を選ばず、終了後の行動と費用対効果を評価する必要があります。\n\n今回の4本から得られる研究上の問いは、**「実験による施策選択と、専門家の事前予測による施策選択では、長期的な顧客価値と費用対効果にどの程度の差が生じるか」**です。\n\nこれは顧客行動の研究であると同時に、データを使う組織そのものの意思決定品質を検証する研究にも発展させられます。\n\n[^082d98b8-1]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用識別子：`turn234643academia48`。原論文への直接リンクではない。\n[^082d98b8-2]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用識別子：`turn234643academia48`。原論文への直接リンクではない。\n[^082d98b8-3]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用識別子：`turn234643search2`。原論文への直接リンクではない。\n[^082d98b8-4]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用識別子：`turn234643academia49`。原論文への直接リンクではない。\n[^082d98b8-5]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用識別子：`turn234643search9turn234643search12`。原論文への直接リンクではない。\n[^082d98b8-6]: [元会話の引用情報](https://chatgpt.com/c/6a7916a9-d408-83ee-a492-22eaadf427dc)。引用識別子：`turn720333search3turn720333search4`。原論文への直接リンクではない。\n\n",
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "実験結果を予測する：誰が何を知っているのか？",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "rq_provenance": "legacy_extraction_from_digest",
+    "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
+    "hypothesis_source_line": 12,
+    "substantive_verification": "not_checked_against_original"
   }
 ]
