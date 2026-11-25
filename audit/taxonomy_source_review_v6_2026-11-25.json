@@ -1,0 +1,81 @@
+{
+  "audit_date": "2026-11-25",
+  "version": 6,
+  "scope": "Four primary-source cross checks for methods outcomes and mechanism tags",
+  "papers": [
+    {
+      "id": "paper-3ada9d3a18",
+      "title": "Diagnosing Physician Error: A Machine Learning Approach to Low-Value Health Care",
+      "source": "https://doi.org/10.1093/qje/qjab046",
+      "verification": "原著要旨に関する部分照合（本文の標本数・-2.6ポイント等の数値は未再検証）",
+      "identification_tags": [
+        "観察データ・交絡調整",
+        "機械学習・ベイズ"
+      ],
+      "outcome_tags": [
+        "健康・医療",
+        "判断品質・知識"
+      ],
+      "mechanism_tags": [],
+      "comment": "原著の要旨と照合：機械学習を医師の心筋梗塞診断判断の研究手段として用いる観察データ研究。過剰検査と過少検査の双方を扱い、医師が単純なリスクモデルに依存したり目立つ情報に過度に重み付けしたりする可能性を示す。論文はこれらをsuggestive evidenceとして述べており、認知メカニズムを厳密に単独識別した結果とは扱わない。"
+    },
+    {
+      "id": "paper-87f8569164",
+      "title": "Generative AI without guardrails can harm learning: Evidence from high school mathematics",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12232635/",
+      "verification": "原著の要旨・本文の研究設定と主要方向を照合（詳細表の数値は未再検証）",
+      "identification_tags": [
+        "ランダム化実験"
+      ],
+      "outcome_tags": [
+        "判断品質・知識"
+      ],
+      "mechanism_tags": [],
+      "comment": "原著の本文および要旨と照合：トルコの高校数学教育で約1,000人の生徒にAI支援を与えたフィールド実験。通常のGPT Baseとヒント中心のGPT Tutorを比較し、AIを使える練習時の成績とAIなし試験での成績を分ける。主たるOutcomeは学習成績であり、企業の生産性ではない。原著はGPT Base利用時にAIなし試験で成績が悪化したと報告している。学習の阻害機序は研究内の証拠から考察されるもので、メカニズムが一意に因果識別されたと断定しない。"
+    },
+    {
+      "id": "paper-63007291f5",
+      "title": "Human Decisions and Machine Predictions",
+      "source": "https://academic.oup.com/qje/article-abstract/133/1/237/4095198",
+      "verification": "原著要旨と設計の部分照合（本文の24.7%・41.9%の数値は未再検証）",
+      "identification_tags": [
+        "観察データ・交絡調整",
+        "機械学習・ベイズ"
+      ],
+      "outcome_tags": [
+        "判断品質・知識"
+      ],
+      "mechanism_tags": [],
+      "comment": "原著の要旨・研究設計と照合：米国の裁判官の保釈判断とリスク予測を比較する研究。実験的にAIを裁判官へ割り付けたRCTではない。過去の保釈判断のために釈放されなかった被告人のOutcomeが観測されないSelective Labelsを考慮して、反事実的な方針比較を行う。モデルの予測精度と、裁判所で実装した際の因果効果は同一視できない。"
+    },
+    {
+      "id": "paper-6bc882df2c",
+      "title": "Predicting Experimental Results: Who Knows What?",
+      "source": "https://eml.berkeley.edu/~sdellavi/",
+      "verification": "著者の公開要旨と主な結果の部分照合（原著の全表・推定値は未再検証）",
+      "identification_tags": [
+        "ランダム化実験"
+      ],
+      "outcome_tags": [
+        "判断品質・知識"
+      ],
+      "mechanism_tags": [],
+      "comment": "著者の公開要旨と照合：208人の学術専門家が、実際の努力量実験で実施された15種類の介入について結果を事前予測した。専門家の平均予測は個人予測の96%を上回った。この96%は予測正解率や処置効果ではない。専門家の地位・被引用数等と個人予測精度の相関が明確でないことも報告。金銭的インセンティブは予測対象の実験条件であり、この論文自体の心理メカニズムを証明するタグとは区別する。"
+    }
+  ],
+  "summary": {
+    "total_records": 83,
+    "selected_field_source_checked": 4,
+    "quantitative_full_paper_audit_complete": 0
+  },
+  "next_actions": [
+    "Validate individual Outcome fields as measured variables rather than broad topical categories",
+    "Review more papers with primary publications",
+    "Build automated diagnostics for incompatible method and outcome tags"
+  ],
+  "limitations": [
+    "Only 4 paper abstracts and sections checked, not all numeric results",
+    "Mechanism tags are deliberately left empty when a mechanism is not directly established",
+    "All other records retain heuristic exploratory classification"
+  ]
+}
