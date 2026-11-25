@@ -22,7 +22,8 @@
     "primary_abstract_v2_verified": 1,
     "primary_body_partially_verified": 6,
     "selected_results_numeric_checked": 4,
-    "identification_assumptions_partially_checked": 6
+    "identification_assumptions_partially_checked": 6,
+    "primary_abstract_checked_current_batch": 1
   },
   "records": [
     {
@@ -49,12 +50,12 @@
       "title": "Efficient transport and generalization of survival treatment effects",
       "original_url": "https://arxiv.org/abs/2609.18764",
       "baseline_status": "basic_reference_check_previously_recorded",
-      "current_turn_source_check": "abstract_checked",
+      "current_turn_source_check": "primary_abstract_v1_checked_numeric_table_pending",
       "full_paper_claims_checked": false,
       "format_v1_2_checked": false,
       "quantitative_results_checked": false,
       "identification_assumptions_checked": false,
-      "notes": "2026-11-25: primary abstract/landing page checked; paper body, data, effect sizes and confidence intervals not yet validated",
+      "notes": "The arXiv v1 abstract confirms estimand, DML/EIC/WHI, but empirical variance values, samples and uncertainty are unverified; added visible warning. Not counted as detailed audit.",
       "automated_markdown_cleanup": true,
       "format_cleanup_summary": {
         "removed_boxed_math": 0,
