@@ -77,7 +77,7 @@ function md(src){
     .replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>')
     .replace(/\*(.+?)\*/g,'<em>$1</em>')
     .replace(/`([^`]+)`/g,'<code>$1</code>')
-    .replace(/\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g,(_,label,url)=>'<a href="'+url+'" target="_blank" rel="noopener noreferrer">'+label+'</a>');
+    .replace(/\[([^\]]+)\]\((https?:\/\/(?:[^\s()]|\([^\s()]*\))+?)\)/g,(_,label,url)=>'<a href="'+url+'" target="_blank" rel="noopener noreferrer">'+label+'</a>');
   const splitCells=line=>{
     let v=line.trim().replace(/^\|/,'').replace(/\|$/,'');
     return v.split(/(?<!\\)\|/).map(cell=>cell.trim().replace(/\\\|/g,'|'));
@@ -94,6 +94,14 @@ function md(src){
   };
   for(let i=0;i<lines.length;i++){
     const t=lines[i].trim();
+    if(/^```/.test(t)){
+      flush();
+      const codeLines=[];
+      while(i+1<lines.length && !/^```\s*$/.test(lines[i+1].trim()))codeLines.push(lines[++i]);
+      if(i+1<lines.length)i++;
+      out+='<pre><code>'+safe(codeLines.join('\n'))+'</code></pre>';
+      continue;
+    }
     if(!t){flush();continue;}
     if(/^MATHBLOCK\d+$/.test(t)){flush();out+=blocks[Number(t.slice(9))]||'';continue;}
     const head=splitCells(t);
