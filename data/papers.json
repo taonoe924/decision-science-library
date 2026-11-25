@@ -363,9 +363,9 @@
   },
   {
     "paper_id": "paper-c79dc0a5e2",
-    "title_candidate": "論文ページ（arXiv）",
+    "title_candidate": "Conformal Policy Learning with Distribution-Free Safety Guarantees",
     "doi_candidate": "",
-    "source_url": "https://arxiv.org/abs/2609.17296?utm_source=chatgpt.com",
+    "source_url": "https://arxiv.org/abs/2609.17296",
     "source_weeks": [
       "W38",
       "W39"
@@ -383,8 +383,9 @@
     "source_text": "**Ying Jin & Naoki Egami｜arXiv｜2026-09-15**  \n[論文ページ（arXiv）](https://arxiv.org/abs/2609.17296?utm_source=chatgpt.com)\n\n#### RQ\n\n**「誰にTreatmentを割り当てるか」を学習するとき、平均Outcomeを最大化するだけでなく、Treatmentによって悪化する個人へ誤ってTreatmentを割り当てる確率を、事前に指定した水準以下に制御できるか？**\n\n#### 仮説・主要命題\n\n方法論論文なので通常のH1/H2はありません。\n\n著者の主要命題は、**Conformal Policy Learning（CPL）を使えば、RCTではoutcome modelを仮定せず有限標本でcounterfactual harmの確率を制御でき、outcome modelがconsistentなら、その安全制約下で漸近的にoptimal welfareを達成できる**というものです。観察研究ではlearn-then-balance weightingにより、doubly robustな安全保証まで拡張しています。[^20260917-2]\n\n#### 1. どんなもの？\n\n通常のPolicy Learningは、\n\n> 「Treatmentを誰に配れば、集団全体の平均Outcomeが最大になるか？」\n\nを考えます。\n\nところが平均値だけを最大化すると、\n\n- 80%には少しプラス\n- 20%には大きなマイナス\n\nでも、平均がプラスならTreatmentするpolicyが選ばれ得ます。\n\nこの論文はそこに、\n\n> **「Treatmentによって害を受ける可能性がある人にはTreatmentしない」**\n\nというindividual-level safety constraintを追加します。\n\nしかも単にCATEの下側信頼区間が正ならTreatmentするという方法ではなく、**各Treatment decisionをcounterfactual harmについてのhypothesis testとして扱い、conformal p-valueでTreatment assignmentを決める**のが特徴です。[^20260917-3]\n\n#### 2. 先行研究と比べてどこがすごい？\n\n標準的なPolicy Learningでは、\n\n$$\n\\pi^*\n=\n\\arg\\max_{\\pi\\in\\Pi}V(\\pi)\n$$\n\nです。\n\nつまり**Policy Value最大化**が目的です。\n\nManski、Kitagawa & Tetenov、Athey & Wagerなどがこの流れの代表です。今回の論文もこれらを主要な先行研究として位置付けています。[^20260917-4]\n\n一方、既存のsafe policy learningでは「平均的にbaseline policyより悪くならない」といった**policy-level safety**を置く研究があります。\n\n今回の違いは、\n\n$$\n\\boxed{\\text{Policy-level safety}\n\\rightarrow\n\\text{Individual counterfactual safety}}\n$$\n\nです。\n\nつまり、\n\n> 「このpolicyを導入すると全体では悪化しません」\n\nではなく、\n\n> **「Treatmentによって害を受ける個人をTreatmentしてしまう確率を $\\alpha$ 以下にする」**\n\nという保証を狙います。\n\nこれはPolicy Learningを実運用へ持っていくうえで重要な違いです。[^20260917-5]\n\n#### 3. 技術や手法のキモはどこ？\n\n##### 算式の説明\n\nまず通常のPolicy Valueを、\n\n$$\nV(\\pi)\n=\nE[\nY(\\pi(X))\n]\n$$\n\nとします。\n\n- $X$：個人属性\n- $A\\in\\{0,1\\}$：Treatment\n- $Y(1),Y(0)$：potential outcome\n- $\\pi(X)\\in\\{0,1\\}$：属性 $X$ の人へTreatmentするかを決めるpolicy\n\n通常なら、\n\n$$\n\\boxed{\n\\pi^*\n=\n\\arg\\max_{\\pi}V(\\pi)\n}\n$$\n\nです。\n\nところがCPLでは、個人について\n\n$$\nH_{0,i}:Y_i(1)\\leq Y_i(0)\n$$\n\nという仮説を考えます。\n\nつまり、\n\n> **「この人はTreatmentすると改善しない、あるいは害を受ける」**\n\nを帰無仮説にします。\n\n各個人についてconformal p-value $p_i$ を作り、\n\n$$\n\\pi_\\alpha(X_i)\n=\n1\\{p_i\\leq\\alpha\\}\n$$\n\nとTreatmentします。\n\n- $p_i$：個人 $i$ が「Treatmentによって害を受ける」という帰無仮説に対するconformal p-value\n- $\\alpha$：意思決定者が指定するsafety level\n\nつまり、\n\n$$\np_i\\leq0.05\n$$\n\nなら、\n\n> 「害を受ける側である」という仮説を十分棄却できる\n\nのでTreatmentします。\n\n著者らが狙う安全保証を概念的に書けば、\n\n$$\n\\boxed{\nP\\{\nY(1)<Y(0)\n\\mid\n\\pi_\\alpha(X)=1\n\\}\n\\leq \\alpha\n}\n$$\n\nに近い発想です。実際の論文では、潜在Outcomeを同時観測できない問題に対し、observable proxyと**selective calibration**を使ってconformal p-valueを構成します。[^20260917-3]\n\n従来：\n\n$$\n\\max_\\pi V(\\pi)\n$$\n\nCPL：\n\n$$\n\\boxed{\n\\max_\\pi V(\\pi)\n\\quad\n\\text{s.t.}\n\\quad\nRisk_{\\text{harm}}(\\pi)\\leq\\alpha\n}\n$$\n\nという**制約付きPolicy Optimization**として理解すると非常に分かりやすいです。\n\n#### 4. どうやって有効だと検証した？\n\n著者らはまず理論的に、RCTについてexchangeability条件の下で、\n\n- outcome model不要\n- distribution-free\n- finite-sample safety guarantee\n\nを証明しています。\n\nさらにoutcome modelがconsistentなら、安全制約を満たすpolicy class内で**asymptotically optimal welfare**を達成することを示しています。観察データではlearn-then-balance weightingを導入し、二重頑健な安全保証を導出しています。[^20260917-3]\n\nSimulationに加え、**AIを使ってconspiracy beliefsを減らす介入**へ適用しています。つまり生成AI介入について、「平均的に効くか」ではなく**誰には介入しない方が安全かまで含めたassignment rule**を評価しています。[^20260917-6]\n\n#### 5. 議論はある？\n\n最大のtrade-offは明確で、\n\n$$\nSafety\\uparrow\n\\Rightarrow\nTreatment\\ rate\\downarrow\n\\Rightarrow\nPotential\\ welfare\\downarrow\n$$\n\nです。\n\n$\\alpha$ を小さくしすぎれば、本当はTreatmentで改善する人までTreatmentしなくなります。\n\nつまり最終的には、\n\n$$\n\\alpha\n$$\n\n自体が**経営・政策パラメータ**になります。\n\nまた、「harm」をどのOutcomeで定義するかも重要です。健康は改善するが継続率が下がる、利益は増えるが顧客満足度が落ちる、といったmulti-outcome問題は残ります。\n\nさらにRCTでのdistribution-free保証と、観察データでの保証は同じ強さではありません。後者ではconfounding adjustmentの妥当性が関わります。\n\n実務への展開では、\n\n$$\n\\boxed{\nExpected\\ Value\n-\nCost\n}\n$$\n\nだけでPolicyを選ぶのではなく、\n\n$$\n\\boxed{\n\\max_\\pi\\{Value(\\pi)-Cost(\\pi)\\}\n\\quad\ns.t.\\quad\nP(Harm\\mid Treatment)\\leq\\alpha\n}\n$$\n\nとすることで、**ROI最大化＋顧客保護制約**という経営問題へかなり自然につながります。\n\n#### 6. 次読むべき論文は？\n\n**Kitagawa & Tetenov (2018), “Who Should Be Treated? Empirical Welfare Maximization Methods for Treatment Choice”**  \n通常のPolicy Learning＝welfare maximizationの基準点。CPLが何を追加したのかが明確になります。[^20260917-4]\n\n**Athey & Wager (2021), “Policy Learning with Observational Data”**  \n観察データでのPolicy Learningの代表研究。CPLのobservational extensionを理解する土台です。[^20260917-4]\n\n**Kallus (2022), “What’s the Harm? Sharp Bounds on the Fraction Negatively Affected by Treatment”**  \n「平均Treatment Effectでは個人レベルのharmが分からない」という今回の問題設定に直結します。[^20260917-4]\n\n---\n\n",
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
-    "title_ja": "書誌情報要確認：arXiv論文へのリンク",
-    "title_ja_status": "source_title_unverified"
+    "title_ja": "分布に依存しない安全性保証付きの適合的方策学習",
+    "title_ja_status": "source_title_unverified",
+    "bibliography_status": "verified_title_or_doi"
   },
   {
     "paper_id": "paper-07919c7d40",
@@ -452,9 +453,9 @@
   },
   {
     "paper_id": "paper-6582247bcc",
-    "title_candidate": "NBER Working Paper",
+    "title_candidate": "Thinking versus Doing: Cognitive Capacity, Decision Making and Medical Diagnosis",
     "doi_candidate": "",
-    "source_url": "https://www.nber.org/papers/w35034?utm_source=chatgpt.com",
+    "source_url": "https://www.nber.org/papers/w35034",
     "source_weeks": [
       "W40"
     ],
@@ -468,8 +469,9 @@
     "source_text": "**Handel, Heizlsperger, Knecht, Kolstad, Malmendier & Matějka (2026)**\n\n[NBER Working Paper](https://www.nber.org/papers/w35034?utm_source=chatgpt.com)\n\n**RQ：**  \n> 医師は認知負荷が高くなると診断の質が単純に落ちるのか。それとも、**「考える」代わりに「検査する」ことで認知能力を補完するのか？**\n\n**RQの面白さ：** 「忙しい医師はミスするか？」ではありません。\n\n$$\n\\boxed{\nThinking\n\\leftrightarrow\nDoing\n}\n$$\n\nという**認知努力と実物資源投入の代替関係**として医療意思決定を捉えています。[^20260928-16]\n\n**中心命題：** cognitive loadが高まると医師はmental deliberationを減らし、より多くのdiagnostic actionへ置き換える。ただし検査はより一般的で精度の低いものへ偏る、という命題です。[^20260928-17]\n\n##### 1. どんなもの？\n\n救急医療の詳細なEHRとaudit-logを使い、\n\n$$\nCognitive\\ Load\n\\rightarrow\nDiagnostic\\ Behavior\n\\rightarrow\nPatient\\ Disposition\n$$\n\nを分析します。\n\n重要なのは「医師Aは忙しい、医師Bは暇」という単純比較ではなく、**同じ医師でもその瞬間に抱えている患者・タスク量が違う**というsituational variationを利用する点です。患者―医師pairingのquasi-random variationも利用しています。[^20260928-18]\n\n##### 2. 先行研究と比べてどこがすごい？\n\nDecision Fatigue研究なら、\n\n$$\nLoad\\uparrow\\Rightarrow Quality\\downarrow\n$$\n\nを調べることが多い。\n\n本研究は、\n\n$$\nLoad\\uparrow\n\\Rightarrow\nThinking\\downarrow\n\\Rightarrow\nDoing\\uparrow\n$$\n\nという**代替行動**まで見る。\n\nつまり「判断が悪くなるか」ではなく、\n\n> **人は認知資源が足りなくなったとき、何を代わりに使うのか？**\n\nというRQです。\n\n##### 3. 技術や手法のキモはどこ？\n\n流れは、\n\n$$\n認知能力は直接観測困難\n\\rightarrow\n同時進行患者等からLoadを測る\n\\rightarrow\n同一医師内variation\n\\rightarrow\nquasi-random patient assignment\n\\rightarrow\norder behavior\n$$\n\nです。\n\n概念的には、\n\n$$\nY_{ijt}\n=\n\\alpha_j+\n\\beta Load_{jt}\n+\\gamma X_i+\n\\lambda_t+\n\\varepsilon_{ijt}.\n$$\n\n- $Y_{ijt}$：患者 $i$ に医師 $j$ が時点 $t$ で行う診断行動\n- $Load_{jt}$：その瞬間の医師のcognitive load\n- $\\alpha_j$：医師固定効果\n- $X_i$：患者特性\n- $\\lambda_t$：時間要因\n\nこれにより、\n\n$$\n\\boxed{\\text{同じ医師・似た患者で、Loadだけが違う}}\n$$\n\n状況へ近づけます。\n\n##### 4. どうやって有効だと検証した？\n\n1SDのcognitive load増加で、1回のorder batchにおけるdiagnostic ordersは約**4%増加**しました。一方、medication ordersには有意な増加がなく、「単に何でも注文している」という説明とは整合しません。[^20260928-19]\n\nさらにloadが高いほど、\n\n- diagnostic test総数 ↑\n- targetedだがuncommonな検査 ↓\n- common tests ↑\n- diagnostic beliefのuncertainty ↑\n\nとなりました。[^20260928-20]\n\nそして最も重い結果は、**cognitive load最高decileの医師は最低decileと比べ、同種の患者を入院させる確率が28%高い**ことです。[^20260928-21]\n\n##### 5. 議論はある？\n\ncognitive loadはRCTで割り付けられていません。\n\nしたがって、\n\n$$\nLoad\\rightarrow Behavior\n$$\n\nではなく、\n\n$$\nUnobserved\\ Situation\n\\rightarrow\nLoad,\\ Behavior\n$$\n\nの可能性は残ります。著者らはquasi-random patient-physician pairing、医師固定効果、medication-order placebo等で代替説明を削っていますが、完全な実験ではありません。[^20260928-22]\n\nまた「検査数増加＝悪い意思決定」と単純には言えません。状況によっては検査が合理的な認知補完になる可能性もあります。\n\n##### 6. 次読むべき論文は？\n\nLinder et al. (2014) の**Time of Day and Antibiotic Prescribing**はdecision fatigueとの比較、Mani et al. (2013) **Poverty Impedes Cognitive Function**はscarcity→cognitive capacityという一般理論、Mullainathan & ShafirのScarcity研究は「有限なattention」という共通構造を理解するのに向いています。\n\n**この論文から学ぶ研究の型：**  \n「負荷が高いとperformanceが下がるか？」で終わらず、**“能力が不足したとき、人は何を代替投入するのか？”**と行動メカニズムへ一段深掘る型です。\n\n---\n\n",
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
-    "title_ja": "書誌情報要確認：NBERワーキングペーパー",
-    "title_ja_status": "source_title_unverified"
+    "title_ja": "考えることと実行すること：認知能力・意思決定・医療診断",
+    "title_ja_status": "source_title_unverified",
+    "bibliography_status": "verified_title_or_doi"
   },
   {
     "paper_id": "paper-ec4e9eeabb",
@@ -582,8 +584,8 @@
   {
     "paper_id": "paper-bb858e1205",
     "title_candidate": "Geodesic Difference-in-Differences",
-    "doi_candidate": "10.1093/biomet/asag054/8790844",
-    "source_url": "",
+    "doi_candidate": "10.1093/biomet/asag054",
+    "source_url": "https://doi.org/10.1093/biomet/asag054",
     "source_weeks": [
       "W40"
     ],
@@ -599,7 +601,8 @@
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "測地線を用いた差の差分析",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "bibliography_status": "verified_title_or_doi"
   },
   {
     "paper_id": "paper-5b0863ec2d",
@@ -830,9 +833,9 @@
   },
   {
     "paper_id": "paper-b7fe6b96d3",
-    "title_candidate": "論文全文・Open Access",
+    "title_candidate": "A Joint Test of Unconfoundedness and Common Trends",
     "doi_candidate": "10.1002/jae.70068",
-    "source_url": "https://doi.org/10.1002/jae.70068?utm_source=chatgpt.com",
+    "source_url": "https://doi.org/10.1002/jae.70068",
     "source_weeks": [
       "W41"
     ],
@@ -847,8 +850,9 @@
     "source_text": "\n**Martin Huber & Eva-Maria Oeß**\n\n*Journal of Applied Econometrics*、**2026年5月22日オンライン公開**。\n\n[論文全文・Open Access](https://doi.org/10.1002/jae.70068?utm_source=chatgpt.com)\n\n##### Research Question（RQ）\n\n> **同じ観察データに対して、Unconfoundednessに基づく推定と、Parallel Trendsに基づくDiDの両方が考えられる。どちらの識別仮定を信じるべきか、データから何か診断できないか？**\n\n##### RQの面白さ\n\n実務では、\n\n> PSM/IPWで推定するか、DiDで推定するか？\n\nという選択が発生します。\n\n通常は、DAGや制度背景から妥当そうな手法を選びます。\n\nしかし本研究は、\n\n$$\n\\boxed{\n2つの異なる識別仮定から\n同じCounterfactualを推定してみる\n}\n$$\n\nという発想です。\n\nもし両方の仮定が成立しているなら、同じATTを識別するはずです。\n\nでは、**推定されたCounterfactualが大きく異なれば、少なくともどちらかの仮定がおかしいのではないか？**\n\nこれがRQです。\n\n##### 主なProposition\n\n著者らの中心命題は、UnconfoundednessとConditional Common Trendsが同時に成立するなら、両者から識別されるATTは一致する、というものです。\n\nしたがって、両者の差をDMLで推定し、統計的にゼロから離れているか検定できます。\n\nただし、**棄却されないことは、両方の仮定が正しいことの証明ではありません**。[^20261009-6]\n\n##### 1. どんなもの？\n\n2期間のPanel Dataを考えます。\n\n$$\nt=0:\\text{施策前}\n$$\n\n$$\nt=1:\\text{施策後}\n$$\n\nTreatment Indicatorを $D$ とします。\n\n知りたいのは、\n\n$$\nATT\n=\nE[Y_1(1)-Y_1(0)\\mid D=1]\n$$\n\nです。\n\n問題は、\n\n$$\nY_1(0)\n$$\n\nをTreatment群について観測できないことです。\n\nそこで2つのCounterfactual推定方法を考えます。\n\n**方法①：Unconfoundedness**\n\n施策前のOutcomeと共変量を調整すれば、Treatment群の未介入Outcomeを推定できると仮定します。\n\n**方法②：DiD**\n\nTreatment群とControl群は、施策がなければ同じように変化したと仮定します。\n\n本論文は、この2つを比較します。\n\n##### 2. 先行研究と比べてどこがすごい？\n\n重要なのは、UnconfoundednessとParallel Trendsが**入れ子になった仮定ではない**ことです。\n\n一方が成立すれば、もう一方も成立するわけではありません。\n\n例えば、時間不変の未観測交絡がTreatment選択に影響していても、その影響が差分で除去できるならDiDは成立し得ます。\n\n反対に、施策前Outcomeに応じてTreatmentが決まり、その後のOutcome変化が平均回帰等の影響を受ける場合、Unconfoundednessは成立してもParallel Trendsは成立しない可能性があります。\n\n本研究はこの違いを利用し、**識別仮定の選択を統計的な診断問題に変えています**。[^20261009-7]\n\n##### 3. 技術や手法のキモはどこ？\n\n研究の流れは、\n\n$$\n\\begin{aligned}\n&RQ:\\text{2つの識別仮定は整合的か}\\\\\n&\\downarrow\\\\\n&仮説:\\text{両方成立すればATTは一致}\\\\\n&\\downarrow\\\\\n&必要データ:(Y_0,Y_1,D,X)\\\\\n&\\downarrow\\\\\n&識別:\\text{Unconfoundedness／Common Trends}\\\\\n&\\downarrow\\\\\n&分析:\\text{DR推定＋DML＋差の検定}\\\\\n&\\downarrow\\\\\n&結果:\\text{少なくとも一方の仮定を疑うべきか}\n\\end{aligned}\n$$\n\n###### 算式の説明①：UnconfoundednessによるATT\n\n$$\n\\boxed{\nATT_U\n=\nE[Y_1\\mid D=1]\n-\nE[\nE[Y_1\\mid X,Y_0,D=0]\n\\mid D=1\n]\n}\n$$\n\n- $Y_0$：施策前Outcome\n- $Y_1$：施策後Outcome\n- $D$：Treatment Indicator\n- $X$：施策前共変量\n\nです。\n\nControl群から、\n\n$$\nE[Y_1\\mid X,Y_0,D=0]\n$$\n\nを学習し、Treatment群へ当てはめます。\n\n###### 算式の説明②：DiDによるATT\n\n$$\n\\boxed{\nATT_{DiD}\n=\nE[Y_1-Y_0\\mid D=1]\n-\nE[\nE[Y_1-Y_0\\mid X,D=0]\n\\mid D=1\n]\n}\n$$\n\nこちらは、施策前後の変化量を比較します。\n\n###### 算式の説明③：識別仮定のJoint Test\n\n両者の差を、\n\n$$\n\\boxed{\n\\theta=ATT_{DiD}-ATT_U\n}\n$$\n\nと定義します。\n\n検定する帰無仮説は、\n\n$$\nH_0:\\theta=0\n$$\n\nです。\n\n実際には、それぞれのATTをDoubly Robust Scoreで推定し、Cross-fittingを利用します。\n\n$$\nZ=\n\\frac{\\hat\\theta}\n{\\widehat{SE}(\\hat\\theta)}\n$$\n\nを標準正規分布と比較することで検定します。\n\nこの手法ではNeyman Orthogonalityを利用し、一定の条件下で高次元共変量の調整にも対応しています。[^20261009-8]\n\n##### 4. どうやって有効だと検証した？\n\nSimulationと、3種類の公開データにおける4つのOutcome・設定で検証しています。\n\n特にJob Corpsの分析が分かりやすいです。\n\n**Job Corps：9,240人**\n\n職業訓練への実際の参加効果を推定しています。\n\nOutcomeは就業した週の割合です。\n\nEnsemble Learnerを用いた結果は、\n\n| 推定方法 | 推定値 |\n|---|---:|\n| Unconfoundedness | 4.129 |\n| DiD | 7.826 |\n| 差 $\\hat\\theta$ | 3.697 |\n| 差の標準誤差 | 0.438 |\n\nでした。\n\nしたがって、\n\n$$\nZ\\approx8.44\n$$\n\nとなり、\n\n$$\np<0.001\n$$\n\nで帰無仮説が棄却されます。\n\n**同じデータでも、識別仮定の選択によって推定効果が大きく変わる**という結果です。\n\n一方、禁煙が体重へ与える効果を分析したNHEFSデータでは、1,566人を対象に検証し、5%水準で帰無仮説は棄却されませんでした。[^20261009-9]\n\n##### 5. 議論はある？\n\nここは特に重要です。\n\n$$\nH_0:\\theta=0\n$$\n\nが棄却された場合、\n\n> UnconfoundednessかParallel Trendsの少なくとも一方が成立していない可能性が高い\n\nと判断できます。\n\nしかし、\n\n$$\np>0.05\n$$\n\nだった場合、\n\n> 両方の仮定が成立した\n\nとは言えません。\n\n両方の推定が同じ方向にBiasを持っている可能性もあります。\n\nまた、検定力が不足している可能性もあります。\n\nしたがって本研究は、**識別仮定の正しさを証明する方法ではなく、識別仮定の組み合わせを反証するための診断方法**と理解すべきです。\n\nさらに、2期間Panel Data、Overlap、施策前共変量などの条件が必要です。\n\n##### 6. 次読むべき論文は？\n\n**Sant'Anna & Zhao（2020）“Doubly Robust Difference-in-Differences Estimators”**  \n→ DR-DiDの基本。\n\n**Chernozhukov et al.（2018）“Double/Debiased Machine Learning for Treatment and Structural Parameters”**  \n→ DMLとOrthogonal Scoreの理論。\n\n**Rambachan & Roth（2023）“A More Credible Approach to Parallel Trends”**  \n→ Parallel Trendsが完全には成立しない場合のSensitivity Analysis。\n\n**この論文から学ぶ研究の型**\n\n観測できない識別仮定を直接検証しようとするのではなく、**異なる仮定から同じ対象を推定した場合に一致するはずの量を見つけ、その一致条件を検定する**。\n\n---\n\n### B｜データ×意思決定 2本\n\n",
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
-    "title_ja": "書誌情報要確認：オープンアクセス論文",
-    "title_ja_status": "source_title_unverified"
+    "title_ja": "非交絡性と共通トレンドの同時検定",
+    "title_ja_status": "source_title_unverified",
+    "bibliography_status": "verified_title_or_doi"
   },
   {
     "paper_id": "paper-bda44147e2",
@@ -895,9 +899,9 @@
   },
   {
     "paper_id": "paper-f1ad1fb3a4",
-    "title_candidate": "論文全文・TEA-Time",
+    "title_candidate": "TEA-Time: Transporting Effects Across Time",
     "doi_candidate": "",
-    "source_url": "https://arxiv.org/html/2603.07018v2?utm_source=chatgpt.com",
+    "source_url": "https://arxiv.org/abs/2603.07018",
     "source_weeks": [
       "W42"
     ],
@@ -912,14 +916,15 @@
     "source_text": "\n**Harsh Parikh, Gabriel Levin-Konigsberg, Dominique Perrault-Joncas & Alexander Volfovsky**\n\n2026年3月7日公開、5月19日改訂。arXivプレプリント。\n\n[論文全文・TEA-Time](https://arxiv.org/html/2603.07018v2?utm_source=chatgpt.com)\n\n##### Research Question（RQ）\n\n> **過去のRCTで推定したTreatment Effectを、同じTreatmentを実施していない別の時点へ移転できるか？**\n\n例えば、2025年4月にメールAとメールBを比較し、\n\n$$\nATE_{2025/4}=+2.0\\%\n$$\n\nという結果が得られたとします。\n\nこの効果は、2026年10月にも成立するでしょうか。\n\n季節性、競合環境、顧客行動などが変わっているため、単純には分かりません。\n\n##### RQの面白さ\n\n通常のTransportabilityは、異なる集団への効果の移転を考えます。\n\n$$\nPopulation_A\\rightarrow Population_B\n$$\n\n本論文は、その発想を時間方向へ拡張します。\n\n$$\n\\boxed{\nTime_A\\rightarrow Time_B\n}\n$$\n\nしかも、移転先の時点で同じTreatmentのRCTを実施していなくても、**別のTreatmentを比較したRCTを利用して時間変化を推定する**という発想です。\n\n##### 主なProposition\n\n著者がH1・H2という形式で提示した仮説ではありません。\n\n中心命題は、Treatment Effectの時間変化に一定の共通構造が存在するなら、別のRCTを時間的な基準（Anchor）として利用し、未実施時点の因果効果を識別できるというものです。\n\n論文では、異なる識別条件を持つ2つの方法を提案しています。[^20261012-1]\n\n##### 1．どんなもの？\n\n次のような状況を考えます。\n\n| 時点 | メールA vs B | メールC vs D |\n|---|---|---|\n| 4月 | RCT実施 | RCT実施 |\n| 10月 | 未実施 | RCT実施 |\n\n知りたいのは、\n\n$$\nATE_{A,B}^{10月}\n$$\n\nです。\n\nしかし10月には、AとBの比較実験がありません。\n\nそこで、CとDの効果が4月から10月にどの程度変化したかを利用します。\n\n例えば、\n\n$$\nATE_{C,D}^{4月}=+1.0\\%\n$$\n\n$$\nATE_{C,D}^{10月}=+1.5\\%\n$$\n\nなら、CとDの効果は1.5倍になっています。\n\nAとBにも同じ時間的変化が適用できるなら、\n\n$$\nATE_{A,B}^{10月}\n=\nATE_{A,B}^{4月}\\times1.5\n$$\n\nと推定できます。\n\nもちろん、この1.5倍を適用できるかどうかが研究の核心です。\n\n##### 2．先行研究と比べてどこがすごい？\n\n従来のRCT分析では、実験時点のATEを推定します。\n\n異なる時点で効果を知りたければ、原則として再実験する必要があります。\n\n本論文は、複数の過去実験を利用して、\n\n$$\n\\text{実験していない時点のATE}\n$$\n\nを推定するための識別条件を明確にしました。\n\n特に重要なのは、2つのStrategyを区別している点です。\n\n**Strategy 1：Replicated Trials**\n\n同じTreatmentの組み合わせを異なる時点で比較したRCTをAnchorとして使います。\n\n**Strategy 2：Common Arm**\n\n複数のRCTに共通するTreatment Armの平均OutcomeをAnchorとして使います。\n\nStrategy 2は必要なデータが比較的少なく、推定精度も高くなり得ます。\n\nしかし、Treatment実施からOutcome測定までの経過時間によって効果が変化する場合には、Biasが生じる可能性があります。[^20261012-2]\n\n##### 3．技術や手法のキモはどこ？\n\n研究の流れは次のとおりです。\n\n$$\n\\begin{aligned}\n&RQ:\\text{過去のRCTを将来時点へ移転できるか}\\\\\n&\\downarrow\\\\\n&仮説:\\text{Treatment間で共有される時間効果がある}\\\\\n&\\downarrow\\\\\n&必要データ:\\text{複数時点・複数TreatmentのRCT}\\\\\n&\\downarrow\\\\\n&識別:\\text{時間効果の分離可能性}\\\\\n&\\downarrow\\\\\n&分析:\\text{Anchorを使った時間効果の推定}\\\\\n&\\downarrow\\\\\n&結果:\\text{Target時点のATE}\n\\end{aligned}\n$$\n\n###### 算式の説明①：推定対象\n\nTreatmentを時点 $t_0$ に実施し、時点 $t_1$ にOutcomeを測定するとします。\n\n$$\nY_{t_1}(a,t_0)\n$$\n\nを、時点 $t_0$ にTreatment $a$ を実施した場合の、時点 $t_1$ の潜在Outcomeと定義します。\n\n知りたいのは、\n\n$$\n\\boxed{\nTATE\n=\nE[\nY_{t_1^*}(a,t_0^*)\n-\nY_{t_1^*}(b,t_0^*)\n]\n}\n$$\n\nです。\n\n- $a,b$：比較するTreatment\n- $t_0^*$：効果を知りたいTreatment実施時点\n- $t_1^*$：効果を知りたいOutcome測定時点\n- $Y$：潜在Outcome\n- $TATE$：移転先時点における平均Treatment Effect\n\nなお、厳密な論文の定義では、元のRCTの対象集団を固定して時点を移動させます。\n\n###### 算式の説明②：時間効果を分解する\n\n著者らは、潜在Outcomeの条件付き平均について、\n\n$$\n\\boxed{\nE[Y_{t_1}(a,t_0)\\mid X]\n=\n\\boldsymbol{\\theta}_a(X)^\\top\n\\boldsymbol{\\Lambda}(t_0,t_1)\n}\n$$\n\nという構造を仮定します。\n\n- $X$：Treatment前の共変量\n- $\\boldsymbol{\\theta}_a(X)$：Treatmentと個人属性に依存する成分\n- $\\boldsymbol{\\Lambda}(t_0,t_1)$：Treatment間で共有される時間的成分\n- ${}^\\top$：ベクトルの転置\n\nです。\n\nこの式が意味するのは、Treatmentによる違いと時間による違いを、一定の共通構造のもとで分離できるということです。\n\n最も単純な1因子モデルでは、\n\n$$\n\\boxed{\nTATE_{A,B}^{target}\n=\nATE_{A,B}^{source}\n\\times\n\\frac{\nATE_{C,D}^{target}\n}{\nATE_{C,D}^{source}\n}\n}\n$$\n\nとなります。\n\nこれはStrategy 1の直感を表す式です。分母がゼロでないことや、共通の時間効果が成立することなどが必要です。\n\n一般の多因子モデルでは、複数のAnchorを使って時間効果ベクトルを識別します。\n\nさらに論文ではDoubly Robust Estimatorを構築しています。[^20261012-3]\n\n##### 4．どうやって有効だと検証した？\n\n実証には、ニュース見出しのA/Bテストを集めた**Upworthy Research Archive**を使用しています。\n\n元データには、2013年1月から2015年4月までの32,487件のA/Bテストが含まれます。\n\n著者らは類似する見出しを50のClusterへ分類し、過去の実験結果から別の月の効果を予測しました。\n\n評価指標は、主にRMSE、Bias、推定値と実際の月別効果との相関です。\n\n| 評価指標 | Strategy 1 | Strategy 2 |\n|---|---:|---:|\n| Trial A：RMSE | **0.0027** | 0.0105 |\n| Trial A：相関 | **+0.97** | -0.12 |\n| Trial B：RMSE | 0.0134 | **0.0081** |\n| Trial B：相関 | -0.87 | +0.26 |\n\nTrial AではStrategy 1が実際の時間変化を非常によく追跡しました。\n\n一方、Trial Bでは両Strategyとも十分に時間変化を再現できませんでした。\n\nまたStrategy 2の標準誤差は、概ねStrategy 1の3分の1でした。\n\nつまり、**推定精度が高い方法が、必ずしも正確に時間変化を捉えるとは限らない**ことを示しています。[^20261012-4]\n\n##### 5．議論はある？\n\n最大の論点は、時間効果の分離可能性です。\n\n例えばメールAは季節の影響を強く受け、メールCはほとんど影響を受けないかもしれません。\n\nその場合、\n\n$$\n\\frac{ATE_{C,D}^{target}}{ATE_{C,D}^{source}}\n$$\n\nをAとBへ適用することはできません。\n\nまた、Treatment実施から測定までの時間差、顧客構成の変化、実験実施時点の選択も問題になります。\n\n著者らは分離可能性が崩れた場合の部分識別と、結論が覆るまでの許容違反量を示すBreakdown Frontierも提案しています。\n\n**実務で確認したい指標**は、過去実験の再現誤差、時間移転後のRMSE、Bias、信頼区間、Anchor間の整合性、Breakdown Frontierです。\n\n##### 6．次読むべき論文は？\n\n**Dahabreh et al.（2019）**  \n→ RCTの効果を異なるPopulationへ一般化する基礎。\n\n**Stuart et al.（2011）**  \n→ 実験サンプルとTarget Populationの違いを調整する考え方。\n\n**Rambachan & Roth（2023）**  \n→ 時間的な識別仮定が完全に成立しない場合のSensitivity Analysis。\n\n**この論文から学ぶ研究の型**\n\n過去の実験結果を将来へ適用する場合、効果が不変だと仮定するのではなく、**他の実験をAnchorとして時間変化を推定する**。さらに、移転の妥当性そのものを検証対象にする。\n\n---\n\n",
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
-    "title_ja": "書誌情報要確認：TEA-Time論文",
-    "title_ja_status": "source_title_unverified"
+    "title_ja": "TEA-Time：異なる時点への因果効果の移送",
+    "title_ja_status": "source_title_unverified",
+    "bibliography_status": "verified_title_or_doi"
   },
   {
     "paper_id": "paper-92bc6de864",
-    "title_candidate": "論文全文・Transportable Causal Effect Estimation",
+    "title_candidate": "Transportable Causal Effect Estimation across Networks under Interference",
     "doi_candidate": "",
-    "source_url": "https://arxiv.org/html/2608.18932v1?utm_source=chatgpt.com",
+    "source_url": "https://arxiv.org/abs/2608.18932",
     "source_weeks": [
       "W42"
     ],
@@ -935,8 +940,9 @@
     "source_text": "\n**Xiaojing Du, Jiuyong Li, Lin Liu, Debo Cheng, Jixue Liu & Thuc Duy Le**\n\n2026年8月19日公開。arXivプレプリント。\n\n[論文全文・Transportable Causal Effect Estimation](https://arxiv.org/html/2608.18932v1?utm_source=chatgpt.com)\n\n##### Research Question（RQ）\n\n> **あるネットワークで確認された介入効果を、人間関係やネットワーク構造が異なる集団へ移転できるか？ 特に、直接効果とSpillover Effectを分けて推定できるか？**\n\n##### RQの面白さ\n\n通常の因果推論では、個人のOutcomeが他人のTreatmentに影響されないことを仮定する場合が多くあります。\n\nしかし現実には、\n\n$$\n\\text{友人への介入}\n\\rightarrow\n\\text{本人の行動変容}\n$$\n\nという波及効果が存在します。\n\n例えば、健康サービスを利用した人が家族や友人へ勧める場合です。\n\nさらに、集団Aと集団Bでは人間関係の構造も違います。\n\n本論文は、\n\n$$\n\\boxed{\nSpillover\n\\times\nTransportability\n}\n$$\n\nという2つの問題を同時に扱います。\n\n##### 主なProposition\n\n著者が正式なH1・H2として提示したものではありません。\n\n中心命題は、個人属性の違いとネットワーク構造の違いを区別し、一定の因果メカニズムが集団間で不変であれば、直接効果・波及効果・総効果を移転先集団について識別できるというものです。[^20261012-5]\n\n##### 1．どんなもの？\n\n例えば、地域Aで健康促進プログラムを実施したとします。\n\n本人が介入を受けることによる効果は、\n\n$$\nDirect\\ Effect\n$$\n\nです。\n\n本人は介入を受けていないものの、友人が介入を受けたことによる効果は、\n\n$$\nSpillover\\ Effect\n$$\n\nです。\n\n両方を同時に変化させた効果は、\n\n$$\nTotal\\ Effect\n$$\n\nです。\n\n地域Bでは、友人の数や関係性が違うかもしれません。\n\nそのため、地域Aで推定した平均効果をそのまま地域Bへ適用できるとは限りません。\n\n##### 2．先行研究と比べてどこがすごい？\n\n既存研究には、主に2つの系統があります。\n\n1つは、Network Interferenceを考慮して因果効果を推定する研究です。\n\nもう1つは、あるPopulationの因果効果を別のPopulationへ移転する研究です。\n\n本研究はこれらを組み合わせ、**ネットワーク構造そのものが異なる場合のTransportability**を考えます。\n\n特に、次の2つのShiftを区別します。\n\n$$\nCovariate\\ Shift\n$$\n\n個人属性の分布が変化すること。\n\n$$\nStructural\\ Network\\ Shift\n$$\n\nネットワークの接続構造が変化すること。\n\nこの2つを区別することが、研究設計上の重要な工夫です。[^20261012-6]\n\n##### 3．技術や手法のキモはどこ？\n\n研究の流れは、\n\n$$\n\\begin{aligned}\n&RQ:\\text{異なるネットワークへ因果効果を移転できるか}\\\\\n&\\downarrow\\\\\n&仮説:\\text{条件付き因果メカニズムは共通}\\\\\n&\\downarrow\\\\\n&必要データ:\\text{RCT・個人属性・Network構造}\\\\\n&\\downarrow\\\\\n&識別:\\text{Selection DiagramとInterference仮定}\\\\\n&\\downarrow\\\\\n&分析:\\text{Transport Formula＋Doubly Robust推定}\\\\\n&\\downarrow\\\\\n&結果:\\text{移転先のDirect・Spillover・Total Effect}\n\\end{aligned}\n$$\n\n###### 算式の説明①：Spilloverを定義する\n\n個人 $i$ のTreatmentを、\n\n$$\nT_i\\in\\{0,1\\}\n$$\n\nとします。\n\n周囲のTreatment状況を、\n\n$$\nE_i\n$$\n\nとします。\n\n例えば、\n\n$$\nE_i=\n\\frac{1}{|\\mathcal N(i)|}\n\\sum_{j\\in\\mathcal N(i)}T_j\n$$\n\nです。\n\n- $\\mathcal N(i)$：個人 $i$ の隣接者集合\n- $|\\mathcal N(i)|$：隣接者数\n- $T_j$：隣接者 $j$ のTreatment\n- $E_i$：隣接者のTreatment割合\n\nです。\n\n論文では、この割合とネットワーク次数を使い、周囲のTreatment状況を有限個のカテゴリーに分類します。\n\n個人の潜在Outcomeを、\n\n$$\nY_i(t,e)\n$$\n\nとします。\n\n- $t$：本人のTreatment\n- $e$：周囲のTreatment状況\n\nです。\n\n###### 算式の説明②：3種類の因果効果\n\n直接効果は、\n\n$$\n\\boxed{\n\\tau_i^{direct}\n=\nE[Y_i(1,e)-Y_i(0,e)]\n}\n$$\n\nです。\n\n周囲のTreatmentを固定して、本人への介入だけを変えます。\n\nSpillover Effectは、\n\n$$\n\\boxed{\n\\tau_i^{spill}\n=\nE[Y_i(t,e_1)-Y_i(t,e_0)]\n}\n$$\n\nです。\n\n本人のTreatmentを固定して、周囲のTreatment状況を変えます。\n\n総効果は、\n\n$$\n\\boxed{\n\\tau_i^{total}\n=\nE[Y_i(1,e_1)-Y_i(0,e_0)]\n}\n$$\n\nです。\n\n本人と周囲のTreatmentを同時に変化させます。\n\nなお、総効果は一般に直接効果と波及効果の単純な和とは限りません。相互作用や、どの状態を基準に差を取るかによって異なります。\n\n###### 算式の説明③：別のネットワークへ移転する\n\n元の集団で推定した条件付きOutcomeを、\n\n$$\n\\mu(t,e,w)\n=\nE[Y_i(t,e)\\mid W_i=w]\n$$\n\nとします。\n\nここで $W_i$ は、個人属性とネットワーク構造に関する特徴量をまとめたものです。\n\n移転先集団の分布を、\n\n$$\nP^*(W)\n$$\n\nとすると、直接効果は、\n\n$$\n\\boxed{\nATE_{target}^{direct}\n=\n\\int\n[\n\\mu(1,e,w)-\\mu(0,e,w)\n]\ndP^*(w)\n}\n$$\n\nとして表されます。\n\nつまり、\n\n**元の集団から条件付き因果効果を学び、移転先集団の属性・ネットワーク構造の分布で平均する**という考え方です。\n\n論文では、この識別式をDoubly Robust Estimatorへ発展させています。[^20261012-7]\n\n##### 4．どうやって有効だと検証した？\n\n著者らは、実際のソーシャルネットワークに基づく半合成データと、中国農村部の天候保険に関するField Experimentを利用しています。\n\n特に後者は、ネットワーク間の移転可能性を検証するうえで興味深い事例です。\n\n保険に関する情報提供をRandomizeした実験で、友人関係のネットワークと保険加入状況を観測しています。\n\n3地域のうち1地域をTargetとして除外し、残りの地域から効果を移転しました。\n\n| Target地域 | 効果 | 移転推定値 | TargetのRCT推定値 |\n|---|---|---:|---:|\n| 地域1 | Direct | 0.085 | 0.076 |\n| 地域1 | Spillover | 0.036 | 0.048 |\n| 地域2 | Direct | 0.068 | 0.078 |\n| 地域2 | Spillover | 0.056 | -0.007 |\n| 地域3 | Direct | 0.056 | 0.066 |\n| 地域3 | Spillover | 0.015 | 0.030 |\n\n直接効果は3地域すべてで、Target側のRCT推定値が移転推定の95%信頼区間に含まれました。\n\nSpillover Effectは3地域中2地域で含まれました。\n\n**直接効果よりも、Spillover Effectの移転が難しい**ことが分かります。[^20261012-8]\n\n##### 5．議論はある？\n\n重要なのは、ネットワークを観測できれば何でも推定できるわけではないことです。\n\n特に次の仮定が必要です。\n\n- 周囲のTreatment状況を適切なExposure変数で要約できること\n- 移転元と移転先で、条件付き因果メカニズムが共通であること\n- 移転先に存在する属性・ネットワーク構造が、移転元でも十分観測されること\n- TreatmentとExposureに十分なOverlapがあること\n\nまた、友人関係がTreatmentによって変化する場合、ネットワーク構造自体が内生的に変化します。\n\nその場合、固定されたネットワークを前提とする分析だけでは不十分です。\n\n**実務への応用**\n\n健康施策の効果検証では、\n\n$$\n\\text{本人への介入効果}\n$$\n\nだけでなく、\n\n$$\n\\text{家族・友人への波及効果}\n$$\n\nを考える余地があります。\n\nただし、個人間の関係性データを保有していなければ、本論文の手法をそのまま適用することは難しいでしょう。\n\n##### 6．次読むべき論文は？\n\n**Aronow & Samii（2017）**  \n→ Interference下でのExposure Mappingと因果効果推定。\n\n**Bareinboim & Pearl（2016）**  \n→ TransportabilityとData Fusionの理論。\n\n**Cai, de Janvry & Sadoulet（2015）“Social Networks and the Decision to Insure”**  \n→ 本研究の実証で利用された、保険加入と社会的ネットワークの研究。\n\n**この論文から学ぶ研究の型**\n\n介入の効果を別の集団へ展開する際、個人属性の違いだけでなく、**個人間の関係性や波及経路の違いを明示的にモデル化する**。\n\n---\n\n### B．データ×意思決定 2本\n\n",
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
-    "title_ja": "書誌情報要確認：因果効果の移送可能性に関する論文",
-    "title_ja_status": "source_title_unverified"
+    "title_ja": "干渉が存在するネットワーク間での移送可能な因果効果推定",
+    "title_ja_status": "source_title_unverified",
+    "bibliography_status": "verified_title_or_doi"
   },
   {
     "paper_id": "paper-399d8b695e",
@@ -980,9 +986,9 @@
   },
   {
     "paper_id": "paper-6575c5dfe1",
-    "title_candidate": "論文全文・2026年改訂版",
+    "title_candidate": "Policy Learning with Confidence",
     "doi_candidate": "",
-    "source_url": "https://arxiv.org/html/2502.10653v3?utm_source=chatgpt.com",
+    "source_url": "https://arxiv.org/abs/2502.10653",
     "source_weeks": [
       "W42"
     ],
@@ -996,8 +1002,9 @@
     "source_text": "\n**Victor Chernozhukov, Sokbae Lee, Adam M. Rosen & Liyang Sun**\n\n2025年2月初稿、2026年1月18日改訂。arXivプレプリント。\n\n[論文全文・2026年改訂版](https://arxiv.org/html/2502.10653v3?utm_source=chatgpt.com)\n\n##### Research Question（RQ）\n\n> **複数の施策について因果効果や経済価値を推定できたとき、推定値が最も高い施策を選ぶことは、本当に合理的なのか？**\n\n例えば、健康サービスの投資候補が2つあるとします。\n\n| | 施策A | 施策B |\n|---|---:|---:|\n| 推定ROI | 150% | 130% |\n| 標準誤差 | 60%pt | 10%pt |\n\n単純にROIを最大化するなら、Aを選びます。\n\nしかし、Aの推定には大きな不確実性があります。\n\nこのとき、Bを選ぶ方が合理的な場合もあるのではないでしょうか。\n\n##### RQの面白さ\n\n従来のPolicy Learningでは、\n\n$\n\\hat\\pi\n=\n\\arg\\max_{\\pi\\in\\Pi}\n\\hat V(\\pi)\n$\n\nというEmpirical Welfare Maximization（EWM）が基本です。\n\nつまり、推定されたPolicy Valueが最大になる施策を選びます。\n\n本論文は、ここに疑問を投げかけます。\n\n**施策の推定価値が高いことと、その価値を十分な確信を持って実現できることは異なる。**\n\nこの区別を、実際のPolicy Selectionに組み込むところが新しい発想です。\n\n##### 主なProposition\n\n著者らは、推定Welfareと推定リスクを組み合わせることで、統計的不確実性を考慮したPolicy Selectionが可能になることを理論的に示しています。\n\n特に提案するPoLeCe（Policy Learning with Confidence）は、一定の正則条件のもとで、**選択したPolicyの真のWelfareが、報告した下限を所定の信頼水準で上回る**という保証を持ちます。[^20261014-1]\n\n##### 1．どんなもの？\n\n研究対象は、複数の施策に対する投資配分です。\n\n例えば、限られた予算を教育、職業訓練、医療保障などの政策にどう配分するかを考えます。\n\n各施策について、期待される社会的便益とその推定精度が分かっているとします。\n\n通常のEWMは、期待便益が最も高い施策に予算を集中させます。\n\nしかし本研究では、**推定精度が高い施策への分散投資**も選択肢になります。\n\n##### 2．先行研究と比べてどこがすごい？\n\n既存のPolicy Learningでは、主にPolicy Valueの最大化とRegretの最小化が研究されてきました。\n\n本論文は、そこに**推定リスクと信頼水準**を明示的に組み込みます。\n\n比較すると、次のようになります。\n\n| 観点 | EWM | PoLeCe |\n|---|---|---|\n| 最適化対象 | 推定Welfare | Welfareの信頼下限 |\n| 推定誤差 | 選択時に直接は考慮しない | 標準誤差で考慮 |\n| 複数施策への配分 | 最大推定値に集中しやすい | 分散投資も選択 |\n| 意思決定の根拠 | 最も高い推定値 | 所定の信頼水準で保証できる下限 |\n| 必要情報 | Policy Value推定値 | 推定値・分散共分散行列 |\n\n重要なのは、PoLeCeが単純に「保守的な施策」を選ぶだけではないことです。\n\n**推定価値と推定精度の効率的な組み合わせを選ぶ**方法になっています。\n\n##### 3．技術や手法のキモはどこ？\n\n研究設計は次の対応関係です。\n\n$\n\\begin{aligned}\n&RQ:\\text{推定誤差を考慮して施策を選べるか}\\\\\n&\\downarrow\\\\\n&命題:\\text{Welfareの下限を最大化すればよい}\\\\\n&\\downarrow\\\\\n&必要データ:\\text{施策別の効果推定値・標準誤差}\\\\\n&\\downarrow\\\\\n&識別:\\text{各施策のWelfareが識別・推定可能}\\\\\n&\\downarrow\\\\\n&分析:\\text{同時信頼下限を使った最適化}\\\\\n&\\downarrow\\\\\n&結果:\\text{統計的保証を伴うPolicy Selection}\n\\end{aligned}\n$\n\n###### 算式の説明①：通常のPolicy Learning\n\n$\n\\boxed{\n\\hat\\pi_{EWM}\n=\n\\arg\\max_{\\pi\\in\\Pi}\n\\hat V(\\pi)\n}\n$\n\nここで、\n\n- $\\pi$：施策配分ルール\n- $\\Pi$：選択可能なPolicyの集合\n- $V(\\pi)$：Policy $\\pi$ の真のWelfare\n- $\\hat V(\\pi)$：推定されたWelfare\n\nです。\n\nこの式は、推定値が最大になるPolicyを選びます。\n\n###### 算式の説明②：推定リスクを考慮する\n\nPoLeCeでは、\n\n$\n\\boxed{\n\\hat\\pi_{PoLeCe}\n=\n\\arg\\max_{\\pi\\in\\Pi}\n\\left\\{\n\\hat V(\\pi)\n-\n\\hat q_{1-\\alpha,\\Pi}\\hat s(\\pi)\n\\right\\}\n}\n$\n\nとします。\n\n- $\\hat s(\\pi)$：Policy Value推定値の標準誤差\n- $\\alpha$：許容する誤り確率\n- $1-\\alpha$：信頼水準\n- $\\hat q_{1-\\alpha,\\Pi}$：複数Policyを同時に評価するための臨界値\n\nです。\n\n例えば、\n\n$\n\\alpha=0.05\n$\n\nなら、95%信頼水準での下限を考えます。\n\n直感的には、\n\n$\n\\boxed{\n推定Welfare\n-\n不確実性へのペナルティ\n}\n$\n\nを最大化します。\n\nここで注意したいのは、$\\hat q$ が単純に1.645や1.96になるとは限らないことです。\n\n多数のPolicyから選択するため、**選択に伴う多重性を考慮した同時信頼下限**を使います。\n\n論文では、Policy Value推定値の相関構造を利用したGaussian Bootstrapで臨界値を計算しています。[^20261014-2]\n\n###### 算式の説明③：意思決定の保証\n\n論文の重要な性質は、\n\n$\n\\boxed{\nP\\left(\nV(\\hat\\pi_{PoLeCe})\n\\geq\nLCB(\\hat\\pi_{PoLeCe})\n\\right)\n\\gtrsim 1-\\alpha\n}\n$\n\nです。\n\nここで、\n\n$\nLCB(\\pi)\n=\n\\hat V(\\pi)-\\hat q_{1-\\alpha,\\Pi}\\hat s(\\pi)\n$\n\nです。\n\nつまり、適切な推定条件のもとでは、選択後のPolicyについてもWelfareの下限を報告できます。\n\nこれは、推定値が最大の施策を選んでから、その施策だけに通常の信頼区間を付ける方法とは異なります。\n\n##### 4．どうやって有効だと検証した？\n\n著者らは、米国の社会プログラム14件を利用して検証しています。\n\n評価指標はMVPF（Marginal Value of Public Funds）です。\n\nこれは、政府の純支出1ドル当たり、受益者にどれだけの便益が生まれるかを表す指標です。\n\n例えば、\n\n$\nMVPF=1.5\n$\n\nなら、政府の純支出1ドル当たり1.5ドルの便益が生じることを意味します。\n\n25歳超を対象とした8プログラムの分析結果は次のとおりです。\n\n| 評価指標 | EWM | PoLeCe |\n|---|---:|---:|\n| 推定MVPF | **1.39** | 1.17 |\n| 95%信頼下限 | −2.06 | **1.04** |\n\nEWMは、推定MVPFが最大のプログラムに100%配分しました。\n\n一方、PoLeCeは、医療保障プログラムに97%、成人職業訓練プログラムに3%を配分しました。\n\n推定MVPFはEWMより低いものの、信頼下限は大きく改善しています。\n\n25歳以下のプログラムでも、EWMは1つの施策に集中する一方、PoLeCeは2つの施策へ52%・48%で配分しました。[^20261014-3]\n\nただし、これらは既存研究の推定値を使った**投資配分の再計算**です。実際に予算配分を変更したRCTで、将来のWelfare改善を確認したわけではありません。\n\n##### 5．議論はある？\n\n最大の論点は、**推定誤差への頑健性と、因果識別への頑健性は異なる**ことです。\n\n例えば、ある施策の因果効果が未観測交絡によってBiasを持っていた場合、標準誤差が小さくても正しい推定とは限りません。\n\nPoLeCeは、基本的にはPolicy Value推定値が妥当な統計的性質を持つことを前提とします。\n\nそのため、前回紹介した *Policy Learning under Unobserved Confounding* とは、対応する不確実性が異なります。\n\nまた、MVPFを使った比較では、異なる受益者への便益をどう評価するかという社会的価値判断も必要です。\n\n##### 6．次読むべき論文は？\n\n**Kitagawa & Tetenov（2018）“Who Should Be Treated?”**  \n→ EWMの理論的基礎を理解する。\n\n**Athey & Wager（2021）“Policy Learning With Observational Data”**  \n→ DR推定とPolicy Learningの接続を学ぶ。\n\n**Andrews & Chen（2025）“P-Certified Decisions”**  \n→ 統計的保証を伴う意思決定をさらに深める。\n\n**この論文から学ぶ研究の型**\n\n施策の期待価値を推定した後、最大推定値をそのまま選ぶのではなく、**推定精度と意思決定リスクを同時に最適化する**。信頼区間を報告用の情報から、施策選択の基準へ変える研究です。\n\n---\n\n",
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
-    "title_ja": "書誌情報要確認：2026年改訂論文",
-    "title_ja_status": "source_title_unverified"
+    "title_ja": "信頼性を考慮した方策学習",
+    "title_ja_status": "source_title_unverified",
+    "bibliography_status": "verified_title_or_doi"
   },
   {
     "paper_id": "paper-83b0e41aa8",
@@ -1325,9 +1332,9 @@
   },
   {
     "paper_id": "paper-d76aeef591",
-    "title_candidate": "過去の施策履歴だけで、まだ試していない介入方針を評価できるか？",
+    "title_candidate": "Double Reinforcement Learning for Efficient Off-Policy Evaluation in Markov Decision Processes",
     "doi_candidate": "",
-    "source_url": "",
+    "source_url": "https://www.jmlr.org/papers/v21/19-827.html",
     "source_weeks": [
       "W45"
     ],
@@ -1341,8 +1348,9 @@
     "source_text": "\nNathan Kallus & Masatoshi Uehara｜Journal of Machine Learning Research, 2020\n\n[Double Reinforcement Learning for Efficient Off-Policy Evaluation in Markov Decision Processes](https://www.jmlr.org/papers/v21/19-827.html)\n\n**Research Question（RQ）**\n\nある介入方針の下で集めた時系列データを使い、別の介入方針を実施した場合の累積価値を、どれだけ正確に推定できるか？\n\n**RQの面白さ：** 強化学習の重要な問題を、「最適方針を探す」前の**方針評価の因果推論問題**として捉えています。特に、長い介入履歴を扱う際の推定分散をどう抑えるかが核心です。\n\n**主な仮説・Proposition：** 著者が正式な仮説として提示しているものではありません。中心命題は、Markov構造を利用し、Q関数と密度比を組み合わせれば、既存のOff-Policy Evaluationより統計的に効率よく方針価値を推定できるというものです。\n\n##### 1．どんなもの？\n\nOffline Reinforcement Learningの中核となるOff-Policy Evaluation（OPE）の方法論研究です。\n\n例えば、過去の施策が「毎週ポイント付与」だったとして、その履歴から「歩数が安定した人はポイントを停止する」という別の方針を評価する問題に対応します。\n\n##### 2．先行研究と比べてどこがすごい？\n\n従来のImportance Samplingでは、介入履歴全体の確率比を掛け合わせるため、期間が長くなるほど分散が大きくなりがちです。\n\n本研究は、現在の状態が過去の必要な情報を十分に保持するというMarkov性を利用し、各時点の状態・行動分布の密度比とQ関数を組み合わせます。\n\n著者らは、この構造による効率性の改善を理論的に示しています。[^cb004ad4-3]\n\n##### 3．技術や手法のキモはどこ？\n\n| 対応関係 | 内容 |\n|--------|--------|\n| RQ | 新しい動的方針の累積価値はどれくらいか |\n| 命題 | 状態遷移と密度比で反事実を評価できる |\n| データ | 時点別状態、介入、報酬、次期状態 |\n| 識別 | Sequential Exchangeability、Overlap、Markov性 |\n| 分析 | Q関数＋Marginalized Density Ratio＋Cross-fitting |\n| 結果 | OPEの推定誤差・効率性 |\n\n###### 算式の説明\n\n評価したい方針 $\\pi^e$ の価値は、\n\n$\n\\rho^{\\pi^e}\n=\nE_{\\pi^e}\\left[\\sum_{t=0}^{T}R_t\\right]\n$\n\nです。\n\n- $\\pi^e$：評価対象の新しい介入方針\n- $T$：最終時点\n- $R_t$：時点 $t$ の報酬または純便益\n- $E_{\\pi^e}$：方針 $\\pi^e$ の下での期待値\n- $\\rho^{\\pi^e}$：累積期待価値\n\n提案手法の中心的な考え方は、次のDoubly Robust形式で表せます。\n\n$\n\\widehat\\rho_{\\mathrm{DRL}}\n=\n\\frac1n\\sum_{i=1}^{n}\n\\left[\n\\widehat v_0(S_{i0})\n+\n\\sum_{t=0}^{T}\n\\widehat w_t(S_{it},A_{it})\n\\left\\{\nR_{it}\n+\\widehat v_{t+1}(S_{i,t+1})\n-\\widehat q_t(S_{it},A_{it})\n\\right\\}\n\\right]\n$\n\n- $S_{it}$：個人 $i$、時点 $t$ の状態\n- $A_{it}$：その時点の介入\n- $\\widehat q_t$：その状態・介入からの将来累積価値の推定値\n- $\\widehat v_t$：評価方針に従う場合の状態価値\n- $\\widehat w_t$：評価方針と過去の方針の状態・行動分布の密度比\n- $n$：観測された独立な行動系列の数\n- 最終時点の次の価値 $\\widehat v_{T+1}$ は0\n\n最初の項はモデルによる将来価値の予測、後半は実際の報酬と予測との差を密度比で補正する部分です。\n\n**DMLとの関係：** DMLと同様に補助モデルの誤差を抑える考え方を使いますが、対象が単発のATEではなく、時系列の累積Policy Valueである点が異なります。\n\n##### 4．どうやって有効だと検証した？\n\n主にシミュレーションと標準的な強化学習ベンチマークで検証しています。実際の歩数RCTの効果を示した研究ではありません。\n\n30期間、二値介入、連続状態のシミュレーションを構築し、サンプル数1,500・3,000・4,500、各設定50,000回のMonte Carlo反復を実施しました。\n\n例えば、Q関数モデルが誤っている設定、サンプル4,500では、推定誤差RMSEは以下でした。\n\n| 推定方法 | RMSE |\n|--------|--------|\n| 通常のImportance Sampling | 20.2 |\n| Direct Method | 10.8 |\n| Marginalized Importance Sampling | 21.5 |\n| **提案DRL（Markov）** | **5.5** |\n\nこれは特定のシミュレーション設定での結果であり、あらゆるデータでDRLが優位という意味ではありません。[^cb004ad4-4]\n\n##### 5．議論はある？\n\n実務での最大の難所は、状態変数を十分に定義できるかです。\n\n例えば、直近歩数だけを状態にすると、習慣強度、生活環境、ポイントへの慣れなどが欠落する可能性があります。\n\nまた、過去のデータに「ポイント停止」という介入がほとんど存在しない場合、密度比の推定が不安定になり、方針価値を識別できないことがあります。\n\n**私の考察：** 仮想顧客の人格をLLMで生成するより、歩数履歴・自動化スコア・介入履歴を状態として定義し、状態遷移を実データで学習する方が、OPEとの接続は明確です。\n\n##### 6．次読むべき論文は？\n\n- [Jiang & Li, Doubly Robust Off-policy Value Evaluation for Reinforcement Learning](https://arxiv.org/abs/1511.03722)：DR推定の基本構造を理解する。\n- [Tran, Bibaut & Kallus（2024）, Inferring the Long-Term Causal Effects of Long-Term Treatments from Short-Term Experiments](https://proceedings.mlr.press/v235/tran24b.html)：短期実験から長期継続介入を外挿する問題へ発展させる。\n\n**この論文から学ぶ研究の型：** 新しい動的施策を試す前に、過去の行動履歴でその方針価値を評価する。ただし、観測されていない状態・介入の組み合わせは、モデルだけでは信頼できる反事実にならない。\n\n---\n\n### B．データ×意思決定\n\n",
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
-    "title_ja": "過去の施策履歴だけで、まだ試していない介入方針を評価できるか？",
-    "title_ja_status": "provisional_translation"
+    "title_ja": "マルコフ決定過程における効率的なオフポリシー評価のための二重強化学習",
+    "title_ja_status": "provisional_translation",
+    "bibliography_status": "verified_title_or_doi"
   },
   {
     "paper_id": "paper-c638566481",
@@ -1620,8 +1628,8 @@
   {
     "paper_id": "paper-8ba0782922",
     "title_candidate": "Provision of Social Norm Feedback to High Prescribers of Antibiotics in General Practice",
-    "doi_candidate": "10.1016/S0140-6736(16",
-    "source_url": "https://doi.org/10.1016/S0140-6736(16",
+    "doi_candidate": "10.1016/S0140-6736(16)00215-4",
+    "source_url": "https://doi.org/10.1016/S0140-6736(16)00215-4",
     "source_weeks": [
       "W46"
     ],
@@ -1637,7 +1645,8 @@
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
     "title_ja": "抗菌薬を多く処方する一般診療医への社会規範フィードバック",
-    "title_ja_status": "provisional_translation"
+    "title_ja_status": "provisional_translation",
+    "bibliography_status": "verified_title_or_doi"
   },
   {
     "paper_id": "paper-5b78f0b3ca",
@@ -1727,9 +1736,9 @@
   },
   {
     "paper_id": "paper-028ecc4f15",
-    "title_candidate": "54種類の行動変容施策を同時に試したら、何が最も効果的だったのか？",
-    "doi_candidate": "",
-    "source_url": "",
+    "title_candidate": "Megastudies Improve the Impact of Applied Behavioural Science",
+    "doi_candidate": "10.1038/s41586-021-04128-4",
+    "source_url": "https://doi.org/10.1038/s41586-021-04128-4",
     "source_weeks": [
       "W46"
     ],
@@ -1743,8 +1752,9 @@
     "source_text": "\nKatherine L. Milkman et al.｜Nature, 2021年12月8日\n\n[Megastudies Improve the Impact of Applied Behavioural Science](https://www.nature.com/articles/s41586-021-04128-4)\n\n**Research Question（RQ）**\n\n異なる研究者が考案した多数の行動変容施策を、同じ対象集団・同じOutcome・同じ期間で比較すると、どの施策が最も効果的か。また、専門家はその優劣を事前に予測できるか。\n\n**RQの面白さ：** 従来は研究ごとに対象者や測定条件が異なり、施策の効果を横比較することが困難でした。本研究は、**研究者同士のアイデアを、共通の実験基盤で競わせる**という研究の実施方法そのものを変えています。\n\n**主なProposition：** 著者が正式な仮説として提示しているものではありません。中心命題は、Megastudyにより複数介入の比較可能性を高め、有望な施策を効率的に発見できるというものです。\n\n##### 1．どんなもの？\n\n米国のフィットネスチェーン会員61,293人を対象に、54種類のデジタル行動変容施策を比較した大規模フィールド実験です。\n\n30人の研究者が15大学から参加し、4週間の運動促進プログラムを設計しました。\n\n##### 2．先行研究と比べてどこがすごい？\n\n従来のRCTでは、各研究が異なる集団・期間・Outcomeを利用しているため、効果量の違いが施策の違いなのか研究条件の違いなのか判断しにくい問題がありました。\n\nMegastudyでは、共通の実験基盤で多くの介入を同時比較します。\n\nこれは単なる大規模A/Bテストではなく、**複数の研究仮説を同じ条件で比較可能にする研究インフラ**という発想です。\n\n##### 3．技術や手法のキモはどこ？\n\n| 段階 | 内容 |\n|--------|--------|\n| RQ | どの行動変容施策が最も有効か |\n| 命題 | 共通条件で多数の施策を比較できる |\n| 必要なデータ | 施策割当、週次ジム来訪、介入後来訪 |\n| 研究デザイン | 多群フィールドRCT |\n| 分析 | 共通対照群との比較、介入間比較 |\n| 結果 | 施策別効果と終了後の持続性 |\n\n重要なのは、施策ごとに異なるOutcomeを設定せず、ジムへの来訪回数という共通の客観指標で評価したことです。\n\n##### 4．どうやって有効だと検証した？\n\n参加者\n\n### 61,293人\n\n比較施策\n\n### 54種類\n\n実験期間\n\n### 4週間\n\n介入中と介入終了後の結果\n\n\n> 図を表へ変換（AI整形）。論文に報告された施策割合。各施策の参加者割合ではありません。\n\n| 時点 | 有意な効果が確認された施策割合 |\n|---|---:|\n| 介入中 | 45 |\n| 介入終了後 | 8 |\n\n\n54施策のうち45%が介入中の週次来訪を有意に増やし、その改善幅は9〜27%でした。一方、介入終了後にも有意な効果が確認された施策は8%でした。\n\n最も成績が良かった施策は、運動を休んだ後にジムへ戻ることに少額の報酬を与えるものでした。[^082d98b8-5]\n\n##### 5．議論はある？\n\n複数の施策を比較するため、多重検定や施策ランキングのWinner's Curseに注意が必要です。\n\nまた、介入終了後に有意な効果が確認されなかったことは、必ずしも効果がゼロだったことを意味しません。\n\n**私の考察：** 健康アプリの施策では、毎回個別のA/Bテストを行うより、共通のKPIと対照群を持つ実験基盤を構築する方が、施策間の比較や学習の蓄積に有利です。特に「離脱後の復帰」に報酬を与えるという発想は、継続利用施策の新しい仮説になります。\n\n##### 6．次読むべき論文は？\n\n[Allcott & Rogers（2014）, The Short-Run and Long-Run Effects of Behavioral Interventions](https://doi.org/10.1257/aer.104.10.3003)：行動変容施策の終了後効果を理解する。\n\n[DellaVigna & Pope（2018）, What Motivates Effort?](https://doi.org/10.1093/restud/rdx033)：多数の介入と専門家予測を比較する別の設計。\n\n**この論文から学ぶ研究の型：** 施策ごとに独立した実験を行うのではなく、共通の実験基盤で複数の仮説を比較する。効果の有無だけでなく、介入間の順位と終了後の持続を評価する。\n\n---\n\n",
     "source_heading_count": 6,
     "verification": "not_checked_against_original",
-    "title_ja": "54種類の行動変容施策を同時に試したら、何が最も効果的だったのか？",
-    "title_ja_status": "provisional_translation"
+    "title_ja": "メガスタディは応用行動科学の効果を高める",
+    "title_ja_status": "provisional_translation",
+    "bibliography_status": "verified_title_or_doi"
   },
   {
     "paper_id": "paper-6bc882df2c",
