@@ -3,6 +3,7 @@ on:
   push:
     paths:
       - "assets/papers.js"
+      - "assets/app.js"
       - "data/digests/**"
       - "scripts/quality-audit.mjs"
       - ".github/workflows/library-quality.yml"
@@ -24,5 +25,10 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
+      - name: JavaScript syntax checks
+        run: |
+          node --check assets/app.js
+          node --check assets/papers.js
+          node --check scripts/quality-audit.mjs
       - name: Validate library data
         run: node scripts/quality-audit.mjs
