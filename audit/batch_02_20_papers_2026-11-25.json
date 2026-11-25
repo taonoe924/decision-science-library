@@ -20,9 +20,9 @@
     "format_verification_complete": 0,
     "automated_markdown_cleanup": 20,
     "primary_abstract_v2_verified": 1,
-    "primary_body_partially_verified": 5,
-    "selected_results_numeric_checked": 3,
-    "identification_assumptions_partially_checked": 5
+    "primary_body_partially_verified": 6,
+    "selected_results_numeric_checked": 4,
+    "identification_assumptions_partially_checked": 6
   },
   "records": [
     {
@@ -121,12 +121,12 @@
       "title": "Incentives, Evidence, and Reminders for Bureaucrats: Overcoming Barriers to Policy Scale Up",
       "original_url": "https://www.nber.org/papers/w35291",
       "baseline_status": "basic_reference_check_previously_recorded",
-      "current_turn_source_check": "pending",
+      "current_turn_source_check": "author_manuscript_2026_09_30_tables_3_4_appendix_F_checked",
       "full_paper_claims_checked": false,
       "format_v1_2_checked": false,
-      "quantitative_results_checked": false,
-      "identification_assumptions_checked": false,
-      "notes": "Source and metadata carried forward from existing audit backlog; not freshly source-verified in this batch.",
+      "quantitative_results_checked": true,
+      "identification_assumptions_checked": true,
+      "notes": "Partly checked N=2724, Table3 reminder +0.203 SE 0.022, Table4 +0.241 SE .017, Appendix F downstream inconclusive; rounded-SE confidence intervals disclosed as calculations.",
       "automated_markdown_cleanup": true,
       "format_cleanup_summary": {
         "removed_boxed_math": 9,
