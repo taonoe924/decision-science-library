@@ -1,0 +1,1541 @@
+{
+  "audit_date": "2026-11-25",
+  "repository": "taonoe924/decision-science-library",
+  "scope": "Existing 83 records originating in 2026 W33-W46 Obsidian exports",
+  "methodology": "Static full-inventory field, title/DOI exact duplicate and Markdown delimiter audit; 10 specified titles/identifiers checked individually against source metadata. No automated assertions of quantitative findings or experimental identification validity.",
+  "summary": {
+    "total": 83,
+    "doi_present": 25,
+    "doi_missing": 58,
+    "doi_malformed": 0,
+    "source_url_present": 55,
+    "source_url_missing": 28,
+    "rq_missing": 30,
+    "hypothesis_missing": 73,
+    "method_missing": 15,
+    "source_heading_count_six": 79,
+    "source_heading_count_other": 4,
+    "bibliography_subset_checked": 10,
+    "original_results_fully_verified": 0,
+    "table_records": 54,
+    "markdown_tables": 94,
+    "legacy_footnote_records": 23,
+    "placeholder_titles": 0,
+    "title_normalized_duplicates": 0,
+    "doi_duplicates": 0
+  },
+  "records": [
+    {
+      "paper_id": "paper-382caf1ae2",
+      "title": "Policy Thresholds as Growth Barriers: Theory and Evidence from a Payroll Tax Notch",
+      "source_date": "2026-08-14",
+      "source_weeks": [
+        "W33"
+      ],
+      "doi": null,
+      "source_url": null,
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "source_url_missing",
+        "rq_extraction_needed",
+        "hypothesis_extraction_needed",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 0
+    },
+    {
+      "paper_id": "paper-62ca0acf9a",
+      "title": "Causal Inference for All: Marginal Estimands for Outcomes Truncated by Death",
+      "source_date": "2026-08-14",
+      "source_weeks": [
+        "W33"
+      ],
+      "doi": null,
+      "source_url": null,
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "source_url_missing",
+        "rq_extraction_needed",
+        "hypothesis_extraction_needed",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 0
+    },
+    {
+      "paper_id": "paper-8db14dc31c",
+      "title": "Inference on Counterfactual Distributions Using Martingale Posteriors",
+      "source_date": "2026-08-14",
+      "source_weeks": [
+        "W33"
+      ],
+      "doi": null,
+      "source_url": null,
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "source_url_missing",
+        "rq_extraction_needed",
+        "hypothesis_extraction_needed",
+        "legacy_chatgpt_citations_in_source",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 0
+    },
+    {
+      "paper_id": "paper-260bb098e8",
+      "title": "Generalised Transportability via Causal Abstractions",
+      "source_date": "2026-08-21",
+      "source_weeks": [
+        "W34"
+      ],
+      "doi": null,
+      "source_url": null,
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "source_url_missing",
+        "rq_extraction_needed",
+        "hypothesis_extraction_needed",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 0
+    },
+    {
+      "paper_id": "paper-4ba1548978",
+      "title": "Difference-in-Differences with “Bad Controls”",
+      "source_date": "2026-08-21",
+      "source_weeks": [
+        "W34"
+      ],
+      "doi": null,
+      "source_url": null,
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "source_url_missing",
+        "rq_extraction_needed",
+        "hypothesis_extraction_needed",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 0
+    },
+    {
+      "paper_id": "paper-e53343e16f",
+      "title": "A Bayesian Approach to Partial Homogeneity in Staggered Difference-in-Difference",
+      "source_date": "2026-08-21",
+      "source_weeks": [
+        "W34"
+      ],
+      "doi": null,
+      "source_url": null,
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "source_url_missing",
+        "rq_extraction_needed",
+        "hypothesis_extraction_needed",
+        "legacy_chatgpt_citations_in_source",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 1
+    },
+    {
+      "paper_id": "paper-44a219aa63",
+      "title": "Using Pre-Trends for Inference in Difference-in-Differences",
+      "source_date": "2026-08-28",
+      "source_weeks": [
+        "W35"
+      ],
+      "doi": null,
+      "source_url": null,
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "source_url_missing",
+        "rq_extraction_needed",
+        "hypothesis_extraction_needed",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 0
+    },
+    {
+      "paper_id": "paper-48724c28e5",
+      "title": "Robust Signal Maximization in Spillover Experiments",
+      "source_date": "2026-08-28",
+      "source_weeks": [
+        "W35"
+      ],
+      "doi": null,
+      "source_url": null,
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "source_url_missing",
+        "rq_extraction_needed",
+        "hypothesis_extraction_needed",
+        "legacy_chatgpt_citations_in_source",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 1
+    },
+    {
+      "paper_id": "paper-8fba52c564",
+      "title": "Which Policy Works, and Where? Estimation and Inference for State-Level Treatment Effects in Difference-in-Differences",
+      "source_date": "2026-09-04",
+      "source_weeks": [
+        "W36"
+      ],
+      "doi": null,
+      "source_url": "https://arxiv.org/abs/2609.01467v1",
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "rq_extraction_needed",
+        "hypothesis_extraction_needed",
+        "six_heading_structure_review",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 0
+    },
+    {
+      "paper_id": "paper-8da38f287b",
+      "title": "Off-policy causal estimation in networks",
+      "source_date": "2026-09-04",
+      "source_weeks": [
+        "W36"
+      ],
+      "doi": null,
+      "source_url": "https://arxiv.org/abs/2609.02756v1",
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "rq_extraction_needed",
+        "hypothesis_extraction_needed",
+        "six_heading_structure_review",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 0
+    },
+    {
+      "paper_id": "paper-b28db29cef",
+      "title": "Causal Foundation Models",
+      "source_date": "2026-09-04",
+      "source_weeks": [
+        "W36"
+      ],
+      "doi": null,
+      "source_url": "https://arxiv.org/abs/2609.03003v1",
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "rq_extraction_needed",
+        "hypothesis_extraction_needed",
+        "six_heading_structure_review",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 0
+    },
+    {
+      "paper_id": "paper-1dec3c647c",
+      "title": "Difference-in-differences with unit-specific trends: Bias in post-treatment estimates and a simple alternative",
+      "source_date": "2026-09-10",
+      "source_weeks": [
+        "W37"
+      ],
+      "doi": null,
+      "source_url": null,
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "source_url_missing",
+        "hypothesis_extraction_needed",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 0
+    },
+    {
+      "paper_id": "paper-b7ba3b5524",
+      "title": "Identifying Policy Causal Effects from Rule Changes",
+      "source_date": "2026-09-10",
+      "source_weeks": [
+        "W37"
+      ],
+      "doi": null,
+      "source_url": null,
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "source_url_missing",
+        "hypothesis_extraction_needed",
+        "method_keywords_missing",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 0
+    },
+    {
+      "paper_id": "paper-061d1b0eff",
+      "title": "CausalVerify: An Execution-Grounded Benchmark for LLM Causal Inference Workflows",
+      "source_date": "2026-09-10",
+      "source_weeks": [
+        "W37"
+      ],
+      "doi": null,
+      "source_url": null,
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "source_url_missing",
+        "hypothesis_extraction_needed",
+        "legacy_chatgpt_citations_in_source",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 1
+    },
+    {
+      "paper_id": "paper-9f6d9ca5d6",
+      "title": "Average Treatment Effect Localization: Projection Methods in Synthetic Control",
+      "source_date": "2026-09-14",
+      "source_weeks": [
+        "W38"
+      ],
+      "doi": null,
+      "source_url": null,
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "source_url_missing",
+        "hypothesis_extraction_needed",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 0
+    },
+    {
+      "paper_id": "paper-fb57ffda6e",
+      "title": "Optimal Covariate Adjustment beyond the Average Treatment Effect: Treated-Population and Overlap-Weighted Estimands",
+      "source_date": "2026-09-14",
+      "source_weeks": [
+        "W38"
+      ],
+      "doi": null,
+      "source_url": null,
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "source_url_missing",
+        "hypothesis_extraction_needed",
+        "method_keywords_missing",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 0
+    },
+    {
+      "paper_id": "paper-235e73a026",
+      "title": "Quantile Treatment Effects in Difference-in-Discontinuities Designs",
+      "source_date": "2026-09-14",
+      "source_weeks": [
+        "W38"
+      ],
+      "doi": null,
+      "source_url": null,
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "source_url_missing",
+        "hypothesis_extraction_needed",
+        "legacy_chatgpt_citations_in_source",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 1
+    },
+    {
+      "paper_id": "paper-c79dc0a5e2",
+      "title": "Conformal Policy Learning with Distribution-Free Safety Guarantees",
+      "source_date": "2026-09-17",
+      "source_weeks": [
+        "W38",
+        "W39"
+      ],
+      "doi": null,
+      "source_url": "https://arxiv.org/abs/2609.17296",
+      "bibliography_status": "verified_title_or_doi",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "hypothesis_extraction_needed",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 0
+    },
+    {
+      "paper_id": "paper-07919c7d40",
+      "title": "PLRD: Partially Linear Regression Discontinuity Inference",
+      "source_date": "2026-09-21",
+      "source_weeks": [
+        "W39"
+      ],
+      "doi": null,
+      "source_url": null,
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "source_url_missing",
+        "hypothesis_extraction_needed",
+        "legacy_chatgpt_citations_in_source",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 1
+    },
+    {
+      "paper_id": "paper-5445c52194",
+      "title": "Omitted Variable Bias in Difference-in-Differences Designs",
+      "source_date": "2026-09-28",
+      "source_weeks": [
+        "W40"
+      ],
+      "doi": null,
+      "source_url": "https://arxiv.org/abs/2609.19386?utm_source=chatgpt.com",
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "rq_extraction_needed",
+        "hypothesis_extraction_needed",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 0
+    },
+    {
+      "paper_id": "paper-c90ea9c9ca",
+      "title": "Heterogeneous Policy Effects in Comparative Case Studies with Treated-Unit Microdata",
+      "source_date": "2026-09-28",
+      "source_weeks": [
+        "W40"
+      ],
+      "doi": null,
+      "source_url": null,
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "source_url_missing",
+        "rq_extraction_needed",
+        "hypothesis_extraction_needed",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 0
+    },
+    {
+      "paper_id": "paper-6582247bcc",
+      "title": "Thinking versus Doing: Cognitive Capacity, Decision Making and Medical Diagnosis",
+      "source_date": "2026-09-28",
+      "source_weeks": [
+        "W40"
+      ],
+      "doi": null,
+      "source_url": "https://www.nber.org/papers/w35034",
+      "bibliography_status": "verified_title_or_doi",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "rq_extraction_needed",
+        "hypothesis_extraction_needed",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 0
+    },
+    {
+      "paper_id": "paper-ec4e9eeabb",
+      "title": "Impact of LLM Assistance on Physician Decision-Making: A Multi-Country Randomized Controlled Trial",
+      "source_date": "2026-09-28",
+      "source_weeks": [
+        "W40"
+      ],
+      "doi": null,
+      "source_url": null,
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "source_url_missing",
+        "rq_extraction_needed",
+        "hypothesis_extraction_needed",
+        "legacy_chatgpt_citations_in_source",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 1
+    },
+    {
+      "paper_id": "paper-9be0b9fd8f",
+      "title": "Difference-in-differences for mediation analysis using double machine learning",
+      "source_date": "2026-09-30",
+      "source_weeks": [
+        "W40"
+      ],
+      "doi": "10.48550/ARXIV.2602.23877",
+      "source_url": "https://doi.org/10.48550/ARXIV.2602.23877",
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "rq_extraction_needed",
+        "hypothesis_extraction_needed",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 0
+    },
+    {
+      "paper_id": "paper-21bfea85b2",
+      "title": "Triple Difference Designs with Heterogeneous Treatment Effects",
+      "source_date": "2026-09-30",
+      "source_weeks": [
+        "W40"
+      ],
+      "doi": null,
+      "source_url": "https://arxiv.org/abs/2502.19620?utm_source=chatgpt.com",
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "rq_extraction_needed",
+        "hypothesis_extraction_needed",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 0
+    },
+    {
+      "paper_id": "paper-99c4958bc6",
+      "title": "Are Guidelines Worth Following? Decision-Making Under Incomplete Evidence",
+      "source_date": "2026-09-30",
+      "source_weeks": [
+        "W40"
+      ],
+      "doi": null,
+      "source_url": null,
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "source_url_missing",
+        "rq_extraction_needed",
+        "hypothesis_extraction_needed",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 0
+    },
+    {
+      "paper_id": "paper-e539e49ca6",
+      "title": "Does AI Assistance Enhance or Erode Expertise? Evidence from a Three-Month Field Experiment in Patent Drafting",
+      "source_date": "2026-09-30",
+      "source_weeks": [
+        "W40"
+      ],
+      "doi": null,
+      "source_url": null,
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "source_url_missing",
+        "rq_extraction_needed",
+        "hypothesis_extraction_needed",
+        "legacy_chatgpt_citations_in_source",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 1
+    },
+    {
+      "paper_id": "paper-bb858e1205",
+      "title": "Geodesic Difference-in-Differences",
+      "source_date": "2026-10-02",
+      "source_weeks": [
+        "W40"
+      ],
+      "doi": "10.1093/biomet/asag054",
+      "source_url": "https://doi.org/10.1093/biomet/asag054",
+      "bibliography_status": "verified_title_or_doi",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "rq_extraction_needed",
+        "hypothesis_extraction_needed",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 0
+    },
+    {
+      "paper_id": "paper-5b0863ec2d",
+      "title": "Causal Inference for Spatial Treatments",
+      "source_date": "2026-10-02",
+      "source_weeks": [
+        "W40"
+      ],
+      "doi": "10.3982/ECTA21571",
+      "source_url": null,
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "source_url_missing",
+        "rq_extraction_needed",
+        "hypothesis_extraction_needed",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 0
+    },
+    {
+      "paper_id": "paper-730aa60651",
+      "title": "Designing Human-AI Collaboration｜NBER",
+      "source_date": "2026-10-02",
+      "source_weeks": [
+        "W40"
+      ],
+      "doi": null,
+      "source_url": "https://www.nber.org/papers/w33949?utm_source=chatgpt.com",
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "rq_extraction_needed",
+        "hypothesis_extraction_needed",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 0
+    },
+    {
+      "paper_id": "paper-fad50f3029",
+      "title": "Understanding Expert Choices Using Decision Time｜NBER",
+      "source_date": "2026-10-02",
+      "source_weeks": [
+        "W40"
+      ],
+      "doi": null,
+      "source_url": "https://www.nber.org/papers/w32515?utm_source=chatgpt.com",
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "rq_extraction_needed",
+        "hypothesis_extraction_needed",
+        "method_keywords_missing",
+        "legacy_chatgpt_citations_in_source",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 1
+    },
+    {
+      "paper_id": "paper-1d8263bd82",
+      "title": "Causal Survival Forests with Negative Controls｜arXiv",
+      "source_date": "2026-10-05",
+      "source_weeks": [
+        "W41"
+      ],
+      "doi": null,
+      "source_url": "https://arxiv.org/abs/2608.19749?utm_source=chatgpt.com",
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "rq_extraction_needed",
+        "hypothesis_extraction_needed",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 0
+    },
+    {
+      "paper_id": "paper-3213b8fc54",
+      "title": "Optimal Sequential Decision-Making with Initiation Regimes｜arXiv",
+      "source_date": "2026-10-05",
+      "source_weeks": [
+        "W41"
+      ],
+      "doi": null,
+      "source_url": "https://arxiv.org/abs/2609.29844?utm_source=chatgpt.com",
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "rq_extraction_needed",
+        "hypothesis_extraction_needed",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 0
+    },
+    {
+      "paper_id": "paper-81e90efb7e",
+      "title": "Retrieval Failures and Consumption Smoothing｜NBER",
+      "source_date": "2026-10-05",
+      "source_weeks": [
+        "W41"
+      ],
+      "doi": null,
+      "source_url": "https://www.nber.org/papers/w35430?utm_source=chatgpt.com",
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "rq_extraction_needed",
+        "hypothesis_extraction_needed",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 0
+    },
+    {
+      "paper_id": "paper-def930c5de",
+      "title": "Incentives, Evidence, and Reminders for Bureaucrats｜NBER",
+      "source_date": "2026-10-05",
+      "source_weeks": [
+        "W41"
+      ],
+      "doi": null,
+      "source_url": "https://www.nber.org/papers/w35291?utm_source=chatgpt.com",
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "rq_extraction_needed",
+        "hypothesis_extraction_needed",
+        "legacy_chatgpt_citations_in_source",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 1
+    },
+    {
+      "paper_id": "paper-ff993d84fc",
+      "title": "Efficient Inference for Incremental Causal Effects of Time to Treatment｜arXiv",
+      "source_date": "2026-10-07",
+      "source_weeks": [
+        "W41"
+      ],
+      "doi": null,
+      "source_url": "https://arxiv.org/abs/2605.29348?utm_source=chatgpt.com",
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "rq_extraction_needed",
+        "hypothesis_extraction_needed",
+        "method_keywords_missing",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 0
+    },
+    {
+      "paper_id": "paper-aec80c656f",
+      "title": "When Are Decisions Improvable?｜NBER",
+      "source_date": "2026-10-07",
+      "source_weeks": [
+        "W41"
+      ],
+      "doi": null,
+      "source_url": "https://www.nber.org/papers/w34979?utm_source=chatgpt.com",
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "rq_extraction_needed",
+        "hypothesis_extraction_needed",
+        "method_keywords_missing",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 0
+    },
+    {
+      "paper_id": "paper-cf94b5d051",
+      "title": "Is Money Overrated? Misperceived Satisfaction from Income｜NBER",
+      "source_date": "2026-10-07",
+      "source_weeks": [
+        "W41"
+      ],
+      "doi": null,
+      "source_url": "https://www.nber.org/papers/w35423?utm_source=chatgpt.com",
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "rq_extraction_needed",
+        "hypothesis_extraction_needed",
+        "method_keywords_missing",
+        "legacy_chatgpt_citations_in_source",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 1
+    },
+    {
+      "paper_id": "paper-dac0ca69ca",
+      "title": "Policy Learning under Unobserved Confounding: A Robust and Efficient Approach",
+      "source_date": "2026-10-09",
+      "source_weeks": [
+        "W41"
+      ],
+      "doi": null,
+      "source_url": "https://arxiv.org/abs/2507.20550?utm_source=chatgpt.com",
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "hypothesis_extraction_needed",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 1
+    },
+    {
+      "paper_id": "paper-b7fe6b96d3",
+      "title": "A Joint Test of Unconfoundedness and Common Trends",
+      "source_date": "2026-10-09",
+      "source_weeks": [
+        "W41"
+      ],
+      "doi": "10.1002/jae.70068",
+      "source_url": "https://doi.org/10.1002/jae.70068",
+      "bibliography_status": "verified_title_or_doi",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "hypothesis_extraction_needed",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 1
+    },
+    {
+      "paper_id": "paper-bda44147e2",
+      "title": "The Economic Consequences of Increasing Sleep Among the Urban Poor",
+      "source_date": "2026-10-09",
+      "source_weeks": [
+        "W41"
+      ],
+      "doi": null,
+      "source_url": null,
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "source_url_missing",
+        "hypothesis_extraction_needed",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 0
+    },
+    {
+      "paper_id": "paper-3ada9d3a18",
+      "title": "Diagnosing Physician Error: A Machine Learning Approach to Low-Value Health Care",
+      "source_date": "2026-10-09",
+      "source_weeks": [
+        "W41"
+      ],
+      "doi": null,
+      "source_url": null,
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "source_url_missing",
+        "hypothesis_extraction_needed",
+        "legacy_chatgpt_citations_in_source",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 1
+    },
+    {
+      "paper_id": "paper-f1ad1fb3a4",
+      "title": "TEA-Time: Transporting Effects Across Time",
+      "source_date": "2026-10-12",
+      "source_weeks": [
+        "W42"
+      ],
+      "doi": null,
+      "source_url": "https://arxiv.org/abs/2603.07018",
+      "bibliography_status": "verified_title_or_doi",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "hypothesis_extraction_needed",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 2
+    },
+    {
+      "paper_id": "paper-92bc6de864",
+      "title": "Transportable Causal Effect Estimation across Networks under Interference",
+      "source_date": "2026-10-12",
+      "source_weeks": [
+        "W42"
+      ],
+      "doi": null,
+      "source_url": "https://arxiv.org/abs/2608.18932",
+      "bibliography_status": "verified_title_or_doi",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "hypothesis_extraction_needed",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 1
+    },
+    {
+      "paper_id": "paper-399d8b695e",
+      "title": "How Do Habits Form? Experimental Evidence from Health Screenings",
+      "source_date": "2026-10-12",
+      "source_weeks": [
+        "W42"
+      ],
+      "doi": null,
+      "source_url": null,
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "source_url_missing",
+        "hypothesis_extraction_needed",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 1
+    },
+    {
+      "paper_id": "paper-0bdefac09e",
+      "title": "Behavioral Attenuation",
+      "source_date": "2026-10-12",
+      "source_weeks": [
+        "W42"
+      ],
+      "doi": null,
+      "source_url": null,
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "source_url_missing",
+        "hypothesis_extraction_needed",
+        "method_keywords_missing",
+        "legacy_chatgpt_citations_in_source",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 2
+    },
+    {
+      "paper_id": "paper-6575c5dfe1",
+      "title": "Policy Learning with Confidence",
+      "source_date": "2026-10-14",
+      "source_weeks": [
+        "W42"
+      ],
+      "doi": null,
+      "source_url": "https://arxiv.org/abs/2502.10653",
+      "bibliography_status": "verified_title_or_doi",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "hypothesis_extraction_needed",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 3
+    },
+    {
+      "paper_id": "paper-83b0e41aa8",
+      "title": "Heterogeneous Treatment Effect in Time-to-Event Outcomes: Harnessing Censored Data with Recursively Imputed Trees",
+      "source_date": "2026-10-14",
+      "source_weeks": [
+        "W42",
+        "W46"
+      ],
+      "doi": null,
+      "source_url": "https://arxiv.org/abs/2502.01575?utm_source=chatgpt.com",
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "hypothesis_extraction_needed",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 1
+    },
+    {
+      "paper_id": "paper-63f74ad77b",
+      "title": "Mechanism Design for Personalized Policy: A Field Experiment Incentivizing Exercise",
+      "source_date": "2026-10-14",
+      "source_weeks": [
+        "W42"
+      ],
+      "doi": "10.3982/ECTA21926",
+      "source_url": null,
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "source_url_missing",
+        "hypothesis_extraction_needed",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 2
+    },
+    {
+      "paper_id": "paper-4d71ad1dbd",
+      "title": "Quick-Fixing: Near-Rationality in Consumption and Savings Behavior",
+      "source_date": "2026-10-14",
+      "source_weeks": [
+        "W42"
+      ],
+      "doi": null,
+      "source_url": null,
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "source_url_missing",
+        "method_keywords_missing",
+        "legacy_chatgpt_citations_in_source",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 3
+    },
+    {
+      "paper_id": "paper-f39eae36a4",
+      "title": "Identification and Estimation of Staggered Difference-in-Differences with Network Spillovers",
+      "source_date": "2026-10-16",
+      "source_weeks": [
+        "W42"
+      ],
+      "doi": null,
+      "source_url": "https://arxiv.org/html/2605.15119?utm_source=chatgpt.com",
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "hypothesis_extraction_needed",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 2
+    },
+    {
+      "paper_id": "paper-a7f60207fb",
+      "title": "Leave No One Undermined: Policy Targeting with Regret Aversion",
+      "source_date": "2026-10-16",
+      "source_weeks": [
+        "W42"
+      ],
+      "doi": null,
+      "source_url": "https://arxiv.org/html/2506.16430?utm_source=chatgpt.com",
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "hypothesis_extraction_needed",
+        "six_heading_structure_review",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 3
+    },
+    {
+      "paper_id": "paper-dc007de13d",
+      "title": "Texting for Taxes: Field Evidence on Loss-Framed Nudges in Japan",
+      "source_date": "2026-10-16",
+      "source_weeks": [
+        "W42"
+      ],
+      "doi": null,
+      "source_url": null,
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "source_url_missing",
+        "hypothesis_extraction_needed",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 3
+    },
+    {
+      "paper_id": "paper-bd820a3c55",
+      "title": "Designing Consent: Choice Architecture and Consumer Welfare in Data Sharing",
+      "source_date": "2026-10-16",
+      "source_weeks": [
+        "W42"
+      ],
+      "doi": null,
+      "source_url": null,
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "source_url_missing",
+        "method_keywords_missing",
+        "legacy_chatgpt_citations_in_source",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 4
+    },
+    {
+      "paper_id": "paper-7f69adc37d",
+      "title": "Time-Varying Causal Survival Learning",
+      "source_date": "2026-10-21",
+      "source_weeks": [
+        "W43"
+      ],
+      "doi": null,
+      "source_url": "https://arxiv.org/html/2503.00730?utm_source=chatgpt.com",
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "substantive_results_not_verified"
+      ],
+      "table_count": 3
+    },
+    {
+      "paper_id": "paper-db679cffd0",
+      "title": "A Meta-learner for Heterogeneous Effects in Difference-in-Differences",
+      "source_date": "2026-10-21",
+      "source_weeks": [
+        "W43"
+      ],
+      "doi": null,
+      "source_url": "https://proceedings.mlr.press/v267/lan25a.html?utm_source=chatgpt.com",
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "substantive_results_not_verified"
+      ],
+      "table_count": 2
+    },
+    {
+      "paper_id": "paper-56160473d1",
+      "title": "An Experimental Comparison of Cognitive Forcing Functions for Execution Plans in AI-Assisted Writing",
+      "source_date": "2026-10-21",
+      "source_weeks": [
+        "W43"
+      ],
+      "doi": null,
+      "source_url": "https://arxiv.org/html/2601.18033?utm_source=chatgpt.com",
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "substantive_results_not_verified"
+      ],
+      "table_count": 3
+    },
+    {
+      "paper_id": "paper-ea9249a409",
+      "title": "Nudge Me! A Field Experiment on Reminders for Medication Adherence",
+      "source_date": "2026-10-21",
+      "source_weeks": [
+        "W43"
+      ],
+      "doi": "10.1016/j.jebo.2025.107368",
+      "source_url": "https://doi.org/10.1016/j.jebo.2025.107368?utm_source=chatgpt.com",
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "method_keywords_missing",
+        "legacy_chatgpt_citations_in_source",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 3
+    },
+    {
+      "paper_id": "paper-85e9fc2e70",
+      "title": "Efficient transport and generalization of survival treatment effects",
+      "source_date": "2026-10-23",
+      "source_weeks": [
+        "W43"
+      ],
+      "doi": null,
+      "source_url": "https://arxiv.org/abs/2609.18764?utm_source=chatgpt.com",
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "substantive_results_not_verified"
+      ],
+      "table_count": 2
+    },
+    {
+      "paper_id": "paper-23ddb1867c",
+      "title": "Policy Learning With Observational Data",
+      "source_date": "2026-10-23",
+      "source_weeks": [
+        "W43",
+        "W45",
+        "W46"
+      ],
+      "doi": "10.3982/ECTA15732",
+      "source_url": "https://doi.org/10.3982/ECTA15732?utm_source=chatgpt.com",
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "substantive_results_not_verified"
+      ],
+      "table_count": 3
+    },
+    {
+      "paper_id": "paper-87f8569164",
+      "title": "Generative AI without guardrails can harm learning: Evidence from high school mathematics",
+      "source_date": "2026-10-23",
+      "source_weeks": [
+        "W43"
+      ],
+      "doi": "10.1073/pnas.2422633122",
+      "source_url": "https://doi.org/10.1073/pnas.2422633122?utm_source=chatgpt.com",
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "substantive_results_not_verified"
+      ],
+      "table_count": 3
+    },
+    {
+      "paper_id": "paper-05ff915c4d",
+      "title": "Salience and Taxation: Theory and Evidence",
+      "source_date": "2026-10-23",
+      "source_weeks": [
+        "W43"
+      ],
+      "doi": "10.1257/aer.99.4.1145",
+      "source_url": "https://doi.org/10.1257/aer.99.4.1145?utm_source=chatgpt.com",
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "method_keywords_missing",
+        "legacy_chatgpt_citations_in_source",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 3
+    },
+    {
+      "paper_id": "paper-d76aeef591",
+      "title": "Double Reinforcement Learning for Efficient Off-Policy Evaluation in Markov Decision Processes",
+      "source_date": "2026-11-02",
+      "source_weeks": [
+        "W45"
+      ],
+      "doi": null,
+      "source_url": "https://www.jmlr.org/papers/v21/19-827.html",
+      "bibliography_status": "verified_title_or_doi",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "hypothesis_extraction_needed",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 2
+    },
+    {
+      "paper_id": "paper-c638566481",
+      "title": "A Megastudy of Text-Based Nudges Encouraging Patients to Get Vaccinated at an Upcoming Doctor's Appointment",
+      "source_date": "2026-11-02",
+      "source_weeks": [
+        "W45"
+      ],
+      "doi": "10.1073/pnas.2101165118",
+      "source_url": "https://doi.org/10.1073/pnas.2101165118",
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "hypothesis_extraction_needed",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 1
+    },
+    {
+      "paper_id": "paper-63007291f5",
+      "title": "Human Decisions and Machine Predictions",
+      "source_date": "2026-11-02",
+      "source_weeks": [
+        "W45"
+      ],
+      "doi": "10.1093/qje/qjx032",
+      "source_url": "https://doi.org/10.1093/qje/qjx032",
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "hypothesis_extraction_needed",
+        "legacy_chatgpt_citations_in_source",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 2
+    },
+    {
+      "paper_id": "paper-aa9f672349",
+      "title": "Efficient Generalization and Transportation",
+      "source_date": "2026-11-04",
+      "source_weeks": [
+        "W45"
+      ],
+      "doi": "10.1214/24-STS972",
+      "source_url": "https://doi.org/10.1214/24-STS972",
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "hypothesis_extraction_needed",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 1
+    },
+    {
+      "paper_id": "paper-d7f08665d5",
+      "title": "Estimating Dynamic Treatment Effects in Event Studies with Heterogeneous Treatment Effects",
+      "source_date": "2026-11-04",
+      "source_weeks": [
+        "W45"
+      ],
+      "doi": "10.1016/j.jeconom.2020.09.006",
+      "source_url": "https://doi.org/10.1016/j.jeconom.2020.09.006",
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "hypothesis_extraction_needed",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 1
+    },
+    {
+      "paper_id": "paper-c8d65e4984",
+      "title": "Rational Habit Formation: Experimental Evidence from Handwashing in India",
+      "source_date": "2026-11-04",
+      "source_weeks": [
+        "W45"
+      ],
+      "doi": "10.1257/app.20190568",
+      "source_url": "https://doi.org/10.1257/app.20190568",
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "hypothesis_extraction_needed",
+        "method_keywords_missing",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 1
+    },
+    {
+      "paper_id": "paper-f3d53a169f",
+      "title": "Navigating the Jagged Technological Frontier: Field Experimental Evidence of the Effects of AI on Knowledge Worker Productivity and Quality",
+      "source_date": "2026-11-04",
+      "source_weeks": [
+        "W45"
+      ],
+      "doi": "10.1287/orsc.2025.21838",
+      "source_url": "https://doi.org/10.1287/orsc.2025.21838",
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "hypothesis_extraction_needed",
+        "legacy_chatgpt_citations_in_source",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 2
+    },
+    {
+      "paper_id": "paper-8b8144db83",
+      "title": "Double/Debiased Machine Learning for Treatment and Structural Parameters",
+      "source_date": "2026-11-06",
+      "source_weeks": [
+        "W45"
+      ],
+      "doi": "10.1111/ectj.12097",
+      "source_url": "https://doi.org/10.1111/ectj.12097",
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "hypothesis_extraction_needed",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 1
+    },
+    {
+      "paper_id": "paper-8da7742b2f",
+      "title": "Revisiting Event-Study Designs: Robust and Efficient Estimation",
+      "source_date": "2026-11-06",
+      "source_weeks": [
+        "W45"
+      ],
+      "doi": "10.1093/restud/rdae007",
+      "source_url": "https://doi.org/10.1093/restud/rdae007",
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "hypothesis_extraction_needed",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 1
+    },
+    {
+      "paper_id": "paper-3567d68f2d",
+      "title": "Tying Odysseus to the Mast: Evidence from a Commitment Savings Product in the Philippines",
+      "source_date": "2026-11-06",
+      "source_weeks": [
+        "W45"
+      ],
+      "doi": "10.1162/qjec.2006.121.2.635",
+      "source_url": "https://doi.org/10.1162/qjec.2006.121.2.635",
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "hypothesis_extraction_needed",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 1
+    },
+    {
+      "paper_id": "paper-45a7b98e64",
+      "title": "Does Management Matter? Evidence from India",
+      "source_date": "2026-11-06",
+      "source_weeks": [
+        "W45"
+      ],
+      "doi": "10.1093/qje/qjs044",
+      "source_url": "https://doi.org/10.1093/qje/qjs044",
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "hypothesis_extraction_needed",
+        "method_keywords_missing",
+        "legacy_chatgpt_citations_in_source",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 2
+    },
+    {
+      "paper_id": "paper-4d0da668f3",
+      "title": "A Sensitivity Analysis of the Surrogate Index Approach for Estimating Long-Term Treatment Effects",
+      "source_date": "2026-11-09",
+      "source_weeks": [
+        "W46"
+      ],
+      "doi": null,
+      "source_url": "https://arxiv.org/abs/2603.00580",
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "hypothesis_extraction_needed",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 1
+    },
+    {
+      "paper_id": "paper-22ffd85d70",
+      "title": "Inferring the Long-Term Causal Effects of Long-Term Treatments from Short-Term Experiments",
+      "source_date": "2026-11-09",
+      "source_weeks": [
+        "W46"
+      ],
+      "doi": null,
+      "source_url": "https://proceedings.mlr.press/v235/tran24b.html",
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "hypothesis_extraction_needed",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 1
+    },
+    {
+      "paper_id": "paper-dd46e1bd34",
+      "title": "Getting to the Top of Mind: How Reminders Increase Saving",
+      "source_date": "2026-11-09",
+      "source_weeks": [
+        "W46"
+      ],
+      "doi": "10.1287/mnsc.2015.2296",
+      "source_url": "https://doi.org/10.1287/mnsc.2015.2296",
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "hypothesis_extraction_needed",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 1
+    },
+    {
+      "paper_id": "paper-8ba0782922",
+      "title": "Provision of Social Norm Feedback to High Prescribers of Antibiotics in General Practice",
+      "source_date": "2026-11-09",
+      "source_weeks": [
+        "W46"
+      ],
+      "doi": "10.1016/S0140-6736(16)00215-4",
+      "source_url": "https://doi.org/10.1016/S0140-6736(16)00215-4",
+      "bibliography_status": "verified_title_or_doi",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "hypothesis_extraction_needed",
+        "legacy_chatgpt_citations_in_source",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 3
+    },
+    {
+      "paper_id": "paper-5b78f0b3ca",
+      "title": "Bayesian Fusion Forests for Heterogeneous Treatment Effects on Survival from Randomised and Real-World Data",
+      "source_date": "2026-11-11",
+      "source_weeks": [
+        "W46"
+      ],
+      "doi": null,
+      "source_url": "https://arxiv.org/abs/2607.29295",
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "hypothesis_extraction_needed",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 1
+    },
+    {
+      "paper_id": "paper-def53679c7",
+      "title": "Does Price Matter in Charitable Giving? Evidence from a Large-Scale Natural Field Experiment",
+      "source_date": "2026-11-11",
+      "source_weeks": [
+        "W46"
+      ],
+      "doi": "10.1257/aer.97.5.1774",
+      "source_url": "https://doi.org/10.1257/aer.97.5.1774",
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "hypothesis_extraction_needed",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 1
+    },
+    {
+      "paper_id": "paper-0fe4ab82a9",
+      "title": "Understanding Mechanisms Underlying Peer Effects: Evidence from a Field Experiment on Financial Decisions",
+      "source_date": "2026-11-11",
+      "source_weeks": [
+        "W46"
+      ],
+      "doi": "10.3982/ECTA11991",
+      "source_url": "https://doi.org/10.3982/ECTA11991",
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "hypothesis_extraction_needed",
+        "method_keywords_missing",
+        "legacy_chatgpt_citations_in_source",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 4
+    },
+    {
+      "paper_id": "paper-3376f0baf3",
+      "title": "PAC-Bayesian Treatment Allocation Under Budget Constraints",
+      "source_date": "2026-11-13",
+      "source_weeks": [
+        "W46"
+      ],
+      "doi": null,
+      "source_url": "https://arxiv.org/abs/2212.09007",
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "hypothesis_extraction_needed",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 1
+    },
+    {
+      "paper_id": "paper-028ecc4f15",
+      "title": "Megastudies Improve the Impact of Applied Behavioural Science",
+      "source_date": "2026-11-13",
+      "source_weeks": [
+        "W46"
+      ],
+      "doi": "10.1038/s41586-021-04128-4",
+      "source_url": "https://doi.org/10.1038/s41586-021-04128-4",
+      "bibliography_status": "verified_title_or_doi",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "hypothesis_extraction_needed",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 2
+    },
+    {
+      "paper_id": "paper-6bc882df2c",
+      "title": "Predicting Experimental Results: Who Knows What?",
+      "source_date": "2026-11-13",
+      "source_weeks": [
+        "W46"
+      ],
+      "doi": "10.1086/699976",
+      "source_url": "https://doi.org/10.1086/699976",
+      "bibliography_status": "not_yet_verified",
+      "substantive_verification": "not_checked_against_original",
+      "warnings": [
+        "hypothesis_extraction_needed",
+        "method_keywords_missing",
+        "legacy_chatgpt_citations_in_source",
+        "substantive_results_not_verified"
+      ],
+      "table_count": 2
+    }
+  ],
+  "limitations": [
+    "Missing DOI does not imply publication lacks DOI",
+    "DOI pattern validation does not confirm resolution",
+    "Titles and DOI not checked for 73 remaining records",
+    "Source_text is preserved; quantitative findings have not been validated against original articles",
+    "New scheduled digests are outside this baseline audit"
+  ]
+}
