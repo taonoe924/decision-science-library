@@ -18,7 +18,7 @@ function record(index){
     hypothesis_candidate:'著者の仮説ではなく解説者の中心命題 '+index,
     method_keywords:['RCT'],
     source_heading_count:6,
-    source_text:'研究設計の説明。'.repeat(60)+'\n'+Array.from({length:6},(_,i)=>'##### '+(i+1)+'．見出し\n詳細な説明を記載する。').join('\n\n'),
+    source_text:'研究設計の説明。'.repeat(120)+'\n'+Array.from({length:6},(_,i)=>'##### '+(i+1)+'．見出し\n詳細な説明を記載する。').join('\n\n'),
     publication_status:'approved',
     substantive_verification:'partially_checked_against_primary_sources',
     original_review:{
