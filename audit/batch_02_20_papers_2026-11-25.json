@@ -20,9 +20,9 @@
     "format_verification_complete": 0,
     "automated_markdown_cleanup": 20,
     "primary_abstract_v2_verified": 1,
-    "primary_body_partially_verified": 2,
-    "selected_results_numeric_checked": 1,
-    "identification_assumptions_partially_checked": 2
+    "primary_body_partially_verified": 3,
+    "selected_results_numeric_checked": 2,
+    "identification_assumptions_partially_checked": 3
   },
   "records": [
     {
@@ -139,12 +139,12 @@
       "title": "Identification and Estimation of Staggered Difference-in-Differences with Network Spillovers",
       "original_url": "https://arxiv.org/html/2605.15119",
       "baseline_status": "basic_reference_check_previously_recorded",
-      "current_turn_source_check": "pending",
+      "current_turn_source_check": "primary_body_v1_tables_4_5_verified",
       "full_paper_claims_checked": false,
       "format_v1_2_checked": false,
-      "quantitative_results_checked": false,
-      "identification_assumptions_checked": false,
-      "notes": "Source and metadata carried forward from existing audit backlog; not freshly source-verified in this batch.",
+      "quantitative_results_checked": true,
+      "identification_assumptions_checked": true,
+      "notes": "Original exposure 50 mi, DTE l4 -113.410, CSE l4 -43.352 with original 95% CIs; displaced previous incompatible coefficients; v1 partial audit.",
       "automated_markdown_cleanup": true,
       "format_cleanup_summary": {
         "removed_boxed_math": 3,
