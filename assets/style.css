@@ -69,3 +69,8 @@
 
 /* v1.4: mark source tables which have no data rows without inventing values */
 .prose .table-note{padding:10px 14px;color:#7a5c2c;background:#fffaf0;font-size:13px;line-height:1.6;border-top:1px solid #ece3d2;}
+
+/* Separate paper-level interpretation from weekly cross-paper summaries. */
+.digest-context summary{cursor:pointer;font-weight:700;color:#294e70;line-height:1.6;}
+.digest-context[open] summary{margin-bottom:16px;padding-bottom:10px;border-bottom:1px solid #e0e7ef;}
+.digest-context .prose{margin-top:10px;}
