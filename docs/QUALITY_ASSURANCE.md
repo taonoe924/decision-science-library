@@ -32,7 +32,7 @@
 ## 構造的な品質ゲート
 `node scripts/quality-audit.mjs` でローカル検査可能です。GitHub Actionsワークフロー `.github/workflows/library-quality.yml` も設定しています。ここでは**データ構造**を点検します：ID・重複・日付・URL・本文有無・Markdownの表の列数・数式区切り・確認状態・配信マニフェスト。
 
-**重要：この機械検査だけでは原著との真偽・リンク先の公開状況・ブラウザ上の表示・数式の意味は検証できません。** 新規論文の登録時は、別途、人による原著照合が必要です。
+**重要：この機械検査だけでは原著との真偽・リンク先の公開状況・ブラウザ上の表示・数式の意味は検証できません。** 新規論文の登録時は、別途、原著の実物に基づく内容照合が必要です。記録の自己申告だけでは学術的な正確性を保証できません。
 
 ## 未完了の品質課題
 - 83論文全体の効果量、95%CI、識別仮定、標本サイズ、数式の全文照合
@@ -50,9 +50,27 @@
 
 ## 2026-11-25 STEP 3 実施記録
 - 原著・要旨等の部分照合は83/83件。これは基本照合であり、原著全文の監査完了ではない。
-- 重点的な数値照合は6論文。 `detailed_review` に出典・本文内の所在・照合範囲を保存。うち2論文は要旨の主要数値のみで、本文の全推定値は未照合。
+- 重点的な数値照合は8論文。 `detailed_review` に出典・本文内の所在・照合範囲を保存。うち2論文は要旨の主要数値のみで、本文の全推定値は未照合。
 - 配信横断の考察を個別論文本文から34件分離し、`digest_context` として元の文言を保持。各ページでは折りたたみ表示する。
 - 旧配信データの単独の `$` 行で囲まれた数式について、表示時にブロック数式へ正規化する。
 - 構造品質チェックの再実行：83件・80表、エラー0件、既知の短報3件の警告。これはブラウザの目視検証ではない。
 - GitHub Actionsは登録済みだが、実行成功の確認は別途必要。
 
+
+## 2026-11-25 新規配信の公開前審査（v1）
+定期タスク「Decision Science Papers」は月・水・金曜8時（Asia/Tokyo）に因果推論2本・データ×意思決定2本を紹介する。タスクのプロンプトには、原著照合・結果の数値照合・誤読防止・未達時のサイト公開保留を明記した。
+
+### 公開する手順
+1. 原著の正式な書誌情報、RQ、識別条件、処置、比較群、Outcome、主要結果を本文・表・図と照合する。確認できない数値・95%CIを補完しない。
+2. 日付別データは `data/digests/YYYY-MM-DD.json` に4件のJSON配列として作る。1〜2件目は `digest_category: "causal"`、3〜4件目は `"decision"`。
+3. 各レコードに `publication_status: "approved"`、`substantive_verification: "partially_checked_against_primary_sources"`、`original_review`（出典URL・locator・scope）、`original_review_checked_on`、`quality_review`を入れる。6見出しと具体的な一次資料の照合がそろうまでapprovedにしない。
+4. `quality_review` は `schema_version:1`、`approved:true`、`reviewed_on`、6チェック項目のboolean、`evidence`（最低2件、うちdesignとresult各1件）で構成する。各evidenceには `type, source_url, locator, claim` を必ず記録する。
+5. `node scripts/test-digest-quality.mjs` と `node scripts/quality-audit.mjs` の両方で確認し、4件すべてが合格した時だけ `data/digests/index.json` の `dates` へ登録する。未達なら日付を登録しない。下書きは `publication_status:"draft"` として保存可能だが、サイトに表示されない。
+6. ブラウザ側の `assets/digest-quality.js` でも日付別4件を一括審査する。合格しなかった配信回は、GitHubへファイルが存在しても**公開ページには表示しない**（fail closed）。
+
+### このゲートの限界
+この品質ゲートは、**検証記録・6見出し・公開承認・出典箇所等の必須項目の充足を機械的に確認**する。チェック欄や引用箇所の真偽、数値の意味、原著本文の読解を独立に立証する機能はない。公開前に原著の指定箇所を実際に読み照合することが不可欠。
+
+また、GitHubへの保存成功と、GitHub Pagesへの配信完了は別の事象である。定期実行時にGitHubのツール権限がない場合、原著の一部が取得できない場合、GitHub Actionsが失敗した場合は、サイト登録が保留される。運用上、配信日とサイト掲載日が一致しないことがある。
+
+今後の課題：GitHub Actions成功の実績確認、公開サイトのPC・スマートフォン表示検証、残りの論文の数値・識別仮定の深掘り。
