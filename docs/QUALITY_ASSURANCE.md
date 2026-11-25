@@ -74,3 +74,14 @@
 また、GitHubへの保存成功と、GitHub Pagesへの配信完了は別の事象である。定期実行時にGitHubのツール権限がない場合、原著の一部が取得できない場合、GitHub Actionsが失敗した場合は、サイト登録が保留される。運用上、配信日とサイト掲載日が一致しないことがある。
 
 今後の課題：GitHub Actions成功の実績確認、公開サイトのPC・スマートフォン表示検証、残りの論文の数値・識別仮定の深掘り。
+
+### 2026-11-25 STEP 3 詳細照合・追加バッチ
+- 重点監査済みは **14/83論文**。最新の追加6件はCausalVerify、DML、Sun–Abraham、DRL、短期実験→長期継続介入、Surrogate Index感度分析。
+- 各論文の `detailed_review.status` は対象を区別する：
+  - `selected_results_checked_against_original`：指定された原著の数値・推定対象を部分照合
+  - `selected_theoretical_claims_checked_against_original`：原著の理論・設計の主張を部分照合（数値性能は未照合の場合がある）
+  - `selected_results_checked_against_source_excerpt`：書誌・原著要旨と公開テキストを照合。原著PDF図表の再確認が未完了
+- CausalVerifyの**66/426=15.5%**は、40件の許容範囲外推定と26件の対象係数抽出不可を含む。後者を誤推定値の提示と誤記しない。
+- DMLの401(k) Table 2は、DML2・Interactive・RF・2-foldのATE=7,770ドル、分割ごとのSE中央値1,276ドル、分割変動調整後SE1,363ドルを区別。
+- Surrogate Indexのプレプリントについて、元データに記載された「9月7日改訂版」を削除。公開arXivで確認できる版は2026年2月28日のv1。Worst-case識別区間と両端点の95%CIは別の対象として記録。
+- 本文・付録・定理の全件検証は未完了。今後の追加監査では論文版と原著の表番号・尺度を併記。
