@@ -50,7 +50,7 @@ for (const [i,p] of papers.entries()) {
   if (typeof p.source_text!=='string'||p.source_text.length<100) error(id,'source_text missing or too short');
   else {
     const lines=p.source_text.split(/\r?\n/);
-    const nums=[...p.source_text.matchAll(/^#{2,6}\s*\*?([1-6])[.．、]\s/gm)].map(m=>Number(m[1]));
+    const nums=[...p.source_text.matchAll(/^#{2,6}\s*\*?([1-6])[.．、]\s*/gm)].map(m=>Number(m[1]));
     if (new Set(nums).size<6) { shortReports++;warn(id,'short-form / fewer than six recognized section headings'); }
     for(let j=0;j<lines.length-1;j++){
       if(!lines[j].includes('|')||!divider(lines[j+1]))continue;
