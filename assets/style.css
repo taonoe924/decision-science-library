@@ -66,3 +66,6 @@
   .prose .md-table{font-size:13px;min-width:390px;}
   .prose .md-table th,.prose .md-table td{padding:9px 10px;}
 }
+
+/* v1.4: mark source tables which have no data rows without inventing values */
+.prose .table-note{padding:10px 14px;color:#7a5c2c;background:#fffaf0;font-size:13px;line-height:1.6;border-top:1px solid #ece3d2;}
