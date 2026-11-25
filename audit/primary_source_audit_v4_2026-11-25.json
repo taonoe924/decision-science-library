@@ -1,0 +1,99 @@
+{
+  "audit_date": "2026-11-25",
+  "stage": "Source links complete and 4 representative primary-source checks",
+  "repository": "taonoe924/decision-science-library",
+  "summary": {
+    "total": 83,
+    "source_urls_present": 83,
+    "source_urls_missing": 0,
+    "doi_present": 31,
+    "doi_missing": 52,
+    "rq_present": 80,
+    "proposition_present": 71,
+    "partial_primary_source_result_checks": 4,
+    "fully_checked_papers": 0
+  },
+  "metadata_fixes_from_this_round": [
+    {
+      "id": "paper-1dec3c647c",
+      "source": "https://doi.org/10.1016/j.econlet.2026.113121"
+    },
+    {
+      "id": "paper-b7ba3b5524",
+      "source": "https://www.nber.org/papers/w35615"
+    },
+    {
+      "id": "paper-061d1b0eff",
+      "source": "https://arxiv.org/abs/2609.07944"
+    },
+    {
+      "id": "paper-9f6d9ca5d6",
+      "source": "https://arxiv.org/abs/2609.10617"
+    },
+    {
+      "id": "paper-fb57ffda6e",
+      "source": "https://arxiv.org/abs/2609.11222"
+    },
+    {
+      "id": "paper-235e73a026",
+      "source": "https://doi.org/10.1093/ectj/utag028"
+    },
+    {
+      "id": "paper-c90ea9c9ca",
+      "source": "https://arxiv.org/abs/2609.28678"
+    },
+    {
+      "id": "paper-dc007de13d",
+      "source": "https://www.jstage.jst.go.jp/article/jbef/18/Special_issue/18_18.S5.pp.S1-S4/_article/-char/en"
+    },
+    {
+      "id": "paper-bd820a3c55",
+      "source": "https://www.nber.org/papers/w34025"
+    }
+  ],
+  "primary_source_checks": [
+    {
+      "id": "paper-8b8144db83",
+      "title": "Double/Debiased Machine Learning for Treatment and Structural Parameters",
+      "verification_scope": "partial_primary_method_and_table_checked",
+      "locator": "Section 6.2, Table 2 (Panel A, twofold random forest)",
+      "method": "Observational 401(k) eligibility and net financial assets; DML2 interactive regression and 2-fold RF",
+      "main_result": "ATE $7,770, split-adjusted SE $1,363; unadjusted difference $19,559 SE $1,413",
+      "source_url": "https://academic.oup.com/ectj/article/21/1/C1/5056401"
+    },
+    {
+      "id": "paper-45a7b98e64",
+      "title": "Does Management Matter? Evidence from India",
+      "verification_scope": "partial_primary_design_and_results_checked",
+      "locator": "Research abstract and original paper sample description",
+      "method": "Field experiment, Indian textile manufacturing; 17 firms, 28 plants",
+      "main_result": "First-year productivity increase approximately 17%",
+      "source_url": "https://poverty-action.org/publication/does-management-matter-evidence-india"
+    },
+    {
+      "id": "paper-dd46e1bd34",
+      "title": "Getting to the Top of Mind: How Reminders Increase Saving",
+      "verification_scope": "partial_primary_table_and_outcomes_checked",
+      "locator": "Table 4, Panel A, pp. 3400–3401",
+      "method": "Randomized reminders at commitment-savings banks in three countries; pooled sample N=13,560",
+      "main_result": "Goal attainment +3.2pp, SE 0.9pp; log(1+amount saved) +0.059 to +0.061, SE 0.037 (p≈.10-.11)",
+      "source_url": "https://sendhil.org/wp-content/uploads/2019/08/Publication-16.pdf"
+    },
+    {
+      "id": "paper-028ecc4f15",
+      "title": "Megastudies Improve the Impact of Applied Behavioural Science",
+      "verification_scope": "partial_primary_abstract_and_result_checked",
+      "locator": "Abstract and Fig. 1",
+      "method": "Megastudy, randomized 54 interventions, 61,293 gym members",
+      "main_result": "45% effective during 4-week treatment, 9–27% higher gym visits; 8% significant post-treatment",
+      "source_url": "https://www.nature.com/articles/s41586-021-04128-4"
+    }
+  ],
+  "limitations": [
+    "The original Markdown digest is preserved and some legacy explanatory language may still be inaccurate.",
+    "Only the explicitly described method and numeric results in these four records were compared with primary source passages; no full-paper verification is claimed.",
+    "A source URL being present does not certify all results or references in the digest.",
+    "DOIs remain missing for some preprints and should not be guessed.",
+    "The new scheduled GitHub ingestion must still be tested in its actual automation environment."
+  ]
+}
