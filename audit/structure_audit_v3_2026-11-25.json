@@ -1,0 +1,217 @@
+{
+  "audit_date": "2026-11-25",
+  "version": 3,
+  "description": "Audit of 83 records, after structural extraction and link supplementation. Original digest language preserved. Quantitative findings NOT checked against papers.",
+  "counts": {
+    "total": 83,
+    "rq_filled": 80,
+    "rq_missing": 3,
+    "rq_extracted_explicit": 19,
+    "rq_reconstructed": 8,
+    "hypothesis_or_proposition_filled": 71,
+    "hypothesis_or_proposition_missing": 12,
+    "hypothesis_recovered": 61,
+    "bibliography_checked_partially": 18,
+    "link_recovered_from_digest_unverified": 11,
+    "original_source_url_filled": 74,
+    "source_url_missing": 9,
+    "doi_missing": 56,
+    "six_heading_exception": 4,
+    "full_text_study_results_verified": 0
+  },
+  "manual_review_queue": [
+    {
+      "paper_id": "paper-382caf1ae2",
+      "title": "Policy Thresholds as Growth Barriers: Theory and Evidence from a Payroll Tax Notch",
+      "source_date": "2026-08-14",
+      "flags": [
+        "proposition_missing"
+      ]
+    },
+    {
+      "paper_id": "paper-62ca0acf9a",
+      "title": "Causal Inference for All: Marginal Estimands for Outcomes Truncated by Death",
+      "source_date": "2026-08-14",
+      "flags": [
+        "proposition_missing"
+      ]
+    },
+    {
+      "paper_id": "paper-8db14dc31c",
+      "title": "Inference on Counterfactual Distributions Using Martingale Posteriors",
+      "source_date": "2026-08-14",
+      "flags": [
+        "proposition_missing"
+      ]
+    },
+    {
+      "paper_id": "paper-260bb098e8",
+      "title": "Generalised Transportability via Causal Abstractions",
+      "source_date": "2026-08-21",
+      "flags": [
+        "proposition_missing"
+      ]
+    },
+    {
+      "paper_id": "paper-4ba1548978",
+      "title": "Difference-in-Differences with “Bad Controls”",
+      "source_date": "2026-08-21",
+      "flags": [
+        "proposition_missing"
+      ]
+    },
+    {
+      "paper_id": "paper-e53343e16f",
+      "title": "A Bayesian Approach to Partial Homogeneity in Staggered Difference-in-Difference",
+      "source_date": "2026-08-21",
+      "flags": [
+        "proposition_missing"
+      ]
+    },
+    {
+      "paper_id": "paper-44a219aa63",
+      "title": "Using Pre-Trends for Inference in Difference-in-Differences",
+      "source_date": "2026-08-28",
+      "flags": [
+        "proposition_missing"
+      ]
+    },
+    {
+      "paper_id": "paper-48724c28e5",
+      "title": "Robust Signal Maximization in Spillover Experiments",
+      "source_date": "2026-08-28",
+      "flags": [
+        "proposition_missing"
+      ]
+    },
+    {
+      "paper_id": "paper-8fba52c564",
+      "title": "Which Policy Works, and Where? Estimation and Inference for State-Level Treatment Effects in Difference-in-Differences",
+      "source_date": "2026-09-04",
+      "flags": [
+        "rq_missing",
+        "proposition_missing",
+        "source_six_heading_review"
+      ]
+    },
+    {
+      "paper_id": "paper-8da38f287b",
+      "title": "Off-policy causal estimation in networks",
+      "source_date": "2026-09-04",
+      "flags": [
+        "rq_missing",
+        "proposition_missing",
+        "source_six_heading_review"
+      ]
+    },
+    {
+      "paper_id": "paper-b28db29cef",
+      "title": "Causal Foundation Models",
+      "source_date": "2026-09-04",
+      "flags": [
+        "rq_missing",
+        "proposition_missing",
+        "source_six_heading_review"
+      ]
+    },
+    {
+      "paper_id": "paper-1dec3c647c",
+      "title": "Difference-in-differences with unit-specific trends: Bias in post-treatment estimates and a simple alternative",
+      "source_date": "2026-09-10",
+      "flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "paper_id": "paper-b7ba3b5524",
+      "title": "Identifying Policy Causal Effects from Rule Changes",
+      "source_date": "2026-09-10",
+      "flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "paper_id": "paper-061d1b0eff",
+      "title": "CausalVerify: An Execution-Grounded Benchmark for LLM Causal Inference Workflows",
+      "source_date": "2026-09-10",
+      "flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "paper_id": "paper-9f6d9ca5d6",
+      "title": "Average Treatment Effect Localization: Projection Methods in Synthetic Control",
+      "source_date": "2026-09-14",
+      "flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "paper_id": "paper-fb57ffda6e",
+      "title": "Optimal Covariate Adjustment beyond the Average Treatment Effect: Treated-Population and Overlap-Weighted Estimands",
+      "source_date": "2026-09-14",
+      "flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "paper_id": "paper-235e73a026",
+      "title": "Quantile Treatment Effects in Difference-in-Discontinuities Designs",
+      "source_date": "2026-09-14",
+      "flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "paper_id": "paper-c90ea9c9ca",
+      "title": "Heterogeneous Policy Effects in Comparative Case Studies with Treated-Unit Microdata",
+      "source_date": "2026-09-28",
+      "flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "paper_id": "paper-ec4e9eeabb",
+      "title": "Impact of LLM Assistance on Physician Decision-Making: A Multi-Country Randomized Controlled Trial",
+      "source_date": "2026-09-28",
+      "flags": [
+        "proposition_missing"
+      ]
+    },
+    {
+      "paper_id": "paper-a7f60207fb",
+      "title": "Leave No One Undermined: Policy Targeting with Regret Aversion",
+      "source_date": "2026-10-16",
+      "flags": [
+        "source_six_heading_review"
+      ]
+    },
+    {
+      "paper_id": "paper-dc007de13d",
+      "title": "Texting for Taxes: Field Evidence on Loss-Framed Nudges in Japan",
+      "source_date": "2026-10-16",
+      "flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "paper_id": "paper-bd820a3c55",
+      "title": "Designing Consent: Choice Architecture and Consumer Welfare in Data Sharing",
+      "source_date": "2026-10-16",
+      "flags": [
+        "source_link_missing"
+      ]
+    }
+  ],
+  "provenance_definitions": {
+    "extracted_from_digest_rq": "Source explicitly labels a research question; not independently checked against paper",
+    "reconstructed_from_digest_overview_not_author_verified": "RQ proposed from digest overview, not author's verbatim research question",
+    "extracted_digest_proposition_not_author_verified": "Source digest's propositions/hypotheses, not proof of author-stated hypothesis",
+    "source_link_in_previous_digest_not_externally_verified": "Link was present in historical Markdown but not independently confirmed as correct article"
+  },
+  "limitations": [
+    "No full-paper methodological or quantitative verification yet",
+    "Not all missing DOI can be inferred from paper titles",
+    "Some digest records contain partial/summary content only"
+  ]
+}
