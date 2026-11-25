@@ -34,9 +34,7 @@
         "企業・生産性・経営",
         "因果効果・推論精度"
       ],
-      "mechanism_tags": [
-        "情報・知識"
-      ],
+      "mechanism_tags": [],
       "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
       "source_coverage": "historical_digest",
       "review_status": "candidate_tags_needs_manual_validation"
@@ -118,9 +116,7 @@
       "outcome_tags": [
         "因果効果・推論精度"
       ],
-      "mechanism_tags": [
-        "情報・知識"
-      ],
+      "mechanism_tags": [],
       "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
       "source_coverage": "historical_digest",
       "review_status": "candidate_tags_needs_manual_validation"
@@ -199,9 +195,7 @@
         "経済・所得・消費",
         "因果効果・推論精度"
       ],
-      "mechanism_tags": [
-        "習慣・持続性"
-      ],
+      "mechanism_tags": [],
       "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
       "source_coverage": "historical_digest",
       "review_status": "candidate_tags_needs_manual_validation"
@@ -327,9 +321,7 @@
         "企業・生産性・経営",
         "因果効果・推論精度"
       ],
-      "mechanism_tags": [
-        "社会規範・ピア効果"
-      ],
+      "mechanism_tags": [],
       "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
       "source_coverage": "historical_digest",
       "review_status": "candidate_tags_needs_manual_validation"
@@ -411,10 +403,7 @@
         "判断品質・知識",
         "因果効果・推論精度"
       ],
-      "mechanism_tags": [
-        "社会規範・ピア効果",
-        "選択・自己制御"
-      ],
+      "mechanism_tags": [],
       "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
       "source_coverage": "historical_digest",
       "review_status": "candidate_tags_needs_manual_validation"
@@ -457,10 +446,7 @@
         "判断品質・知識",
         "因果効果・推論精度"
       ],
-      "mechanism_tags": [
-        "情報・知識",
-        "組織・実装"
-      ],
+      "mechanism_tags": [],
       "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
       "source_coverage": "historical_digest",
       "review_status": "candidate_tags_needs_manual_validation"
@@ -503,9 +489,7 @@
         "企業・生産性・経営",
         "因果効果・推論精度"
       ],
-      "mechanism_tags": [
-        "習慣・持続性"
-      ],
+      "mechanism_tags": [],
       "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
       "source_coverage": "historical_digest",
       "review_status": "candidate_tags_needs_manual_validation"
@@ -625,9 +609,7 @@
         "判断品質・知識",
         "因果効果・推論精度"
       ],
-      "mechanism_tags": [
-        "習慣・持続性"
-      ],
+      "mechanism_tags": [],
       "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
       "source_coverage": "historical_digest",
       "review_status": "candidate_tags_needs_manual_validation"
@@ -960,9 +942,7 @@
         "健康・医療",
         "判断品質・知識"
       ],
-      "mechanism_tags": [
-        "認知負荷・代替"
-      ],
+      "mechanism_tags": [],
       "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
       "source_coverage": "historical_digest",
       "review_status": "candidate_tags_needs_manual_validation"
@@ -1088,9 +1068,7 @@
         "判断品質・知識",
         "因果効果・推論精度"
       ],
-      "mechanism_tags": [
-        "情報・知識"
-      ],
+      "mechanism_tags": [],
       "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
       "source_coverage": "historical_digest",
       "review_status": "candidate_tags_needs_manual_validation"
@@ -1179,9 +1157,7 @@
         "健康・医療",
         "因果効果・推論精度"
       ],
-      "mechanism_tags": [
-        "社会規範・ピア効果"
-      ],
+      "mechanism_tags": [],
       "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
       "source_coverage": "historical_digest",
       "review_status": "candidate_tags_needs_manual_validation"
@@ -1266,9 +1242,7 @@
         "因果効果・推論精度"
       ],
       "mechanism_tags": [
-        "情報・知識",
-        "認知負荷・代替",
-        "選択・自己制御"
+        "認知負荷・代替"
       ],
       "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
       "source_coverage": "historical_digest",
@@ -1305,11 +1279,7 @@
       "outcome_tags": [
         "判断品質・知識"
       ],
-      "mechanism_tags": [
-        "情報・知識",
-        "認知負荷・代替",
-        "選択・自己制御"
-      ],
+      "mechanism_tags": [],
       "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
       "source_coverage": "historical_digest",
       "review_status": "candidate_tags_needs_manual_validation"
@@ -1391,9 +1361,7 @@
       "outcome_tags": [
         "判断品質・知識"
       ],
-      "mechanism_tags": [
-        "情報・知識"
-      ],
+      "mechanism_tags": [],
       "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
       "source_coverage": "historical_digest",
       "review_status": "candidate_tags_needs_manual_validation"
@@ -1433,9 +1401,7 @@
         "判断品質・知識"
       ],
       "mechanism_tags": [
-        "注意・想起",
-        "情報・知識",
-        "選択・自己制御"
+        "注意・想起"
       ],
       "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
       "source_coverage": "historical_digest",
@@ -1479,7 +1445,6 @@
       "mechanism_tags": [
         "注意・想起",
         "インセンティブ",
-        "情報・知識",
         "組織・実装"
       ],
       "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
@@ -1559,9 +1524,7 @@
         "判断品質・知識",
         "因果効果・推論精度"
       ],
-      "mechanism_tags": [
-        "選択・自己制御"
-      ],
+      "mechanism_tags": [],
       "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
       "source_coverage": "historical_digest",
       "review_status": "candidate_tags_needs_manual_validation"
@@ -1597,10 +1560,7 @@
         "判断品質・知識",
         "因果効果・推論精度"
       ],
-      "mechanism_tags": [
-        "情報・知識",
-        "選択・自己制御"
-      ],
+      "mechanism_tags": [],
       "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
       "source_coverage": "historical_digest",
       "review_status": "candidate_tags_needs_manual_validation"
@@ -1642,8 +1602,7 @@
         "因果効果・推論精度"
       ],
       "mechanism_tags": [
-        "情報・知識",
-        "選択・自己制御"
+        "情報・知識"
       ],
       "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
       "source_coverage": "historical_digest",
@@ -1685,9 +1644,7 @@
         "健康・医療",
         "因果効果・推論精度"
       ],
-      "mechanism_tags": [
-        "選択・自己制御"
-      ],
+      "mechanism_tags": [],
       "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
       "source_coverage": "historical_digest",
       "review_status": "candidate_tags_needs_manual_validation"
@@ -1728,9 +1685,7 @@
         "企業・生産性・経営",
         "因果効果・推論精度"
       ],
-      "mechanism_tags": [
-        "選択・自己制御"
-      ],
+      "mechanism_tags": [],
       "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
       "source_coverage": "historical_digest",
       "review_status": "candidate_tags_needs_manual_validation"
@@ -1855,9 +1810,7 @@
         "行動変容・継続",
         "因果効果・推論精度"
       ],
-      "mechanism_tags": [
-        "社会規範・ピア効果"
-      ],
+      "mechanism_tags": [],
       "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
       "source_coverage": "historical_digest",
       "review_status": "candidate_tags_needs_manual_validation"
@@ -1897,9 +1850,7 @@
         "行動変容・継続"
       ],
       "mechanism_tags": [
-        "インセンティブ",
         "習慣・持続性",
-        "情報・知識",
         "認知負荷・代替"
       ],
       "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
@@ -1939,11 +1890,7 @@
         "行動変容・継続",
         "因果効果・推論精度"
       ],
-      "mechanism_tags": [
-        "インセンティブ",
-        "情報・知識",
-        "選択・自己制御"
-      ],
+      "mechanism_tags": [],
       "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
       "source_coverage": "historical_digest",
       "review_status": "candidate_tags_needs_manual_validation"
@@ -1983,8 +1930,7 @@
         "因果効果・推論精度"
       ],
       "mechanism_tags": [
-        "情報・知識",
-        "選択・自己制御"
+        "情報・知識"
       ],
       "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
       "source_coverage": "historical_digest",
@@ -2028,9 +1974,7 @@
         "健康・医療",
         "因果効果・推論精度"
       ],
-      "mechanism_tags": [
-        "情報・知識"
-      ],
+      "mechanism_tags": [],
       "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
       "source_coverage": "historical_digest",
       "review_status": "candidate_tags_needs_manual_validation"
@@ -2071,9 +2015,7 @@
         "因果効果・推論精度"
       ],
       "mechanism_tags": [
-        "インセンティブ",
-        "習慣・持続性",
-        "選択・自己制御"
+        "インセンティブ"
       ],
       "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
       "source_coverage": "historical_digest",
@@ -2148,9 +2090,7 @@
         "健康・医療",
         "因果効果・推論精度"
       ],
-      "mechanism_tags": [
-        "社会規範・ピア効果"
-      ],
+      "mechanism_tags": [],
       "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
       "source_coverage": "historical_digest",
       "review_status": "candidate_tags_needs_manual_validation"
@@ -2190,9 +2130,7 @@
         "判断品質・知識",
         "因果効果・推論精度"
       ],
-      "mechanism_tags": [
-        "情報・知識"
-      ],
+      "mechanism_tags": [],
       "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
       "source_coverage": "historical_digest",
       "review_status": "candidate_tags_needs_manual_validation"
@@ -2234,9 +2172,7 @@
         "経済・所得・消費",
         "行動変容・継続"
       ],
-      "mechanism_tags": [
-        "情報・知識"
-      ],
+      "mechanism_tags": [],
       "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
       "source_coverage": "historical_digest",
       "review_status": "candidate_tags_needs_manual_validation"
@@ -2320,8 +2256,7 @@
         "因果効果・推論精度"
       ],
       "mechanism_tags": [
-        "情報・知識",
-        "組織・実装"
+        "情報・知識"
       ],
       "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
       "source_coverage": "historical_digest",
@@ -2362,9 +2297,7 @@
         "判断品質・知識",
         "因果効果・推論精度"
       ],
-      "mechanism_tags": [
-        "情報・知識"
-      ],
+      "mechanism_tags": [],
       "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
       "source_coverage": "historical_digest",
       "review_status": "candidate_tags_needs_manual_validation"
@@ -2438,8 +2371,7 @@
         "行動変容・継続"
       ],
       "mechanism_tags": [
-        "注意・想起",
-        "情報・知識"
+        "注意・想起"
       ],
       "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
       "source_coverage": "historical_digest",
@@ -2485,9 +2417,7 @@
         "健康・医療",
         "因果効果・推論精度"
       ],
-      "mechanism_tags": [
-        "情報・知識"
-      ],
+      "mechanism_tags": [],
       "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
       "source_coverage": "historical_digest",
       "review_status": "candidate_tags_needs_manual_validation"
@@ -2609,8 +2539,7 @@
         "経済・所得・消費"
       ],
       "mechanism_tags": [
-        "注意・想起",
-        "情報・知識"
+        "注意・想起"
       ],
       "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
       "source_coverage": "historical_digest",
@@ -2732,9 +2661,7 @@
         "判断品質・知識",
         "因果効果・推論精度"
       ],
-      "mechanism_tags": [
-        "選択・自己制御"
-      ],
+      "mechanism_tags": [],
       "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
       "source_coverage": "historical_digest",
       "review_status": "candidate_tags_needs_manual_validation"
@@ -2777,9 +2704,7 @@
         "判断品質・知識",
         "因果効果・推論精度"
       ],
-      "mechanism_tags": [
-        "情報・知識"
-      ],
+      "mechanism_tags": [],
       "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
       "source_coverage": "historical_digest",
       "review_status": "candidate_tags_needs_manual_validation"
@@ -2855,7 +2780,6 @@
       "mechanism_tags": [
         "インセンティブ",
         "習慣・持続性",
-        "情報・知識",
         "認知負荷・代替"
       ],
       "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
@@ -3028,7 +2952,6 @@
         "行動変容・継続"
       ],
       "mechanism_tags": [
-        "情報・知識",
         "選択・自己制御"
       ],
       "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
@@ -3075,7 +2998,6 @@
         "因果効果・推論精度"
       ],
       "mechanism_tags": [
-        "情報・知識",
         "組織・実装"
       ],
       "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
@@ -3116,9 +3038,7 @@
         "健康・医療",
         "因果効果・推論精度"
       ],
-      "mechanism_tags": [
-        "習慣・持続性"
-      ],
+      "mechanism_tags": [],
       "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
       "source_coverage": "historical_digest",
       "review_status": "candidate_tags_needs_manual_validation"
@@ -3157,9 +3077,7 @@
         "健康・医療",
         "因果効果・推論精度"
       ],
-      "mechanism_tags": [
-        "習慣・持続性"
-      ],
+      "mechanism_tags": [],
       "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
       "source_coverage": "historical_digest",
       "review_status": "candidate_tags_needs_manual_validation"
@@ -3299,9 +3217,7 @@
         "健康・医療",
         "因果効果・推論精度"
       ],
-      "mechanism_tags": [
-        "情報・知識"
-      ],
+      "mechanism_tags": [],
       "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
       "source_coverage": "historical_digest",
       "review_status": "candidate_tags_needs_manual_validation"
@@ -3338,9 +3254,7 @@
       "outcome_tags": [
         "因果効果・推論精度"
       ],
-      "mechanism_tags": [
-        "情報・知識"
-      ],
+      "mechanism_tags": [],
       "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
       "source_coverage": "historical_digest",
       "review_status": "candidate_tags_needs_manual_validation"
@@ -3378,8 +3292,7 @@
       ],
       "mechanism_tags": [
         "社会規範・ピア効果",
-        "情報・知識",
-        "選択・自己制御"
+        "情報・知識"
       ],
       "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
       "source_coverage": "historical_digest",
@@ -3504,7 +3417,6 @@
       ],
       "mechanism_tags": [
         "インセンティブ",
-        "情報・知識",
         "認知負荷・代替"
       ],
       "tag_provenance": "heuristic_from_title_RQ_and_digest_intro_not_primary_verified",
