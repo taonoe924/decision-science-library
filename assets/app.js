@@ -162,10 +162,14 @@ function md(src){
   return out;
 }
 function paperOnlyText(text){
-  // The historical digest sometimes appended a cross-paper weekly ranking after the
-  // sixth section. Keep that data in the source, but do not mislabel it as section 6.
-  const cutoff=/^---\s*\n\s*###\s*今週読むならこの順(?:\s|$)/m.exec(text);
-  return cutoff ? text.slice(0,cutoff.index).trim() : text;
+  // Archived weekly digests may include a subsequent category or cross-paper synthesis
+  // after section 6. Retain full source data; render only the single-paper exposition.
+  const all=[...String(text||'').matchAll(/^#{2,6}\s*(?:\*\*)?6[.．、]\s*[^\n]+$/gm)];
+  if(!all.length)return text;
+  const finalSix=all[all.length-1], start=finalSix.index+finalSix[0].length;
+  const suffix=String(text).slice(start);
+  const cut=/^---\s*\n\s*#{2,4}\s*(?:今週読むなら|4本を横断|B[｜．.：\s]|[AB][．.｜]\s*|今回の研究テーマから)/m.exec(suffix);
+  return cut?String(text).slice(0,start+cut.index).trim():text;
 }
 function headings(text){
   const body=paperOnlyText(text),parts=[];
