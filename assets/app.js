@@ -164,7 +164,7 @@ function md(src){
 function paperOnlyText(text){
   // The historical digest sometimes appended a cross-paper weekly ranking after the
   // sixth section. Keep that data in the source, but do not mislabel it as section 6.
-  const cutoff=/^---\s*\n\s*###\s*今週読むならこの順\b/m.exec(text);
+  const cutoff=/^---\s*\n\s*###\s*今週読むならこの順(?:\s|$)/m.exec(text);
   return cutoff ? text.slice(0,cutoff.index).trim() : text;
 }
 function headings(text){
