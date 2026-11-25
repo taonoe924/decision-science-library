@@ -10,6 +10,7 @@ on:
   pull_request:
     paths:
       - "assets/papers.js"
+      - "assets/app.js"
       - "data/digests/**"
       - "scripts/quality-audit.mjs"
       - ".github/workflows/library-quality.yml"
