@@ -71,6 +71,15 @@ for (const [i,p] of papers.entries()) {
     if(open!==close)warn(id,'possible block LaTeX delimiter mismatch');
     if(p.source_text.includes('\uFFFD'))warn(id,'replacement character in text');
   }
+  if (p.digest_context != null) {
+    if (typeof p.digest_context!=='string'||!p.digest_context.trim())error(id,'empty digest_context');
+    if (typeof p.digest_context_provenance!=='string')warn(id,'missing digest_context provenance');
+    if (/^###\s*(?:今週|今回|B[．.]|A[．.])/m.test(p.source_text))warn(id,'weekly summary still appears in paper body');
+  }
+  if(p.detailed_review != null){
+    if(!p.detailed_review.source_url || !p.detailed_review.locator)error(id,'detailed review lacks source or table/section locator');
+    if(!p.source_text.includes('詳細監査'))warn(id,'detailed review metadata without visible audit note');
+  }
   if (!allowedStatus.has(p.substantive_verification)) error(id,'unknown verification status');
   if (p.substantive_verification==='not_checked_against_original') {
     warn(id,'primary-source check pending');
