@@ -103,14 +103,16 @@ function md(src){
       const cell=(v,tag,j)=>'<'+tag+' style="text-align:'+align[Math.min(j,align.length-1)]+'">'+inline(v)+'</'+tag+'>';
       out+='<div class="table-scroll" role="region" aria-label="研究データの表" tabindex="0"><table class="md-table"><thead><tr>'+head.map((v,j)=>cell(v,'th',j)).join('')+'</tr></thead><tbody>';
       i+=1;
+      let rowCount=0;
       while(i+1<lines.length){
         const line=lines[i+1].trim();
         if(!line||!line.includes('|')||isDivider(line))break;
         const row=splitCells(line);
+        rowCount++;
         out+='<tr>'+head.map((_,j)=>cell(row[j]||'','td',j)).join('')+'</tr>';
         i++;
       }
-      out+='</tbody></table></div>';
+      out+='</tbody></table>'+(rowCount===0?'<div class="table-note">注：元の配信データには列見出しのみがあり、行の内容は記載されていません。</div>':'')+'</div>';
       continue;
     }
     const h=t.match(/^(#{1,6})\s+(.+)/);
