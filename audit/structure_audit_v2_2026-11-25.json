@@ -1,0 +1,1003 @@
+{
+  "updated": "2026-11-25",
+  "version": 2,
+  "scope": "83 existing W33–W46 records",
+  "important": "Structured fields were recovered from previous ChatGPT/Obsidian digest text. This is not full verification against journal articles or preprints.",
+  "summary": {
+    "total": 83,
+    "rq_filled": 80,
+    "rq_missing": 3,
+    "rq_explicit_extracted": 19,
+    "rq_reconstructed_from_overview": 8,
+    "hypothesis_filled": 71,
+    "hypothesis_missing": 12,
+    "proposition_extracted": 61,
+    "bibliography_partially_checked": 10,
+    "source_url_missing": 28,
+    "doi_missing": 58,
+    "six_heading_exception": 4
+  },
+  "manual_review_queue": [
+    {
+      "id": "paper-382caf1ae2",
+      "title": "Policy Thresholds as Growth Barriers: Theory and Evidence from a Payroll Tax Notch",
+      "source_week": [
+        "W33"
+      ],
+      "source_date": "2026-08-14",
+      "flags": [
+        "proposition_missing"
+      ]
+    },
+    {
+      "id": "paper-62ca0acf9a",
+      "title": "Causal Inference for All: Marginal Estimands for Outcomes Truncated by Death",
+      "source_week": [
+        "W33"
+      ],
+      "source_date": "2026-08-14",
+      "flags": [
+        "proposition_missing"
+      ]
+    },
+    {
+      "id": "paper-8db14dc31c",
+      "title": "Inference on Counterfactual Distributions Using Martingale Posteriors",
+      "source_week": [
+        "W33"
+      ],
+      "source_date": "2026-08-14",
+      "flags": [
+        "proposition_missing"
+      ]
+    },
+    {
+      "id": "paper-260bb098e8",
+      "title": "Generalised Transportability via Causal Abstractions",
+      "source_week": [
+        "W34"
+      ],
+      "source_date": "2026-08-21",
+      "flags": [
+        "proposition_missing"
+      ]
+    },
+    {
+      "id": "paper-4ba1548978",
+      "title": "Difference-in-Differences with “Bad Controls”",
+      "source_week": [
+        "W34"
+      ],
+      "source_date": "2026-08-21",
+      "flags": [
+        "proposition_missing"
+      ]
+    },
+    {
+      "id": "paper-e53343e16f",
+      "title": "A Bayesian Approach to Partial Homogeneity in Staggered Difference-in-Difference",
+      "source_week": [
+        "W34"
+      ],
+      "source_date": "2026-08-21",
+      "flags": [
+        "proposition_missing"
+      ]
+    },
+    {
+      "id": "paper-44a219aa63",
+      "title": "Using Pre-Trends for Inference in Difference-in-Differences",
+      "source_week": [
+        "W35"
+      ],
+      "source_date": "2026-08-28",
+      "flags": [
+        "proposition_missing"
+      ]
+    },
+    {
+      "id": "paper-48724c28e5",
+      "title": "Robust Signal Maximization in Spillover Experiments",
+      "source_week": [
+        "W35"
+      ],
+      "source_date": "2026-08-28",
+      "flags": [
+        "proposition_missing"
+      ]
+    },
+    {
+      "id": "paper-8fba52c564",
+      "title": "Which Policy Works, and Where? Estimation and Inference for State-Level Treatment Effects in Difference-in-Differences",
+      "source_week": [
+        "W36"
+      ],
+      "source_date": "2026-09-04",
+      "flags": [
+        "rq_missing",
+        "proposition_missing",
+        "six_heading_structure_review"
+      ]
+    },
+    {
+      "id": "paper-8da38f287b",
+      "title": "Off-policy causal estimation in networks",
+      "source_week": [
+        "W36"
+      ],
+      "source_date": "2026-09-04",
+      "flags": [
+        "rq_missing",
+        "proposition_missing",
+        "six_heading_structure_review"
+      ]
+    },
+    {
+      "id": "paper-b28db29cef",
+      "title": "Causal Foundation Models",
+      "source_week": [
+        "W36"
+      ],
+      "source_date": "2026-09-04",
+      "flags": [
+        "rq_missing",
+        "proposition_missing",
+        "six_heading_structure_review"
+      ]
+    },
+    {
+      "id": "paper-ec4e9eeabb",
+      "title": "Impact of LLM Assistance on Physician Decision-Making: A Multi-Country Randomized Controlled Trial",
+      "source_week": [
+        "W40"
+      ],
+      "source_date": "2026-09-28",
+      "flags": [
+        "proposition_missing"
+      ]
+    },
+    {
+      "id": "paper-a7f60207fb",
+      "title": "Leave No One Undermined: Policy Targeting with Regret Aversion",
+      "source_week": [
+        "W42"
+      ],
+      "source_date": "2026-10-16",
+      "flags": [
+        "six_heading_structure_review"
+      ]
+    }
+  ],
+  "per_record_provenance": [
+    {
+      "id": "paper-382caf1ae2",
+      "title": "Policy Thresholds as Growth Barriers: Theory and Evidence from a Payroll Tax Notch",
+      "rq_status": "reconstructed_from_digest_overview_not_author_verified",
+      "hypothesis_status": "needs_manual_review",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": null,
+      "hypothesis_source_line": null
+    },
+    {
+      "id": "paper-62ca0acf9a",
+      "title": "Causal Inference for All: Marginal Estimands for Outcomes Truncated by Death",
+      "rq_status": "reconstructed_from_digest_overview_not_author_verified",
+      "hypothesis_status": "needs_manual_review",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": null,
+      "hypothesis_source_line": null
+    },
+    {
+      "id": "paper-8db14dc31c",
+      "title": "Inference on Counterfactual Distributions Using Martingale Posteriors",
+      "rq_status": "reconstructed_from_digest_overview_not_author_verified",
+      "hypothesis_status": "needs_manual_review",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": null,
+      "hypothesis_source_line": null
+    },
+    {
+      "id": "paper-260bb098e8",
+      "title": "Generalised Transportability via Causal Abstractions",
+      "rq_status": "reconstructed_from_digest_overview_not_author_verified",
+      "hypothesis_status": "needs_manual_review",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": null,
+      "hypothesis_source_line": null
+    },
+    {
+      "id": "paper-4ba1548978",
+      "title": "Difference-in-Differences with “Bad Controls”",
+      "rq_status": "reconstructed_from_digest_overview_not_author_verified",
+      "hypothesis_status": "needs_manual_review",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": null,
+      "hypothesis_source_line": null
+    },
+    {
+      "id": "paper-e53343e16f",
+      "title": "A Bayesian Approach to Partial Homogeneity in Staggered Difference-in-Difference",
+      "rq_status": "reconstructed_from_digest_overview_not_author_verified",
+      "hypothesis_status": "needs_manual_review",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": null,
+      "hypothesis_source_line": null
+    },
+    {
+      "id": "paper-44a219aa63",
+      "title": "Using Pre-Trends for Inference in Difference-in-Differences",
+      "rq_status": "reconstructed_from_digest_overview_not_author_verified",
+      "hypothesis_status": "needs_manual_review",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": null,
+      "hypothesis_source_line": null
+    },
+    {
+      "id": "paper-48724c28e5",
+      "title": "Robust Signal Maximization in Spillover Experiments",
+      "rq_status": "reconstructed_from_digest_overview_not_author_verified",
+      "hypothesis_status": "needs_manual_review",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": null,
+      "hypothesis_source_line": null
+    },
+    {
+      "id": "paper-8fba52c564",
+      "title": "Which Policy Works, and Where? Estimation and Inference for State-Level Treatment Effects in Difference-in-Differences",
+      "rq_status": "needs_manual_review",
+      "hypothesis_status": "needs_manual_review",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": null,
+      "hypothesis_source_line": null
+    },
+    {
+      "id": "paper-8da38f287b",
+      "title": "Off-policy causal estimation in networks",
+      "rq_status": "needs_manual_review",
+      "hypothesis_status": "needs_manual_review",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": null,
+      "hypothesis_source_line": null
+    },
+    {
+      "id": "paper-b28db29cef",
+      "title": "Causal Foundation Models",
+      "rq_status": "needs_manual_review",
+      "hypothesis_status": "needs_manual_review",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": null,
+      "hypothesis_source_line": null
+    },
+    {
+      "id": "paper-1dec3c647c",
+      "title": "Difference-in-differences with unit-specific trends: Bias in post-treatment estimates and a simple alternative",
+      "rq_status": "legacy_extraction_from_digest",
+      "hypothesis_status": "extracted_digest_proposition_not_author_verified",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": null,
+      "hypothesis_source_line": 7
+    },
+    {
+      "id": "paper-b7ba3b5524",
+      "title": "Identifying Policy Causal Effects from Rule Changes",
+      "rq_status": "legacy_extraction_from_digest",
+      "hypothesis_status": "extracted_digest_proposition_not_author_verified",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": null,
+      "hypothesis_source_line": 7
+    },
+    {
+      "id": "paper-061d1b0eff",
+      "title": "CausalVerify: An Execution-Grounded Benchmark for LLM Causal Inference Workflows",
+      "rq_status": "legacy_extraction_from_digest",
+      "hypothesis_status": "extracted_digest_proposition_not_author_verified",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": null,
+      "hypothesis_source_line": 7
+    },
+    {
+      "id": "paper-9f6d9ca5d6",
+      "title": "Average Treatment Effect Localization: Projection Methods in Synthetic Control",
+      "rq_status": "legacy_extraction_from_digest",
+      "hypothesis_status": "extracted_digest_proposition_not_author_verified",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": null,
+      "hypothesis_source_line": 7
+    },
+    {
+      "id": "paper-fb57ffda6e",
+      "title": "Optimal Covariate Adjustment beyond the Average Treatment Effect: Treated-Population and Overlap-Weighted Estimands",
+      "rq_status": "legacy_extraction_from_digest",
+      "hypothesis_status": "extracted_digest_proposition_not_author_verified",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": null,
+      "hypothesis_source_line": 7
+    },
+    {
+      "id": "paper-235e73a026",
+      "title": "Quantile Treatment Effects in Difference-in-Discontinuities Designs",
+      "rq_status": "legacy_extraction_from_digest",
+      "hypothesis_status": "extracted_digest_proposition_not_author_verified",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": null,
+      "hypothesis_source_line": 7
+    },
+    {
+      "id": "paper-c79dc0a5e2",
+      "title": "Conformal Policy Learning with Distribution-Free Safety Guarantees",
+      "rq_status": "legacy_extraction_from_digest",
+      "hypothesis_status": "extracted_digest_proposition_not_author_verified",
+      "bibliography_status": "verified_title_or_doi",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": null,
+      "hypothesis_source_line": 8
+    },
+    {
+      "id": "paper-07919c7d40",
+      "title": "PLRD: Partially Linear Regression Discontinuity Inference",
+      "rq_status": "legacy_extraction_from_digest",
+      "hypothesis_status": "extracted_digest_proposition_not_author_verified",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": null,
+      "hypothesis_source_line": 9
+    },
+    {
+      "id": "paper-5445c52194",
+      "title": "Omitted Variable Bias in Difference-in-Differences Designs",
+      "rq_status": "extracted_from_digest_rq",
+      "hypothesis_status": "extracted_digest_proposition_not_author_verified",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": 5,
+      "hypothesis_source_line": 10
+    },
+    {
+      "id": "paper-c90ea9c9ca",
+      "title": "Heterogeneous Policy Effects in Comparative Case Studies with Treated-Unit Microdata",
+      "rq_status": "extracted_from_digest_rq",
+      "hypothesis_status": "extracted_digest_proposition_not_author_verified",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": 5,
+      "hypothesis_source_line": 10
+    },
+    {
+      "id": "paper-6582247bcc",
+      "title": "Thinking versus Doing: Cognitive Capacity, Decision Making and Medical Diagnosis",
+      "rq_status": "extracted_from_digest_rq",
+      "hypothesis_status": "extracted_digest_proposition_not_author_verified",
+      "bibliography_status": "verified_title_or_doi",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": 5,
+      "hypothesis_source_line": 20
+    },
+    {
+      "id": "paper-ec4e9eeabb",
+      "title": "Impact of LLM Assistance on Physician Decision-Making: A Multi-Country Randomized Controlled Trial",
+      "rq_status": "extracted_from_digest_rq",
+      "hypothesis_status": "needs_manual_review",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": 5,
+      "hypothesis_source_line": null
+    },
+    {
+      "id": "paper-9be0b9fd8f",
+      "title": "Difference-in-differences for mediation analysis using double machine learning",
+      "rq_status": "extracted_from_digest_rq",
+      "hypothesis_status": "extracted_digest_proposition_not_author_verified",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": 6,
+      "hypothesis_source_line": 24
+    },
+    {
+      "id": "paper-21bfea85b2",
+      "title": "Triple Difference Designs with Heterogeneous Treatment Effects",
+      "rq_status": "extracted_from_digest_rq",
+      "hypothesis_status": "extracted_digest_proposition_not_author_verified",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": 6,
+      "hypothesis_source_line": 10
+    },
+    {
+      "id": "paper-99c4958bc6",
+      "title": "Are Guidelines Worth Following? Decision-Making Under Incomplete Evidence",
+      "rq_status": "extracted_from_digest_rq",
+      "hypothesis_status": "extracted_digest_proposition_not_author_verified",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": 6,
+      "hypothesis_source_line": 34
+    },
+    {
+      "id": "paper-e539e49ca6",
+      "title": "Does AI Assistance Enhance or Erode Expertise? Evidence from a Three-Month Field Experiment in Patent Drafting",
+      "rq_status": "extracted_from_digest_rq",
+      "hypothesis_status": "extracted_digest_proposition_not_author_verified",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": 6,
+      "hypothesis_source_line": 30
+    },
+    {
+      "id": "paper-bb858e1205",
+      "title": "Geodesic Difference-in-Differences",
+      "rq_status": "extracted_from_digest_rq",
+      "hypothesis_status": "extracted_digest_proposition_not_author_verified",
+      "bibliography_status": "verified_title_or_doi",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": 5,
+      "hypothesis_source_line": 44
+    },
+    {
+      "id": "paper-5b0863ec2d",
+      "title": "Causal Inference for Spatial Treatments",
+      "rq_status": "extracted_from_digest_rq",
+      "hypothesis_status": "extracted_digest_proposition_not_author_verified",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": 5,
+      "hypothesis_source_line": 41
+    },
+    {
+      "id": "paper-730aa60651",
+      "title": "Designing Human-AI Collaboration｜NBER",
+      "rq_status": "extracted_from_digest_rq",
+      "hypothesis_status": "extracted_digest_proposition_not_author_verified",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": 5,
+      "hypothesis_source_line": 33
+    },
+    {
+      "id": "paper-fad50f3029",
+      "title": "Understanding Expert Choices Using Decision Time｜NBER",
+      "rq_status": "extracted_from_digest_rq",
+      "hypothesis_status": "extracted_digest_proposition_not_author_verified",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": 5,
+      "hypothesis_source_line": 31
+    },
+    {
+      "id": "paper-1d8263bd82",
+      "title": "Causal Survival Forests with Negative Controls｜arXiv",
+      "rq_status": "extracted_from_digest_rq",
+      "hypothesis_status": "extracted_digest_proposition_not_author_verified",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": 5,
+      "hypothesis_source_line": 35
+    },
+    {
+      "id": "paper-3213b8fc54",
+      "title": "Optimal Sequential Decision-Making with Initiation Regimes｜arXiv",
+      "rq_status": "extracted_from_digest_rq",
+      "hypothesis_status": "extracted_digest_proposition_not_author_verified",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": 5,
+      "hypothesis_source_line": 64
+    },
+    {
+      "id": "paper-81e90efb7e",
+      "title": "Retrieval Failures and Consumption Smoothing｜NBER",
+      "rq_status": "extracted_from_digest_rq",
+      "hypothesis_status": "extracted_digest_proposition_not_author_verified",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": 5,
+      "hypothesis_source_line": 49
+    },
+    {
+      "id": "paper-def930c5de",
+      "title": "Incentives, Evidence, and Reminders for Bureaucrats｜NBER",
+      "rq_status": "extracted_from_digest_rq",
+      "hypothesis_status": "extracted_digest_proposition_not_author_verified",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": 5,
+      "hypothesis_source_line": 53
+    },
+    {
+      "id": "paper-ff993d84fc",
+      "title": "Efficient Inference for Incremental Causal Effects of Time to Treatment｜arXiv",
+      "rq_status": "extracted_from_digest_rq",
+      "hypothesis_status": "extracted_digest_proposition_not_author_verified",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": 6,
+      "hypothesis_source_line": 42
+    },
+    {
+      "id": "paper-aec80c656f",
+      "title": "When Are Decisions Improvable?｜NBER",
+      "rq_status": "extracted_from_digest_rq",
+      "hypothesis_status": "extracted_digest_proposition_not_author_verified",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": 6,
+      "hypothesis_source_line": 42
+    },
+    {
+      "id": "paper-cf94b5d051",
+      "title": "Is Money Overrated? Misperceived Satisfaction from Income｜NBER",
+      "rq_status": "extracted_from_digest_rq",
+      "hypothesis_status": "extracted_digest_proposition_not_author_verified",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": 6,
+      "hypothesis_source_line": 52
+    },
+    {
+      "id": "paper-dac0ca69ca",
+      "title": "Policy Learning under Unobserved Confounding: A Robust and Efficient Approach",
+      "rq_status": "legacy_extraction_from_digest",
+      "hypothesis_status": "extracted_digest_proposition_not_author_verified",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": null,
+      "hypothesis_source_line": 38
+    },
+    {
+      "id": "paper-b7fe6b96d3",
+      "title": "A Joint Test of Unconfoundedness and Common Trends",
+      "rq_status": "legacy_extraction_from_digest",
+      "hypothesis_status": "extracted_digest_proposition_not_author_verified",
+      "bibliography_status": "verified_title_or_doi",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": null,
+      "hypothesis_source_line": 39
+    },
+    {
+      "id": "paper-bda44147e2",
+      "title": "The Economic Consequences of Increasing Sleep Among the Urban Poor",
+      "rq_status": "legacy_extraction_from_digest",
+      "hypothesis_status": "extracted_digest_proposition_not_author_verified",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": null,
+      "hypothesis_source_line": 34
+    },
+    {
+      "id": "paper-3ada9d3a18",
+      "title": "Diagnosing Physician Error: A Machine Learning Approach to Low-Value Health Care",
+      "rq_status": "legacy_extraction_from_digest",
+      "hypothesis_status": "extracted_digest_proposition_not_author_verified",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": null,
+      "hypothesis_source_line": 48
+    },
+    {
+      "id": "paper-f1ad1fb3a4",
+      "title": "TEA-Time: Transporting Effects Across Time",
+      "rq_status": "legacy_extraction_from_digest",
+      "hypothesis_status": "extracted_digest_proposition_not_author_verified",
+      "bibliography_status": "verified_title_or_doi",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": null,
+      "hypothesis_source_line": 42
+    },
+    {
+      "id": "paper-92bc6de864",
+      "title": "Transportable Causal Effect Estimation across Networks under Interference",
+      "rq_status": "legacy_extraction_from_digest",
+      "hypothesis_status": "extracted_digest_proposition_not_author_verified",
+      "bibliography_status": "verified_title_or_doi",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": null,
+      "hypothesis_source_line": 42
+    },
+    {
+      "id": "paper-399d8b695e",
+      "title": "How Do Habits Form? Experimental Evidence from Health Screenings",
+      "rq_status": "legacy_extraction_from_digest",
+      "hypothesis_status": "extracted_digest_proposition_not_author_verified",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": null,
+      "hypothesis_source_line": 42
+    },
+    {
+      "id": "paper-0bdefac09e",
+      "title": "Behavioral Attenuation",
+      "rq_status": "legacy_extraction_from_digest",
+      "hypothesis_status": "extracted_digest_proposition_not_author_verified",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": null,
+      "hypothesis_source_line": 42
+    },
+    {
+      "id": "paper-6575c5dfe1",
+      "title": "Policy Learning with Confidence",
+      "rq_status": "legacy_extraction_from_digest",
+      "hypothesis_status": "extracted_digest_proposition_not_author_verified",
+      "bibliography_status": "verified_title_or_doi",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": null,
+      "hypothesis_source_line": 46
+    },
+    {
+      "id": "paper-83b0e41aa8",
+      "title": "Heterogeneous Treatment Effect in Time-to-Event Outcomes: Harnessing Censored Data with Recursively Imputed Trees",
+      "rq_status": "legacy_extraction_from_digest",
+      "hypothesis_status": "extracted_digest_proposition_not_author_verified",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": null,
+      "hypothesis_source_line": 32
+    },
+    {
+      "id": "paper-63f74ad77b",
+      "title": "Mechanism Design for Personalized Policy: A Field Experiment Incentivizing Exercise",
+      "rq_status": "legacy_extraction_from_digest",
+      "hypothesis_status": "extracted_digest_proposition_not_author_verified",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": null,
+      "hypothesis_source_line": 42
+    },
+    {
+      "id": "paper-4d71ad1dbd",
+      "title": "Quick-Fixing: Near-Rationality in Consumption and Savings Behavior",
+      "rq_status": "legacy_extraction_from_digest",
+      "hypothesis_status": "legacy_extraction_from_digest",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": null,
+      "hypothesis_source_line": null
+    },
+    {
+      "id": "paper-f39eae36a4",
+      "title": "Identification and Estimation of Staggered Difference-in-Differences with Network Spillovers",
+      "rq_status": "legacy_extraction_from_digest",
+      "hypothesis_status": "extracted_digest_proposition_not_author_verified",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": null,
+      "hypothesis_source_line": 28
+    },
+    {
+      "id": "paper-a7f60207fb",
+      "title": "Leave No One Undermined: Policy Targeting with Regret Aversion",
+      "rq_status": "legacy_extraction_from_digest",
+      "hypothesis_status": "extracted_digest_proposition_not_author_verified",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": null,
+      "hypothesis_source_line": 35
+    },
+    {
+      "id": "paper-dc007de13d",
+      "title": "Texting for Taxes: Field Evidence on Loss-Framed Nudges in Japan",
+      "rq_status": "legacy_extraction_from_digest",
+      "hypothesis_status": "extracted_digest_proposition_not_author_verified",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": null,
+      "hypothesis_source_line": 22
+    },
+    {
+      "id": "paper-bd820a3c55",
+      "title": "Designing Consent: Choice Architecture and Consumer Welfare in Data Sharing",
+      "rq_status": "legacy_extraction_from_digest",
+      "hypothesis_status": "legacy_extraction_from_digest",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": null,
+      "hypothesis_source_line": null
+    },
+    {
+      "id": "paper-7f69adc37d",
+      "title": "Time-Varying Causal Survival Learning",
+      "rq_status": "legacy_extraction_from_digest",
+      "hypothesis_status": "legacy_extraction_from_digest",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": null,
+      "hypothesis_source_line": null
+    },
+    {
+      "id": "paper-db679cffd0",
+      "title": "A Meta-learner for Heterogeneous Effects in Difference-in-Differences",
+      "rq_status": "legacy_extraction_from_digest",
+      "hypothesis_status": "legacy_extraction_from_digest",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": null,
+      "hypothesis_source_line": null
+    },
+    {
+      "id": "paper-56160473d1",
+      "title": "An Experimental Comparison of Cognitive Forcing Functions for Execution Plans in AI-Assisted Writing",
+      "rq_status": "legacy_extraction_from_digest",
+      "hypothesis_status": "legacy_extraction_from_digest",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": null,
+      "hypothesis_source_line": null
+    },
+    {
+      "id": "paper-ea9249a409",
+      "title": "Nudge Me! A Field Experiment on Reminders for Medication Adherence",
+      "rq_status": "legacy_extraction_from_digest",
+      "hypothesis_status": "legacy_extraction_from_digest",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": null,
+      "hypothesis_source_line": null
+    },
+    {
+      "id": "paper-85e9fc2e70",
+      "title": "Efficient transport and generalization of survival treatment effects",
+      "rq_status": "legacy_extraction_from_digest",
+      "hypothesis_status": "legacy_extraction_from_digest",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": null,
+      "hypothesis_source_line": null
+    },
+    {
+      "id": "paper-23ddb1867c",
+      "title": "Policy Learning With Observational Data",
+      "rq_status": "legacy_extraction_from_digest",
+      "hypothesis_status": "legacy_extraction_from_digest",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": null,
+      "hypothesis_source_line": null
+    },
+    {
+      "id": "paper-87f8569164",
+      "title": "Generative AI without guardrails can harm learning: Evidence from high school mathematics",
+      "rq_status": "legacy_extraction_from_digest",
+      "hypothesis_status": "legacy_extraction_from_digest",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": null,
+      "hypothesis_source_line": null
+    },
+    {
+      "id": "paper-05ff915c4d",
+      "title": "Salience and Taxation: Theory and Evidence",
+      "rq_status": "legacy_extraction_from_digest",
+      "hypothesis_status": "legacy_extraction_from_digest",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": null,
+      "hypothesis_source_line": null
+    },
+    {
+      "id": "paper-d76aeef591",
+      "title": "Double Reinforcement Learning for Efficient Off-Policy Evaluation in Markov Decision Processes",
+      "rq_status": "legacy_extraction_from_digest",
+      "hypothesis_status": "extracted_digest_proposition_not_author_verified",
+      "bibliography_status": "verified_title_or_doi",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": null,
+      "hypothesis_source_line": 12
+    },
+    {
+      "id": "paper-c638566481",
+      "title": "A Megastudy of Text-Based Nudges Encouraging Patients to Get Vaccinated at an Upcoming Doctor's Appointment",
+      "rq_status": "legacy_extraction_from_digest",
+      "hypothesis_status": "extracted_digest_proposition_not_author_verified",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": null,
+      "hypothesis_source_line": 12
+    },
+    {
+      "id": "paper-63007291f5",
+      "title": "Human Decisions and Machine Predictions",
+      "rq_status": "legacy_extraction_from_digest",
+      "hypothesis_status": "extracted_digest_proposition_not_author_verified",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": null,
+      "hypothesis_source_line": 12
+    },
+    {
+      "id": "paper-aa9f672349",
+      "title": "Efficient Generalization and Transportation",
+      "rq_status": "legacy_extraction_from_digest",
+      "hypothesis_status": "extracted_digest_proposition_not_author_verified",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": null,
+      "hypothesis_source_line": 12
+    },
+    {
+      "id": "paper-d7f08665d5",
+      "title": "Estimating Dynamic Treatment Effects in Event Studies with Heterogeneous Treatment Effects",
+      "rq_status": "legacy_extraction_from_digest",
+      "hypothesis_status": "extracted_digest_proposition_not_author_verified",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": null,
+      "hypothesis_source_line": 12
+    },
+    {
+      "id": "paper-c8d65e4984",
+      "title": "Rational Habit Formation: Experimental Evidence from Handwashing in India",
+      "rq_status": "legacy_extraction_from_digest",
+      "hypothesis_status": "extracted_digest_proposition_not_author_verified",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": null,
+      "hypothesis_source_line": 14
+    },
+    {
+      "id": "paper-f3d53a169f",
+      "title": "Navigating the Jagged Technological Frontier: Field Experimental Evidence of the Effects of AI on Knowledge Worker Productivity and Quality",
+      "rq_status": "legacy_extraction_from_digest",
+      "hypothesis_status": "extracted_digest_proposition_not_author_verified",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": null,
+      "hypothesis_source_line": 12
+    },
+    {
+      "id": "paper-8b8144db83",
+      "title": "Double/Debiased Machine Learning for Treatment and Structural Parameters",
+      "rq_status": "legacy_extraction_from_digest",
+      "hypothesis_status": "extracted_digest_proposition_not_author_verified",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": null,
+      "hypothesis_source_line": 12
+    },
+    {
+      "id": "paper-8da7742b2f",
+      "title": "Revisiting Event-Study Designs: Robust and Efficient Estimation",
+      "rq_status": "legacy_extraction_from_digest",
+      "hypothesis_status": "extracted_digest_proposition_not_author_verified",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": null,
+      "hypothesis_source_line": 12
+    },
+    {
+      "id": "paper-3567d68f2d",
+      "title": "Tying Odysseus to the Mast: Evidence from a Commitment Savings Product in the Philippines",
+      "rq_status": "legacy_extraction_from_digest",
+      "hypothesis_status": "extracted_digest_proposition_not_author_verified",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": null,
+      "hypothesis_source_line": 12
+    },
+    {
+      "id": "paper-45a7b98e64",
+      "title": "Does Management Matter? Evidence from India",
+      "rq_status": "legacy_extraction_from_digest",
+      "hypothesis_status": "extracted_digest_proposition_not_author_verified",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": null,
+      "hypothesis_source_line": 12
+    },
+    {
+      "id": "paper-4d0da668f3",
+      "title": "A Sensitivity Analysis of the Surrogate Index Approach for Estimating Long-Term Treatment Effects",
+      "rq_status": "legacy_extraction_from_digest",
+      "hypothesis_status": "extracted_digest_proposition_not_author_verified",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": null,
+      "hypothesis_source_line": 12
+    },
+    {
+      "id": "paper-22ffd85d70",
+      "title": "Inferring the Long-Term Causal Effects of Long-Term Treatments from Short-Term Experiments",
+      "rq_status": "legacy_extraction_from_digest",
+      "hypothesis_status": "extracted_digest_proposition_not_author_verified",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": null,
+      "hypothesis_source_line": 12
+    },
+    {
+      "id": "paper-dd46e1bd34",
+      "title": "Getting to the Top of Mind: How Reminders Increase Saving",
+      "rq_status": "legacy_extraction_from_digest",
+      "hypothesis_status": "extracted_digest_proposition_not_author_verified",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": null,
+      "hypothesis_source_line": 12
+    },
+    {
+      "id": "paper-8ba0782922",
+      "title": "Provision of Social Norm Feedback to High Prescribers of Antibiotics in General Practice",
+      "rq_status": "legacy_extraction_from_digest",
+      "hypothesis_status": "extracted_digest_proposition_not_author_verified",
+      "bibliography_status": "verified_title_or_doi",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": null,
+      "hypothesis_source_line": 12
+    },
+    {
+      "id": "paper-5b78f0b3ca",
+      "title": "Bayesian Fusion Forests for Heterogeneous Treatment Effects on Survival from Randomised and Real-World Data",
+      "rq_status": "legacy_extraction_from_digest",
+      "hypothesis_status": "extracted_digest_proposition_not_author_verified",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": null,
+      "hypothesis_source_line": 12
+    },
+    {
+      "id": "paper-def53679c7",
+      "title": "Does Price Matter in Charitable Giving? Evidence from a Large-Scale Natural Field Experiment",
+      "rq_status": "legacy_extraction_from_digest",
+      "hypothesis_status": "extracted_digest_proposition_not_author_verified",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": null,
+      "hypothesis_source_line": 12
+    },
+    {
+      "id": "paper-0fe4ab82a9",
+      "title": "Understanding Mechanisms Underlying Peer Effects: Evidence from a Field Experiment on Financial Decisions",
+      "rq_status": "legacy_extraction_from_digest",
+      "hypothesis_status": "extracted_digest_proposition_not_author_verified",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": null,
+      "hypothesis_source_line": 12
+    },
+    {
+      "id": "paper-3376f0baf3",
+      "title": "PAC-Bayesian Treatment Allocation Under Budget Constraints",
+      "rq_status": "legacy_extraction_from_digest",
+      "hypothesis_status": "extracted_digest_proposition_not_author_verified",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": null,
+      "hypothesis_source_line": 12
+    },
+    {
+      "id": "paper-028ecc4f15",
+      "title": "Megastudies Improve the Impact of Applied Behavioural Science",
+      "rq_status": "legacy_extraction_from_digest",
+      "hypothesis_status": "extracted_digest_proposition_not_author_verified",
+      "bibliography_status": "verified_title_or_doi",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": null,
+      "hypothesis_source_line": 12
+    },
+    {
+      "id": "paper-6bc882df2c",
+      "title": "Predicting Experimental Results: Who Knows What?",
+      "rq_status": "legacy_extraction_from_digest",
+      "hypothesis_status": "extracted_digest_proposition_not_author_verified",
+      "bibliography_status": "not_yet_verified",
+      "body_status": "not_checked_against_original",
+      "rq_source_line": null,
+      "hypothesis_source_line": 12
+    }
+  ]
+}
