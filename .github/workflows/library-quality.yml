@@ -1,0 +1,28 @@
+name: Decision Science Library quality gate
+on:
+  push:
+    paths:
+      - "assets/papers.js"
+      - "data/digests/**"
+      - "scripts/quality-audit.mjs"
+      - ".github/workflows/library-quality.yml"
+  pull_request:
+    paths:
+      - "assets/papers.js"
+      - "data/digests/**"
+      - "scripts/quality-audit.mjs"
+      - ".github/workflows/library-quality.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  structure-and-metadata:
+    name: Validate papers, tables, links, and digest data
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Validate library data
+        run: node scripts/quality-audit.mjs
