@@ -9,7 +9,14 @@ try {
     const batches=await Promise.all(dates.map(async date=>{
       try {
         const response=await fetch('./data/digests/'+date+'.json',{cache:'no-store'});
-        return response.ok?await response.json():[];
+        if(!response.ok)return [];
+        const batch=await response.json();
+        const review=window.DSLDigestQuality?.validateBatch?.(batch,date);
+        if(!review?.ok){
+          console.warn('Digest not published (quality gate):',date,review?.problems||['quality module unavailable']);
+          return [];
+        }
+        return batch;
       }catch(e){console.warn('Digest unavailable:',date,e);return [];}
     }));
     const ids=new Set(papers.map(p=>p.paper_id));
