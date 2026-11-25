@@ -4,6 +4,7 @@
 import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
+import '../assets/digest-quality.js';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const errors = [], warnings = [];
@@ -92,13 +93,26 @@ for (const [i,p] of papers.entries()) {
 }
 const digestIndex=JSON.parse(readFileSync(join(root,'data','digests','index.json'),'utf8'));
 if(!Array.isArray(digestIndex.dates))error('digest-index','dates must be array');
-else for(const date of digestIndex.dates){
-  if(!/^\d{4}-\d{2}-\d{2}$/.test(date)){error('digest-index','invalid date '+date);continue;}
-  const batch=JSON.parse(readFileSync(join(root,'data','digests',date+'.json'),'utf8'));
-  if(!Array.isArray(batch))error(date,'digest must contain an array');
-  else for(const item of batch){
-    if(!item.paper_id||!item.title_candidate||!item.source_date)error(date,'digest record missing required fields');
-    if(ids.has(item.paper_id))warn(date,'digest duplicates base paper '+item.paper_id);
+else {
+  const dates=new Set(), titlesSeen=new Set(papers.map(p=>String(p.title_candidate).toLowerCase().replace(/\s+/g,' ').trim()));
+  for(const date of digestIndex.dates){
+    if(!/^\d{4}-\d{2}-\d{2}$/.test(date)){error('digest-index','invalid date '+date);continue;}
+    if(dates.has(date))error('digest-index','duplicate date '+date);
+    dates.add(date);
+    let batch;
+    try { batch=JSON.parse(readFileSync(join(root,'data','digests',date+'.json'),'utf8')); }
+    catch(e){error(date,'cannot read or parse digest JSON: '+String(e));continue;}
+    const review=globalThis.DSLDigestQuality?.validateBatch(batch,date);
+    if(!review?.ok){
+      for(const message of (review?.problems||['quality validator unavailable']))error(date,message);
+      continue;
+    }
+    for(const item of batch){
+      if(ids.has(item.paper_id))error(date,'digest duplicates base ID '+item.paper_id);
+      const key=String(item.title_candidate).toLowerCase().replace(/\s+/g,' ').trim();
+      if(titlesSeen.has(key))error(date,'digest duplicates previous title '+item.title_candidate);
+      titlesSeen.add(key); ids.add(item.paper_id);
+    }
   }
 }
 console.log('Decision Science Library quality gate');
