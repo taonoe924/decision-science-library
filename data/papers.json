@@ -476,7 +476,7 @@
     "paper_id": "paper-07919c7d40",
     "title_candidate": "PLRD: Partially Linear Regression Discontinuity Inference",
     "doi_candidate": "",
-    "source_url": "",
+    "source_url": "https://www.nber.org/papers/w35699",
     "source_weeks": [
       "W39"
     ],
@@ -495,7 +495,8 @@
     "rq_provenance": "legacy_extraction_from_digest",
     "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
     "hypothesis_source_line": 9,
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "source_url_provenance": "source_link_in_previous_digest_not_externally_verified"
   },
   {
     "paper_id": "paper-5445c52194",
@@ -581,7 +582,7 @@
     "paper_id": "paper-ec4e9eeabb",
     "title_candidate": "Impact of LLM Assistance on Physician Decision-Making: A Multi-Country Randomized Controlled Trial",
     "doi_candidate": "",
-    "source_url": "",
+    "source_url": "https://www.nature.com/articles/s41746-026-03111-5",
     "source_weeks": [
       "W40"
     ],
@@ -600,7 +601,8 @@
     "rq_provenance": "extracted_from_digest_rq",
     "rq_source_line": 5,
     "hypothesis_provenance": "needs_manual_review",
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "source_url_provenance": "source_link_in_previous_digest_not_externally_verified"
   },
   {
     "paper_id": "paper-9be0b9fd8f",
@@ -660,7 +662,7 @@
     "paper_id": "paper-99c4958bc6",
     "title_candidate": "Are Guidelines Worth Following? Decision-Making Under Incomplete Evidence",
     "doi_candidate": "",
-    "source_url": "",
+    "source_url": "https://www.nber.org/papers/w35798",
     "source_weeks": [
       "W40"
     ],
@@ -680,13 +682,14 @@
     "rq_source_line": 6,
     "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
     "hypothesis_source_line": 34,
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "source_url_provenance": "source_link_in_previous_digest_not_externally_verified"
   },
   {
     "paper_id": "paper-e539e49ca6",
     "title_candidate": "Does AI Assistance Enhance or Erode Expertise? Evidence from a Three-Month Field Experiment in Patent Drafting",
     "doi_candidate": "",
-    "source_url": "",
+    "source_url": "https://www.nber.org/papers/w35720",
     "source_weeks": [
       "W40"
     ],
@@ -707,7 +710,8 @@
     "rq_source_line": 6,
     "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
     "hypothesis_source_line": 30,
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "source_url_provenance": "source_link_in_previous_digest_not_externally_verified"
   },
   {
     "paper_id": "paper-bb858e1205",
@@ -741,7 +745,7 @@
     "paper_id": "paper-5b0863ec2d",
     "title_candidate": "Causal Inference for Spatial Treatments",
     "doi_candidate": "10.3982/ECTA21571",
-    "source_url": "",
+    "source_url": "https://onlinelibrary.wiley.com/doi/full/10.3982/ECTA21571",
     "source_weeks": [
       "W40"
     ],
@@ -762,7 +766,8 @@
     "rq_source_line": 5,
     "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
     "hypothesis_source_line": 41,
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "source_url_provenance": "source_link_in_previous_digest_not_externally_verified"
   },
   {
     "paper_id": "paper-730aa60651",
@@ -1049,7 +1054,7 @@
     "paper_id": "paper-bda44147e2",
     "title_candidate": "The Economic Consequences of Increasing Sleep Among the Urban Poor",
     "doi_candidate": "",
-    "source_url": "",
+    "source_url": "https://www.nber.org/papers/w26746",
     "source_weeks": [
       "W41"
     ],
@@ -1068,13 +1073,14 @@
     "rq_provenance": "legacy_extraction_from_digest",
     "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
     "hypothesis_source_line": 34,
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "source_url_provenance": "source_link_in_previous_digest_not_externally_verified"
   },
   {
     "paper_id": "paper-3ada9d3a18",
     "title_candidate": "Diagnosing Physician Error: A Machine Learning Approach to Low-Value Health Care",
     "doi_candidate": "",
-    "source_url": "",
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12497445/",
     "source_weeks": [
       "W41"
     ],
@@ -1094,7 +1100,8 @@
     "rq_provenance": "legacy_extraction_from_digest",
     "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
     "hypothesis_source_line": 48,
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "source_url_provenance": "source_link_in_previous_digest_not_externally_verified"
   },
   {
     "paper_id": "paper-f1ad1fb3a4",
@@ -1155,7 +1162,7 @@
     "paper_id": "paper-399d8b695e",
     "title_candidate": "How Do Habits Form? Experimental Evidence from Health Screenings",
     "doi_candidate": "",
-    "source_url": "",
+    "source_url": "https://www.nber.org/papers/w32745",
     "source_weeks": [
       "W42"
     ],
@@ -1174,13 +1181,14 @@
     "rq_provenance": "legacy_extraction_from_digest",
     "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
     "hypothesis_source_line": 42,
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "source_url_provenance": "source_link_in_previous_digest_not_externally_verified"
   },
   {
     "paper_id": "paper-0bdefac09e",
     "title_candidate": "Behavioral Attenuation",
     "doi_candidate": "",
-    "source_url": "",
+    "source_url": "https://www.zora.uzh.ch/bitstreams/fc7e186d-c67a-4213-b425-06384b9231c6/download",
     "source_weeks": [
       "W42"
     ],
@@ -1197,7 +1205,8 @@
     "rq_provenance": "legacy_extraction_from_digest",
     "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
     "hypothesis_source_line": 42,
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "source_url_provenance": "source_link_in_previous_digest_not_externally_verified"
   },
   {
     "paper_id": "paper-6575c5dfe1",
@@ -1256,7 +1265,7 @@
     "paper_id": "paper-63f74ad77b",
     "title_candidate": "Mechanism Design for Personalized Policy: A Field Experiment Incentivizing Exercise",
     "doi_candidate": "10.3982/ECTA21926",
-    "source_url": "",
+    "source_url": "https://onlinelibrary.wiley.com/doi/full/10.3982/ECTA21926",
     "source_weeks": [
       "W42"
     ],
@@ -1275,13 +1284,14 @@
     "rq_provenance": "legacy_extraction_from_digest",
     "hypothesis_provenance": "extracted_digest_proposition_not_author_verified",
     "hypothesis_source_line": 42,
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "source_url_provenance": "source_link_in_previous_digest_not_externally_verified"
   },
   {
     "paper_id": "paper-4d71ad1dbd",
     "title_candidate": "Quick-Fixing: Near-Rationality in Consumption and Savings Behavior",
     "doi_candidate": "",
-    "source_url": "",
+    "source_url": "https://www.karthiksastry.com/files/Quick_Fixing_may26_web.pdf",
     "source_weeks": [
       "W42"
     ],
@@ -1297,7 +1307,8 @@
     "title_ja_status": "provisional_translation",
     "rq_provenance": "legacy_extraction_from_digest",
     "hypothesis_provenance": "legacy_extraction_from_digest",
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "source_url_provenance": "source_link_in_previous_digest_not_externally_verified"
   },
   {
     "paper_id": "paper-f39eae36a4",
