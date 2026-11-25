@@ -161,7 +161,22 @@ function md(src){
   flush();
   return out;
 }
-function headings(text){const parts=[];let re=/^#{2,5}\s*(?:\*\*)?([1-6])[.．、]\s*([^\n*]+)(?:\*\*)?\s*$/gm;let matches=[...text.matchAll(re)];if(matches.length<3)return null;for(let i=0;i<matches.length;i++){parts.push({n:Number(matches[i][1]),heading:matches[i][2].trim(),body:text.slice(matches[i].index+matches[i][0].length,matches[i+1]?.index||text.length).trim()})}return parts}
+function paperOnlyText(text){
+  // The historical digest sometimes appended a cross-paper weekly ranking after the
+  // sixth section. Keep that data in the source, but do not mislabel it as section 6.
+  const cutoff=/^---\s*\n\s*###\s*今週読むならこの順\b/m.exec(text);
+  return cutoff ? text.slice(0,cutoff.index).trim() : text;
+}
+function headings(text){
+  const body=paperOnlyText(text),parts=[];
+  const re=/^#{2,6}\s*(?:\*\*)?([1-6])[.．、]\s*([^\n*]+)(?:\*\*)?\s*$/gm;
+  const matches=[...body.matchAll(re)];
+  if(matches.length!==6||matches.some((m,i)=>Number(m[1])!==i+1))return null;
+  for(let i=0;i<matches.length;i++){
+    parts.push({n:Number(matches[i][1]),heading:matches[i][2].trim(),body:body.slice(matches[i].index+matches[i][0].length,matches[i+1]?.index||body.length).trim()});
+  }
+  return parts;
+}
 function paperCard(p,extra=''){return `<article class="card"><div class="meta">${safe((p.source_weeks||[]).join('・'))} · ${safe(p.source_date||'配信日未確認')} <span class="pill">${safe(genre(p))}</span></div><h3 class="paper-title"><a href="${route('paper',p.paper_id)}">${dualTitle(p)}</a></h3><div class="meta">${safe(p.design_status||'研究デザイン要確認')}</div><div class="actions"><a class="btn" href="${route('paper',p.paper_id)}">詳細を読む</a>${extra}</div></article>`}
 function layout(content,active){app.innerHTML=`<header class="top"><div class="shell topinner"><div class="brand">Decision Science Library</div><div class="subbrand">論文から、新しい研究の問いへ。</div><nav class="nav" aria-label="メインメニュー">${navs.map(([k,v])=>`<button data-page="${k}" class="${active===k?'active':''}">${v}</button>`).join('')}</nav></div></header><main class="shell page">${content}</main><footer class="footer"><div class="shell">Decision Science Library · 過去配信と新規配信の研究ライブラリ · 原著未照合の項目を含みます</div></footer>`;app.querySelectorAll('[data-page]').forEach(b=>b.onclick=()=>location.hash=route(b.dataset.page));}
 function home(){let featured=papers.slice(0,6);layout(`<div class="pagehead"><h1>研究を探す。問いを育てる。</h1><p>因果推論・意思決定科学の論文を、研究課題・手法・配信履歴から探索できます。</p></div><div class="stats"><div class="card stat"><strong>${papers.length}</strong><span>論文レコード（暫定）</span></div><div class="card stat"><strong>${weeks.length}</strong><span>収録週数</span></div><div class="card stat"><strong>6</strong><span>論文解説の基本見出し</span></div></div><section class="section"><div class="card"><h2>今週の4本</h2><p>最近追加された論文から、Research Questionを起点に読み始めましょう。</p><div class="actions"><a class="btn primary" href="${route('latest')}">最新4本の解説を見る</a></div></div></section><div class="notice">収録データは過去の配信Markdownから抽出したもので、タイトル・DOI・数値結果などの原著照合は完了していません。論文数も今後の同定により変わる可能性があります。</div><section class="section"><h2>ジャンルから探す</h2><div class="grid">${[...genres.map(x=>x[0]),'その他'].map(g=>`<div class="card"><h3>${safe(g)}</h3><p class="meta">${papers.filter(p=>genre(p)===g).length} レコード</p><button class="btn" data-genre="${safe(g)}">この分野を探索</button></div>`).join('')}</div></section><section class="section"><h2>収録論文から</h2><div class="grid">${featured.map(p=>paperCard(p)).join('')}</div></section><section class="section"><h2>研究の問いを広げる</h2><div class="card"><p class="tagline">同じテーマでも、識別戦略や対象集団、メカニズムを変えると新たなRQが生まれます。まずはRQ探索と研究ネットワークで、収録論文の関係候補を確認してください。</p><div class="actions"><a class="btn primary" href="${route('rq')}">RQ探索を開く</a><a class="btn" href="${route('network')}">ネットワークを開く</a></div></div></section>`,'home');app.querySelectorAll('[data-genre]').forEach(b=>b.onclick=()=>{state.genre=b.dataset.genre;location.hash=route('library')})}
