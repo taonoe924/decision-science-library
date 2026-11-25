@@ -4,7 +4,7 @@
 
 ## 完了条件と対象範囲
 
-基礎データ83件のうち、詳細監査は18件、未実施は65件。詳細監査には数値・推定量を照合するもの、研究設計・理論だけを照合するものが含まれ、後者を全数値検証済みとはみなさない。
+基礎データ83件のうち、詳細監査は20件、未実施は63件。詳細監査には数値・推定量を照合するもの、研究設計・理論だけを照合するものが含まれ、後者を全数値検証済みとはみなさない。
 
 優先判定は学習・研究上の再利用可能性と、誤解した場合の意思決定上の影響に基づく暫定分類。論文の品質ランキングではない。
 
@@ -14,12 +14,10 @@
 
 | 論文ID | 論文（原著リンク） | 基本確認 |
 |---|---|---|
-| paper-730aa60651 | [Designing Human-AI Collaboration: A Sufficient-Statistic Approach](https://www.nber.org/papers/w33949) | 基本照合済み |
 | paper-9be0b9fd8f | [Difference-in-differences for mediation analysis using double machine learning](https://doi.org/10.48550/ARXIV.2602.23877) | 基本照合済み |
 | paper-85e9fc2e70 | [Efficient transport and generalization of survival treatment effects](https://arxiv.org/abs/2609.18764) | 基本照合済み |
 | paper-5b78f0b3ca | [Bayesian Fusion Forests for Heterogeneous Treatment Effects on Survival from Randomised and Real-World Data](https://arxiv.org/abs/2607.29295) | 基本照合済み |
 | paper-23ddb1867c | [Policy Learning With Observational Data](https://doi.org/10.3982/ECTA15732) | 基本照合済み |
-| paper-6575c5dfe1 | [Policy Learning with Confidence](https://arxiv.org/abs/2502.10653) | 基本照合済み |
 | paper-c79dc0a5e2 | [Conformal Policy Learning with Distribution-Free Safety Guarantees](https://arxiv.org/abs/2609.17296) | 基本照合済み |
 | paper-def930c5de | [Incentives, Evidence, and Reminders for Bureaucrats: Overcoming Barriers to Policy Scale Up](https://www.nber.org/papers/w35291) | 基本照合済み |
 | paper-f39eae36a4 | [Identification and Estimation of Staggered Difference-in-Differences with Network Spillovers](https://arxiv.org/html/2605.15119) | 基本照合済み |
@@ -94,7 +92,9 @@
 | paper-061d1b0eff | [CausalVerify: An Execution-Grounded Benchmark for LLM Causal Inference Workflows](https://arxiv.org/abs/2609.07944) | selected_results_checked_against_original |
 | paper-ec4e9eeabb | [Impact of LLM Assistance on Physician Decision-Making: A Multi-Country Randomized Controlled Trial](https://www.nature.com/articles/s41746-026-03111-5) | selected_results_checked_against_primary_abstract |
 | paper-e539e49ca6 | [Does AI Assistance Enhance or Erode Expertise? Evidence from a Three-Month Field Experiment in Patent Drafting](https://www.nber.org/papers/w35720) | selected_results_checked_against_original |
+| paper-730aa60651 | [Designing Human-AI Collaboration: A Sufficient-Statistic Approach](https://www.nber.org/papers/w33949) | selected_results_checked_against_primary_abstract |
 | paper-399d8b695e | [How Do Habits Form? Experimental Evidence from Health Screenings](https://www.nber.org/papers/w32745) | selected_results_checked_against_primary_abstract |
+| paper-6575c5dfe1 | [Policy Learning with Confidence](https://arxiv.org/abs/2502.10653) | selected_results_checked_against_original |
 | paper-63f74ad77b | [Mechanism Design for Personalized Policy: A Field Experiment Incentivizing Exercise](https://onlinelibrary.wiley.com/doi/full/10.3982/ECTA21926) | selected_results_checked_against_original |
 | paper-56160473d1 | [An Experimental Comparison of Cognitive Forcing Functions for Execution Plans in AI-Assisted Writing](https://arxiv.org/html/2601.18033) | selected_results_checked_against_original |
 | paper-87f8569164 | [Generative AI without guardrails can harm learning: Evidence from high school mathematics](https://doi.org/10.1073/pnas.2422633122) | selected_results_checked_against_original |
