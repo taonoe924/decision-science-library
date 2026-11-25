@@ -72,9 +72,13 @@ for (const [i,p] of papers.entries()) {
     if(p.source_text.includes('\uFFFD'))warn(id,'replacement character in text');
   }
   if (!allowedStatus.has(p.substantive_verification)) error(id,'unknown verification status');
-  if (p.substantive_verification!=='not_checked_against_original') {
+  if (p.substantive_verification==='not_checked_against_original') {
+    warn(id,'primary-source check pending');
+  } else {
     reviewed++;
-    if (!p.original_review && !p.taxonomy_audit)warn(id,'verification flag without inspectable source review');
+    if (!p.original_review && !p.taxonomy_audit)error(id,'verification flag lacks source review evidence');
+    const evidence=p.original_review||p.taxonomy_audit;
+    if (!evidence?.source_url)error(id,'review evidence lacks source URL');
   }
 }
 const digestIndex=JSON.parse(readFileSync(join(root,'data','digests','index.json'),'utf8'));
