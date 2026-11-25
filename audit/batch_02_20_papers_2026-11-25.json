@@ -20,9 +20,9 @@
     "format_verification_complete": 0,
     "automated_markdown_cleanup": 20,
     "primary_abstract_v2_verified": 1,
-    "primary_body_partially_verified": 4,
+    "primary_body_partially_verified": 5,
     "selected_results_numeric_checked": 3,
-    "identification_assumptions_partially_checked": 4
+    "identification_assumptions_partially_checked": 5
   },
   "records": [
     {
@@ -103,12 +103,12 @@
       "title": "Conformal Policy Learning with Distribution-Free Safety Guarantees",
       "original_url": "https://arxiv.org/abs/2609.17296",
       "baseline_status": "basic_reference_check_previously_recorded",
-      "current_turn_source_check": "abstract_checked",
+      "current_turn_source_check": "primary_body_v1_safety_definition_theorem_checked",
       "full_paper_claims_checked": false,
       "format_v1_2_checked": false,
       "quantitative_results_checked": false,
-      "identification_assumptions_checked": false,
-      "notes": "2026-11-25: primary abstract/landing page checked; paper body, data, effect sizes and confidence intervals not yet validated",
+      "identification_assumptions_checked": true,
+      "notes": "Critical erratum: finite-sample safety is marginal joint probability P(harm AND assigned treatment)<=alpha, NOT P(harm|assigned treatment)<=alpha. Verified binary outcome and RCT exchangeability scope.",
       "automated_markdown_cleanup": true,
       "format_cleanup_summary": {
         "removed_boxed_math": 6,
