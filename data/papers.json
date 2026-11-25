@@ -2,8 +2,8 @@
   {
     "paper_id": "paper-382caf1ae2",
     "title_candidate": "Policy Thresholds as Growth Barriers: Theory and Evidence from a Payroll Tax Notch",
-    "doi_candidate": "",
-    "source_url": "",
+    "doi_candidate": "10.3386/w35484",
+    "source_url": "https://www.nber.org/papers/w35484",
     "source_weeks": [
       "W33"
     ],
@@ -22,13 +22,15 @@
     "rq_provenance": "reconstructed_from_digest_overview_not_author_verified",
     "rq_source_line": null,
     "hypothesis_provenance": "needs_manual_review",
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "bibliography_status": "verified_title_and_source_url",
+    "bibliography_source": "external_lookup_2026-11-25"
   },
   {
     "paper_id": "paper-62ca0acf9a",
     "title_candidate": "Causal Inference for All: Marginal Estimands for Outcomes Truncated by Death",
     "doi_candidate": "",
-    "source_url": "",
+    "source_url": "https://arxiv.org/abs/2607.00222",
     "source_weeks": [
       "W33"
     ],
@@ -48,13 +50,15 @@
     "rq_provenance": "reconstructed_from_digest_overview_not_author_verified",
     "rq_source_line": null,
     "hypothesis_provenance": "needs_manual_review",
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "bibliography_status": "verified_title_and_source_url",
+    "bibliography_source": "external_lookup_2026-11-25"
   },
   {
     "paper_id": "paper-8db14dc31c",
     "title_candidate": "Inference on Counterfactual Distributions Using Martingale Posteriors",
     "doi_candidate": "",
-    "source_url": "",
+    "source_url": "https://arxiv.org/abs/2607.24143",
     "source_weeks": [
       "W33"
     ],
@@ -74,13 +78,15 @@
     "rq_provenance": "reconstructed_from_digest_overview_not_author_verified",
     "rq_source_line": null,
     "hypothesis_provenance": "needs_manual_review",
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "bibliography_status": "verified_title_and_source_url",
+    "bibliography_source": "external_lookup_2026-11-25"
   },
   {
     "paper_id": "paper-260bb098e8",
     "title_candidate": "Generalised Transportability via Causal Abstractions",
     "doi_candidate": "",
-    "source_url": "",
+    "source_url": "https://arxiv.org/abs/2608.15645",
     "source_weeks": [
       "W34"
     ],
@@ -99,13 +105,15 @@
     "rq_provenance": "reconstructed_from_digest_overview_not_author_verified",
     "rq_source_line": null,
     "hypothesis_provenance": "needs_manual_review",
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "bibliography_status": "verified_title_and_source_url",
+    "bibliography_source": "external_lookup_2026-11-25"
   },
   {
     "paper_id": "paper-4ba1548978",
     "title_candidate": "Difference-in-Differences with “Bad Controls”",
     "doi_candidate": "",
-    "source_url": "",
+    "source_url": "https://arxiv.org/abs/2608.03881",
     "source_weeks": [
       "W34"
     ],
@@ -124,13 +132,15 @@
     "rq_provenance": "reconstructed_from_digest_overview_not_author_verified",
     "rq_source_line": null,
     "hypothesis_provenance": "needs_manual_review",
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "bibliography_status": "verified_title_and_source_url",
+    "bibliography_source": "external_lookup_2026-11-25"
   },
   {
     "paper_id": "paper-e53343e16f",
     "title_candidate": "A Bayesian Approach to Partial Homogeneity in Staggered Difference-in-Difference",
     "doi_candidate": "",
-    "source_url": "",
+    "source_url": "https://www.ashoka.edu.in/research/a-bayesian-approach-to-partial-homogeneity-in-staggered-difference-in-difference/",
     "source_weeks": [
       "W34"
     ],
@@ -149,13 +159,15 @@
     "rq_provenance": "reconstructed_from_digest_overview_not_author_verified",
     "rq_source_line": null,
     "hypothesis_provenance": "needs_manual_review",
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "bibliography_status": "verified_title_and_source_url",
+    "bibliography_source": "external_lookup_2026-11-25"
   },
   {
     "paper_id": "paper-44a219aa63",
     "title_candidate": "Using Pre-Trends for Inference in Difference-in-Differences",
     "doi_candidate": "",
-    "source_url": "",
+    "source_url": "https://arxiv.org/abs/2607.21312",
     "source_weeks": [
       "W35"
     ],
@@ -175,13 +187,15 @@
     "rq_provenance": "reconstructed_from_digest_overview_not_author_verified",
     "rq_source_line": null,
     "hypothesis_provenance": "needs_manual_review",
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "bibliography_status": "verified_title_and_source_url",
+    "bibliography_source": "external_lookup_2026-11-25"
   },
   {
     "paper_id": "paper-48724c28e5",
     "title_candidate": "Robust Signal Maximization in Spillover Experiments",
-    "doi_candidate": "",
-    "source_url": "",
+    "doi_candidate": "10.3386/w35570",
+    "source_url": "https://www.nber.org/papers/w35570",
     "source_weeks": [
       "W35"
     ],
@@ -201,7 +215,9 @@
     "rq_provenance": "reconstructed_from_digest_overview_not_author_verified",
     "rq_source_line": null,
     "hypothesis_provenance": "needs_manual_review",
-    "substantive_verification": "not_checked_against_original"
+    "substantive_verification": "not_checked_against_original",
+    "bibliography_status": "verified_title_and_source_url",
+    "bibliography_source": "external_lookup_2026-11-25"
   },
   {
     "paper_id": "paper-8fba52c564",
