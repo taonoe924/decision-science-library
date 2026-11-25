@@ -19,7 +19,10 @@
     "full_paper_audit_complete": 0,
     "format_verification_complete": 0,
     "automated_markdown_cleanup": 20,
-    "primary_abstract_v2_verified": 1
+    "primary_abstract_v2_verified": 1,
+    "primary_body_partially_verified": 1,
+    "selected_results_numeric_checked": 1,
+    "identification_assumptions_partially_checked": 1
   },
   "records": [
     {
@@ -28,12 +31,12 @@
       "title": "Difference-in-differences for mediation analysis using double machine learning",
       "original_url": "https://arxiv.org/abs/2602.23877",
       "baseline_status": "basic_reference_check_previously_recorded",
-      "current_turn_source_check": "primary_abstract_v2_verified",
+      "current_turn_source_check": "primary_body_v1_sections_and_tables_partially_verified",
       "full_paper_claims_checked": false,
       "format_v1_2_checked": false,
-      "quantitative_results_checked": false,
-      "identification_assumptions_checked": false,
-      "notes": "Primary arXiv abstract/v2 revision verified; equation-level and numerical claims not checked",
+      "quantitative_results_checked": true,
+      "identification_assumptions_checked": true,
+      "notes": "v1 §2–4 and §7 Tables 2/4 partly checked. 3 estimates and sample N=1020 verified; v2 tables not checked. 95% CIs calculated from rounded SE.",
       "automated_markdown_cleanup": true,
       "format_cleanup_summary": {
         "removed_boxed_math": 3,
