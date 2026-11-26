@@ -232,6 +232,58 @@ function evidencePanel(p){
 
 /* Individual visual abstracts cross-checked against their public primary abstracts.
    These explain study logic, not the author's figure or fully validated estimates. */
+const DIGEST_ABSTRACTS={
+
+  'paper-0bdefac09e':{
+    type:'インセンティブへの反応が小さい理由',
+    steps:[['報酬や情報が変わる','標準的な理論なら行動も変わる'],['実際の反応は限定的','最適な行動を把握しづらい可能性'],['複数の選択課題で検証','反応の弱さの共通性を見る']],
+    outcome:'価格や情報への弱い反応を認知上の制約から考える',
+    source:'https://www.zora.uzh.ch/bitstreams/fc7e186d-c67a-4213-b425-06384b9231c6/download'
+  },
+  'paper-4d71ad1dbd':{
+    type:'消費・貯蓄の近似的な意思決定',
+    steps:[['家計の収入が変化','毎回最適化するには手間がかかる'],['単純な調整ルール','小さな変化には簡略な対応'],['大きな変化で再計画','近似の便益と損失を比べる']],
+    outcome:'完全な最適化をしない行動にも合理的な理由があり得る',
+    source:'https://www.karthiksastry.com/files/Quick_Fixing_may26_web.pdf'
+  },
+  'paper-dc007de13d':{
+    type:'損失を強調する税金督促SMS',
+    steps:[['滞納者への通常通知','比較の基準となるメッセージ'],['損失を強調するSMS','不利益の見え方を変える'],['納付行動を比較','メッセージ表現の追加効果']],
+    outcome:'単純な通知と損失フレームの効果差を検討',
+    source:'https://www.jstage.jst.go.jp/article/jbef/18/Special_issue/18_18.S5.pp.S1-S4/_article/-char/en'
+  },
+  'paper-7f69adc37d':{
+    type:'時点で変わる生存時間の因果効果',
+    steps:[['追跡期間中に状態が変化','介入とリスクの関係を把握'],['時間ごとの効果を考慮','一定の処置効果を仮定しない'],['生存結果を推定','打切りと異質性に対応']],
+    outcome:'時間によって変わる生存効果を学習する手法を整理'
+  },
+  'paper-db679cffd0':{
+    type:'DIDで異質な効果を推定するメタ学習',
+    steps:[['時点前後の観測結果','処置群と比較群を用意'],['DIDの識別条件','未処置時の変化を比較'],['メタ学習で異質性を推定','属性別の効果を検討']],
+    outcome:'平均のDIDを越えて対象者ごとの効果の違いを評価'
+  },
+  'paper-ea9249a409':{
+    type:'服薬行動を促すリマインド実験',
+    steps:[['服薬の継続が課題','飲み忘れや注意不足を想定'],['リマインド施策','服薬する時点に通知を提示'],['服薬遵守を測定','通知あり・なしを比較']],
+    outcome:'リマインドが服薬継続に与える追加的な効果を検証'
+  },
+  'paper-85e9fc2e70':{
+    type:'生存時間の治療効果を他集団へ移送',
+    steps:[['元研究で生存効果を推定','死亡・発症などの時間を追跡'],['対象集団の構成が異なる','効果修飾因子と打切りを扱う'],['移送後の効果を推定','一般化の条件と効率を検討']],
+    outcome:'研究対象と導入先が異なる場合の生存効果を評価'
+  },
+  'paper-23ddb1867c':{
+    type:'観察データから施策配分を学習',
+    steps:[['過去の施策データを集める','割当は必ずしも無作為でない'],['交絡を補正して効果を推定','反実仮想の価値を比較'],['施策配分ルールを選択','政策価値と後悔を評価']],
+    outcome:'因果効果の推定と政策選択を結び付ける'
+  },
+  'paper-05ff915c4d':{
+    type:'税込価格の見え方が需要に与える影響',
+    steps:[['税率は変えない','実際の負担は同じ'],['税込表示を目立たせる','店頭での価格認識を変える'],['購入行動を観測','表示の顕著性と需要を比較']],
+    outcome:'税の負担だけでなく表示の見え方が選択を変え得る',
+    source:'https://doi.org/10.1257/aer.99.4.1145'
+  },
+};
 const VERIFIED_ABSTRACTS={
 
   'paper-c90ea9c9ca':{
