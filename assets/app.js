@@ -229,39 +229,72 @@ function evidencePanel(p){
 /* Paper-specific visual abstract: schematic, not a reproduced author figure.
    Uses only available digest metadata and labels missing fields explicitly. */
 function overviewFigure(p){
-  const clean=x=>String(x||'').replace(/\s+/g,' ').replace(/\[\^(?:20\d{6})-\d+\]/g,'').trim();
+  const clean=x=>String(x||'').replace(/\s+/g,' ').replace(/\[\^(?:20\d{6})-\d+\]/g,'').replace(/元配信の中心命題（解説者による再構成）：/g,'').trim();
   const esc=x=>safe(clean(x));
-  const lines=(input,max=22,count=3)=>{
-    const chars=[...clean(input)];const out=[];let i=0;
-    for(let n=0;n<count&&i<chars.length;n++){const part=chars.slice(i,i+max).join('');out.push(part);i+=max;}
-    if(i<chars.length&&out.length)out[out.length-1]=out[out.length-1].replace(/.$/,'…');
+  const lines=(s,n=35,count=2)=>{
+    const ch=[...clean(s)],out=[];for(let i=0;i<ch.length&&out.length<count;i+=n)out.push(ch.slice(i,i+n).join(''));
+    if(ch.length>n*count)out[count-1]=out[count-1].slice(0,-1)+'…';
     return out.length?out:['情報を確認中'];
   };
-  const methods=(p.research_map?.identification_tags||[]).slice(0,3).join('・')||p.design_status||'分析手法は確認中';
-  const outcomes=(p.research_map?.outcome_tags||[]).slice(0,3).join('・')||'評価指標は確認中';
-  const caveat='原著図ではなく、配信情報からの概念整理です。正確な対象・手法・数値は本文と原著で確認してください。';
-  const boxes=[
-    ['01','研究の問い（RQ）',p.rq_candidate||'何を明らかにしようとした研究か'],
-    ['02','比較・分析の方法',methods],
-    ['03','測定する結果（Outcome）',outcomes],
-    ['04','意思決定への接続',p.hypothesis_candidate||'結果から何を判断できるか']
-  ];
-  const positions=[24,316,608,900];
-  const panels=boxes.map((b,i)=>{
-    const x=positions[i],w=276,y=112;
-    const txt=lines(b[2],i===0||i===3?18:20,4).map((t,j)=>'<text x="'+(x+17)+'" y="'+(y+91+j*24)+'" fill="#243b54" font-size="16" font-weight="500">'+esc(t)+'</text>').join('');
-    return '<rect x="'+x+'" y="'+y+'" width="'+w+'" height="206" rx="12" fill="#ffffff" stroke="#d6e2eb"/>'+
-      '<text x="'+(x+17)+'" y="'+(y+34)+'" font-size="15" fill="#427393" font-weight="700">'+b[0]+'</text>'+
-      '<text x="'+(x+17)+'" y="'+(y+61)+'" font-size="18" fill="#183c59" font-weight="700">'+esc(b[1])+'</text>'+txt+
-      (i<3?'<path d="M'+(x+w+4)+' 211 h9 m-5 -5 l5 5 -5 5" fill="none" stroke="#7899ae" stroke-width="2"/>':'');
-  }).join('');
-  const svg='<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="395" viewBox="0 0 1200 395" role="img">'+
-    '<rect width="1200" height="395" rx="14" fill="#f3f7fa"/>'+
-    '<text x="24" y="39" font-size="24" font-weight="700" fill="#183c59">この論文の全体像</text>'+
-    '<text x="24" y="70" font-size="15" fill="#516b80">研究課題から判断への流れを１枚で整理</text>'+
-    panels+
-    '<text x="24" y="357" font-size="14" fill="#61778b">'+esc(caveat)+'</text></svg>';
-  return '<figure class="paper-overview"><img src="data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svg)+'" alt="'+safe('論文概要図。研究の問い、比較・分析方法、測定結果、意思決定への接続を整理')+'" loading="lazy" decoding="async"><figcaption>論文の概要（解説用の模式図・原著の図ではありません）</figcaption></figure>';
+  const textRows=(s,x,y,width=37,count=2,size=17,fill='#243b54')=>lines(s,width,count).map((t,i)=>'<text x="'+x+'" y="'+(y+i*(size+9))+'" font-size="'+size+'" fill="'+fill+'">'+esc(t)+'</text>').join('');
+  const box=(x,y,w,h,label,desc,accent='#ecf4f9')=>'<rect x="'+x+'" y="'+y+'" width="'+w+'" height="'+h+'" rx="12" fill="'+accent+'" stroke="#cbdde8"/><text x="'+(x+15)+'" y="'+(y+31)+'" font-size="18" font-weight="700" fill="#164264">'+esc(label)+'</text>'+textRows(desc,x+15,y+62,Math.max(10,Math.floor((w-30)/17)),2,16);
+  const arrow=(x1,y1,x2,y2)=>'<path d="M'+x1+' '+y1+' L'+x2+' '+y2+'" fill="none" stroke="#6188a3" stroke-width="2.5"/><path d="M'+x2+' '+y2+' l-9 -4 v8 z" fill="#6188a3" transform="rotate('+Math.atan2(y2-y1,x2-x1)*180/Math.PI+' '+x2+' '+y2+')"/>';
+  // Use methodological metadata rather than scanning the full digest, which often discusses competing designs.
+  const methods=[...(p.method_keywords||[]),...(p.research_map?.identification_tags||[]),p.design_status||''].join(' ');
+  const isRCT=/\bRCT\b|randomi[sz]ed|ランダム化|無作為割付|無作為化/i.test(methods);
+  const isDID=/\bDID\b|difference.in.difference|差の差|差分の差分/i.test(methods);
+  const isRD=/\bRDD\b|regression discontinuity|回帰不連続/i.test(methods);
+  const isSurvival=/survival|time.to.event|生存時間|ハザード/i.test(methods);
+  const isTheory=/理論|simulation|シミュレーション|estimand|推定対象/i.test(methods);
+  const type=isRCT?'rct':isDID?'did':isRD?'rdd':isSurvival?'survival':isTheory?'theory':'general';
+  const typeName={rct:'ランダム化比較試験（RCT）',did:'差の差分析（DID）',rdd:'回帰不連続デザイン（RDD）',survival:'生存時間・イベント分析',theory:'理論・推定方法の研究',general:'研究内容の概念整理'}[type];
+  const out=(p.research_map?.outcome_tags||[]).slice(0,2).join('・')||'測定指標は本文を確認';
+  let graphic='';
+  if(type==='rct'){
+    graphic+=box(30,148,286,107,'対象者','条件に合う参加者')+box(460,128,290,98,'介入群','施策・治療を受ける')+box(460,255,290,98,'比較群','対照となる条件')+box(894,184,273,114,'比較する結果',out);
+    graphic+=arrow(316,197,455,177)+arrow(316,209,455,302)+arrow(751,177,888,221)+arrow(751,303,888,260);
+    graphic+='<text x="340" y="180" font-size="15" fill="#506d83">無作為に割り付け</text>';
+  }else if(type==='did'){
+    graphic+=box(28,169,240,100,'介入・制度変更','政策や施策の導入');
+    graphic+='<rect x="334" y="128" width="492" height="236" rx="10" fill="#fff" stroke="#bfd2df"/>';
+    graphic+='<text x="469" y="157" font-size="17" font-weight="700" fill="#164264">導入前</text><text x="672" y="157" font-size="17" font-weight="700" fill="#164264">導入後</text>';
+    graphic+='<line x1="334" y1="247" x2="826" y2="247" stroke="#d7e2ea"/><line x1="562" y1="128" x2="562" y2="364" stroke="#d7e2ea"/>';
+    graphic+='<text x="356" y="204" font-size="18" fill="#183c59">介入群</text><text x="356" y="319" font-size="18" fill="#183c59">比較群</text>';
+    for(const [x,y,v] of [[488,205,'前'],[686,205,'後'],[488,318,'前'],[686,318,'後']])graphic+='<circle cx="'+x+'" cy="'+(y-7)+'" r="22" fill="#e9f2f8"/><text x="'+(x-9)+'" y="'+y+'" font-size="17" fill="#164264">'+v+'</text>';
+    graphic+=box(885,173,284,111,'変化の差を比較',out)+arrow(826,242,879,242)+arrow(268,218,328,218);
+  }else if(type==='rdd'){
+    graphic+=box(28,160,280,112,'制度上の閾値','基準の前後を比較');
+    graphic+='<rect x="380" y="126" width="444" height="237" rx="12" fill="#fff" stroke="#cbdde8"/>';
+    graphic+='<line x1="429" y1="322" x2="784" y2="322" stroke="#6e8ca2" stroke-width="2"/><line x1="429" y1="322" x2="429" y2="158" stroke="#6e8ca2" stroke-width="2"/>';
+    graphic+='<line x1="617" y1="153" x2="617" y2="324" stroke="#d38b51" stroke-dasharray="6 6" stroke-width="3"/>';
+    graphic+='<path d="M450 286 L590 245 M644 204 L766 165" stroke="#4d84a6" stroke-width="4" fill="none"/>';
+    graphic+='<text x="580" y="349" font-size="15" fill="#7d5738">閾値</text><text x="450" y="178" font-size="15" fill="#425c72">閾値直前と直後の結果</text>';
+    graphic+=box(882,172,287,110,'局所的な差を評価',out)+arrow(309,217,371,217)+arrow(826,235,875,235);
+  }else if(type==='survival'){
+    graphic+=box(28,170,275,105,'対象者と追跡','観察開始から追跡');
+    graphic+='<rect x="366" y="145" width="466" height="202" rx="12" fill="#fff" stroke="#cbdde8"/>';
+    graphic+='<text x="388" y="177" font-size="18" fill="#164264" font-weight="700">時間の経過とイベント発生</text>';
+    graphic+='<line x1="414" y1="281" x2="792" y2="281" stroke="#5d829b" stroke-width="2"/>';
+    graphic+='<path d="M424 219 H512 V232 H603 V249 H717 V268 H783" stroke="#477d9b" fill="none" stroke-width="4"/>';
+    graphic+='<text x="437" y="312" font-size="15" fill="#5b7183">追跡開始</text><text x="717" y="312" font-size="15" fill="#5b7183">追跡期間</text>';
+    graphic+=box(894,170,275,114,'時間と結果を評価',out)+arrow(303,223,358,223)+arrow(832,236,886,236);
+  }else if(type==='theory'){
+    graphic+=box(29,164,332,109,'既存手法の課題','推定対象・仮定を整理')+box(440,164,332,109,'新しい考え方',methods.slice(0,65)||'識別・推定方法を検討')+box(855,164,311,109,'検証・適用',out);
+    graphic+=arrow(361,217,431,217)+arrow(772,217,847,217);
+  }else{
+    graphic+=box(28,164,343,109,'研究課題',p.rq_candidate||'何を明らかにするか')+box(428,164,341,109,'比較・分析',methods||'研究デザインを確認中')+box(827,164,343,109,'評価する結果',out);
+    graphic+=arrow(371,218,420,218)+arrow(769,218,819,218);
+  }
+  const rq=p.rq_candidate||'研究課題は本文で確認してください';
+  const svg='<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 477" width="1200" height="477" role="img">'+
+    '<rect width="1200" height="477" rx="14" fill="#f3f7fa"/>'+
+    '<text x="28" y="40" font-size="24" fill="#173d59" font-weight="700">この論文の全体像</text>'+
+    '<text x="28" y="71" font-size="16" fill="#50728b">研究デザイン：'+esc(typeName)+'（配信データからの暫定判定）</text>'+
+    textRows('問い：'+rq,28,102,67,1,16,'#37556b')+graphic+
+    '<text x="28" y="402" font-size="17" font-weight="700" fill="#183c59">意思決定への接続</text>'+
+    textRows(p.hypothesis_candidate||'結果をどのような判断に利用できるか、本文で確認してください',28,432,73,1,16,'#37556b')+
+    '<text x="28" y="462" font-size="13" fill="#637c8f">注：原著図ではなく、解説用の模式図。群構成・数値・識別条件を確認した図ではありません。</text></svg>';
+  return '<figure class="paper-overview"><img src="data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svg)+'" alt="'+safe('論文概要図：'+typeName+'。研究の問い、研究設計、結果、意思決定への接続を図解')+'" loading="lazy" decoding="async"><figcaption>論文概要（'+safe(typeName)+'の概念図／原著の図ではありません。研究デザインの判定は暫定的です）</figcaption></figure>';
 }
 function detail(id){let p=papers.find(x=>x.paper_id===id);if(!p){layout('<div class="card">論文が見つかりません。<a href="#/library">一覧へ戻る</a></div>','library');return}let parts=headings(sourceText(p));let sections=parts?parts.map((s,i)=>`<section class="section" id="s${i}"><h2>${s.n}. ${safe(s.heading)}</h2><div class="prose">${md(s.body)}</div></section>`).join(''):`<section class="section"><h2>短報（元配信の全文）</h2><div class="prose">${md(sourceText(p))}</div></section>`;let toc=parts?parts.map((s,i)=>`<a href="#s${i}" data-anchor="s${i}">${s.n}. ${safe(s.heading)}</a>`).join(''):'<p class="meta">この論文は短報形式で収録されており、6見出し構成ではありません。本文をそのまま掲載しています。</p>';layout(`<div class="pagehead"><a href="${route('library')}">← ライブラリへ戻る</a><h1 style="margin-top:12px">${safe(titleJa(p))}</h1><p class="detail-en-title">${safe(title(p))}</p><p>${safe((p.source_weeks||[]).join('・'))} · ${safe(p.source_date||'日付未確認')} · ${safe(p.design_status||'手法要確認')}</p></div><div class="notice">${p.substantive_verification==='partially_checked_against_primary_sources'?'一部の研究デザイン・定量結果を原著の指定箇所と照合しました（本文内の「原著照合ノート」を参照）。その他の説明や数値は未照合です。':p.substantive_verification==='partial_abstract_or_primary_source_checked'?'原著・出版社要旨等の一部と照合しました。本文内の「原著照合ノート」または「分類監査ノート」に確認範囲を記録しています。数式・効果量・信頼区間・識別仮定など全項目の検証は未完了です。':'この解説は過去配信の原文を保持したものです。原著照合は未完了です。数値・出典・識別仮定を研究に使用する際は原論文をご確認ください。'}</div>${auditPanel(p)}${evidencePanel(p)}<div class="split"><div><div class="card"><div class="meta">${safe(genre(p))}　${(p.method_keywords||[]).map(x=>`<span class="pill">${safe(x)}</span>`).join('')}</div><p class="tagline"><strong>研究課題（RQ）：</strong>${safe(p.rq_candidate||'構造化待ち（本文をご参照ください）')}<span class="meta"> ${['reconstructed_from_digest_overview_not_author_verified','analyst_reconstruction_from_digest_not_author_verified'].includes(p.rq_provenance)?'［元配信の説明から再構成・原著未照合］':p.rq_provenance==='extracted_from_digest_rq'?'［元配信のRQ欄から抽出・原著未照合］':'［原著未照合］'}</span></p><p class="tagline"><strong>仮説・中心命題：</strong>${safe(p.hypothesis_candidate||'構造化待ち')}<span class="meta"> ${p.hypothesis_provenance==='extracted_digest_proposition_not_author_verified'||p.hypothesis_provenance==='analyst_reconstruction_from_digest_not_author_verified'?'［元配信から抽出した要約・著者の正式仮説とは限りません］':'［原著未照合］'}</span></p><div class="meta"><strong>研究デザイン・Outcome・メカニズム（探索用の暫定分類）</strong><div>${[["識別・分析",(p.research_map?.identification_tags||[])],["Outcome",(p.research_map?.outcome_tags||[])],["メカニズム候補",(p.research_map?.mechanism_tags||[])]].filter(x=>x[1].length).map(x=>`<p>${safe(x[0])}：${x[1].map(t=>`<span class="pill">${safe(t)}</span>`).join("")}</p>`).join("")}</div><p>${String(p.research_map?.review_status||'').includes('reviewed')||p.research_map?.review_status==='source_cross_checked_selected_fields_only'?'識別手法等の一部を一次資料と照合した探索用分類です。分類の全項目を検証したわけではありません。':'元配信テキストからの自動分類候補です。分類自体の原著照合は未完了です。'}</p></div><div class="actions"><button class="btn" id="addCompare">${state.selected.includes(id)?'比較対象から外す':'比較対象に追加'}</button>${p.doi_candidate?`<a class="btn" target="_blank" rel="noopener" href="https://doi.org/${encodeURIComponent(p.doi_candidate)}">DOIを開く</a>`:''}${/^https?:\/\//.test(p.source_url||'')?`<a class="btn" href="${safe(p.source_url)}" target="_blank" rel="noopener">原文リンク</a>`:''}</div></div><div class="card">${overviewFigure(p)}${sections}</div>${p.digest_context?`<details class="card digest-context"><summary>同じ配信回の横断まとめ（開いて読む）</summary><div class="prose">${md(p.digest_context)}</div></details>`:'' }<div class="card"><h2>研究の型と次のRQ</h2><p class="muted">構造化・原著照合待ち。既存の解説「次読むべき論文は？」を参照してください。</p></div></div><aside class="card side"><strong>この論文の目次</strong>${toc}<hr><p class="small muted">データ品質：${p.substantive_verification==="not_checked_against_original"?"原著未照合":"原著・要旨等の一部を照合済み"}</p>${p.detailed_review?`<p class="small"><strong>${p.detailed_review.status==="selected_results_checked_against_original"?"原著の指定箇所にある数値の部分照合":p.detailed_review.status==="selected_results_checked_against_primary_abstract"?"原著要旨の主要数値の部分照合":p.detailed_review.status==="selected_results_checked_against_source_excerpt"?"公開テキストによる数値部分照合":"理論・研究設計の部分照合"}：</strong>${safe(p.detailed_review.locator||"原著の指定箇所")}。全文監査ではありません。</p>`:""}<p class="small muted">論文ID：${safe(p.paper_id)}</p></aside></div>`,'library');app.querySelector('#addCompare').onclick=()=>{state.selected=state.selected.includes(id)?state.selected.filter(x=>x!==id):state.selected.length<4?[...state.selected,id]:state.selected;detail(id)};app.querySelectorAll('[data-anchor]').forEach(a=>a.onclick=e=>{e.preventDefault();document.getElementById(a.dataset.anchor)?.scrollIntoView({behavior:'smooth'})})}
 function compare(){let chosen=state.selected.map(id=>papers.find(p=>p.paper_id===id)).filter(Boolean);layout(`<div class="pagehead"><h1>論文比較</h1><p>最大4本まで選択し、RQ・研究デザイン・検証内容を横並びにします。</p></div><div class="notice">比較表は配信原文からの抜粋を含みます。原著との整合性は未検証です。</div><div class="card"><h3>比較対象を選択（${chosen.length}/4）</h3><div class="toolbar"><select id="addPaper"><option value="">論文を追加…</option>${papers.filter(p=>!state.selected.includes(p.paper_id)).map(p=>`<option value="${p.paper_id}">${safe(titleJa(p))} / ${safe(title(p))}</option>`).join('')}</select><button class="btn" id="clear">選択を解除</button></div><div class="actions">${chosen.map(p=>`<button class="btn" data-remove="${p.paper_id}">× ${safe(titleJa(p).slice(0,36))}</button>`).join('')}</div></div>${chosen.length?`<div class="card comparewrap"><table class="compare"><thead><tr><th>比較項目</th>${chosen.map(p=>`<th><a href="${route('paper',p.paper_id)}">${dualTitle(p)}</a></th>`).join('')}</tr></thead><tbody>${[['ジャンル',p=>genre(p)],['配信週',p=>(p.source_weeks||[]).join('・')],['RQ（抽出候補）',p=>p.rq_candidate||'未構造化'],['仮説（抽出候補）',p=>p.hypothesis_candidate||'未構造化'],['手法（キーワード）',p=>p.design_status||'未確認'],['解説の長さ',p=>sourceText(p).length.toLocaleString()+'文字'],['原著確認',p=>'未照合']].map(([name,fn])=>`<tr><th>${name}</th>${chosen.map(p=>`<td>${safe(fn(p))}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`:'<div class="card empty">論文ライブラリから比較対象を追加してください。</div>'}`,'compare');app.querySelector('#addPaper').onchange=e=>{if(e.target.value&&state.selected.length<4)state.selected.push(e.target.value);compare()};app.querySelector('#clear').onclick=()=>{state.selected=[];compare()};app.querySelectorAll('[data-remove]').forEach(b=>b.onclick=()=>{state.selected=state.selected.filter(x=>x!==b.dataset.remove);compare()})}
