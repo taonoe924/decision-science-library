@@ -189,7 +189,16 @@ function auditPanel(p){
   const r=p.detailed_review;
   if(!r)return '<div class="audit-summary"><h2>原著照合の状況</h2><p>詳細監査記録は未整備です。論文中の数値、信頼区間、識別仮定は原著で再確認してください。</p></div>';
   const status=String(r.status||'');
-  const quantitative=status==='selected_results_checked_against_original'?'原著本文の指定箇所で一部の定量結果を照合':
+  const ev=p.quantitative_evidence;
+  const quantitative=ev?.status==='selected_numeric_rows_checked_against_original_tables'
+    ? '原著の指定Table/Figureの一部を数値照合。ほかの結果は未完了'
+    :ev?.status==='headline_approximations_checked_against_primary_abstract'
+    ? '公式要旨で概数のみ確認。表番号・SE・CIは未確認'
+    :ev?.status==='author_repo_summary_stats_checked'
+    ? '著者公開資料の評価結果と一部95%CIを確認。論文全体は未照合'
+    :ev?.status==='sample_counts_and_narrative_approximate_effect_checked'
+    ? '原著の標本構成と本文中の概数を確認。対応するCIは未確認'
+    :status==='selected_results_checked_against_original'?'原著本文の指定箇所で一部の定量結果を照合':
     status==='selected_results_checked_against_primary_abstract'?'公式要旨の主要数値のみ部分照合':
     status==='selected_results_checked_against_source_excerpt'?'公開本文抜粋による部分照合':
     '数値・信頼区間は原著本文との完全照合未了';
@@ -214,8 +223,8 @@ function evidencePanel(p){
     '<td>'+safe(x.ci95||'未確認')+'</td><td>'+safe(x.unit||'')+'</td>'+
     '<td>'+safe(x.caveat||'')+'</td></tr>').join('');
   const source=/^https:\/\//.test(e.source_url||'')?
-    '<a href="'+safe(e.source_url)+'" target="_blank" rel="noopener noreferrer">原著の対応箇所</a>':'';
-  return '<details class="audit-evidence"><summary>原著の表・図と照合した数値（'+e.records.length+'件）</summary>'+
+    '<a href="'+safe(e.source_url)+'" target="_blank" rel="noopener noreferrer">数値の確認に用いた一次資料</a>':'';
+  return '<details class="audit-evidence"><summary>一次資料と照合した定量情報（'+e.records.length+'件）</summary>'+
     '<p class="small">出典：'+safe(e.source_version||'')+'。'+safe(e.method||'')+'</p>'+
     (e.n_total?'<p class="small">標本数：'+safe(e.n_total)+'人。'+safe(e.groups||'')+'</p>':'')+
     '<div class="table-scroll" role="region" aria-label="原著の定量結果" tabindex="0">'+
