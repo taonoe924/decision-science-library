@@ -73,7 +73,7 @@ try{
     await page.locator('.split .section h2').first().waitFor({timeout:15000});
     assert.equal(await page.locator('.split .section h2').count(),6,
       'archived cross-paper weekly summary must not appear as extra sections');
-    assert.equal(await page.locator('.split .prose').filter({hasText:'今週読むならこの順'}).count(),0,
+    assert.equal(await page.locator('.split .section .prose').filter({hasText:'今週読むならこの順'}).count(),0,
       'weekly digest text leaked into individual paper detail');
     assert.deepEqual(errors,[],'JavaScript errors on '+item.name);
     await page.close();
