@@ -233,6 +233,35 @@ function evidencePanel(p){
 /* Individual visual abstracts cross-checked against their public primary abstracts.
    These explain study logic, not the author's figure or fully validated estimates. */
 const VERIFIED_ABSTRACTS={
+
+  'paper-62ca0acf9a':{
+    type:'死亡により測定が途切れるOutcomeの因果推論',
+    steps:[['追跡中に死亡が発生','生存者にだけOutcomeが定義される'],['何を推定するか定義','全対象集団で解釈可能な推定対象'],['識別・推定を検討','前立腺がん試験の再分析で比較']],
+    outcome:'どの推定対象を選ぶかで治療の結論が変わり得る',
+    caveat:'arXiv要旨との照合。全対象集団の効果と生存者限定効果を混同しないでください。',
+    source:'https://arxiv.org/abs/2607.00222'
+  },
+  'paper-8db14dc31c':{
+    type:'反事実分布のベイズ型推定（方法論）',
+    steps:[['平均効果だけでは不足','効果の分布や分位点も知りたい'],['マルチンゲール事後分布','柔軟な反事実分布を推定'],['不確実性も合わせて評価','分位点などの推定に接続']],
+    outcome:'平均値に隠れる分布差と推定の不確実性を評価',
+    caveat:'arXiv要旨との照合。DMLを使う研究と断定しないでください。',
+    source:'https://arxiv.org/abs/2607.24143'
+  },
+  'paper-260bb098e8':{
+    type:'因果効果の他集団への移送可能性（理論）',
+    steps:[['元集団の研究結果','別環境にも適用できるか検討'],['因果モデルを対応づける','介入時の振る舞いの差を表現'],['近似的な移送を評価','移送できない場合も範囲を提示']],
+    outcome:'厳密な移送だけでなく、近似誤差を伴う推定範囲を検討',
+    caveat:'arXiv要旨との照合。一般の実データに無条件に移送できる意味ではありません。',
+    source:'https://arxiv.org/abs/2608.15645'
+  },
+  'paper-4ba1548978':{
+    type:'処置後に変わる共変量とDID（方法論＋応用）',
+    steps:[['処置後の共変量が問題','通常の調整ではバイアスの懸念'],['識別条件を整理','処置前値の調整や補完的手法'],['推定量を提案・適用','DMLも含め雇用喪失の事例を分析']],
+    outcome:'共変量を単に除外する以外の識別・推定方法を検討',
+    caveat:'arXiv要旨との照合。どの共変量でも調整可能という主張ではありません。',
+    source:'https://arxiv.org/abs/2608.03881'
+  },
   'paper-382caf1ae2':{
     type:'制度の閾値と企業行動（方法論＋実証）',
     steps:[['制度上の段差','企業規模を超えると給与税が変わる'],['行動・比較集団の変化','企業が閾値を避け、規模分布も変化'],['反実仮想分布を推定','従来のDIDとの推定結果を比較']],
