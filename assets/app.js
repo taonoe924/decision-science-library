@@ -167,6 +167,7 @@ function headings(text){
   const body=paperOnlyText(text),parts=[];
   const re=/^#{2,6}\s*(?:\*\*)?([1-6])[.．、](?!\d)\s*([^\n*]+)(?:\*\*)?\s*$/gm;
   const matches=[...body.matchAll(re)];
+  // Source heading_count metadata can be stale: trust actual 1–6 headings.
   if(matches.length!==6||matches.some((m,i)=>Number(m[1])!==i+1))return null;
   for(let i=0;i<matches.length;i++){
     parts.push({n:Number(matches[i][1]),heading:matches[i][2].trim(),body:body.slice(matches[i].index+matches[i][0].length,matches[i+1]?.index||body.length).trim()});
@@ -242,6 +243,7 @@ function overviewFigure(p){
   const arrow=(x1,y1,x2,y2)=>'<path d="M'+x1+' '+y1+' L'+x2+' '+y2+'" fill="none" stroke="#6188a3" stroke-width="2.5"/><path d="M'+x2+' '+y2+' l-9 -4 v8 z" fill="#6188a3" transform="rotate('+Math.atan2(y2-y1,x2-x1)*180/Math.PI+' '+x2+' '+y2+')"/>';
   // Use methodological metadata rather than scanning the full digest, which often discusses competing designs.
   const methods=[...(p.method_keywords||[]),...(p.research_map?.identification_tags||[]),p.design_status||''].join(' ');
+  const methodsDisplay=(p.method_keywords||[]).slice(0,3).join('・')||'分析手法は原著で確認';
   const knownDesign=String(p.design_status||'');
   // Keyword-derived labels are not evidence that a method was actually used.
   // Display a specific design only when a source-checked classification is available.
@@ -287,7 +289,7 @@ function overviewFigure(p){
     graphic+=box(29,164,332,109,'既存手法の課題','推定対象・仮定を整理')+box(440,164,332,109,'新しい考え方',methods.slice(0,65)||'識別・推定方法を検討')+box(855,164,311,109,'検証・適用',out);
     graphic+=arrow(361,217,431,217)+arrow(772,217,847,217);
   }else{
-    graphic+=box(28,164,343,109,'研究課題',p.rq_candidate||'何を明らかにするか')+box(428,164,341,109,'比較・分析',methods||'研究デザインを確認中')+box(827,164,343,109,'評価する結果',out);
+    graphic+=box(28,164,343,109,'研究課題',p.rq_candidate||'何を明らかにするか')+box(428,164,341,109,'比較・分析',methodsDisplay)+box(827,164,343,109,'評価する結果',out);
     graphic+=arrow(371,218,420,218)+arrow(769,218,819,218);
   }
   const rq=p.rq_candidate||'研究課題は本文で確認してください';
@@ -295,7 +297,7 @@ function overviewFigure(p){
     '<rect width="1200" height="477" rx="14" fill="#f3f7fa"/>'+
     '<text x="28" y="40" font-size="24" fill="#173d59" font-weight="700">この論文の全体像</text>'+
     '<text x="28" y="71" font-size="16" fill="#50728b">研究デザイン：'+esc(typeName)+'（配信データからの暫定判定）</text>'+
-    textRows('問い：'+rq,28,99,62,2,16,'#37556b')+graphic+
+    textRows('問い：'+rq,28,99,62,1,16,'#37556b')+graphic+
     '<text x="28" y="419" font-size="17" font-weight="700" fill="#183c59">意思決定への接続（仮説・解説者による整理）</text>'+
     textRows(p.hypothesis_candidate||'結果をどのような判断に利用できるか、本文で確認してください',28,453,65,3,16,'#37556b')+
     '<text x="28" y="545" font-size="13" fill="#637c8f">注：原著図ではなく、解説用の模式図。群構成・数値・識別条件を確認した図ではありません。</text></svg>';
