@@ -4,20 +4,26 @@ on:
     paths:
       - "assets/papers.js"
       - "assets/app.js"
+      - "assets/style.css"
+      - "index.html"
       - "assets/digest-quality.js"
       - "data/digests/**"
       - "scripts/quality-audit.mjs"
       - "scripts/validate-library.mjs"
+      - "scripts/browser-smoke.mjs"
       - "scripts/test-digest-quality.mjs"
       - ".github/workflows/library-quality.yml"
   pull_request:
     paths:
       - "assets/papers.js"
       - "assets/app.js"
+      - "assets/style.css"
+      - "index.html"
       - "assets/digest-quality.js"
       - "data/digests/**"
       - "scripts/quality-audit.mjs"
       - "scripts/validate-library.mjs"
+      - "scripts/browser-smoke.mjs"
       - "scripts/test-digest-quality.mjs"
       - ".github/workflows/library-quality.yml"
   workflow_dispatch:
@@ -46,3 +52,26 @@ jobs:
         run: |
           node scripts/quality-audit.mjs
           node scripts/validate-library.mjs
+
+  browser-smoke:
+    name: Verify desktop/mobile paper detail rendering
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Install Playwright
+        run: |
+          npm install --no-save --no-package-lock playwright@1.58.2
+          npx playwright install --with-deps chromium
+      - name: Smoke-test local rendered site
+        run: node scripts/browser-smoke.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: paper-page-screenshots
+          path: test-artifacts/
+          if-no-files-found: ignore
