@@ -46,6 +46,7 @@ jobs:
           node --check scripts/quality-audit.mjs
           node --check scripts/validate-library.mjs
           node --check scripts/test-digest-quality.mjs
+          node --check scripts/browser-smoke.mjs
       - name: Test publication gate
         run: node scripts/test-digest-quality.mjs
       - name: Validate library data
