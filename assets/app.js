@@ -229,7 +229,72 @@ function evidencePanel(p){
 
 /* Paper-specific visual abstract: schematic, not a reproduced author figure.
    Uses only available digest metadata and labels missing fields explicitly. */
+
+/* Individual visual abstracts cross-checked against their public primary abstracts.
+   These explain study logic, not the author's figure or fully validated estimates. */
+const VERIFIED_ABSTRACTS={
+  'paper-382caf1ae2':{
+    type:'制度の閾値と企業行動（方法論＋実証）',
+    steps:[['制度上の段差','企業規模を超えると給与税が変わる'],['行動・比較集団の変化','企業が閾値を避け、規模分布も変化'],['反実仮想分布を推定','従来のDIDとの推定結果を比較']],
+    outcome:'著者報告：閾値超の企業数 約18％減、雇用・資本・付加価値 約10％減',
+    caveat:'NBER公開要旨で概数を照合。標準誤差・95％信頼区間は図には表示しません。',
+    source:'https://www.nber.org/papers/w35484'
+  },
+  'paper-8fba52c564':{
+    type:'州・政策別の差の差分析（方法論）',
+    steps:[['政策導入の違い','州・政策種類・導入時点が異なる'],['推定対象を分ける','全体／州別／政策種類別のATT'],['識別と推論を検討','集約の粒度ごとに仮定を確認']],
+    outcome:'意思決定者の問いに合う集計単位で政策効果を評価',
+    caveat:'原著要旨との方法論上の整合を確認。個別の政策効果量を示す図ではありません。',
+    source:'https://arxiv.org/abs/2609.01467'
+  },
+  'paper-8da38f287b':{
+    type:'ネットワーク干渉下の政策評価（方法論）',
+    steps:[['ネットワークで干渉','他者への介入も本人の結果に影響'],['政策変更を想定','実験時とは異なる割当方針を評価'],['構造仮定＋重み付け','Fourier部分空間を使い推定']],
+    outcome:'政策の移送に伴う推定の分散とバイアスを検討',
+    caveat:'arXiv要旨との方法論上の整合を確認。因果効果の数値は断定しません。',
+    source:'https://arxiv.org/abs/2609.02756'
+  },
+  'paper-b28db29cef':{
+    type:'因果推論の基盤モデル（概説）',
+    steps:[['事前学習モデル','因果効果の推定方法を事前に学習'],['新たなデータを入力','共変量・処置・Outcomeを文脈として与える'],['効果を推定','モデル更新なしでATE・CATEを推定']],
+    outcome:'案件ごとの再学習を減らす可能性と識別仮定の課題を整理',
+    caveat:'arXiv要旨に基づく概念図。単一RCTの実証結果ではありません。',
+    source:'https://arxiv.org/abs/2609.03003'
+  }
+};
+function verifiedOverviewFigure(p){
+  const v=VERIFIED_ABSTRACTS[p.paper_id];if(!v)return '';
+  const tidy=x=>String(x||'').replace(/\s+/g,' ').trim();
+  const wrap=(value,max=22,count=3)=>{
+    const cs=[...tidy(value)],out=[];
+    for(let i=0;i<cs.length&&out.length<count;i+=max)out.push(cs.slice(i,i+max).join(''));
+    if(cs.length>max*count)out[count-1]=out[count-1].slice(0,Math.max(0,max-4))+'…';
+    return out.length?out:['未確認'];
+  };
+  const rows=(value,x,y,max=22,count=3,font=16)=>{
+    return wrap(value,max,count).map((line,i)=>'<text x="'+x+'" y="'+(y+i*26)+'" font-size="'+font+'" fill="#263f55">'+safe(line)+'</text>').join('');
+  };
+  const boxes=v.steps.map(([title,body],i)=>{
+    const x=26+394*i;
+    return '<rect x="'+x+'" y="127" width="362" height="168" rx="12" fill="#fff" stroke="#d0dfe9"/>'+
+      '<text x="'+(x+16)+'" y="163" font-size="20" font-weight="700" fill="#194666">'+safe(String(i+1)+'．'+title)+'</text>'+
+      rows(body,x+16,202,19,3,16)+
+      (i<2?'<path d="M'+(x+365)+' 208 h21 m-7 -6 l7 6 -7 6" fill="none" stroke="#5587a5" stroke-width="2"/>':'');
+  }).join('');
+  const svg='<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 465" width="1200" height="465" role="img">'+
+    '<rect width="1200" height="465" rx="14" fill="#f2f7fa"/>'+
+    '<text x="26" y="42" font-size="25" font-weight="700" fill="#163c58">この論文の全体像</text>'+
+    '<text x="26" y="80" font-size="17" fill="#496c83">'+safe(v.type)+'</text>'+
+    boxes+'<text x="26" y="335" font-size="19" font-weight="700" fill="#194666">何が分かる？</text>'+
+    rows(v.outcome,26,367,54,2,17)+
+    '<text x="26" y="431" font-size="14" fill="#566e82">'+safe(v.caveat)+'</text>'+
+    '<text x="26" y="451" font-size="13" fill="#566e82">注：研究内容を説明するための再構成図であり、原著図の転載ではありません。</text></svg>';
+  return '<figure class="paper-overview"><img src="data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svg)+'" alt="'+safe('原著要旨を照合した論文概要図：'+v.type)+'" loading="lazy" decoding="async">'+
+    '<figcaption>研究の流れ（原著公開要旨に基づく再構成・<a href="'+safe(v.source)+'" target="_blank" rel="noopener noreferrer">照合先</a>）。本文中の結果や識別仮定の全項目を検証したものではありません。</figcaption></figure>';
+}
+
 function overviewFigure(p){
+  if(VERIFIED_ABSTRACTS[p.paper_id])return verifiedOverviewFigure(p);
   const clean=x=>String(x||'').replace(/\s+/g,' ').replace(/\[\^(?:20\d{6})-\d+\]/g,'').replace(/元配信の中心命題（解説者による再構成）：/g,'').trim();
   const esc=x=>safe(clean(x));
   const lines=(s,n=35,count=2)=>{
