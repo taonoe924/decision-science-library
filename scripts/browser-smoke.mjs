@@ -62,6 +62,13 @@ try{
     await page.locator('details.audit-evidence summary').click();
     assert.ok(await page.locator('.audit-evidence tbody tr').count()>=7,
       'spillover evidence rows missing on '+item.name);
+    const spillText=await page.locator('.split').innerText();
+    assert.ok(spillText.includes('波及効果（spillover effect）'),
+      'Japanese-first terminology must be present on '+item.name);
+    assert.ok(spillText.includes('無作為割付（randomization）'),
+      'randomization translation missing on '+item.name);
+    assert.ok(!/\\[\\^20\\d{6}-\\d+\\]/.test(spillText),
+      'legacy citation artifacts visible on '+item.name);
     await page.goto(base+'#/paper/paper-8db14dc31c',{waitUntil:'domcontentloaded'});
     await page.locator('.split .section h2').first().waitFor({timeout:15000});
     assert.equal(await page.locator('.split .section h2').count(),6,
