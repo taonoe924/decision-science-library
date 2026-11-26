@@ -785,7 +785,8 @@ const VERIFIED_ABSTRACTS={
   }
 };
 function verifiedOverviewFigure(p){
-  const v=VERIFIED_ABSTRACTS[p.paper_id];if(!v)return '';
+  const checked=Boolean(VERIFIED_ABSTRACTS[p.paper_id]);
+  const v=VERIFIED_ABSTRACTS[p.paper_id]||DIGEST_ABSTRACTS[p.paper_id];if(!v)return '';
   const tidy=x=>String(x||'').replace(/\s+/g,' ').trim();
   const wrap=(value,max=22,count=3)=>{
     const cs=[...tidy(value)],out=[];
@@ -809,14 +810,14 @@ function verifiedOverviewFigure(p){
     '<text x="26" y="80" font-size="17" fill="#496c83">'+safe(v.type)+'</text>'+
     boxes+'<text x="26" y="335" font-size="19" font-weight="700" fill="#194666">何が分かる？</text>'+
     rows(v.outcome,26,367,54,2,17)+
-    '<text x="26" y="431" font-size="14" fill="#566e82">'+safe(v.caveat)+'</text>'+
+    '<text x="26" y="431" font-size="14" fill="#566e82">'+safe(checked?v.caveat:'配信解説からの再構成。研究デザイン・結果数値の原著照合は未完了です。')+'</text>'+
     '<text x="26" y="451" font-size="13" fill="#566e82">注：研究内容を説明するための再構成図であり、原著図の転載ではありません。</text></svg>';
   return '<figure class="paper-overview"><img src="data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svg)+'" alt="'+safe('原著要旨を照合した論文概要図：'+v.type)+'" loading="lazy" decoding="async">'+
-    '<figcaption>研究の流れ（原著公開要旨に基づく再構成・<a href="'+safe(v.source)+'" target="_blank" rel="noopener noreferrer">照合先</a>）。本文中の結果や識別仮定の全項目を検証したものではありません。</figcaption></figure>';
+    '<figcaption>'+(checked?'研究の流れ（公開原著要旨に基づく再構成）':'研究の流れ（本ライブラリの配信解説から再構成・原著追加照合待ち）')+(v.source?' · <a href="'+safe(v.source)+'" target="_blank" rel="noopener noreferrer">原著リンク</a>':'')+'。本文中の数値や識別仮定をすべて検証したものではありません。</figcaption></figure>';
 }
 
 function overviewFigure(p){
-  if(VERIFIED_ABSTRACTS[p.paper_id])return verifiedOverviewFigure(p);
+  if(VERIFIED_ABSTRACTS[p.paper_id]||DIGEST_ABSTRACTS[p.paper_id])return verifiedOverviewFigure(p);
   const clean=x=>String(x||'').replace(/\s+/g,' ').replace(/\[\^(?:20\d{6})-\d+\]/g,'').replace(/元配信の中心命題（解説者による再構成）：/g,'').trim();
   const esc=x=>safe(clean(x));
   const lines=(s,n=35,count=2)=>{
