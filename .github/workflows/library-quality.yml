@@ -7,6 +7,7 @@ on:
       - "assets/digest-quality.js"
       - "data/digests/**"
       - "scripts/quality-audit.mjs"
+      - "scripts/validate-library.mjs"
       - "scripts/test-digest-quality.mjs"
       - ".github/workflows/library-quality.yml"
   pull_request:
@@ -16,6 +17,7 @@ on:
       - "assets/digest-quality.js"
       - "data/digests/**"
       - "scripts/quality-audit.mjs"
+      - "scripts/validate-library.mjs"
       - "scripts/test-digest-quality.mjs"
       - ".github/workflows/library-quality.yml"
   workflow_dispatch:
@@ -36,8 +38,11 @@ jobs:
           node --check assets/digest-quality.js
           node --check assets/papers.js
           node --check scripts/quality-audit.mjs
+          node --check scripts/validate-library.mjs
           node --check scripts/test-digest-quality.mjs
       - name: Test publication gate
         run: node scripts/test-digest-quality.mjs
       - name: Validate library data
-        run: node scripts/quality-audit.mjs
+        run: |
+          node scripts/quality-audit.mjs
+          node scripts/validate-library.mjs
