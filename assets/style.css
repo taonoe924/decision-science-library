@@ -101,3 +101,13 @@
 .paper-overview{margin:0 0 28px;padding:0;max-width:100%}
 .paper-overview img{display:block;width:100%;height:auto;border:1px solid #dce4ed;border-radius:12px;background:#f3f7fa}
 .paper-overview figcaption{margin:8px 2px 0;color:#64788b;font-size:12px;line-height:1.65}
+
+/* v1.0 final QA: keep wide tables and SVG schematics inside the article on narrow screens. */
+.split{grid-template-columns:minmax(0,1fr) 275px}
+.split>div,.split .card,.split .section,.audit-summary,.audit-evidence{min-width:0;max-width:100%}
+@media(max-width:760px){
+  .split{grid-template-columns:minmax(0,1fr)}
+  .split>div,.split .card,.split .section,.prose,.paper-overview{min-width:0;max-width:100%}
+  .paper-overview img{max-width:100%}
+  .audit-evidence .table-scroll,.prose .table-scroll{min-width:0;max-width:100%}
+}
