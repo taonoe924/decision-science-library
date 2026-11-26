@@ -85,3 +85,14 @@
 .prose .table-scroll:focus-visible{outline:3px solid #457bad;outline-offset:2px}
 .prose .table-scroll::after{content:"横スクロールできます";display:block;text-align:right;padding:3px 10px;font-size:11px;color:#61778b;border-top:1px solid #e6ebf0}
 @media(min-width:920px){.prose .table-scroll::after{content:""}}
+
+/* Source-linked quantitative evidence tables (2026-11-26). */
+.audit-evidence{background:#fff;border:1px solid #dce4ed;border-radius:10px;margin:0 0 24px;padding:14px 18px;color:#34485d}
+.audit-evidence summary{cursor:pointer;font-weight:700;line-height:1.6}
+.audit-evidence[open] summary{margin-bottom:12px;border-bottom:1px solid #e6ebf0;padding-bottom:10px}
+.audit-evidence .table-scroll{overflow-x:auto;max-width:100%;margin:14px 0;border:1px solid #dce4ed;border-radius:8px}
+.audit-evidence .md-table{width:100%;min-width:850px;border-collapse:collapse;font-size:12px;line-height:1.55}
+.audit-evidence .md-table th,.audit-evidence .md-table td{padding:10px;border:1px solid #e3e9ee;text-align:left;vertical-align:top;overflow-wrap:anywhere}
+.audit-evidence .md-table th{background:#f1f4f7;white-space:nowrap}
+.audit-evidence .md-table tbody tr:nth-child(even){background:#fbfcfe}
+.audit-evidence .small{line-height:1.7;overflow-wrap:anywhere}
