@@ -234,6 +234,35 @@ function evidencePanel(p){
    These explain study logic, not the author's figure or fully validated estimates. */
 const VERIFIED_ABSTRACTS={
 
+  'paper-c79dc0a5e2':{
+    type:'個人への害を抑える政策学習（方法論）',
+    steps:[['平均の改善だけでは不足','施策によって悪化する人がいる'],['害を受ける確率を制御','Conformal Policy Learningを設計'],['制約下で施策を配分','改善と安全性の両立を評価']],
+    outcome:'分布に依存しない条件付きの安全性保証を提案',
+    caveat:'arXiv原著本文で研究目的を確認。保証には研究内の条件があります。',
+    source:'https://arxiv.org/abs/2609.17296'
+  },
+  'paper-730aa60651':{
+    type:'人間とAIの役割分担（理論・設計）',
+    steps:[['分類の意思決定','人間もAIも異なる得意・不得意'],['役割分担を設計','自動化または人間への選択的支援'],['十分統計量で評価','協働方針の反実仮想を比較']],
+    outcome:'自動化と選択的なAI支援を共通の枠組みで検討',
+    caveat:'NBER公開要旨との照合。人間とAIのどちらかが常に優秀という結果ではありません。',
+    source:'https://www.nber.org/papers/w33949'
+  },
+  'paper-99c4958bc6':{
+    type:'不完全な医療エビデンスと治療方針（意思決定）',
+    steps:[['治療の利益と害','利益より害の推定が不確か'],['治療ルールを比較','既存ガイドラインと代替案'],['曖昧さを考慮した判断','Maximin・Minimax Regret']],
+    outcome:'有害事象の仮定によって推奨方針・評価が変わる',
+    caveat:'NBER要旨を照合。患者集団や害の仮定を無視して一般化できません。',
+    source:'https://www.nber.org/papers/w35798'
+  },
+  'paper-6582247bcc':{
+    type:'認知負荷下の医師の診断行動（実証研究）',
+    steps:[['診療時の認知負荷','同時進行の判断で処理負担が増える'],['行動の切り替え','熟考に代わり検査等の行動が増える'],['診断行動の質を検討','医師の行動ログと患者データ']],
+    outcome:'認知負荷のもとで診断行動の数と精度が変化',
+    caveat:'NBER研究紹介を照合。実証研究でありRCTと断定しません。',
+    source:'https://www.nber.org/papers/w35034'
+  },
+
   'paper-b7ba3b5524':{
     type:'政策ルール変更の動学的因果効果（方法論）',
     steps:[['政策の見方が2種類','政策ショックと政策ルールの変更'],['同じ効果かを検討','局所射影法の推定対象を整理'],['動学的効果を比較','一時的変化と持続的な政策変更']],
