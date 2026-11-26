@@ -234,6 +234,63 @@ function evidencePanel(p){
    These explain study logic, not the author's figure or fully validated estimates. */
 const VERIFIED_ABSTRACTS={
 
+  'paper-c90ea9c9ca':{
+    type:'実施地域の個票と比較地域の集計データ',
+    steps:[['データの粒度が異なる','介入地域は個票・対照地域は集計'],['地域全体の効果を基準化','介入地域内のサブ集団差を利用'],['属性別の効果へ展開','比較可能性の仮定を置いて推定']],
+    outcome:'集計データだけの比較地域でも条件付きの異質効果を識別',
+    caveat:'arXiv公開要旨で確認。基準化する属性分布に注意が必要です。',
+    source:'https://arxiv.org/abs/2609.28678'
+  },
+  'paper-ff993d84fc':{
+    type:'治療開始時点を早める政策の因果効果',
+    steps:[['治療開始までの時間','開始時点にばらつきがある'],['開始ハザードを少し変える','開始強度への介入を定義'],['結果の変化を推定','固定時点への強制と区別']],
+    outcome:'現実的な開始促進政策の漸進的な因果効果を定義・推定',
+    caveat:'arXiv公開要旨を照合。開始強度に関するモデル仮定が必要です。',
+    source:'https://arxiv.org/abs/2605.29348'
+  },
+  'paper-b7fe6b96d3':{
+    type:'交絡なしと共通トレンドの同時検定',
+    steps:[['処置群効果を推定','異なる識別仮定でATTを考える'],['2つの反実仮想を比較','共変量調整とDiDを併用'],['共同成立の仮説を検定','DMLで高次元共変量にも対応']],
+    outcome:'両仮定が同時に成立するか診断する検定を提案',
+    caveat:'Journal of Applied Econometrics原著公開要旨を照合。棄却は個別の仮定を特定しません。',
+    source:'https://doi.org/10.1002/jae.70068'
+  },
+  'paper-92bc6de864':{
+    type:'干渉のあるネットワーク間で効果を移送',
+    steps:[['元ネットワークの介入','友人や周囲への波及も存在'],['別のネットワークへ移す','つながり構造の違いを考慮'],['直接・波及効果を推定','移送に必要な構造条件を設定']],
+    outcome:'異なるネットワークへの因果効果の移送条件を検討',
+    caveat:'arXiv公開要旨を照合。移送先での構造的な仮定が必要です。',
+    source:'https://arxiv.org/abs/2608.18932'
+  },
+  'paper-63f74ad77b':{
+    type:'運動習慣への個別最適化インセンティブ',
+    steps:[['健康状態を持つ成人を対象','運動への反応・コストは人による'],['本人が報酬条件を選択','誘因両立的なメニューを設計'],['画一的な報酬と比較','運動行動とコストを評価']],
+    outcome:'著者報告：追加費用なしで運動への処置効果を約80％増加',
+    caveat:'Econometrica公表要旨の概数。対象集団・条件での実験結果です。',
+    source:'https://doi.org/10.3982/ECTA21926'
+  },
+  'paper-a7f60207fb':{
+    type:'不利益を受ける人を重視した政策配分',
+    steps:[['平均厚生だけでは不足','一部の対象者に負の効果が生じる'],['後悔・不利益を定式化','集団別の損失も評価基準に組込む'],['施策配分を最適化','画一実施と分割配分を比較']],
+    outcome:'平均効果最大化とは異なる政策選択が生じ得る',
+    caveat:'arXiv公開要旨に基づく理論的な整理。特定の数値効果ではありません。',
+    source:'https://arxiv.org/abs/2506.16430'
+  },
+  'paper-56160473d1':{
+    type:'AI支援執筆で考えさせる操作の比較',
+    steps:[['生成AIが作業計画を提示','そのまま受け入れるリスクがある'],['認知的な強制機能を比較','計画の点検・修正を促す'],['利用者の行動を評価','過度な依存と批判的思考を測る']],
+    outcome:'計画に焦点を当てる仕組みが熟慮を促す可能性',
+    caveat:'Microsoft Research公開要旨を照合。すべてのAI作業での一般化は未確認です。',
+    source:'https://www.microsoft.com/en-us/research/publication/an-experimental-comparison-of-cognitive-forcing-functions-for-execution-plans-in-ai-assisted-writing-effects-on-trust-overreliance-and-perceived-critical-thinking/'
+  },
+  'paper-3ada9d3a18':{
+    type:'医師の検査判断と機械学習による診断',
+    steps:[['患者の実際のリスク','検査・治療の判断に使う'],['医師の判断を観察','モデルの予測と一致しない場合もある'],['事後の健康結果を比較','予測と行動の違いを評価']],
+    outcome:'予測精度だけで医師の判断の良否は決められない',
+    caveat:'公開論文の研究設計を要約。未観測の情報による差には注意が必要です。',
+    source:'https://pmc.ncbi.nlm.nih.gov/articles/PMC12497445/'
+  },
+
   'paper-1dec3c647c':{
     type:'ユニット別トレンドを伴うDIDの推定量',
     steps:[['各地域の傾向を調整','固定効果と固有の時系列トレンド'],['一定の効果を仮定','処置後を1係数に集約する問題'],['動的効果を別々に推定','時間別効果を平均する代替案']],
