@@ -65,7 +65,7 @@ jobs:
           node-version: "22"
       - name: Install Playwright
         run: |
-          npm install --no-save --no-package-lock playwright@1.58.2
+          npm install --no-save --no-package-lock playwright@1.65.1
           npx playwright install --with-deps chromium
       - name: Smoke-test local rendered site
         run: node scripts/browser-smoke.mjs
