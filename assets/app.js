@@ -535,8 +535,8 @@ function verifiedOverviewFigure(p){
   const boxes=v.steps.map(([title,body],i)=>{
     const x=26+394*i;
     return '<rect x="'+x+'" y="127" width="362" height="168" rx="12" fill="#fff" stroke="#d0dfe9"/>'+
-      '<text x="'+(x+16)+'" y="163" font-size="20" font-weight="700" fill="#194666">'+safe(String(i+1)+'．'+title)+'</text>'+
-      rows(body,x+16,202,19,3,16)+
+      wrap(String(i+1)+'．'+title,16,2).map((t,j)=>'<text x="'+(x+16)+'" y="'+(156+j*23)+'" font-size="18" font-weight="700" fill="#194666">'+safe(t)+'</text>').join('')+
+      rows(body,x+16,221,19,3,16)+
       (i<2?'<path d="M'+(x+365)+' 208 h21 m-7 -6 l7 6 -7 6" fill="none" stroke="#5587a5" stroke-width="2"/>':'');
   }).join('');
   const svg='<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 465" width="1200" height="465" role="img">'+
