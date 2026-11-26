@@ -67,7 +67,7 @@ try{
       'Japanese-first terminology must be present on '+item.name);
     assert.ok(spillText.includes('無作為割付（randomization）'),
       'randomization translation missing on '+item.name);
-    assert.ok(!/\\[\\^20\\d{6}-\\d+\\]/.test(spillText),
+    assert.ok(!/\[\^20\d{6}-\d+\]/.test(spillText),
       'legacy citation artifacts visible on '+item.name);
     await page.goto(base+'#/paper/paper-8db14dc31c',{waitUntil:'domcontentloaded'});
     await page.locator('.split .section h2').first().waitFor({timeout:15000});
