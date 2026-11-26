@@ -96,3 +96,8 @@
 .audit-evidence .md-table th{background:#f1f4f7;white-space:nowrap}
 .audit-evidence .md-table tbody tr:nth-child(even){background:#fbfcfe}
 .audit-evidence .small{line-height:1.7;overflow-wrap:anywhere}
+
+/* Paper visual abstracts: responsive, image-based schematic before chapter 1 */
+.paper-overview{margin:0 0 28px;padding:0;max-width:100%}
+.paper-overview img{display:block;width:100%;height:auto;border:1px solid #dce4ed;border-radius:12px;background:#f3f7fa}
+.paper-overview figcaption{margin:8px 2px 0;color:#64788b;font-size:12px;line-height:1.65}
