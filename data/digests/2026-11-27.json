@@ -39,6 +39,13 @@
         "markdown_and_links": false
       },
       "evidence": []
+    },
+    "bibliographic_review": {
+      "checked_on": "2026-11-28",
+      "source_url": "https://doi.org/10.1016/j.jeconom.2020.12.001",
+      "locator": "Journal of Econometrics 225(2), pp.200–230; Abstract",
+      "confirmed": "2021年掲載、集団・時点別効果、条件付き平行トレンド、最低賃金の応用を確認",
+      "remaining": "原著本文の主要表・推定式・標本数・不確実性指標を横断照合する監査は未完了"
     }
   },
   {
@@ -81,6 +88,13 @@
         "markdown_and_links": false
       },
       "evidence": []
+    },
+    "bibliographic_review": {
+      "checked_on": "2026-11-28",
+      "source_url": "https://doi.org/10.1080/01621459.2017.1319839",
+      "locator": "JASA 113(523), pp.1228–1242; Abstract",
+      "confirmed": "2018年掲載、honest causal forestの推論、理論的漸近性と実験比較を確認",
+      "remaining": "原著本文の主要表・推定式・標本数・不確実性指標を横断照合する監査は未完了"
     }
   },
   {
@@ -123,6 +137,13 @@
         "markdown_and_links": false
       },
       "evidence": []
+    },
+    "bibliographic_review": {
+      "checked_on": "2026-11-28",
+      "source_url": "https://doi.org/10.1093/qje/qju015",
+      "locator": "QJE 129(3), pp.1311–1353; Abstract",
+      "confirmed": "2014年掲載、海藻養殖実験、pod sizeへの注意と集計情報提示による行動変化を確認",
+      "remaining": "原著本文の主要表・推定式・標本数・不確実性指標を横断照合する監査は未完了"
     }
   },
   {
@@ -165,6 +186,13 @@
         "markdown_and_links": false
       },
       "evidence": []
+    },
+    "bibliographic_review": {
+      "checked_on": "2026-11-28",
+      "source_url": "https://doi.org/10.1093/qje/qju032",
+      "locator": "QJE 130(1), pp.165–218; Abstract",
+      "confirmed": "2015年掲載、9か月のRCT、13%の業績改善と制度再選択後22%を確認。推定対象の違いに注意",
+      "remaining": "原著本文の主要表・推定式・標本数・不確実性指標を横断照合する監査は未完了"
     }
   }
 ]
