@@ -1,0 +1,170 @@
+[
+  {
+    "paper_id": "digest-20261127-01",
+    "digest_category": "causal",
+    "title_candidate": "Difference-in-Differences with Multiple Time Periods",
+    "title_ja": "複数時点の差の差分析",
+    "source_date": "2026-11-27",
+    "source_weeks": [
+      "2026-W48"
+    ],
+    "rq_candidate": "導入時期が異なる集団の因果効果をどう推定するか",
+    "hypothesis_candidate": "条件付き平行トレンドの下で集団・時点別ATTを識別する",
+    "method_keywords": [
+      "DID",
+      "ATT(g,t)",
+      "staggered adoption"
+    ],
+    "source_text": "Callaway & Sant’Anna (2021)\n\n**RQ：** 導入時期が異なる集団の因果効果をどう推定するか\n\n**仮説・命題（暫定的要約）：** 条件付き平行トレンドの下で集団・時点別ATTを識別する\n\n### 1. どんなもの？\n導入時期が異なる政策のDIDを扱う。\n\n### 2. 先行研究と比べてどこがすごい？\nTWFEの一つの係数では異質な効果が混在し得るため、集団・時点別効果を明示する。\n\n### 3. 技術や手法のキモはどこ？\nRQ→仮説→データ（導入時期、結果、共変量）→識別（条件付き平行トレンド等）→分析（group-time ATT）→結果。ATT(g,t)=E[Y_t(1)-Y_t(0)|G=g]。Gは初回介入時点、gはその値、tは評価時点、Yは潜在結果。\n\n### 4. どうやって有効だと検証した？\n理論と最低賃金・若年雇用の応用。本文の数値・CIは未照合。\n\n### 5. 議論はある？\n平行トレンド、先取り、波及、導入時期の内生性に注意。\n\n### 6. 次読むべき論文は？\nGoodman-Bacon (2021); Sun & Abraham (2021)。研究の型：推定対象を細分化してから集計する。",
+    "source_url": "https://arxiv.org/abs/1803.09015",
+    "doi": "10.1016/j.jeconom.2020.12.001",
+    "source_heading_count": 6,
+    "verification": "primary_source_full_text_not_audited",
+    "title_ja_status": "provisional",
+    "publication_status": "draft",
+    "substantive_verification": "not_checked_against_primary_sources",
+    "original_review": {
+      "status": "pending",
+      "scope": "本文・表・効果量・信頼区間の照合未実施"
+    },
+    "quality_review": {
+      "approved": false,
+      "reviewed_on": "2026-11-28",
+      "checks": {
+        "bibliography": false,
+        "rq_and_design": false,
+        "identification_and_limitations": false,
+        "quantitative_claims": false,
+        "equations": false,
+        "markdown_and_links": false
+      },
+      "evidence": []
+    }
+  },
+  {
+    "paper_id": "digest-20261127-02",
+    "digest_category": "causal",
+    "title_candidate": "Estimation and Inference of Heterogeneous Treatment Effects using Random Forests",
+    "title_ja": "因果フォレストによる異質な効果の推定と推論",
+    "source_date": "2026-11-27",
+    "source_weeks": [
+      "2026-W48"
+    ],
+    "rq_candidate": "個人属性による処置効果の違いを推定し推論できるか",
+    "hypothesis_candidate": "honest forestと正則性条件の下でCATEの統計的推論を行う",
+    "method_keywords": [
+      "CATE",
+      "causal forest",
+      "honesty"
+    ],
+    "source_text": "Wager & Athey (2018)\n\n**RQ：** 個人属性による処置効果の違いを推定し推論できるか\n\n**仮説・命題（暫定的要約）：** honest forestと正則性条件の下でCATEの統計的推論を行う\n\n### 1. どんなもの？\n個人別の因果効果を森林モデルで推定する。\n\n### 2. 先行研究と比べてどこがすごい？\n柔軟な異質性探索に推論の理論を組み合わせる。\n\n### 3. 技術や手法のキモはどこ？\nRQ→仮説→データ（処置W、結果Y、属性X）→識別（交換可能性、overlap等）→分析（honest forest）→結果。τ(x)=E[Y(1)-Y(0)|X=x]。τは属性xにおける条件付き平均処置効果。\n\n### 4. どうやって有効だと検証した？\n理論的性質とシミュレーションによる検証。数値は未照合。\n\n### 5. 議論はある？\n未測定交絡やoverlap不足はモデルだけでは解消しない。\n\n### 6. 次読むべき論文は？\nAthey et al. (2019); Athey & Wager (2021)。研究の型：平均効果から対象別の効果へ。",
+    "source_url": "https://doi.org/10.1080/01621459.2017.1319839",
+    "doi": "10.1080/01621459.2017.1319839",
+    "source_heading_count": 6,
+    "verification": "primary_source_full_text_not_audited",
+    "title_ja_status": "provisional",
+    "publication_status": "draft",
+    "substantive_verification": "not_checked_against_primary_sources",
+    "original_review": {
+      "status": "pending",
+      "scope": "本文・表・効果量・信頼区間の照合未実施"
+    },
+    "quality_review": {
+      "approved": false,
+      "reviewed_on": "2026-11-28",
+      "checks": {
+        "bibliography": false,
+        "rq_and_design": false,
+        "identification_and_limitations": false,
+        "quantitative_claims": false,
+        "equations": false,
+        "markdown_and_links": false
+      },
+      "evidence": []
+    }
+  },
+  {
+    "paper_id": "digest-20261127-03",
+    "digest_category": "decision",
+    "title_candidate": "Learning Through Noticing: Theory and Evidence from a Field Experiment",
+    "title_ja": "気づきを通じた学習：理論とフィールド実験",
+    "source_date": "2026-11-27",
+    "source_weeks": [
+      "2026-W48"
+    ],
+    "rq_candidate": "経験があっても重要な要因を学べないのはなぜか",
+    "hypothesis_candidate": "注意を向ける変数が学習を左右する",
+    "method_keywords": [
+      "attention",
+      "learning",
+      "field experiment"
+    ],
+    "source_text": "Hanna, Mullainathan & Schwartzstein (2014)\n\n**RQ：** 経験があっても重要な要因を学べないのはなぜか\n\n**仮説・命題（暫定的要約）：** 注意を向ける変数が学習を左右する\n\n### 1. どんなもの？\nインドネシアの海藻養殖を対象に、経験からの学習を研究する。\n\n### 2. 先行研究と比べてどこがすごい？\n情報不足だけでなく重要変数への注意不足に着目する。\n\n### 3. 技術や手法のキモはどこ？\nRQ→仮説（注意が学習を左右）→データ（生産投入、収量、認識）→識別（フィールド実験）→分析（情報の提示方法を比較）→結果。種苗の大きさへの注意が焦点。\n\n### 4. どうやって有効だと検証した？\nフィールド実験と情報提示を比較。群別N・効果量・CIは未照合。\n\n### 5. 議論はある？\n注意、理解容易性、信頼性などのメカニズムを完全に分離できるとは限らない。\n\n### 6. 次読むべき論文は？\n関連するNBERワーキングペーパーと注意・学習研究。研究の型：情報量ではなく注意の向け方を操作する。",
+    "source_url": "https://doi.org/10.1093/qje/qju015",
+    "doi": "10.1093/qje/qju015",
+    "source_heading_count": 6,
+    "verification": "primary_source_full_text_not_audited",
+    "title_ja_status": "provisional",
+    "publication_status": "draft",
+    "substantive_verification": "not_checked_against_primary_sources",
+    "original_review": {
+      "status": "pending",
+      "scope": "本文・表・効果量・信頼区間の照合未実施"
+    },
+    "quality_review": {
+      "approved": false,
+      "reviewed_on": "2026-11-28",
+      "checks": {
+        "bibliography": false,
+        "rq_and_design": false,
+        "identification_and_limitations": false,
+        "quantitative_claims": false,
+        "equations": false,
+        "markdown_and_links": false
+      },
+      "evidence": []
+    }
+  },
+  {
+    "paper_id": "digest-20261127-04",
+    "digest_category": "decision",
+    "title_candidate": "Does Working from Home Work? Evidence from a Chinese Experiment",
+    "title_ja": "在宅勤務は機能するのか：中国の実験から",
+    "source_date": "2026-11-27",
+    "source_weeks": [
+      "2026-W48"
+    ],
+    "rq_candidate": "在宅勤務は業績を高めるか、再選択後はどう変わるか",
+    "hypothesis_candidate": "勤務環境と個人の適合性が業績を左右する",
+    "method_keywords": [
+      "RCT",
+      "WFH",
+      "productivity"
+    ],
+    "source_text": "Bloom, Liang, Roberts & Ying (2015)\n\n**RQ：** 在宅勤務は業績を高めるか、再選択後はどう変わるか\n\n**仮説・命題（暫定的要約）：** 勤務環境と個人の適合性が業績を左右する\n\n### 1. どんなもの？\nCtripのコールセンターで9か月の在宅勤務RCTを行う。\n\n### 2. 先行研究と比べてどこがすごい？\n平均的効果と制度選択後の適合性を区別する。\n\n### 3. 技術や手法のキモはどこ？\nRQ→仮説→データ（業績、勤務時間、離職、希望）→識別（適格希望者内の無作為割付）→分析（割付群比較と事後選択）→結果。\n\n### 4. どうやって有効だと検証した？\n原著要旨では実験期間の業績13%改善、再選択後22%改善を報告。後者は同じ因果推定対象ではない。本文表・CIは未照合。\n\n### 5. 議論はある？\n希望者限定の外的妥当性と自己選択の内生性に注意。\n\n### 6. 次読むべき論文は？\nBloom et al. (2024); Mas & Pallais (2017)。研究の型：RCT効果と制度導入後の選択を区別する。",
+    "source_url": "https://doi.org/10.1093/qje/qju032",
+    "doi": "10.1093/qje/qju032",
+    "source_heading_count": 6,
+    "verification": "primary_source_full_text_not_audited",
+    "title_ja_status": "provisional",
+    "publication_status": "draft",
+    "substantive_verification": "not_checked_against_primary_sources",
+    "original_review": {
+      "status": "pending",
+      "scope": "本文・表・効果量・信頼区間の照合未実施"
+    },
+    "quality_review": {
+      "approved": false,
+      "reviewed_on": "2026-11-28",
+      "checks": {
+        "bibliography": false,
+        "rq_and_design": false,
+        "identification_and_limitations": false,
+        "quantitative_claims": false,
+        "equations": false,
+        "markdown_and_links": false
+      },
+      "evidence": []
+    }
+  }
+]
