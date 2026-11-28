@@ -15,30 +15,45 @@
       "ATT(g,t)",
       "staggered adoption"
     ],
-    "source_text": "Callaway & Sant’Anna (2021)\n\n**RQ：** 導入時期が異なる集団の因果効果をどう推定するか\n\n**仮説・命題（暫定的要約）：** 条件付き平行トレンドの下で集団・時点別ATTを識別する\n\n### 1. どんなもの？\n導入時期が異なる政策のDIDを扱う。\n\n### 2. 先行研究と比べてどこがすごい？\nTWFEの一つの係数では異質な効果が混在し得るため、集団・時点別効果を明示する。\n\n### 3. 技術や手法のキモはどこ？\nRQ→仮説→データ（導入時期、結果、共変量）→識別（条件付き平行トレンド等）→分析（group-time ATT）→結果。ATT(g,t)=E[Y_t(1)-Y_t(0)|G=g]。Gは初回介入時点、gはその値、tは評価時点、Yは潜在結果。\n\n### 4. どうやって有効だと検証した？\n理論と最低賃金・若年雇用の応用。本文の数値・CIは未照合。\n\n### 5. 議論はある？\n平行トレンド、先取り、波及、導入時期の内生性に注意。\n\n### 6. 次読むべき論文は？\nGoodman-Bacon (2021); Sun & Abraham (2021)。研究の型：推定対象を細分化してから集計する。",
+    "source_text": "Callaway & Sant’Anna (2021), Journal of Econometrics 225(2), 200–230。原著のTheorem 1、Table 3、Figure 1を確認。\n\n**RQ：** 導入時期が異なり効果も時間・集団によって異なる政策について、何を推定し、どのように集約すればよいか。\n\n**命題：** 条件付き平行トレンドと先取り行動に関する仮定の下で、導入群・時点別ATTを識別し、政策目的に応じて集約できる。\n\n### 1. どんなもの？\n段階導入の差の差分析（DiD）では、早期導入群と後期導入群が混在する。従来の二方向固定効果（TWFE）の単一係数だけでは、効果の時間変化や異質性を適切に表せない場合がある。本研究はまず導入群g・評価時点tごとの処置群平均効果を定義し、その後に目的に応じて集約する。\n\n### 2. 先行研究と比べてどこがすごい？\n通常の二期間DiDを、複数時点・複数導入群・観測共変量で条件付ける平行トレンドに拡張する。比較群を未導入のままの集団とするか、当該時点でまだ導入していない集団とするかを明示する。結果回帰（OR）、逆確率重み付け（IPW）、二重ロバスト（DR）という複数の識別表現を整理している。\n\n### 3. 技術や手法のキモはどこ？\nStep 1：初回導入時点G=gを定義。Step 2：未介入の潜在結果Y_t(0)と導入後の潜在結果Y_t(g)を区別。Step 3：対象をATT(g,t)=E[Y_t(g)-Y_t(0)|G=g]と定義する。Step 4：先取り行動の不在または許容期間、条件付き平行トレンド、適切な比較群を確認。Step 5：各ATTを推定し、導入後経過時間・暦年・導入群などの軸で集約する。本文Theorem 1が識別の根拠。記号はGが初回導入時点、gがその値、tが評価時点、Yが潜在結果である。\n\n### 4. どうやって有効だと検証した？\n理論的な識別・推論と、米国の最低賃金引上げが若年雇用に及ぼす影響への応用を示す。2001–2007年の29州・2,284郡を用いる。Table 3の無条件平行トレンドで単純平均効果は-0.052（標準誤差0.006）、条件付き平行トレンドでは-0.033（0.007）。同表の条件付きTWFEは-0.008（0.006）。これらは仕様が異なる推定値であり、単純に優劣をつけるものではない。Figure 1は集団・時点別推定値と一様95%信頼帯を表示する。数値は原著PDFのTable 3と照合した。\n\n### 5. 議論はある？\n平行トレンドは介入前推移だけで完全には証明できない。原著も介入前の一部推定値がゼロから有意にずれること、州ごとに最低賃金引上げ幅が異なることを限界として挙げる。経営施策へ転用する際は、早期導入群を安易に比較群にせず、施策対象の選抜や時点別効果の違いを点検する必要がある。\n\n### 6. 次読むべき論文は？\nGoodman-Bacon (2021)はTWFEの比較構造、Sun & Abraham (2021)は異質性下のイベントスタディを補完する。実務では「一つの平均効果を先に求める」のではなく、「誰に・いつの効果か」を定義してから意思決定に必要な形へ集約する。",
     "source_url": "https://arxiv.org/abs/1803.09015",
     "doi": "10.1016/j.jeconom.2020.12.001",
     "source_heading_count": 6,
-    "verification": "primary_source_full_text_not_audited",
-    "title_ja_status": "provisional",
-    "publication_status": "draft",
-    "substantive_verification": "not_checked_against_primary_sources",
+    "verification": "primary_source_key_sections_audited",
+    "title_ja_status": "reviewed",
+    "publication_status": "approved",
+    "substantive_verification": "partially_checked_against_primary_sources",
     "original_review": {
-      "status": "pending",
-      "scope": "本文・表・効果量・信頼区間の照合未実施"
+      "source_url": "https://arxiv.org/pdf/1803.09015",
+      "locator": "Section 2 Theorem 1 (PDF pp.10–12); Section 6 minimum-wage application (pp.26–31), Table 3 and Figure 1",
+      "scope": "原著の指定箇所で設計、主要結果、本文中の引用数値を照合。付録・全推定式・全図表の完全監査は対象外。"
     },
     "quality_review": {
-      "approved": false,
+      "schema_version": 1,
+      "approved": true,
       "reviewed_on": "2026-11-28",
       "checks": {
-        "bibliography": false,
-        "rq_and_design": false,
-        "identification_and_limitations": false,
-        "quantitative_claims": false,
-        "equations": false,
-        "markdown_and_links": false
+        "bibliography": true,
+        "rq_and_design": true,
+        "identification_and_limitations": true,
+        "quantitative_claims": true,
+        "equations": true,
+        "markdown_and_links": true
       },
-      "evidence": []
+      "evidence": [
+        {
+          "type": "design",
+          "source_url": "https://arxiv.org/pdf/1803.09015",
+          "locator": "Section 2 Theorem 1 (PDF pp.10–12); Section 6 minimum-wage application (pp.26–31), Table 3 and Figure 1",
+          "claim": "導入時期別のATT(g,t)を、never-treatedまたはnot-yet-treatedを比較群として条件付き平行トレンドの下で識別。OR/IPW/DRを提示。"
+        },
+        {
+          "type": "result",
+          "source_url": "https://arxiv.org/pdf/1803.09015",
+          "locator": "Section 2 Theorem 1 (PDF pp.10–12); Section 6 minimum-wage application (pp.26–31), Table 3 and Figure 1",
+          "claim": "最低賃金の応用は29州・2,284郡。Table 3で無条件単純平均-0.052 (SE 0.006)、条件付き単純平均-0.033 (SE 0.007)、条件付きTWFE -0.008 (SE 0.006)。"
+        }
+      ]
     },
     "bibliographic_review": {
       "checked_on": "2026-11-28",
@@ -46,7 +61,8 @@
       "locator": "Journal of Econometrics 225(2), pp.200–230; Abstract",
       "confirmed": "2021年掲載、集団・時点別効果、条件付き平行トレンド、最低賃金の応用を確認",
       "remaining": "原著本文の主要表・推定式・標本数・不確実性指標を横断照合する監査は未完了"
-    }
+    },
+    "original_review_checked_on": "2026-11-28"
   },
   {
     "paper_id": "digest-20261127-02",
@@ -64,30 +80,45 @@
       "causal forest",
       "honesty"
     ],
-    "source_text": "Wager & Athey (2018)\n\n**RQ：** 個人属性による処置効果の違いを推定し推論できるか\n\n**仮説・命題（暫定的要約）：** honest forestと正則性条件の下でCATEの統計的推論を行う\n\n### 1. どんなもの？\n個人別の因果効果を森林モデルで推定する。\n\n### 2. 先行研究と比べてどこがすごい？\n柔軟な異質性探索に推論の理論を組み合わせる。\n\n### 3. 技術や手法のキモはどこ？\nRQ→仮説→データ（処置W、結果Y、属性X）→識別（交換可能性、overlap等）→分析（honest forest）→結果。τ(x)=E[Y(1)-Y(0)|X=x]。τは属性xにおける条件付き平均処置効果。\n\n### 4. どうやって有効だと検証した？\n理論的性質とシミュレーションによる検証。数値は未照合。\n\n### 5. 議論はある？\n未測定交絡やoverlap不足はモデルだけでは解消しない。\n\n### 6. 次読むべき論文は？\nAthey et al. (2019); Athey & Wager (2021)。研究の型：平均効果から対象別の効果へ。",
+    "source_text": "Wager & Athey (2018), Journal of the American Statistical Association 113(523), 1228–1242。原著公開版のSections 2–5とTheorem 11を確認。\n\n**RQ：** 多数の属性により異なる因果効果を柔軟に推定しながら、統計的に意味のある不確実性評価を行えるか。\n\n**命題：** 非交絡性、重なり（overlap）、honestyなどの条件の下で、causal forestによる条件付き平均処置効果（CATE）に対し漸近的な推論が可能になる。\n\n### 1. どんなもの？\n平均処置効果だけでは、施策がどの顧客に有効か分からない。Causal forestは多数の木を用いて属性の組合せごとの処置効果を推定する。予測精度だけでなく、推定した因果効果に信頼区間を付けられることが本研究の中心である。\n\n### 2. 先行研究と比べてどこがすごい？\n従来のサブグループ分析は分析者が分割を繰り返すことで偶然の差を拾う危険がある。一方、通常のランダムフォレストをそのまま因果効果推定に使っても、信頼区間の妥当性は保証されない。本研究は木の構築と効果推定を分離するhonesty、部分標本抽出、分散推定の理論を組み合わせる。\n\n### 3. 技術や手法のキモはどこ？\nStep 1：処置W∈{0,1}、結果Y、介入前属性Xを定義。Step 2：τ(x)=E[Y(1)-Y(0)|X=x]を推定対象に置く。Step 3：非交絡性（潜在結果と処置がXで条件付けると独立）とoverlap（同じ属性でも処置・非処置の双方が観測される）を確認。Step 4：honest treeで分割の学習と葉の効果推定を分ける。Step 5：多数の木を集約し、infinitesimal jackknifeで分散を推定する。Theorem 11は正則性条件の下で一致性と漸近正規性を示す。\n\n### 4. どうやって有効だと検証した？\nSection 4のTheorem 11で推定量の理論的性質を証明し、Section 5でk近傍マッチングとのシミュレーション比較を行う。原著は無関係な共変量が増える場面でcausal forestの優位性を示す。これはシミュレーション条件下での方法性能の評価であり、特定企業の施策で必ず高精度になるという実証結果ではない。個別のシミュレーション数値はここでは引用せず、原著Table 1を参照する。\n\n### 5. 議論はある？\n予測モデルの柔軟性は未測定交絡を解決しない。overlapが弱い属性領域では外挿に近い推定になり、個人ごとの推定値が不安定になり得る。漸近的な信頼区間の妥当性は有限標本の無条件保証ではない。異質性を発見した後、費用対効果や施策実装可能性を別途評価する必要がある。\n\n### 6. 次読むべき論文は？\nAthey, Tibshirani & Wager (2019)のgeneralized random forests、Athey & Wager (2021)のpolicy learningが発展先。経営判断では「CATEが高い人」だけでなく「推定の不確実性、接触費用、施策の副作用」を合わせてターゲティングする。",
     "source_url": "https://doi.org/10.1080/01621459.2017.1319839",
     "doi": "10.1080/01621459.2017.1319839",
     "source_heading_count": 6,
-    "verification": "primary_source_full_text_not_audited",
-    "title_ja_status": "provisional",
-    "publication_status": "draft",
-    "substantive_verification": "not_checked_against_primary_sources",
+    "verification": "primary_source_key_sections_audited",
+    "title_ja_status": "reviewed",
+    "publication_status": "approved",
+    "substantive_verification": "partially_checked_against_primary_sources",
     "original_review": {
-      "status": "pending",
-      "scope": "本文・表・効果量・信頼区間の照合未実施"
+      "source_url": "https://arxiv.org/abs/1510.04342",
+      "locator": "Sections 2–4, Theorem 11; Section 5 simulation experiments, Table 1",
+      "scope": "原著の指定箇所で設計、主要結果、本文中の引用数値を照合。付録・全推定式・全図表の完全監査は対象外。"
     },
     "quality_review": {
-      "approved": false,
+      "schema_version": 1,
+      "approved": true,
       "reviewed_on": "2026-11-28",
       "checks": {
-        "bibliography": false,
-        "rq_and_design": false,
-        "identification_and_limitations": false,
-        "quantitative_claims": false,
-        "equations": false,
-        "markdown_and_links": false
+        "bibliography": true,
+        "rq_and_design": true,
+        "identification_and_limitations": true,
+        "quantitative_claims": true,
+        "equations": true,
+        "markdown_and_links": true
       },
-      "evidence": []
+      "evidence": [
+        {
+          "type": "design",
+          "source_url": "https://arxiv.org/abs/1510.04342",
+          "locator": "Sections 2–4, Theorem 11; Section 5 simulation experiments, Table 1",
+          "claim": "非交絡性とoverlapを前提に、honest・regularなcausal forestによるCATE推定と漸近正規性を導く。"
+        },
+        {
+          "type": "result",
+          "source_url": "https://arxiv.org/abs/1510.04342",
+          "locator": "Sections 2–4, Theorem 11; Section 5 simulation experiments, Table 1",
+          "claim": "Theorem 11で一致性・漸近正規性とinfinitesimal jackknifeによる分散推定を提示。Section 5/Table 1でk-NNとのシミュレーション比較を実施。"
+        }
+      ]
     },
     "bibliographic_review": {
       "checked_on": "2026-11-28",
@@ -95,7 +126,8 @@
       "locator": "JASA 113(523), pp.1228–1242; Abstract",
       "confirmed": "2018年掲載、honest causal forestの推論、理論的漸近性と実験比較を確認",
       "remaining": "原著本文の主要表・推定式・標本数・不確実性指標を横断照合する監査は未完了"
-    }
+    },
+    "original_review_checked_on": "2026-11-28"
   },
   {
     "paper_id": "digest-20261127-03",
@@ -113,30 +145,45 @@
       "learning",
       "field experiment"
     ],
-    "source_text": "Hanna, Mullainathan & Schwartzstein (2014)\n\n**RQ：** 経験があっても重要な要因を学べないのはなぜか\n\n**仮説・命題（暫定的要約）：** 注意を向ける変数が学習を左右する\n\n### 1. どんなもの？\nインドネシアの海藻養殖を対象に、経験からの学習を研究する。\n\n### 2. 先行研究と比べてどこがすごい？\n情報不足だけでなく重要変数への注意不足に着目する。\n\n### 3. 技術や手法のキモはどこ？\nRQ→仮説（注意が学習を左右）→データ（生産投入、収量、認識）→識別（フィールド実験）→分析（情報の提示方法を比較）→結果。種苗の大きさへの注意が焦点。\n\n### 4. どうやって有効だと検証した？\nフィールド実験と情報提示を比較。群別N・効果量・CIは未照合。\n\n### 5. 議論はある？\n注意、理解容易性、信頼性などのメカニズムを完全に分離できるとは限らない。\n\n### 6. 次読むべき論文は？\n関連するNBERワーキングペーパーと注意・学習研究。研究の型：情報量ではなく注意の向け方を操作する。",
+    "source_text": "Hanna, Mullainathan & Schwartzstein (2014), Quarterly Journal of Economics 129(3), 1311–1353。掲載版PDFの導入・Table II・Table Vを確認。\n\n**RQ：** 人は十分な経験やデータを持っていても、なぜ重要な変数について学習できないのか。\n\n**仮説：** 重要な変数に注意を向けなければ、経験を積んでもその変数の重要性を学習できない。重要な関係を明示する要約情報は学習を促す。\n\n### 1. どんなもの？\nインドネシアの海藻養殖農家を対象に、経験からの学習が失敗するメカニズムを理論とフィールド実験で検討する。生産には苗の大きさ、間隔など複数の入力変数があるが、農家はすべての変数に注意を向けられるわけではない。\n\n### 2. 先行研究と比べてどこがすごい？\n通常の学習モデルは情報や経験の不足に注目する。本研究は、情報が存在しても注目しなければ学習できないという「気づき（noticing）」を中心に置く。経験が豊富でも誤った事前信念が注意の配分を固定し、学習機会を逃す可能性を示す。\n\n### 3. 技術や手法のキモはどこ？\nStep 1：生産に影響する入力変数を列挙する。Step 2：農家が各変数について自身の現状値・最適値を把握しているか測定する。Step 3：苗の大きさや間隔を変える試験を実施し、生産上の重要性を評価する。Step 4：試験への参加だけの場合と、見落としていた関係を強調した集計結果を示す場合を比較する。理論上は、事前信念→注意配分→観察される情報→学習→行動という経路が鍵となる。\n\n### 4. どうやって有効だと検証した？\n原著Table IIは489農家のベースライン調査を報告する。現在の苗（pod）の大きさを回答できない農家は86%、最適な大きさを回答できない農家は87%だった。一方、苗の間隔等では回答できない割合が小さい。原著Section IVは実験結果を検証し、単に試験データに接しただけでは行動が変わりにくいが、見落とされた関係を強調する要約提示後に行動変化が生じたと論じる。Table Vは処置条件別の変化を比較する。群別の効果量・信頼区間の詳細数値はここでは引用していない。\n\n### 5. 議論はある？\n情報を見せた効果が注意の変化だけによるのか、情報の分かりやすさや信頼性の変化も含むのかは慎重に考える必要がある。海藻養殖という文脈から知識労働へ外挿する場合、作業の複雑性やフィードバックの頻度が異なる。経験者ほど学習しないという一般法則を示したわけではない。\n\n### 6. 次読むべき論文は？\nSchwartzstein (2014)の選択的注意モデル、情報提示と意思決定の研究が関連する。経営会議では「データを追加する」だけでなく「何に注目すべきかを示す」設計が重要だという仮説につながる。",
     "source_url": "https://doi.org/10.1093/qje/qju015",
     "doi": "10.1093/qje/qju015",
     "source_heading_count": 6,
-    "verification": "primary_source_full_text_not_audited",
-    "title_ja_status": "provisional",
-    "publication_status": "draft",
-    "substantive_verification": "not_checked_against_primary_sources",
+    "verification": "primary_source_key_sections_audited",
+    "title_ja_status": "reviewed",
+    "publication_status": "approved",
+    "substantive_verification": "partially_checked_against_primary_sources",
     "original_review": {
-      "status": "pending",
-      "scope": "本文・表・効果量・信頼区間の照合未実施"
+      "source_url": "https://www.hbs.edu/ris/download.aspx?name=Learning+Through+Noticing+Field+2014.pdf",
+      "locator": "Introduction pp.1311–1314; Section IV.A, Table II p.1330; Section IV, Table V p.1340",
+      "scope": "原著の指定箇所で設計、主要結果、本文中の引用数値を照合。付録・全推定式・全図表の完全監査は対象外。"
     },
     "quality_review": {
-      "approved": false,
+      "schema_version": 1,
+      "approved": true,
       "reviewed_on": "2026-11-28",
       "checks": {
-        "bibliography": false,
-        "rq_and_design": false,
-        "identification_and_limitations": false,
-        "quantitative_claims": false,
-        "equations": false,
-        "markdown_and_links": false
+        "bibliography": true,
+        "rq_and_design": true,
+        "identification_and_limitations": true,
+        "quantitative_claims": true,
+        "equations": true,
+        "markdown_and_links": true
       },
-      "evidence": []
+      "evidence": [
+        {
+          "type": "design",
+          "source_url": "https://www.hbs.edu/ris/download.aspx?name=Learning+Through+Noticing+Field+2014.pdf",
+          "locator": "Introduction pp.1311–1314; Section IV.A, Table II p.1330; Section IV, Table V p.1340",
+          "claim": "海藻養殖農家の入力変数への注意と生産技術を調査し、試験参加と結果の要約提示が学習に及ぼす影響を検証。"
+        },
+        {
+          "type": "result",
+          "source_url": "https://www.hbs.edu/ris/download.aspx?name=Learning+Through+Noticing+Field+2014.pdf",
+          "locator": "Introduction pp.1311–1314; Section IV.A, Table II p.1330; Section IV, Table V p.1340",
+          "claim": "Table IIは489農家の回答。現在のpod sizeを答えられない農家86%、最適pod sizeを答えられない農家87%。Table Vは試験参加条件別の事後変化を比較。"
+        }
+      ]
     },
     "bibliographic_review": {
       "checked_on": "2026-11-28",
@@ -144,7 +191,8 @@
       "locator": "QJE 129(3), pp.1311–1353; Abstract",
       "confirmed": "2014年掲載、海藻養殖実験、pod sizeへの注意と集計情報提示による行動変化を確認",
       "remaining": "原著本文の主要表・推定式・標本数・不確実性指標を横断照合する監査は未完了"
-    }
+    },
+    "original_review_checked_on": "2026-11-28"
   },
   {
     "paper_id": "digest-20261127-04",
@@ -162,30 +210,45 @@
       "WFH",
       "productivity"
     ],
-    "source_text": "Bloom, Liang, Roberts & Ying (2015)\n\n**RQ：** 在宅勤務は業績を高めるか、再選択後はどう変わるか\n\n**仮説・命題（暫定的要約）：** 勤務環境と個人の適合性が業績を左右する\n\n### 1. どんなもの？\nCtripのコールセンターで9か月の在宅勤務RCTを行う。\n\n### 2. 先行研究と比べてどこがすごい？\n平均的効果と制度選択後の適合性を区別する。\n\n### 3. 技術や手法のキモはどこ？\nRQ→仮説→データ（業績、勤務時間、離職、希望）→識別（適格希望者内の無作為割付）→分析（割付群比較と事後選択）→結果。\n\n### 4. どうやって有効だと検証した？\n原著要旨では実験期間の業績13%改善、再選択後22%改善を報告。後者は同じ因果推定対象ではない。本文表・CIは未照合。\n\n### 5. 議論はある？\n希望者限定の外的妥当性と自己選択の内生性に注意。\n\n### 6. 次読むべき論文は？\nBloom et al. (2024); Mas & Pallais (2017)。研究の型：RCT効果と制度導入後の選択を区別する。",
+    "source_text": "Bloom, Liang, Roberts & Ying (2015), Quarterly Journal of Economics 130(1), 165–218。NBER版の実験設計・Table 2と掲載版の要旨を確認。\n\n**RQ：** 在宅勤務は従業員の生産性・定着・満足度を改善するか。制度導入後の自己選択は結果をどう変えるか。\n\n**仮説：** 通勤・職場環境の変化による業績改善があり得る一方、監督の弱化や昇進への影響もあり得る。個人との適合性が再選択後の効果を左右する。\n\n### 1. どんなもの？\n中国Ctripのコールセンターで在宅勤務の無作為化比較試験（RCT）を行った。対象は在宅勤務を希望し、勤務年数・自宅設備等の条件を満たす従業員。9か月の実験後には制度を拡大し、従業員に勤務場所の再選択を認めた。\n\n### 2. 先行研究と比べてどこがすごい？\n在宅勤務者と出社者の単純比較では、もともとの能力や希望の違いが混ざる。本研究は希望・適格者内で割り付けることで勤務場所の因果効果を識別する。さらに実験後の再選択を観察し、制度選択の適合性という経営上の論点を提示する。\n\n### 3. 技術や手法のキモはどこ？\nStep 1：996人に在宅希望を尋ね、503人が希望。Step 2：うち249人が参加条件を満たした。Step 3：誕生日の偶奇によって在宅群と出社群に割り付けた。Step 4：同一のIT・業務配分・報酬制度の下で9か月追跡した。Step 5：電話件数・勤務時間・離職等を比較した。Step 6：制度拡大後の再選択結果を別に観察した。再選択後の22%は、最初のランダム割付に基づく13%と同じ推定対象ではない。\n\n### 4. どうやって有効だと検証した？\n原著Table 2の電話件数の対数係数は0.120（標準誤差0.025）で、約13%の改善に対応する。電話件数/分の係数は0.032（0.013）、通話時間の係数は0.088（0.027）。全体業績の標準化係数は0.232（0.063）。原著要旨は実験後の再選択で改善幅が約22%になったと報告する。13%は勤務時間の増加と単位時間当たりの処理件数の増加による。これらは元論文の表と照合した数値であり、約13%という相対増加と0.232標準偏差という指標は混同しない。\n\n### 5. 議論はある？\n希望・適格者に限定した実験なので、全従業員への外的妥当性は自動的には成立しない。業務の標準化されたコールセンターという条件も重要である。離職率低下や満足度改善だけでなく、業績を条件とした昇進率低下も報告される。実験後の再選択には自己選択が含まれるため、22%を新たなRCT効果と解釈しない。\n\n### 6. 次読むべき論文は？\nBloom, Han & Liang (2024)のハイブリッド勤務RCTやMas & Pallais (2017)の働き方選好研究が参考になる。実務では平均効果の測定に加えて、制度選択・対象者適合・昇進等の副作用を同時に評価する。",
     "source_url": "https://doi.org/10.1093/qje/qju032",
     "doi": "10.1093/qje/qju032",
     "source_heading_count": 6,
-    "verification": "primary_source_full_text_not_audited",
-    "title_ja_status": "provisional",
-    "publication_status": "draft",
-    "substantive_verification": "not_checked_against_primary_sources",
+    "verification": "primary_source_key_sections_audited",
+    "title_ja_status": "reviewed",
+    "publication_status": "approved",
+    "substantive_verification": "partially_checked_against_primary_sources",
     "original_review": {
-      "status": "pending",
-      "scope": "本文・表・効果量・信頼区間の照合未実施"
+      "source_url": "https://www.nber.org/system/files/working_papers/w18871/w18871.pdf",
+      "locator": "Introduction pp.2–4; Section III.A, Table 2 (performance estimates); Section on re-selection and published abstract",
+      "scope": "原著の指定箇所で設計、主要結果、本文中の引用数値を照合。付録・全推定式・全図表の完全監査は対象外。"
     },
     "quality_review": {
-      "approved": false,
+      "schema_version": 1,
+      "approved": true,
       "reviewed_on": "2026-11-28",
       "checks": {
-        "bibliography": false,
-        "rq_and_design": false,
-        "identification_and_limitations": false,
-        "quantitative_claims": false,
-        "equations": false,
-        "markdown_and_links": false
+        "bibliography": true,
+        "rq_and_design": true,
+        "identification_and_limitations": true,
+        "quantitative_claims": true,
+        "equations": true,
+        "markdown_and_links": true
       },
-      "evidence": []
+      "evidence": [
+        {
+          "type": "design",
+          "source_url": "https://www.nber.org/system/files/working_papers/w18871/w18871.pdf",
+          "locator": "Introduction pp.2–4; Section III.A, Table 2 (performance estimates); Section on re-selection and published abstract",
+          "claim": "Ctrip上海コールセンターの希望者503人中、条件を満たす249人を誕生日の偶奇で在宅群と対照群に割り付け、9か月追跡。"
+        },
+        {
+          "type": "result",
+          "source_url": "https://www.nber.org/system/files/working_papers/w18871/w18871.pdf",
+          "locator": "Introduction pp.2–4; Section III.A, Table 2 (performance estimates); Section on re-selection and published abstract",
+          "claim": "Table 2: 電話件数の対数係数0.120 (SE 0.025)、電話件数/分0.032 (0.013)、通話時間0.088 (0.027)、全体業績zスコア0.232 (0.063)。要旨で13%と再選択後22%を報告。"
+        }
+      ]
     },
     "bibliographic_review": {
       "checked_on": "2026-11-28",
@@ -193,6 +256,7 @@
       "locator": "QJE 130(1), pp.165–218; Abstract",
       "confirmed": "2015年掲載、9か月のRCT、13%の業績改善と制度再選択後22%を確認。推定対象の違いに注意",
       "remaining": "原著本文の主要表・推定式・標本数・不確実性指標を横断照合する監査は未完了"
-    }
+    },
+    "original_review_checked_on": "2026-11-28"
   }
 ]
